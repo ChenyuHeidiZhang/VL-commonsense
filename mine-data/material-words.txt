@@ -1,6 +1,7 @@
 bronze
 ceramic
 chemicals
+cloth
 composite materials
 concrete
 copper

@@ -15,6 +15,7 @@ def mine_attributes(type, print_every=1000, max_imgs=1000000):
     for line in words_f:
         words_dict[line.strip()] = []
     word_ls = words_dict.keys()
+    att_counts = {}
 
     print('mining attributes...')
     img_num = 0
@@ -25,19 +26,21 @@ def mine_attributes(type, print_every=1000, max_imgs=1000000):
         for obj in img['attributes']:
             if 'attributes' not in obj:
                 continue
-            for att in obj['attributes']:
-                attribute = None
+            for attribute in obj['attributes']:
+                att = attribute
+                # treat attribute "x colored" the same as "x"
+                if type == 'color' and att.split()[-1] == 'colored' and att != 'light colored' and att != 'dark colored':
+                    att = ' '.join(att.split()[:-1])
                 # check if any attribute word is in our word list
                 if att in word_ls:
-                    attribute = att
-                else:
-                    # if part of the attribute (e.g. 'light' in light colored) is in our word list
-                    loc = np.where([(att_word in word_ls) for att_word in att.split()])
-                    if len(loc[0] > 0):
-                        attribute = att.split()[loc[0][0]]
-                if attribute and obj['names'][0] not in words_dict[attribute]:  # don't append the same attribute twice
-                    words_dict[attribute].append(obj['names'][0])
-                    # TODO: count the number of occurrences of each pair
+                    sub = obj['names'][0]
+                    if att in sub: 
+                        continue  # skip cases when the subject is something like "red box" 
+                    if sub not in words_dict[att]:  # don't append the same attribute twice
+                        words_dict[att].append(sub)
+                        att_counts[(sub, att)] = 1
+                    else:
+                        att_counts[(sub, att)] += 1
         if img_num == max_imgs:
             break
     print(f'finished processing {img_num} images')
@@ -48,8 +51,8 @@ def mine_attributes(type, print_every=1000, max_imgs=1000000):
         for key in word_ls:
             for sub in words_dict[key]:
                 #out.write({"sub": sub, "obj": key})
-                json.dump({"sub": sub, "obj": key}, out)
+                json.dump({"sub": sub, "obj": key, "count": att_counts[(sub, key)]}, out)
                 out.write('\n')
 
 if __name__ == "__main__":
-    mine_attributes('material')
+    mine_attributes('shape')

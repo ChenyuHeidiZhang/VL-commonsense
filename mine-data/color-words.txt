@@ -20,7 +20,7 @@ chartreuse
 coral
 crimson
 cyan
-dark
+dark colored
 ebony
 ecru
 emerald
@@ -39,7 +39,7 @@ jungle green
 kelly green
 khaki
 lavender
-light
+light colored
 magenta
 mahogany
 maroon
