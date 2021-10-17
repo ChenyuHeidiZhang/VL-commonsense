@@ -1,0 +1,1123 @@
+{"sub": "dirt", "obj": "circle", "count": 3}
+{"sub": "sign", "obj": "circle", "count": 58}
+{"sub": "object", "obj": "circle", "count": 3}
+{"sub": "globe", "obj": "circle", "count": 2}
+{"sub": "logo", "obj": "circle", "count": 14}
+{"sub": "pattern", "obj": "circle", "count": 2}
+{"sub": "light", "obj": "circle", "count": 10}
+{"sub": "wall", "obj": "circle", "count": 2}
+{"sub": "roof", "obj": "circle", "count": 2}
+{"sub": "building", "obj": "circle", "count": 2}
+{"sub": "design", "obj": "circle", "count": 14}
+{"sub": "dial", "obj": "circle", "count": 2}
+{"sub": "mirror", "obj": "circle", "count": 17}
+{"sub": "item", "obj": "circle", "count": 2}
+{"sub": "plate", "obj": "circle", "count": 19}
+{"sub": "pizza", "obj": "circle", "count": 7}
+{"sub": "frisbee", "obj": "circle", "count": 3}
+{"sub": "button", "obj": "circle", "count": 7}
+{"sub": "kite", "obj": "circle", "count": 5}
+{"sub": "window", "obj": "circle", "count": 16}
+{"sub": "screw", "obj": "circle", "count": 2}
+{"sub": "wheel", "obj": "circle", "count": 2}
+{"sub": "hole", "obj": "circle", "count": 2}
+{"sub": "sticker", "obj": "circle", "count": 5}
+{"sub": "emblem", "obj": "circle", "count": 2}
+{"sub": "symbol", "obj": "circle", "count": 3}
+{"sub": "line", "obj": "circle", "count": 2}
+{"sub": "table", "obj": "circle", "count": 4}
+{"sub": "decal", "obj": "circle", "count": 2}
+{"sub": "clock", "obj": "circle", "count": 20}
+{"sub": "rug", "obj": "circle", "count": 2}
+{"sub": "donut", "obj": "circle", "count": 6}
+{"sub": "windows", "obj": "circle", "count": 2}
+{"sub": "headlight", "obj": "circle", "count": 12}
+{"sub": "cake", "obj": "circle", "count": 2}
+{"sub": "buttons", "obj": "circle", "count": 2}
+{"sub": "tag", "obj": "circle", "count": 3}
+{"sub": "tray", "obj": "circle", "count": 3}
+{"sub": "cement", "obj": "circle", "count": 2}
+{"sub": "bead", "obj": "circle", "count": 2}
+{"sub": "bun", "obj": "circle", "count": 8}
+{"sub": "eye", "obj": "circle", "count": 2}
+{"sub": "frame", "obj": "circle", "count": 3}
+{"sub": "inflation device", "obj": "circle", "count": 2}
+{"sub": "designs", "obj": "circle", "count": 2}
+{"sub": "cord", "obj": "circle", "count": 5}
+{"sub": "food", "obj": "circle", "count": 4}
+{"sub": "drain", "obj": "circle", "count": 2}
+{"sub": "sign", "obj": "cross", "count": 7}
+{"sub": "walk", "obj": "cross", "count": 4}
+{"sub": "structure", "obj": "cross", "count": 2}
+{"sub": "symbol", "obj": "cross", "count": 3}
+{"sub": "tattoo", "obj": "cross", "count": 2}
+{"sub": "skier", "obj": "cross", "count": 3}
+{"sub": "tie", "obj": "cross", "count": 50}
+{"sub": "sign", "obj": "diamond", "count": 41}
+{"sub": "pattern", "obj": "diamond", "count": 23}
+{"sub": "design", "obj": "diamond", "count": 17}
+{"sub": "shape", "obj": "diamond", "count": 23}
+{"sub": "ring", "obj": "diamond", "count": 10}
+{"sub": "homeplate", "obj": "diamond", "count": 2}
+{"sub": "yellow sign", "obj": "diamond", "count": 2}
+{"sub": "tile", "obj": "diamond", "count": 15}
+{"sub": "earring", "obj": "diamond", "count": 14}
+{"sub": "bracelet", "obj": "diamond", "count": 2}
+{"sub": "clock", "obj": "diamond", "count": 5}
+{"sub": "fence", "obj": "diamond", "count": 7}
+{"sub": "field", "obj": "diamond", "count": 3}
+{"sub": "kite", "obj": "diamond", "count": 12}
+{"sub": "logo", "obj": "diamond", "count": 2}
+{"sub": "tie", "obj": "diamond", "count": 2}
+{"sub": "necklace", "obj": "diamond", "count": 3}
+{"sub": "home plate", "obj": "diamond", "count": 5}
+{"sub": "tiara", "obj": "diamond", "count": 2}
+{"sub": "plate", "obj": "diamond", "count": 4}
+{"sub": "shapes", "obj": "diamond", "count": 4}
+{"sub": "board", "obj": "diamond", "count": 2}
+{"sub": "tiles", "obj": "diamond", "count": 2}
+{"sub": "floor", "obj": "diamond", "count": 2}
+{"sub": "wall", "obj": "diamond", "count": 2}
+{"sub": "logo", "obj": "heart", "count": 2}
+{"sub": "design", "obj": "heart", "count": 7}
+{"sub": "tassel", "obj": "heart", "count": 2}
+{"sub": "tattoo", "obj": "heart", "count": 2}
+{"sub": "pillow", "obj": "heart", "count": 2}
+{"sub": "shape", "obj": "heart", "count": 3}
+{"sub": "tag", "obj": "heart", "count": 6}
+{"sub": "shirt", "obj": "heart", "count": 2}
+{"sub": "sticker", "obj": "heart", "count": 3}
+{"sub": "toothpick", "obj": "heart", "count": 2}
+{"sub": "sign", "obj": "hexagon", "count": 3}
+{"sub": "stop sign", "obj": "hexagon", "count": 2}
+{"sub": "sign", "obj": "octagon", "count": 107}
+{"sub": "stop sign", "obj": "octagon", "count": 36}
+{"sub": "clock", "obj": "octagon", "count": 2}
+{"sub": "waffle", "obj": "octagon", "count": 2}
+{"sub": "shape", "obj": "octagon", "count": 2}
+{"sub": "opening", "obj": "oval", "count": 3}
+{"sub": "grape", "obj": "oval", "count": 12}
+{"sub": "plate", "obj": "oval", "count": 58}
+{"sub": "window", "obj": "oval", "count": 32}
+{"sub": "mirror", "obj": "oval", "count": 54}
+{"sub": "lamp", "obj": "oval", "count": 2}
+{"sub": "table", "obj": "oval", "count": 40}
+{"sub": "sink", "obj": "oval", "count": 34}
+{"sub": "tree", "obj": "oval", "count": 2}
+{"sub": "eye", "obj": "oval", "count": 12}
+{"sub": "face", "obj": "oval", "count": 2}
+{"sub": "light", "obj": "oval", "count": 9}
+{"sub": "dish", "obj": "oval", "count": 5}
+{"sub": "picture", "obj": "oval", "count": 5}
+{"sub": "tomato", "obj": "oval", "count": 4}
+{"sub": "leaves", "obj": "oval", "count": 8}
+{"sub": "sign", "obj": "oval", "count": 31}
+{"sub": "ears", "obj": "oval", "count": 2}
+{"sub": "glasses", "obj": "oval", "count": 13}
+{"sub": "windows", "obj": "oval", "count": 14}
+{"sub": "sunglasses", "obj": "oval", "count": 6}
+{"sub": "toilet", "obj": "oval", "count": 9}
+{"sub": "wheel", "obj": "oval", "count": 2}
+{"sub": "eyes", "obj": "oval", "count": 3}
+{"sub": "frame", "obj": "oval", "count": 3}
+{"sub": "leaf", "obj": "oval", "count": 15}
+{"sub": "eyeglasses", "obj": "oval", "count": 2}
+{"sub": "lens", "obj": "oval", "count": 6}
+{"sub": "ear", "obj": "oval", "count": 2}
+{"sub": "top", "obj": "oval", "count": 2}
+{"sub": "hole", "obj": "oval", "count": 7}
+{"sub": "vase", "obj": "oval", "count": 9}
+{"sub": "kite", "obj": "oval", "count": 2}
+{"sub": "decal", "obj": "oval", "count": 3}
+{"sub": "rock", "obj": "oval", "count": 2}
+{"sub": "seat", "obj": "oval", "count": 7}
+{"sub": "chair", "obj": "oval", "count": 2}
+{"sub": "button", "obj": "oval", "count": 11}
+{"sub": "pattern", "obj": "oval", "count": 2}
+{"sub": "logo", "obj": "oval", "count": 6}
+{"sub": "part", "obj": "oval", "count": 2}
+{"sub": "pizza", "obj": "oval", "count": 5}
+{"sub": "tub", "obj": "oval", "count": 3}
+{"sub": "clock", "obj": "oval", "count": 5}
+{"sub": "container", "obj": "oval", "count": 4}
+{"sub": "bowl", "obj": "oval", "count": 14}
+{"sub": "shapes", "obj": "oval", "count": 2}
+{"sub": "rug", "obj": "oval", "count": 7}
+{"sub": "handle", "obj": "oval", "count": 3}
+{"sub": "cut-outs", "obj": "oval", "count": 2}
+{"sub": "sticker", "obj": "oval", "count": 16}
+{"sub": "egg", "obj": "oval", "count": 3}
+{"sub": "serving dish", "obj": "oval", "count": 2}
+{"sub": "lid", "obj": "oval", "count": 2}
+{"sub": "helmet", "obj": "oval", "count": 2}
+{"sub": "design", "obj": "oval", "count": 5}
+{"sub": "coffee table", "obj": "oval", "count": 2}
+{"sub": "name tag", "obj": "oval", "count": 2}
+{"sub": "engine", "obj": "oval", "count": 2}
+{"sub": "indentation", "obj": "oval", "count": 5}
+{"sub": "bathtub", "obj": "oval", "count": 3}
+{"sub": "toilet seat", "obj": "oval", "count": 2}
+{"sub": "label", "obj": "oval", "count": 4}
+{"sub": "carrot", "obj": "oval", "count": 2}
+{"sub": "mouse", "obj": "oval", "count": 2}
+{"sub": "basket", "obj": "oval", "count": 2}
+{"sub": "shape", "obj": "oval", "count": 4}
+{"sub": "nose", "obj": "oval", "count": 2}
+{"sub": "sinks", "obj": "oval", "count": 3}
+{"sub": "labels", "obj": "oval", "count": 4}
+{"sub": "emblem", "obj": "oval", "count": 2}
+{"sub": "windshield", "obj": "oval", "count": 2}
+{"sub": "urinal", "obj": "oval", "count": 2}
+{"sub": "pupil", "obj": "oval", "count": 2}
+{"sub": "handles", "obj": "oval", "count": 2}
+{"sub": "bath tub", "obj": "oval", "count": 2}
+{"sub": "petal", "obj": "oval", "count": 5}
+{"sub": "toilet bowl", "obj": "oval", "count": 2}
+{"sub": "body", "obj": "oval", "count": 2}
+{"sub": "back", "obj": "oval", "count": 2}
+{"sub": "panel", "obj": "oval", "count": 2}
+{"sub": "window", "obj": "rectangle", "count": 84}
+{"sub": "glass", "obj": "rectangle", "count": 5}
+{"sub": "desk", "obj": "rectangle", "count": 2}
+{"sub": "picture", "obj": "rectangle", "count": 5}
+{"sub": "sign", "obj": "rectangle", "count": 96}
+{"sub": "windows", "obj": "rectangle", "count": 7}
+{"sub": "mirror", "obj": "rectangle", "count": 17}
+{"sub": "building", "obj": "rectangle", "count": 3}
+{"sub": "container", "obj": "rectangle", "count": 2}
+{"sub": "drawer", "obj": "rectangle", "count": 3}
+{"sub": "placemat", "obj": "rectangle", "count": 2}
+{"sub": "tray", "obj": "rectangle", "count": 5}
+{"sub": "banner", "obj": "rectangle", "count": 3}
+{"sub": "plate", "obj": "rectangle", "count": 17}
+{"sub": "brick", "obj": "rectangle", "count": 17}
+{"sub": "pan", "obj": "rectangle", "count": 2}
+{"sub": "sticker", "obj": "rectangle", "count": 4}
+{"sub": "box", "obj": "rectangle", "count": 5}
+{"sub": "dish", "obj": "rectangle", "count": 5}
+{"sub": "frame", "obj": "rectangle", "count": 3}
+{"sub": "pillow", "obj": "rectangle", "count": 6}
+{"sub": "napkin", "obj": "rectangle", "count": 2}
+{"sub": "rug", "obj": "rectangle", "count": 6}
+{"sub": "cake", "obj": "rectangle", "count": 3}
+{"sub": "button", "obj": "rectangle", "count": 2}
+{"sub": "object", "obj": "rectangle", "count": 3}
+{"sub": "pizza", "obj": "rectangle", "count": 7}
+{"sub": "door", "obj": "rectangle", "count": 3}
+{"sub": "sink", "obj": "rectangle", "count": 2}
+{"sub": "slice", "obj": "rectangle", "count": 3}
+{"sub": "license plate", "obj": "rectangle", "count": 4}
+{"sub": "tile", "obj": "rectangle", "count": 13}
+{"sub": "label", "obj": "rectangle", "count": 2}
+{"sub": "headlight", "obj": "rectangle", "count": 3}
+{"sub": "street sign", "obj": "rectangle", "count": 6}
+{"sub": "phone", "obj": "rectangle", "count": 2}
+{"sub": "light", "obj": "rectangle", "count": 7}
+{"sub": "kite", "obj": "rectangle", "count": 5}
+{"sub": "table", "obj": "rectangle", "count": 7}
+{"sub": "cellphone", "obj": "rectangle", "count": 5}
+{"sub": "lid", "obj": "rectangle", "count": 2}
+{"sub": "bowl", "obj": "rectangle", "count": 3}
+{"sub": "ground", "obj": "rectangle", "count": 2}
+{"sub": "sticky note", "obj": "rectangle", "count": 2}
+{"sub": "block", "obj": "rectangle", "count": 4}
+{"sub": "shelf", "obj": "rectangle", "count": 3}
+{"sub": "sign", "obj": "rhombus", "count": 3}
+{"sub": "finger", "obj": "ring", "count": 13}
+{"sub": "stripe", "obj": "ring", "count": 5}
+{"sub": "onion", "obj": "ring", "count": 3}
+{"sub": "border", "obj": "ring", "count": 3}
+{"sub": "plate", "obj": "round", "count": 1304}
+{"sub": "table", "obj": "round", "count": 557}
+{"sub": "light", "obj": "round", "count": 426}
+{"sub": "headlight", "obj": "round", "count": 194}
+{"sub": "table top", "obj": "round", "count": 4}
+{"sub": "top", "obj": "round", "count": 38}
+{"sub": "tail light", "obj": "round", "count": 2}
+{"sub": "tire", "obj": "round", "count": 355}
+{"sub": "trashcan", "obj": "round", "count": 7}
+{"sub": "manhole", "obj": "round", "count": 12}
+{"sub": "posts", "obj": "round", "count": 2}
+{"sub": "sign", "obj": "round", "count": 402}
+{"sub": "window", "obj": "round", "count": 165}
+{"sub": "pot", "obj": "round", "count": 29}
+{"sub": "nose", "obj": "round", "count": 41}
+{"sub": "doughnut", "obj": "round", "count": 53}
+{"sub": "bread", "obj": "round", "count": 52}
+{"sub": "pool", "obj": "round", "count": 2}
+{"sub": "bowl", "obj": "round", "count": 243}
+{"sub": "street light", "obj": "round", "count": 6}
+{"sub": "mirror", "obj": "round", "count": 217}
+{"sub": "tires", "obj": "round", "count": 22}
+{"sub": "webcam", "obj": "round", "count": 3}
+{"sub": "knob", "obj": "round", "count": 110}
+{"sub": "cover", "obj": "round", "count": 22}
+{"sub": "mouse", "obj": "round", "count": 9}
+{"sub": "recepticle", "obj": "round", "count": 2}
+{"sub": "clock", "obj": "round", "count": 741}
+{"sub": "picture", "obj": "round", "count": 13}
+{"sub": "wheel", "obj": "round", "count": 232}
+{"sub": "globe", "obj": "round", "count": 35}
+{"sub": "sink", "obj": "round", "count": 91}
+{"sub": "dining table", "obj": "round", "count": 3}
+{"sub": "handle", "obj": "round", "count": 67}
+{"sub": "sewer", "obj": "round", "count": 3}
+{"sub": "hat", "obj": "round", "count": 24}
+{"sub": "dish", "obj": "round", "count": 45}
+{"sub": "cake", "obj": "round", "count": 97}
+{"sub": "building", "obj": "round", "count": 51}
+{"sub": "circle", "obj": "round", "count": 54}
+{"sub": "buildings", "obj": "round", "count": 3}
+{"sub": "button", "obj": "round", "count": 171}
+{"sub": "scale", "obj": "round", "count": 5}
+{"sub": "cylinder", "obj": "round", "count": 10}
+{"sub": "lamp", "obj": "round", "count": 32}
+{"sub": "bicycle wheel", "obj": "round", "count": 4}
+{"sub": "pillar", "obj": "round", "count": 10}
+{"sub": "cage", "obj": "round", "count": 4}
+{"sub": "basket", "obj": "round", "count": 17}
+{"sub": "tub", "obj": "round", "count": 7}
+{"sub": "pillow", "obj": "round", "count": 16}
+{"sub": "chair", "obj": "round", "count": 21}
+{"sub": "teapot", "obj": "round", "count": 2}
+{"sub": "lemons", "obj": "round", "count": 5}
+{"sub": "ceiling light", "obj": "round", "count": 7}
+{"sub": "lifesaver", "obj": "round", "count": 4}
+{"sub": "lights", "obj": "round", "count": 71}
+{"sub": "drum", "obj": "round", "count": 2}
+{"sub": "bulb", "obj": "round", "count": 23}
+{"sub": "dirt", "obj": "round", "count": 2}
+{"sub": "trash can", "obj": "round", "count": 13}
+{"sub": "pumpkin", "obj": "round", "count": 9}
+{"sub": "ball", "obj": "round", "count": 212}
+{"sub": "orange", "obj": "round", "count": 154}
+{"sub": "planter", "obj": "round", "count": 13}
+{"sub": "bush", "obj": "round", "count": 33}
+{"sub": "grate", "obj": "round", "count": 4}
+{"sub": "tables", "obj": "round", "count": 3}
+{"sub": "drain", "obj": "round", "count": 16}
+{"sub": "marker", "obj": "round", "count": 2}
+{"sub": "decoration", "obj": "round", "count": 14}
+{"sub": "base", "obj": "round", "count": 55}
+{"sub": "spot", "obj": "round", "count": 11}
+{"sub": "seat", "obj": "round", "count": 8}
+{"sub": "tower", "obj": "round", "count": 12}
+{"sub": "area", "obj": "round", "count": 2}
+{"sub": "eye", "obj": "round", "count": 142}
+{"sub": "roof", "obj": "round", "count": 19}
+{"sub": "head light", "obj": "round", "count": 3}
+{"sub": "post", "obj": "round", "count": 13}
+{"sub": "lamp post", "obj": "round", "count": 2}
+{"sub": "bushes", "obj": "round", "count": 5}
+{"sub": "manhole cover", "obj": "round", "count": 13}
+{"sub": "windows", "obj": "round", "count": 28}
+{"sub": "front tire", "obj": "round", "count": 3}
+{"sub": "street sign", "obj": "round", "count": 11}
+{"sub": "boat", "obj": "round", "count": 3}
+{"sub": "board", "obj": "round", "count": 9}
+{"sub": "ornament", "obj": "round", "count": 6}
+{"sub": "object", "obj": "round", "count": 83}
+{"sub": "pothole", "obj": "round", "count": 2}
+{"sub": "plant", "obj": "round", "count": 3}
+{"sub": "bucket", "obj": "round", "count": 13}
+{"sub": "traffic light", "obj": "round", "count": 4}
+{"sub": "landing gear", "obj": "round", "count": 2}
+{"sub": "car", "obj": "round", "count": 2}
+{"sub": "float", "obj": "round", "count": 3}
+{"sub": "tomato", "obj": "round", "count": 20}
+{"sub": "life saver", "obj": "round", "count": 2}
+{"sub": "dot", "obj": "round", "count": 3}
+{"sub": "donut", "obj": "round", "count": 136}
+{"sub": "fruit", "obj": "round", "count": 57}
+{"sub": "potatoes", "obj": "round", "count": 3}
+{"sub": "peas", "obj": "round", "count": 2}
+{"sub": "edge", "obj": "round", "count": 13}
+{"sub": "log", "obj": "round", "count": 6}
+{"sub": "logo", "obj": "round", "count": 47}
+{"sub": "structure", "obj": "round", "count": 12}
+{"sub": "painting", "obj": "round", "count": 2}
+{"sub": "dome", "obj": "round", "count": 11}
+{"sub": "rack", "obj": "round", "count": 3}
+{"sub": "wheels", "obj": "round", "count": 50}
+{"sub": "back", "obj": "round", "count": 7}
+{"sub": "tube", "obj": "round", "count": 5}
+{"sub": "water", "obj": "round", "count": 5}
+{"sub": "front", "obj": "round", "count": 3}
+{"sub": "bar stool", "obj": "round", "count": 3}
+{"sub": "stool", "obj": "round", "count": 17}
+{"sub": "candle", "obj": "round", "count": 7}
+{"sub": "glass top", "obj": "round", "count": 2}
+{"sub": "sticker", "obj": "round", "count": 45}
+{"sub": "faucet", "obj": "round", "count": 3}
+{"sub": "cushion", "obj": "round", "count": 6}
+{"sub": "smoke detector", "obj": "round", "count": 3}
+{"sub": "pipe", "obj": "round", "count": 7}
+{"sub": "patch", "obj": "round", "count": 4}
+{"sub": "cup", "obj": "round", "count": 29}
+{"sub": "knee", "obj": "round", "count": 4}
+{"sub": "front headlight", "obj": "round", "count": 2}
+{"sub": "objects", "obj": "round", "count": 6}
+{"sub": "barrel", "obj": "round", "count": 12}
+{"sub": "symbol", "obj": "round", "count": 11}
+{"sub": "lid", "obj": "round", "count": 16}
+{"sub": "pole", "obj": "round", "count": 45}
+{"sub": "plates", "obj": "round", "count": 20}
+{"sub": "paper", "obj": "round", "count": 5}
+{"sub": "napkin", "obj": "round", "count": 2}
+{"sub": "drinking glass", "obj": "round", "count": 2}
+{"sub": "glass", "obj": "round", "count": 25}
+{"sub": "saucer", "obj": "round", "count": 25}
+{"sub": "placemat", "obj": "round", "count": 10}
+{"sub": "side table", "obj": "round", "count": 4}
+{"sub": "knobs", "obj": "round", "count": 19}
+{"sub": "berry", "obj": "round", "count": 3}
+{"sub": "stem", "obj": "round", "count": 7}
+{"sub": "sandwich", "obj": "round", "count": 8}
+{"sub": "burners", "obj": "round", "count": 2}
+{"sub": "buoy", "obj": "round", "count": 15}
+{"sub": "eyes", "obj": "round", "count": 34}
+{"sub": "mound", "obj": "round", "count": 15}
+{"sub": "engine", "obj": "round", "count": 8}
+{"sub": "broccoli", "obj": "round", "count": 2}
+{"sub": "helmet", "obj": "round", "count": 17}
+{"sub": "doughnuts", "obj": "round", "count": 6}
+{"sub": "headlights", "obj": "round", "count": 24}
+{"sub": "speaker", "obj": "round", "count": 18}
+{"sub": "coffee table", "obj": "round", "count": 14}
+{"sub": "banana", "obj": "round", "count": 12}
+{"sub": "rug", "obj": "round", "count": 15}
+{"sub": "toy", "obj": "round", "count": 4}
+{"sub": "tennis ball", "obj": "round", "count": 35}
+{"sub": "mouse pad", "obj": "round", "count": 4}
+{"sub": "fence post", "obj": "round", "count": 2}
+{"sub": "frisbee", "obj": "round", "count": 220}
+{"sub": "rock", "obj": "round", "count": 33}
+{"sub": "clock face", "obj": "round", "count": 35}
+{"sub": "disc", "obj": "round", "count": 11}
+{"sub": "cabbage", "obj": "round", "count": 4}
+{"sub": "moon", "obj": "round", "count": 2}
+{"sub": "section", "obj": "round", "count": 4}
+{"sub": "carpet", "obj": "round", "count": 2}
+{"sub": "bathroom sink", "obj": "round", "count": 6}
+{"sub": "tray", "obj": "round", "count": 53}
+{"sub": "pizza", "obj": "round", "count": 276}
+{"sub": "green ball", "obj": "round", "count": 2}
+{"sub": "wood table", "obj": "round", "count": 2}
+{"sub": "kite", "obj": "round", "count": 21}
+{"sub": "chain", "obj": "round", "count": 2}
+{"sub": "tip", "obj": "round", "count": 7}
+{"sub": "bottom", "obj": "round", "count": 14}
+{"sub": "shade", "obj": "round", "count": 6}
+{"sub": "steering wheel", "obj": "round", "count": 10}
+{"sub": "umbrella", "obj": "round", "count": 15}
+{"sub": "pie", "obj": "round", "count": 5}
+{"sub": "sunglasses", "obj": "round", "count": 4}
+{"sub": "stove", "obj": "round", "count": 2}
+{"sub": "trunk", "obj": "round", "count": 5}
+{"sub": "box", "obj": "round", "count": 10}
+{"sub": "car wheel", "obj": "round", "count": 3}
+{"sub": "baseball", "obj": "round", "count": 42}
+{"sub": "toilet", "obj": "round", "count": 12}
+{"sub": "exercise ball", "obj": "round", "count": 2}
+{"sub": "white plate", "obj": "round", "count": 46}
+{"sub": "streetlight", "obj": "round", "count": 5}
+{"sub": "pepperoni", "obj": "round", "count": 60}
+{"sub": "gauges", "obj": "round", "count": 2}
+{"sub": "pan", "obj": "round", "count": 39}
+{"sub": "dials", "obj": "round", "count": 4}
+{"sub": "hubcap", "obj": "round", "count": 2}
+{"sub": "signs", "obj": "round", "count": 13}
+{"sub": "food", "obj": "round", "count": 31}
+{"sub": "item", "obj": "round", "count": 9}
+{"sub": "platter", "obj": "round", "count": 11}
+{"sub": "pattern", "obj": "round", "count": 3}
+{"sub": "coaster", "obj": "round", "count": 11}
+{"sub": "rim", "obj": "round", "count": 13}
+{"sub": "wastebasket", "obj": "round", "count": 2}
+{"sub": "belly", "obj": "round", "count": 12}
+{"sub": "vase", "obj": "round", "count": 72}
+{"sub": "side mirror", "obj": "round", "count": 2}
+{"sub": "potato", "obj": "round", "count": 7}
+{"sub": "earring", "obj": "round", "count": 28}
+{"sub": "handles", "obj": "round", "count": 3}
+{"sub": "ring", "obj": "round", "count": 11}
+{"sub": "ceiling", "obj": "round", "count": 3}
+{"sub": "emblem", "obj": "round", "count": 10}
+{"sub": "hole", "obj": "round", "count": 55}
+{"sub": "stomach", "obj": "round", "count": 5}
+{"sub": "man hole", "obj": "round", "count": 3}
+{"sub": "bagel", "obj": "round", "count": 2}
+{"sub": "ears", "obj": "round", "count": 16}
+{"sub": "stone", "obj": "round", "count": 9}
+{"sub": "apple", "obj": "round", "count": 49}
+{"sub": "keyhole", "obj": "round", "count": 3}
+{"sub": "container", "obj": "round", "count": 42}
+{"sub": "label", "obj": "round", "count": 10}
+{"sub": "shower head", "obj": "round", "count": 4}
+{"sub": "bed", "obj": "round", "count": 7}
+{"sub": "cucumber", "obj": "round", "count": 4}
+{"sub": "platform", "obj": "round", "count": 4}
+{"sub": "railing", "obj": "round", "count": 2}
+{"sub": "insignia", "obj": "round", "count": 2}
+{"sub": "face", "obj": "round", "count": 30}
+{"sub": "pastry", "obj": "round", "count": 25}
+{"sub": "front wheel", "obj": "round", "count": 4}
+{"sub": "back wheel", "obj": "round", "count": 4}
+{"sub": "grapes", "obj": "round", "count": 5}
+{"sub": "urinal", "obj": "round", "count": 5}
+{"sub": "holder", "obj": "round", "count": 7}
+{"sub": "soccer ball", "obj": "round", "count": 17}
+{"sub": "cheese", "obj": "round", "count": 4}
+{"sub": "tree", "obj": "round", "count": 31}
+{"sub": "indentation", "obj": "round", "count": 4}
+{"sub": "oranges", "obj": "round", "count": 27}
+{"sub": "ear", "obj": "round", "count": 78}
+{"sub": "earrings", "obj": "round", "count": 4}
+{"sub": "bird", "obj": "round", "count": 4}
+{"sub": "speedometer", "obj": "round", "count": 2}
+{"sub": "nostril", "obj": "round", "count": 3}
+{"sub": "neck", "obj": "round", "count": 2}
+{"sub": "racket", "obj": "round", "count": 6}
+{"sub": "shadow", "obj": "round", "count": 2}
+{"sub": "corner", "obj": "round", "count": 3}
+{"sub": "design", "obj": "round", "count": 16}
+{"sub": "collar", "obj": "round", "count": 11}
+{"sub": "buttons", "obj": "round", "count": 13}
+{"sub": "light bulb", "obj": "round", "count": 4}
+{"sub": "part", "obj": "round", "count": 3}
+{"sub": "pendant", "obj": "round", "count": 2}
+{"sub": "glasses", "obj": "round", "count": 26}
+{"sub": "piece", "obj": "round", "count": 7}
+{"sub": "boulder", "obj": "round", "count": 3}
+{"sub": "bathmat", "obj": "round", "count": 2}
+{"sub": "headboard", "obj": "round", "count": 2}
+{"sub": "porthole", "obj": "round", "count": 3}
+{"sub": "body", "obj": "round", "count": 2}
+{"sub": "headlamp", "obj": "round", "count": 5}
+{"sub": "tin", "obj": "round", "count": 2}
+{"sub": "tank", "obj": "round", "count": 4}
+{"sub": "watermelon", "obj": "round", "count": 5}
+{"sub": "preserver", "obj": "round", "count": 3}
+{"sub": "dial", "obj": "round", "count": 10}
+{"sub": "bolt", "obj": "round", "count": 10}
+{"sub": "meat", "obj": "round", "count": 15}
+{"sub": "toilet bowl", "obj": "round", "count": 3}
+{"sub": "lamp shade", "obj": "round", "count": 7}
+{"sub": "cereal", "obj": "round", "count": 4}
+{"sub": "cardboard", "obj": "round", "count": 4}
+{"sub": "crust", "obj": "round", "count": 4}
+{"sub": "screw", "obj": "round", "count": 16}
+{"sub": "fixture", "obj": "round", "count": 8}
+{"sub": "spindle", "obj": "round", "count": 7}
+{"sub": "soap", "obj": "round", "count": 5}
+{"sub": "balls", "obj": "round", "count": 9}
+{"sub": "carrot", "obj": "round", "count": 14}
+{"sub": "soap dish", "obj": "round", "count": 2}
+{"sub": "column", "obj": "round", "count": 13}
+{"sub": "shirt", "obj": "round", "count": 2}
+{"sub": "black tire", "obj": "round", "count": 13}
+{"sub": "stones", "obj": "round", "count": 3}
+{"sub": "timer", "obj": "round", "count": 2}
+{"sub": "sun", "obj": "round", "count": 4}
+{"sub": "metal", "obj": "round", "count": 4}
+{"sub": "cheese pizza", "obj": "round", "count": 2}
+{"sub": "mousepad", "obj": "round", "count": 3}
+{"sub": "waste basket", "obj": "round", "count": 2}
+{"sub": "jar", "obj": "round", "count": 3}
+{"sub": "can", "obj": "round", "count": 12}
+{"sub": "mat", "obj": "round", "count": 6}
+{"sub": "wall", "obj": "round", "count": 7}
+{"sub": "fruits", "obj": "round", "count": 14}
+{"sub": "beam", "obj": "round", "count": 3}
+{"sub": "donuts", "obj": "round", "count": 12}
+{"sub": "tangerine", "obj": "round", "count": 5}
+{"sub": "disk", "obj": "round", "count": 6}
+{"sub": "bathtub", "obj": "round", "count": 5}
+{"sub": "pebbles", "obj": "round", "count": 2}
+{"sub": "grapefruit", "obj": "round", "count": 2}
+{"sub": "hamburger", "obj": "round", "count": 2}
+{"sub": "ramp", "obj": "round", "count": 2}
+{"sub": "lime", "obj": "round", "count": 6}
+{"sub": "left ear", "obj": "round", "count": 3}
+{"sub": "drawer pull", "obj": "round", "count": 7}
+{"sub": "grill", "obj": "round", "count": 3}
+{"sub": "left mirror", "obj": "round", "count": 2}
+{"sub": "rocks", "obj": "round", "count": 7}
+{"sub": "speakers", "obj": "round", "count": 2}
+{"sub": "balloon", "obj": "round", "count": 2}
+{"sub": "toilet seat", "obj": "round", "count": 5}
+{"sub": "vent", "obj": "round", "count": 3}
+{"sub": "pin", "obj": "round", "count": 5}
+{"sub": "pizza cutter", "obj": "round", "count": 7}
+{"sub": "blade", "obj": "round", "count": 4}
+{"sub": "gear", "obj": "round", "count": 4}
+{"sub": "medal", "obj": "round", "count": 2}
+{"sub": "plane", "obj": "round", "count": 4}
+{"sub": "front light", "obj": "round", "count": 2}
+{"sub": "connector", "obj": "round", "count": 2}
+{"sub": "globes", "obj": "round", "count": 2}
+{"sub": "nightstand", "obj": "round", "count": 2}
+{"sub": "keychain", "obj": "round", "count": 3}
+{"sub": "door knob", "obj": "round", "count": 3}
+{"sub": "cookie", "obj": "round", "count": 11}
+{"sub": "watch", "obj": "round", "count": 6}
+{"sub": "tomatoes", "obj": "round", "count": 4}
+{"sub": "garbage can", "obj": "round", "count": 3}
+{"sub": "curb", "obj": "round", "count": 2}
+{"sub": "dirt patch", "obj": "round", "count": 2}
+{"sub": "reflector", "obj": "round", "count": 5}
+{"sub": "surfaces", "obj": "round", "count": 2}
+{"sub": "waffle", "obj": "round", "count": 2}
+{"sub": "bottle", "obj": "round", "count": 13}
+{"sub": "tag", "obj": "round", "count": 20}
+{"sub": "scissors", "obj": "round", "count": 2}
+{"sub": "sandwhich", "obj": "round", "count": 2}
+{"sub": "hanger", "obj": "round", "count": 3}
+{"sub": "hand sink", "obj": "round", "count": 3}
+{"sub": "beads", "obj": "round", "count": 3}
+{"sub": "lock", "obj": "round", "count": 9}
+{"sub": "spots", "obj": "round", "count": 5}
+{"sub": "sink basin", "obj": "round", "count": 3}
+{"sub": "pad", "obj": "round", "count": 9}
+{"sub": "feet", "obj": "round", "count": 4}
+{"sub": "cereal piece", "obj": "round", "count": 2}
+{"sub": "bar", "obj": "round", "count": 13}
+{"sub": "thing", "obj": "round", "count": 6}
+{"sub": "beans", "obj": "round", "count": 4}
+{"sub": "serving plate", "obj": "round", "count": 3}
+{"sub": "doorknob", "obj": "round", "count": 6}
+{"sub": "cap", "obj": "round", "count": 9}
+{"sub": "lamps", "obj": "round", "count": 3}
+{"sub": "utensil", "obj": "round", "count": 2}
+{"sub": "olives", "obj": "round", "count": 6}
+{"sub": "tortilla", "obj": "round", "count": 3}
+{"sub": "head", "obj": "round", "count": 13}
+{"sub": "roll", "obj": "round", "count": 3}
+{"sub": "reflection", "obj": "round", "count": 2}
+{"sub": "designs", "obj": "round", "count": 6}
+{"sub": "shapes", "obj": "round", "count": 2}
+{"sub": "floret", "obj": "round", "count": 2}
+{"sub": "gauge", "obj": "round", "count": 4}
+{"sub": "stand", "obj": "round", "count": 3}
+{"sub": "onion", "obj": "round", "count": 9}
+{"sub": "archway", "obj": "round", "count": 4}
+{"sub": "armrest", "obj": "round", "count": 2}
+{"sub": "metal piece", "obj": "round", "count": 2}
+{"sub": "fan unit", "obj": "round", "count": 2}
+{"sub": "butter", "obj": "round", "count": 3}
+{"sub": "bumper", "obj": "round", "count": 11}
+{"sub": "net", "obj": "round", "count": 2}
+{"sub": "tail", "obj": "round", "count": 6}
+{"sub": "sausage", "obj": "round", "count": 4}
+{"sub": "table.", "obj": "round", "count": 2}
+{"sub": "fence", "obj": "round", "count": 3}
+{"sub": "brush", "obj": "round", "count": 3}
+{"sub": "banana slice", "obj": "round", "count": 7}
+{"sub": "frame", "obj": "round", "count": 8}
+{"sub": "portrait", "obj": "round", "count": 3}
+{"sub": "man hole cover", "obj": "round", "count": 5}
+{"sub": "dispenser", "obj": "round", "count": 2}
+{"sub": "sculpture", "obj": "round", "count": 2}
+{"sub": "light fixture", "obj": "round", "count": 4}
+{"sub": "birthday cake", "obj": "round", "count": 2}
+{"sub": "leaf", "obj": "round", "count": 6}
+{"sub": "depression", "obj": "round", "count": 2}
+{"sub": "wooden table", "obj": "round", "count": 4}
+{"sub": "white object", "obj": "round", "count": 2}
+{"sub": "chocolate piece", "obj": "round", "count": 2}
+{"sub": "clocks", "obj": "round", "count": 10}
+{"sub": "blueberry", "obj": "round", "count": 12}
+{"sub": "end", "obj": "round", "count": 2}
+{"sub": "belly button", "obj": "round", "count": 2}
+{"sub": "door", "obj": "round", "count": 4}
+{"sub": "carrots", "obj": "round", "count": 3}
+{"sub": "grass", "obj": "round", "count": 2}
+{"sub": "camera", "obj": "round", "count": 5}
+{"sub": "trees", "obj": "round", "count": 6}
+{"sub": "olive", "obj": "round", "count": 4}
+{"sub": "lampshade", "obj": "round", "count": 3}
+{"sub": "melon", "obj": "round", "count": 11}
+{"sub": "image", "obj": "round", "count": 3}
+{"sub": "life preserver", "obj": "round", "count": 4}
+{"sub": "clockface", "obj": "round", "count": 2}
+{"sub": "toe", "obj": "round", "count": 3}
+{"sub": "ornaments", "obj": "round", "count": 2}
+{"sub": "attachment", "obj": "round", "count": 4}
+{"sub": "squash", "obj": "round", "count": 2}
+{"sub": "rod", "obj": "round", "count": 3}
+{"sub": "pitcher's mound", "obj": "round", "count": 3}
+{"sub": "arches", "obj": "round", "count": 2}
+{"sub": "gas cap", "obj": "round", "count": 2}
+{"sub": "power button", "obj": "round", "count": 2}
+{"sub": "spoon", "obj": "round", "count": 4}
+{"sub": "pizza pan", "obj": "round", "count": 5}
+{"sub": "cutting board", "obj": "round", "count": 3}
+{"sub": "flusher", "obj": "round", "count": 2}
+{"sub": "fan", "obj": "round", "count": 4}
+{"sub": "plum", "obj": "round", "count": 6}
+{"sub": "bench", "obj": "round", "count": 3}
+{"sub": "foot", "obj": "round", "count": 5}
+{"sub": "bear", "obj": "round", "count": 6}
+{"sub": "dessert", "obj": "round", "count": 15}
+{"sub": "street lights", "obj": "round", "count": 2}
+{"sub": "satellite dish", "obj": "round", "count": 2}
+{"sub": "wood", "obj": "round", "count": 4}
+{"sub": "stop sign", "obj": "round", "count": 2}
+{"sub": "block", "obj": "round", "count": 3}
+{"sub": "orange fruit", "obj": "round", "count": 7}
+{"sub": "sandwiches", "obj": "round", "count": 2}
+{"sub": "meter", "obj": "round", "count": 2}
+{"sub": "lemon", "obj": "round", "count": 6}
+{"sub": "balloons", "obj": "round", "count": 2}
+{"sub": "cd", "obj": "round", "count": 2}
+{"sub": "ottoman", "obj": "round", "count": 4}
+{"sub": "egg", "obj": "round", "count": 2}
+{"sub": "couch", "obj": "round", "count": 2}
+{"sub": "guards", "obj": "round", "count": 2}
+{"sub": "meatballs", "obj": "round", "count": 2}
+{"sub": "candy", "obj": "round", "count": 4}
+{"sub": "crackers", "obj": "round", "count": 4}
+{"sub": "step", "obj": "round", "count": 7}
+{"sub": "radish", "obj": "round", "count": 3}
+{"sub": "burner", "obj": "round", "count": 7}
+{"sub": "containers", "obj": "round", "count": 6}
+{"sub": "kitchen table", "obj": "round", "count": 2}
+{"sub": "towel rack", "obj": "round", "count": 4}
+{"sub": "cherry", "obj": "round", "count": 3}
+{"sub": "paper plate", "obj": "round", "count": 8}
+{"sub": "volleyball", "obj": "round", "count": 2}
+{"sub": "security camera", "obj": "round", "count": 2}
+{"sub": "tomatoe", "obj": "round", "count": 3}
+{"sub": "left wheel", "obj": "round", "count": 2}
+{"sub": "food container", "obj": "round", "count": 2}
+{"sub": "sinks", "obj": "round", "count": 4}
+{"sub": "horn", "obj": "round", "count": 4}
+{"sub": "white bowl", "obj": "round", "count": 2}
+{"sub": "suitcase", "obj": "round", "count": 3}
+{"sub": "panel", "obj": "round", "count": 2}
+{"sub": "opening", "obj": "round", "count": 4}
+{"sub": "parking meter", "obj": "round", "count": 2}
+{"sub": "stickers", "obj": "round", "count": 4}
+{"sub": "end cap", "obj": "round", "count": 2}
+{"sub": "meatball", "obj": "round", "count": 6}
+{"sub": "pet toy", "obj": "round", "count": 2}
+{"sub": "red sign", "obj": "round", "count": 2}
+{"sub": "pepperoni slice", "obj": "round", "count": 5}
+{"sub": "flower pot", "obj": "round", "count": 2}
+{"sub": "bowls", "obj": "round", "count": 9}
+{"sub": "sliced orange", "obj": "round", "count": 5}
+{"sub": "columns", "obj": "round", "count": 3}
+{"sub": "vegetable", "obj": "round", "count": 5}
+{"sub": "airplane engine", "obj": "round", "count": 2}
+{"sub": "slice", "obj": "round", "count": 4}
+{"sub": "blue sign", "obj": "round", "count": 2}
+{"sub": "puddle", "obj": "round", "count": 2}
+{"sub": "salt shaker", "obj": "round", "count": 2}
+{"sub": "pepper", "obj": "round", "count": 2}
+{"sub": "biscuit", "obj": "round", "count": 2}
+{"sub": "bracelet", "obj": "round", "count": 2}
+{"sub": "tab", "obj": "round", "count": 2}
+{"sub": "mini pizza", "obj": "round", "count": 6}
+{"sub": "green light", "obj": "round", "count": 4}
+{"sub": "mirrors", "obj": "round", "count": 3}
+{"sub": "sauce", "obj": "round", "count": 3}
+{"sub": "canister", "obj": "round", "count": 3}
+{"sub": "pitchers mound", "obj": "round", "count": 2}
+{"sub": "cactus", "obj": "round", "count": 3}
+{"sub": "white frisbee", "obj": "round", "count": 2}
+{"sub": "urinals", "obj": "round", "count": 2}
+{"sub": "bag", "obj": "round", "count": 2}
+{"sub": "train", "obj": "round", "count": 5}
+{"sub": "candies", "obj": "round", "count": 2}
+{"sub": "silver button", "obj": "round", "count": 2}
+{"sub": "shape", "obj": "round", "count": 2}
+{"sub": "drums", "obj": "round", "count": 2}
+{"sub": "metal tube", "obj": "round", "count": 3}
+{"sub": "yellow light", "obj": "round", "count": 2}
+{"sub": "necklace", "obj": "round", "count": 2}
+{"sub": "blue plate", "obj": "round", "count": 4}
+{"sub": "cooler", "obj": "round", "count": 4}
+{"sub": "lighting", "obj": "round", "count": 2}
+{"sub": "luggage", "obj": "round", "count": 4}
+{"sub": "pizzas", "obj": "round", "count": 2}
+{"sub": "circle graphic", "obj": "round", "count": 2}
+{"sub": "magnet", "obj": "round", "count": 6}
+{"sub": "tabletop", "obj": "round", "count": 5}
+{"sub": "o", "obj": "round", "count": 2}
+{"sub": "key", "obj": "round", "count": 2}
+{"sub": "red light", "obj": "round", "count": 2}
+{"sub": "pink hat", "obj": "round", "count": 2}
+{"sub": "dinner plate", "obj": "round", "count": 3}
+{"sub": "pancake", "obj": "round", "count": 2}
+{"sub": "white sink", "obj": "round", "count": 3}
+{"sub": "right ear", "obj": "round", "count": 2}
+{"sub": "blueberries", "obj": "round", "count": 2}
+{"sub": "graphic", "obj": "round", "count": 3}
+{"sub": "leaves", "obj": "round", "count": 2}
+{"sub": "holes", "obj": "round", "count": 6}
+{"sub": "mug", "obj": "round", "count": 2}
+{"sub": "carrot slice", "obj": "round", "count": 2}
+{"sub": "basin", "obj": "round", "count": 2}
+{"sub": "arch", "obj": "round", "count": 6}
+{"sub": "cement arch", "obj": "round", "count": 2}
+{"sub": "white light", "obj": "round", "count": 5}
+{"sub": "cracker", "obj": "round", "count": 11}
+{"sub": "cracker w/cheese", "obj": "round", "count": 5}
+{"sub": "apples", "obj": "round", "count": 3}
+{"sub": "flower", "obj": "round", "count": 6}
+{"sub": "medallion", "obj": "round", "count": 2}
+{"sub": "plug", "obj": "round", "count": 2}
+{"sub": "cucumber slice", "obj": "round", "count": 7}
+{"sub": "copyright symbol", "obj": "round", "count": 2}
+{"sub": "earing", "obj": "round", "count": 2}
+{"sub": "house", "obj": "round", "count": 2}
+{"sub": "shoe", "obj": "round", "count": 2}
+{"sub": "boxes", "obj": "round", "count": 2}
+{"sub": "grape", "obj": "round", "count": 17}
+{"sub": "glass table", "obj": "round", "count": 2}
+{"sub": "hook", "obj": "round", "count": 3}
+{"sub": "cherry tomato", "obj": "round", "count": 2}
+{"sub": "lenses", "obj": "round", "count": 2}
+{"sub": "white button", "obj": "round", "count": 3}
+{"sub": "island", "obj": "round", "count": 2}
+{"sub": "scooter", "obj": "round", "count": 2}
+{"sub": "display", "obj": "round", "count": 3}
+{"sub": "tongue", "obj": "round", "count": 2}
+{"sub": "pottery", "obj": "round", "count": 2}
+{"sub": "number", "obj": "round", "count": 2}
+{"sub": "rivet", "obj": "round", "count": 13}
+{"sub": "throw pillow", "obj": "round", "count": 2}
+{"sub": "rail", "obj": "round", "count": 3}
+{"sub": "white saucer", "obj": "round", "count": 2}
+{"sub": "light globe", "obj": "round", "count": 2}
+{"sub": "sushi", "obj": "round", "count": 2}
+{"sub": "cakes", "obj": "round", "count": 3}
+{"sub": "pea", "obj": "round", "count": 6}
+{"sub": "muffin", "obj": "round", "count": 2}
+{"sub": "head lights", "obj": "round", "count": 2}
+{"sub": "planters", "obj": "round", "count": 2}
+{"sub": "bright light", "obj": "round", "count": 2}
+{"sub": "eye hole", "obj": "round", "count": 2}
+{"sub": "knife", "obj": "round", "count": 2}
+{"sub": "wreath", "obj": "round", "count": 2}
+{"sub": "towel ring", "obj": "round", "count": 2}
+{"sub": "bowling ball", "obj": "round", "count": 2}
+{"sub": "icing wheel", "obj": "round", "count": 5}
+{"sub": "flowers", "obj": "round", "count": 2}
+{"sub": "motorcycle wheel", "obj": "round", "count": 2}
+{"sub": "black wheels", "obj": "round", "count": 5}
+{"sub": "cement ball", "obj": "round", "count": 4}
+{"sub": "metal armrest", "obj": "round", "count": 2}
+{"sub": "luggage wheel", "obj": "round", "count": 2}
+{"sub": "cutout", "obj": "round", "count": 2}
+{"sub": "broccoli floret", "obj": "round", "count": 4}
+{"sub": "windwo", "obj": "round", "count": 2}
+{"sub": "gold ball", "obj": "round", "count": 3}
+{"sub": "ear", "obj": "semicircle", "count": 2}
+{"sub": "window", "obj": "square", "count": 360}
+{"sub": "bag", "obj": "square", "count": 5}
+{"sub": "monitor", "obj": "square", "count": 15}
+{"sub": "pillow", "obj": "square", "count": 130}
+{"sub": "frame", "obj": "square", "count": 16}
+{"sub": "door", "obj": "square", "count": 8}
+{"sub": "vent", "obj": "square", "count": 8}
+{"sub": "handle", "obj": "square", "count": 2}
+{"sub": "light", "obj": "square", "count": 43}
+{"sub": "sign", "obj": "square", "count": 279}
+{"sub": "shade", "obj": "square", "count": 13}
+{"sub": "manhole", "obj": "square", "count": 7}
+{"sub": "head board", "obj": "square", "count": 2}
+{"sub": "coffee table", "obj": "square", "count": 7}
+{"sub": "building", "obj": "square", "count": 50}
+{"sub": "bush", "obj": "square", "count": 6}
+{"sub": "van", "obj": "square", "count": 3}
+{"sub": "planter", "obj": "square", "count": 11}
+{"sub": "tile", "obj": "square", "count": 442}
+{"sub": "button", "obj": "square", "count": 17}
+{"sub": "chair", "obj": "square", "count": 4}
+{"sub": "cake", "obj": "square", "count": 31}
+{"sub": "clock", "obj": "square", "count": 76}
+{"sub": "table", "obj": "square", "count": 137}
+{"sub": "tiles", "obj": "square", "count": 111}
+{"sub": "carpet", "obj": "square", "count": 4}
+{"sub": "plate", "obj": "square", "count": 227}
+{"sub": "fence", "obj": "square", "count": 16}
+{"sub": "car", "obj": "square", "count": 5}
+{"sub": "picture", "obj": "square", "count": 26}
+{"sub": "box", "obj": "square", "count": 48}
+{"sub": "stones", "obj": "square", "count": 6}
+{"sub": "base", "obj": "square", "count": 26}
+{"sub": "mirror", "obj": "square", "count": 37}
+{"sub": "pane", "obj": "square", "count": 18}
+{"sub": "throw pillow", "obj": "square", "count": 6}
+{"sub": "rug", "obj": "square", "count": 8}
+{"sub": "drain", "obj": "square", "count": 10}
+{"sub": "shapes", "obj": "square", "count": 2}
+{"sub": "window frame", "obj": "square", "count": 3}
+{"sub": "grate", "obj": "square", "count": 3}
+{"sub": "column", "obj": "square", "count": 3}
+{"sub": "columns", "obj": "square", "count": 4}
+{"sub": "phone", "obj": "square", "count": 4}
+{"sub": "windows", "obj": "square", "count": 63}
+{"sub": "toilet", "obj": "square", "count": 5}
+{"sub": "sink", "obj": "square", "count": 48}
+{"sub": "side table", "obj": "square", "count": 3}
+{"sub": "grid", "obj": "square", "count": 4}
+{"sub": "pillar", "obj": "square", "count": 5}
+{"sub": "wall", "obj": "square", "count": 16}
+{"sub": "suitcase", "obj": "square", "count": 2}
+{"sub": "object", "obj": "square", "count": 6}
+{"sub": "leg", "obj": "square", "count": 4}
+{"sub": "pictures", "obj": "square", "count": 5}
+{"sub": "platform", "obj": "square", "count": 6}
+{"sub": "shutter", "obj": "square", "count": 2}
+{"sub": "house", "obj": "square", "count": 6}
+{"sub": "dish", "obj": "square", "count": 35}
+{"sub": "swatch", "obj": "square", "count": 8}
+{"sub": "placemat", "obj": "square", "count": 5}
+{"sub": "fabric", "obj": "square", "count": 7}
+{"sub": "tray", "obj": "square", "count": 16}
+{"sub": "bowl", "obj": "square", "count": 30}
+{"sub": "tv", "obj": "square", "count": 5}
+{"sub": "television", "obj": "square", "count": 11}
+{"sub": "mousepad", "obj": "square", "count": 2}
+{"sub": "pattern", "obj": "square", "count": 16}
+{"sub": "panel", "obj": "square", "count": 14}
+{"sub": "bus", "obj": "square", "count": 4}
+{"sub": "lamp", "obj": "square", "count": 11}
+{"sub": "painting", "obj": "square", "count": 2}
+{"sub": "mouse pad", "obj": "square", "count": 3}
+{"sub": "napkin", "obj": "square", "count": 18}
+{"sub": "container", "obj": "square", "count": 39}
+{"sub": "lid", "obj": "square", "count": 2}
+{"sub": "pan", "obj": "square", "count": 10}
+{"sub": "design", "obj": "square", "count": 8}
+{"sub": "sticker", "obj": "square", "count": 18}
+{"sub": "screen", "obj": "square", "count": 16}
+{"sub": "bin", "obj": "square", "count": 3}
+{"sub": "laptop", "obj": "square", "count": 2}
+{"sub": "paper", "obj": "square", "count": 13}
+{"sub": "structure", "obj": "square", "count": 4}
+{"sub": "window pane", "obj": "square", "count": 10}
+{"sub": "license plate", "obj": "square", "count": 5}
+{"sub": "pot", "obj": "square", "count": 7}
+{"sub": "light fixture", "obj": "square", "count": 3}
+{"sub": "bathtub", "obj": "square", "count": 6}
+{"sub": "tower", "obj": "square", "count": 3}
+{"sub": "bushes", "obj": "square", "count": 5}
+{"sub": "windshield", "obj": "square", "count": 6}
+{"sub": "train", "obj": "square", "count": 5}
+{"sub": "trash can", "obj": "square", "count": 5}
+{"sub": "shirt", "obj": "square", "count": 2}
+{"sub": "basket", "obj": "square", "count": 9}
+{"sub": "lights", "obj": "square", "count": 8}
+{"sub": "flag", "obj": "square", "count": 10}
+{"sub": "symbol", "obj": "square", "count": 2}
+{"sub": "number", "obj": "square", "count": 2}
+{"sub": "tub", "obj": "square", "count": 2}
+{"sub": "stone", "obj": "square", "count": 10}
+{"sub": "floor", "obj": "square", "count": 17}
+{"sub": "logo", "obj": "square", "count": 4}
+{"sub": "holder", "obj": "square", "count": 5}
+{"sub": "tank", "obj": "square", "count": 2}
+{"sub": "poster", "obj": "square", "count": 3}
+{"sub": "pizza", "obj": "square", "count": 54}
+{"sub": "something", "obj": "square", "count": 2}
+{"sub": "tag", "obj": "square", "count": 10}
+{"sub": "board", "obj": "square", "count": 10}
+{"sub": "shape", "obj": "square", "count": 2}
+{"sub": "cheese", "obj": "square", "count": 14}
+{"sub": "rock", "obj": "square", "count": 7}
+{"sub": "display", "obj": "square", "count": 2}
+{"sub": "metal clamp", "obj": "square", "count": 2}
+{"sub": "dishes", "obj": "square", "count": 2}
+{"sub": "bucket", "obj": "square", "count": 3}
+{"sub": "seat", "obj": "square", "count": 5}
+{"sub": "ottoman", "obj": "square", "count": 12}
+{"sub": "cushion", "obj": "square", "count": 7}
+{"sub": "patch", "obj": "square", "count": 11}
+{"sub": "tablecloth", "obj": "square", "count": 2}
+{"sub": "donut", "obj": "square", "count": 8}
+{"sub": "kite", "obj": "square", "count": 11}
+{"sub": "umbrella", "obj": "square", "count": 6}
+{"sub": "keys", "obj": "square", "count": 4}
+{"sub": "bricks", "obj": "square", "count": 2}
+{"sub": "block", "obj": "square", "count": 25}
+{"sub": "wood", "obj": "square", "count": 2}
+{"sub": "lampshade", "obj": "square", "count": 4}
+{"sub": "electrical box", "obj": "square", "count": 2}
+{"sub": "magnet", "obj": "square", "count": 7}
+{"sub": "plastic container", "obj": "square", "count": 2}
+{"sub": "slice", "obj": "square", "count": 6}
+{"sub": "hole", "obj": "square", "count": 27}
+{"sub": "dispenser", "obj": "square", "count": 3}
+{"sub": "nut", "obj": "square", "count": 5}
+{"sub": "blanket", "obj": "square", "count": 6}
+{"sub": "potatoe", "obj": "square", "count": 5}
+{"sub": "quilt", "obj": "square", "count": 3}
+{"sub": "brick", "obj": "square", "count": 6}
+{"sub": "manhole cover", "obj": "square", "count": 2}
+{"sub": "fridge", "obj": "square", "count": 2}
+{"sub": "bottle", "obj": "square", "count": 6}
+{"sub": "ground", "obj": "square", "count": 2}
+{"sub": "computer monitor", "obj": "square", "count": 2}
+{"sub": "doughnut", "obj": "square", "count": 2}
+{"sub": "vase", "obj": "square", "count": 6}
+{"sub": "head", "obj": "square", "count": 3}
+{"sub": "post", "obj": "square", "count": 16}
+{"sub": "pastry", "obj": "square", "count": 2}
+{"sub": "glass", "obj": "square", "count": 14}
+{"sub": "designs", "obj": "square", "count": 6}
+{"sub": "placard", "obj": "square", "count": 2}
+{"sub": "stand", "obj": "square", "count": 4}
+{"sub": "clock frame", "obj": "square", "count": 3}
+{"sub": "switch", "obj": "square", "count": 2}
+{"sub": "napkins", "obj": "square", "count": 3}
+{"sub": "white plate", "obj": "square", "count": 3}
+{"sub": "outlet", "obj": "square", "count": 2}
+{"sub": "pole", "obj": "square", "count": 6}
+{"sub": "banner", "obj": "square", "count": 3}
+{"sub": "camera", "obj": "square", "count": 3}
+{"sub": "food", "obj": "square", "count": 4}
+{"sub": "appliance", "obj": "square", "count": 3}
+{"sub": "glasses", "obj": "square", "count": 6}
+{"sub": "coaster", "obj": "square", "count": 8}
+{"sub": "wall tile", "obj": "square", "count": 10}
+{"sub": "bumper", "obj": "square", "count": 2}
+{"sub": "foil", "obj": "square", "count": 2}
+{"sub": "brownie", "obj": "square", "count": 4}
+{"sub": "watch", "obj": "square", "count": 4}
+{"sub": "newspaper box", "obj": "square", "count": 2}
+{"sub": "pillows", "obj": "square", "count": 9}
+{"sub": "cover", "obj": "square", "count": 7}
+{"sub": "headlight", "obj": "square", "count": 7}
+{"sub": "headlights", "obj": "square", "count": 2}
+{"sub": "patterns", "obj": "square", "count": 3}
+{"sub": "cutting board", "obj": "square", "count": 4}
+{"sub": "grass", "obj": "square", "count": 2}
+{"sub": "throw pillows", "obj": "square", "count": 2}
+{"sub": "speaker", "obj": "square", "count": 2}
+{"sub": "roof", "obj": "square", "count": 3}
+{"sub": "ashtray", "obj": "square", "count": 2}
+{"sub": "lamp shade", "obj": "square", "count": 4}
+{"sub": "cement", "obj": "square", "count": 8}
+{"sub": "tent", "obj": "square", "count": 4}
+{"sub": "books", "obj": "square", "count": 2}
+{"sub": "label", "obj": "square", "count": 2}
+{"sub": "pedestal", "obj": "square", "count": 3}
+{"sub": "opening", "obj": "square", "count": 4}
+{"sub": "compartments", "obj": "square", "count": 2}
+{"sub": "field", "obj": "square", "count": 2}
+{"sub": "sidewalk", "obj": "square", "count": 2}
+{"sub": "tofu", "obj": "square", "count": 6}
+{"sub": "stool", "obj": "square", "count": 2}
+{"sub": "concrete", "obj": "square", "count": 9}
+{"sub": "walkway", "obj": "square", "count": 2}
+{"sub": "reflector", "obj": "square", "count": 6}
+{"sub": "meat", "obj": "square", "count": 5}
+{"sub": "case", "obj": "square", "count": 2}
+{"sub": "billboard", "obj": "square", "count": 2}
+{"sub": "mark", "obj": "square", "count": 5}
+{"sub": "clock face", "obj": "square", "count": 2}
+{"sub": "mesh", "obj": "square", "count": 2}
+{"sub": "platter", "obj": "square", "count": 2}
+{"sub": "carton", "obj": "square", "count": 4}
+{"sub": "pavers", "obj": "square", "count": 2}
+{"sub": "wall tiles", "obj": "square", "count": 3}
+{"sub": "mirrors", "obj": "square", "count": 2}
+{"sub": "boxes", "obj": "square", "count": 2}
+{"sub": "nightstand", "obj": "square", "count": 2}
+{"sub": "concrete tile", "obj": "square", "count": 2}
+{"sub": "pocket", "obj": "square", "count": 4}
+{"sub": "card", "obj": "square", "count": 3}
+{"sub": "panes", "obj": "square", "count": 8}
+{"sub": "detail", "obj": "square", "count": 2}
+{"sub": "piece", "obj": "square", "count": 9}
+{"sub": "stove", "obj": "square", "count": 2}
+{"sub": "cart", "obj": "square", "count": 2}
+{"sub": "ceramic tile", "obj": "square", "count": 5}
+{"sub": "light switch", "obj": "square", "count": 2}
+{"sub": "traffic light", "obj": "square", "count": 2}
+{"sub": "end table", "obj": "square", "count": 3}
+{"sub": "pavement", "obj": "square", "count": 2}
+{"sub": "canvas", "obj": "square", "count": 2}
+{"sub": "cardboard sign", "obj": "square", "count": 2}
+{"sub": "skylight", "obj": "square", "count": 3}
+{"sub": "sunlight", "obj": "square", "count": 2}
+{"sub": "plates", "obj": "square", "count": 3}
+{"sub": "magnets", "obj": "square", "count": 2}
+{"sub": "briefcase", "obj": "square", "count": 3}
+{"sub": "traffic sign", "obj": "square", "count": 3}
+{"sub": "white sign", "obj": "square", "count": 3}
+{"sub": "butter", "obj": "square", "count": 3}
+{"sub": "canister", "obj": "square", "count": 2}
+{"sub": "slabs", "obj": "square", "count": 2}
+{"sub": "paver", "obj": "square", "count": 7}
+{"sub": "yellow patch", "obj": "square", "count": 2}
+{"sub": "bread", "obj": "square", "count": 3}
+{"sub": "building window", "obj": "square", "count": 3}
+{"sub": "fireplace", "obj": "square", "count": 2}
+{"sub": "mug", "obj": "square", "count": 2}
+{"sub": "donuts", "obj": "square", "count": 3}
+{"sub": "framed art", "obj": "square", "count": 2}
+{"sub": "pizza box", "obj": "square", "count": 2}
+{"sub": "drawer", "obj": "square", "count": 3}
+{"sub": "dessert", "obj": "square", "count": 3}
+{"sub": "computer", "obj": "square", "count": 3}
+{"sub": "corner", "obj": "square", "count": 2}
+{"sub": "wooden post", "obj": "square", "count": 2}
+{"sub": "key", "obj": "square", "count": 3}
+{"sub": "street sign", "obj": "square", "count": 2}
+{"sub": "decorations", "obj": "square", "count": 2}
+{"sub": "vehicle light", "obj": "square", "count": 2}
+{"sub": "cheese piece", "obj": "square", "count": 2}
+{"sub": "hay", "obj": "square", "count": 5}
+{"sub": "holes", "obj": "square", "count": 2}
+{"sub": "wire", "obj": "square", "count": 8}
+{"sub": "edge", "obj": "square", "count": 2}
+{"sub": "bench", "obj": "square", "count": 3}
+{"sub": "carrot", "obj": "square", "count": 2}
+{"sub": "granola", "obj": "square", "count": 4}
+{"sub": "truck", "obj": "square", "count": 2}
+{"sub": "cornbread", "obj": "square", "count": 2}
+{"sub": "sidewalk block", "obj": "square", "count": 5}
+{"sub": "crackers", "obj": "square", "count": 2}
+{"sub": "wheel", "obj": "square", "count": 4}
+{"sub": "decal", "obj": "star", "count": 2}
+{"sub": "logo", "obj": "star", "count": 7}
+{"sub": "symbol", "obj": "star", "count": 2}
+{"sub": "emblem", "obj": "star", "count": 2}
+{"sub": "design", "obj": "star", "count": 8}
+{"sub": "candle", "obj": "star", "count": 2}
+{"sub": "sprinkles", "obj": "star", "count": 5}
+{"sub": "sprinkle", "obj": "star", "count": 11}
+{"sub": "sign", "obj": "triangle", "count": 58}
+{"sub": "roof", "obj": "triangle", "count": 12}
+{"sub": "sandwhich", "obj": "triangle", "count": 6}
+{"sub": "box", "obj": "triangle", "count": 2}
+{"sub": "building", "obj": "triangle", "count": 3}
+{"sub": "pizza", "obj": "triangle", "count": 7}
+{"sub": "home plate", "obj": "triangle", "count": 4}
+{"sub": "kite", "obj": "triangle", "count": 13}
+{"sub": "piece", "obj": "triangle", "count": 2}
+{"sub": "logo", "obj": "triangle", "count": 4}
+{"sub": "cake", "obj": "triangle", "count": 3}
+{"sub": "window", "obj": "triangle", "count": 3}
+{"sub": "shapes", "obj": "triangle", "count": 2}
+{"sub": "hat", "obj": "triangle", "count": 2}
+{"sub": "bread", "obj": "triangle", "count": 2}
+{"sub": "flags", "obj": "triangle", "count": 2}
+{"sub": "top", "obj": "triangle", "count": 2}
+{"sub": "sandwich", "obj": "triangle", "count": 14}
+{"sub": "shape", "obj": "triangle", "count": 3}
+{"sub": "flag", "obj": "triangle", "count": 11}
+{"sub": "slice", "obj": "triangle", "count": 4}
+{"sub": "table", "obj": "triangle", "count": 2}
+{"sub": "cheese", "obj": "triangle", "count": 2}
+{"sub": "button", "obj": "triangle", "count": 3}
+{"sub": "toast", "obj": "triangle", "count": 2}
+{"sub": "nose", "obj": "triangle", "count": 4}
+{"sub": "street sign", "obj": "triangle", "count": 2}
+{"sub": "server", "obj": "triangle", "count": 2}
+{"sub": "half", "obj": "triangle", "count": 2}
+{"sub": "cracker", "obj": "triangle", "count": 2}

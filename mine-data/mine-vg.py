@@ -46,13 +46,14 @@ def mine_attributes(type, print_every=1000, max_imgs=1000000):
     print(f'finished processing {img_num} images')
 
     # output
-    out_file = words_file.split('-')[0] + '.jsonl'
+    out_file = 'db/' + type + '.jsonl'
     with open(out_file, 'w') as out:
         for key in word_ls:
             for sub in words_dict[key]:
                 #out.write({"sub": sub, "obj": key})
-                json.dump({"sub": sub, "obj": key, "count": att_counts[(sub, key)]}, out)
-                out.write('\n')
+                if att_counts[(sub, key)] > 2:  # only output when count > threshold
+                    json.dump({"sub": sub, "obj": key, "count": att_counts[(sub, key)]}, out)
+                    out.write('\n')
 
 if __name__ == "__main__":
-    mine_attributes('shape')
+    mine_attributes('color')
