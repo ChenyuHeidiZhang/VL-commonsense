@@ -1,0 +1,8 @@
+{"template": "[X] is smaller than [Y] ."}
+{"template": "Ths size of [X] is smaller than that of [Y] ."}
+{"template": "[X] can be smaller than [Y] ."}
+{"template": "[Y] is larger than [X] ."}
+{"template": "Ths size of [Y] is larger than that of [X] ."}
+{"template": "[Y] can be larger than [X] ."}
+{"template": "[Y] is bigger than [X] ."}
+{"template": "[X] is not as big as [Y] ."}

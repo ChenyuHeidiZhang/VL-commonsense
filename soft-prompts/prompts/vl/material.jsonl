@@ -1,0 +1,7 @@
+{"template": "[X] is made of [Y] ."}
+{"template": "[X] can be made of [Y] ."}
+{"template": "[X] is made from [Y] ."}
+{"template": "[X] can be made from [Y] ."}
+{"template": "[Y] [X] ."}
+{"template": "This is a [Y] [X] ."}
+{"template": "[Y] is used to make [X] ."}

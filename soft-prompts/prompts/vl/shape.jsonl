@@ -1,0 +1,7 @@
+{"template": "[X] can be of shape [Y] ."}
+{"template": "[X] has shape [Y] ."}
+{"template": "[X] is of shape [Y] ."}
+{"template": "The shape of [X] can be [Y] ."}
+{"template": "The shape of the [X] is [Y] ."}
+{"template": "[Y] [X] ."}
+{"template": "This is a [Y] [X] ."}
