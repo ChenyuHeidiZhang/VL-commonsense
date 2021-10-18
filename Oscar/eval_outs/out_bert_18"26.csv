@@ -1,0 +1,27 @@
+,question,category,correctness,choice_correct_score,choice_wrong_score,inverse,compositional
+0,The color of a horse can be **mask**.,color,True,-8.563,-8.901,FALSE,FALSE
+1,The color of horses can be **mask**.,color,True,-8.563,-8.901,FALSE,FALSE
+2,A horse can be **mask**.,color,True,-8.563,-8.901,FALSE,FALSE
+3,The color of a horse can be **mask**.,color,False,-9.094,-5.581,FALSE,FALSE
+4,The color of a horse cannot be **mask**.,color,False,-8.901,-8.563,TRUE,FALSE
+5,The color of a big horse can be **mask**.,color,True,-8.563,-8.901,FALSE,TRUE
+6,The color of avocado is **mask**.,color,True,-5.581,-5.828,FALSE,FALSE
+7,The color of avocado is not **mask**.,color,False,-5.828,-5.581,TRUE,FALSE
+8,The color of my favoriate food avocado is **mask**.,color,True,-5.581,-5.828,FALSE,TRUE
+9,A car is **mask** than a bike.,size,True,-14.524,-15.389,FALSE,FALSE
+10,Cars are **mask** than bikes.,size,True,-14.524,-15.389,FALSE,FALSE
+11,A vehicle is **mask** than a bicycle.,size,True,-14.524,-15.389,FALSE,FALSE
+12,A bike is **mask** than a car.,size,False,-15.389,-14.524,TRUE,FALSE
+13,A blue car **mask** than a red bike.,size,True,-14.524,-15.389,FALSE,TRUE
+14,A cat is **mask** than a lion.,size,False,-15.389,-14.524,FALSE,FALSE
+15,A cat is **mask** than a lion.,size,True,-10.085,-13.629,FALSE,FALSE
+16,A lion is **mask** than a cat.,size,False,-13.629,-10.085,FALSE,FALSE
+17,A brown cat is **mask** than a gold lion.,size,True,-10.085,-13.629,FALSE,FALSE
+18,The shape of the sun is **mask**.,shape,True,-10.225,-11.533,FALSE,FALSE
+19,The shape of the sun is not **mask**.,shape,False,-11.533,-10.225,TRUE,FALSE
+20,The shape of the sun in our solar system is **mask**.,shape,True,-10.225,-11.533,FALSE,TRUE
+21,The shape of a TV is **mask**.,shape,True,-10.856,-11.685,FALSE,FALSE
+22,The shape of a television is **mask**.,shape,True,-10.856,-11.685,FALSE,FALSE
+23,The shape of televisions are **mask**.,shape,True,-10.856,-11.685,FALSE,FALSE
+24,The shape of a TV is not **mask**.,shape,False,-11.685,-10.856,TRUE,FALSE
+25,The shape of a Sony TV is **mask**.,shape,True,-10.856,-11.685,FALSE,TRUE

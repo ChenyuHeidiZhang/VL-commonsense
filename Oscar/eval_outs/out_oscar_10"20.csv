@@ -1,0 +1,21 @@
+,question,category,correctness,choice_correct_score,choice_wrong_score,inverse,compositional
+0,The color of a horse can be **mask**.,color,False,-20.672,-17.853,FALSE,FALSE
+1,A horse can be **mask**.,color,False,-20.672,-17.853,FALSE,FALSE
+2,The color of a horse can be **mask**.,color,False,-22.366,-21.714,FALSE,FALSE
+3,The color of a horse cannot be **mask**.,color,True,-17.853,-20.672,TRUE,FALSE
+4,The color of a big horse can be **mask**.,color,False,-20.672,-17.853,FALSE,TRUE
+5,The color of avocado is **mask**.,color,True,-21.714,-21.988,FALSE,FALSE
+6,The color of avocado is not **mask**.,color,False,-21.988,-21.714,TRUE,FALSE
+7,The color of my favoriate food avocado is **mask**.,color,True,-21.714,-21.988,FALSE,TRUE
+8,A car is **mask** than a bike.,size,True,-11.951,-12.276,FALSE,FALSE
+9,A bike is **mask** than a car.,size,False,-12.276,-11.951,TRUE,FALSE
+10,A blue car **mask** than a red bike.,size,True,-11.951,-12.276,FALSE,TRUE
+11,A cat is **mask** than a lion.,size,True,-11.103,-21.672,FALSE,FALSE
+12,A lion is **mask** than a cat.,size,False,-21.672,-11.103,FALSE,FALSE
+13,A brown cat is **mask** than a gold lion.,size,True,-11.103,-21.672,FALSE,FALSE
+14,The shape of the sun is **mask**.,shape,False,-18.638,-18.305,FALSE,FALSE
+15,The shape of the sun is not **mask**.,shape,True,-18.305,-18.638,TRUE,FALSE
+16,The shape of the sun in our solar system is **mask**.,shape,False,-18.638,-18.305,FALSE,TRUE
+17,The shape of a TV is **mask**.,shape,True,-13.087,-19.682,FALSE,FALSE
+18,The shape of a TV is not **mask**.,shape,False,-19.682,-13.087,TRUE,FALSE
+19,The shape of a Sony TV is **mask**.,shape,True,-13.087,-19.682,FALSE,TRUE
