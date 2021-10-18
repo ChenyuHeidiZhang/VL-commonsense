@@ -1,0 +1,7 @@
+{"sub": "television", "obj": "rectangle", "alt": "circle"}
+{"sub": "TV", "obj": "rectangle", "alt": "circle"}
+{"sub": "Sony TV", "obj": "rectangle", "alt": "circle"}
+{"sub": "sun", "obj": "round", "alt": "square"}
+{"sub": "the sun in our solar system", "obj": "round", "alt": "square"}
+{"sub": "orange", "obj": "round", "alt": "triangle"}
+{"sub": "eye", "obj": "oval", "alt": "triangle"}
