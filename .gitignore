@@ -1,6 +1,7 @@
 mine-data/annotations
 mine-data/prompts
 mine-data/attributes.json
+mine-data/size_att_mined.jsonl
 azcopy
 out_roberta.csv
 output.csv

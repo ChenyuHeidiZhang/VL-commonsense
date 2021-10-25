@@ -1,0 +1,15 @@
+ant
+leaf
+earring
+candle
+lip
+ear
+eye
+nose
+pebble
+shrimp
+pendant
+spoon
+dirt
+pill
+bee

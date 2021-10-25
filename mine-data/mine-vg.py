@@ -2,11 +2,12 @@ import numpy as np
 import json
 import random
 
+attributes_file = 'attributes.json'
+
 def mine_attributes(type, single_slot=True, print_every=1000, max_imgs=1000000):
     # read a list of attributes and find corresponding subjects in Visual Genome
     # output obtained pairs to file
     words_file = f'{type}-words.txt'
-    attributes_file = 'attributes.json'
 
     print(f'loading word file of type {type}...')
     words_f = open(words_file, 'r').readlines()
@@ -56,7 +57,6 @@ def mine_attributes(type, single_slot=True, print_every=1000, max_imgs=1000000):
     with open(out_files[0], 'w') as train_f, open(out_files[1], 'w') as dev_f, open(out_files[2], 'w') as test_f:
         for key in word_ls:
             for sub in words_dict[key]:
-                #out.write({"sub": sub, "obj": key})
                 if att_counts[(sub, key)] > 2:  # only output when count > threshold
                     alt = random.choice(list(word_ls))
                     while (sub in words_dict[alt]):
@@ -71,5 +71,58 @@ def mine_attributes(type, single_slot=True, print_every=1000, max_imgs=1000000):
                     out.write('\n')
                     i += 1
 
+
+def mine_cooccurrence(print_every=1000, max_imgs=1000000):
+    print('loading attributes file...')
+    attributes_f = json.load(open(attributes_file))
+
+    print('mining attributes...')
+    out_file = open('co-occurrence_mined.jsonl', 'w')
+    #cooccur_counts = {}
+    img_num = 0
+    for img in attributes_f:
+        img_num += 1
+        if img_num % print_every == 0:
+            print(f'processing {img_num}-th image')
+        names = []
+        for obj in img['attributes']:
+            names.append(obj['names'][0])
+        json.dump({'obj_names': names}, out_file)
+        out_file.write('\n')
+        if img_num == max_imgs:
+            break
+    out_file.close()
+    print(f'finished processing {img_num} images')
+
+
+def mine_size(print_every=1000, max_imgs=1000000):
+    print('loading attributes file...')
+    attributes_f = json.load(open(attributes_file))
+
+    print('mining attributes...')
+    out_file = open('size_att_mined.jsonl', 'w')
+    img_num = 0
+    for img in attributes_f:
+        img_num += 1
+        if img_num % print_every == 0:
+            print(f'processing {img_num}-th image')
+        for obj in img['attributes']:
+            if 'attributes' not in obj:
+                continue
+            for attribute in obj['attributes']:
+                if attribute in ['tiny', 'small', 'medium', 'large', 'big', 'huge', 'enormous']:
+                    json.dump({'size': attribute, 'obj': obj['names'][0]}, out_file)
+                    out_file.write('\n')
+        if img_num == max_imgs:
+            break
+    out_file.close()
+    print(f'finished processing {img_num} images')
+
+def extract_size():
+    pass
+
+
 if __name__ == "__main__":
-    mine_attributes('material')
+    # mine_attributes('material')
+    # mine_size()
+    mine_cooccurrence()

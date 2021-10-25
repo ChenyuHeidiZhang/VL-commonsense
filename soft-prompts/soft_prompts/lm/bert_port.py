@@ -44,6 +44,10 @@ class PreTrainedBert(LanguageModel):
             self.config = BertConfig.from_pretrained("pretrained_base/checkpoint-2000000/config.json")
             util.tokenizer = BertTokenizer.from_pretrained("pretrained_base/checkpoint-2000000/")
             model = BertImgForMaskedLM.from_pretrained("pretrained_base/checkpoint-2000000/pytorch_model.bin", config=self.config)
+        elif model_type == 'distil_bert':
+            self.config = BertConfig.from_pretrained("distil_bert/config.json")
+            util.tokenizer = BertTokenizer.from_pretrained("distil_bert/")
+            model = BertForMaskedLM.from_pretrained("distil_bert/")
         else:
             self.config, model_class, tokenizer_class = model_classes[model_type]
             util.tokenizer = tokenizer_class.from_pretrained(param_name)

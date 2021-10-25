@@ -1,0 +1,16 @@
+elephant
+car
+tree
+suv
+pillar
+stairway
+bed
+minivan
+fireplace
+bus
+boat
+cheetah
+wall
+balcony
+bear
+lion

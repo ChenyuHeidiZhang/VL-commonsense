@@ -1,4 +1,5 @@
 pretrained_base/
+distil_bert/
 
 .idea
 logs

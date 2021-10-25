@@ -19,7 +19,7 @@ import torch.nn.functional as F
 
 from oscar.modeling.modeling_bert import BertImgForPreTraining
 # from oscar.modeling.modeling_distill_oscar import DistilBertForMaskedLM
-from transformers.models.bert.modeling_bert import BertForMaskedLM
+from pytorch_transformers.modeling_bert import BertForMaskedLM
 from pytorch_transformers import (WEIGHTS_NAME, BertConfig,
                                   BertTokenizer)
 
@@ -102,11 +102,11 @@ def main():
                         help="Whether to run training.")
     parser.add_argument("--learning_rate", default=5e-5, type=float,
                         help="The initial learning rate for Adam.")
-    parser.add_argument("--max_iters", default=2000000, type=int,
+    parser.add_argument("--max_iters", default=100000, type=int,
                         help="Maximal number of training iterations.")
-    parser.add_argument("--train_batch_size", default=1024, type=int,
+    parser.add_argument("--train_batch_size", default=64, type=int,
                         help="Batch size for training.")
-    parser.add_argument("--num_workers", default=6, type=int,
+    parser.add_argument("--num_workers", default=0, type=int,
                         help="Number of workers for dataset.")
     parser.add_argument("--adam_epsilon", default=1e-8, type=float,
                         help="Epsilon for Adam optimizer.")
@@ -117,7 +117,7 @@ def main():
                         help="Linear warmup over warmup_steps.")
     parser.add_argument("--no_cuda", action='store_true',
                         help="Whether not to use CUDA when available")
-    parser.add_argument("--on_memory", action='store_true',
+    parser.add_argument("--on_memory", action='store_false',
                         help="Whether to load train samples into memory or use disk")
     parser.add_argument("--do_lower_case", action='store_true',
                         help="Whether to lower case the input text. True for uncased models, False for cased models.")
@@ -168,6 +168,7 @@ def main():
         device = torch.device(
             "cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu")
         args.n_gpu = torch.cuda.device_count()
+        # args.n_gpu = 0
     else:  # Initializes the distributed backend which will take care of sychronizing nodes/GPUs
         torch.cuda.set_device(args.local_rank)
         device = torch.device("cuda", args.local_rank)
@@ -377,16 +378,18 @@ def main():
         data_time = time.time() - end
 
         def kd_step(images, input_ids, input_mask, segment_ids,
-                             lm_label_ids, is_next, loss_weight=1.0):
+                    label_ids, is_next, loss_weight=1.0):
             # feature as input
             image_features = torch.stack(images).to(args.device, non_blocking=True)
 
             with torch.no_grad():
                 outputs_t = teacher_model(input_ids, segment_ids, input_mask,
-                                lm_label_ids, is_next, img_feats=image_features)
-                logits_t = outputs_t[1]
-            outputs_s = student_model(input_ids, attention_mask=input_mask, labels=lm_label_ids)
-            logits_s = outputs_s.logits
+                                label_ids, is_next, img_feats=image_features)
+                logits_t = outputs_t[1][:, :args.max_seq_length, :].contiguous()
+            lm_input_mask = input_mask[:, :args.max_seq_length].contiguous()
+            lm_label_ids = label_ids[:, :args.max_seq_length].contiguous()
+            outputs_s = student_model(input_ids, attention_mask=lm_input_mask, masked_lm_labels=lm_label_ids)
+            logits_s = outputs_s[1]
 
             loss = loss_weight * KD_loss(input=F.log_softmax(logits_s, dim=-1),
                                          target=F.softmax(logits_t, dim=-1))
@@ -470,7 +473,8 @@ def main():
         if (step + 1) == max_iter or (step + 1) % args.ckpt_period == 0:  # Save a trained model
             log_json[step+1] = tr_loss
             train_metrics_total = torch.Tensor([tr_loss, nb_tr_examples, nb_tr_steps]).to(args.device)
-            torch.distributed.all_reduce(train_metrics_total)
+            if args.distributed:
+                torch.distributed.all_reduce(train_metrics_total)
             # reset metrics
             tr_loss = 0
             nb_tr_examples, nb_tr_steps = 0, 0

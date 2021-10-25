@@ -274,47 +274,47 @@ class PatternModel:
         # print('true answer', answers)
 
         self.force_single_token = True
+        all_dist = list()
+        with torch.no_grad():
+            for ret in self.iter_pattern_relation(rel_bank, batch_size, False, 'product', None, None, [False, True]):
+                lm = ret['label_mask']
+                target_mask = torch.arange(lm.shape[1], device=lm.device).unsqueeze(0).expand_as(lm)[lm]
+                target_dist = ret['word_dist'].gather(
+                    1, target_mask.unsqueeze(1).unsqueeze(2).expand(-1, 1, ret['word_dist'].shape[2])
+                ).squeeze(1)
+                all_dist.append(target_dist.detach().clone().cpu())
+        all_dist = torch.cat(all_dist, 0)
+        all_dist.T[~self.vocab_mask] = 0.0
+        all_dist = all_dist.reshape([len(answers), -1, all_dist.shape[1]]).log()
+        weights = self.weights
+        if self.conditional_prompt:
+            weights = weights * self.conditional_prompt_prob(batch_size, rel_bank)
+        all_dist = (all_dist.permute(0, 2, 1) + weights.cpu().log()).permute(0, 2, 1)
+        target_dist = all_dist.logsumexp(1)
+        if freq is not None:
+            freq_dist = torch.tensor(freq, dtype=torch.float32)
+            target_dist = freq_dist.unsqueeze(0).log() + target_dist
+        pred = (-target_dist).argsort(1)  # prediction id in descending order of score
 
         def get_answer_ranks(answers):
-            all_dist = list()
-            with torch.no_grad():
-                for ret in self.iter_pattern_relation(rel_bank, batch_size, False, 'product', None, None, [False, True]):
-                    lm = ret['label_mask']
-                    target_mask = torch.arange(lm.shape[1], device=lm.device).unsqueeze(0).expand_as(lm)[lm]
-                    target_dist = ret['word_dist'].gather(
-                        1, target_mask.unsqueeze(1).unsqueeze(2).expand(-1, 1, ret['word_dist'].shape[2])
-                    ).squeeze(1)
-                    all_dist.append(target_dist.detach().clone().cpu())
-            all_dist = torch.cat(all_dist, 0)
-            all_dist.T[~self.vocab_mask] = 0.0
-            all_dist = all_dist.reshape([len(answers), -1, all_dist.shape[1]]).log()
-            weights = self.weights
-            if self.conditional_prompt:
-                weights = weights * self.conditional_prompt_prob(batch_size, rel_bank)
-            all_dist = (all_dist.permute(0, 2, 1) + weights.cpu().log()).permute(0, 2, 1)
-            target_dist = all_dist.logsumexp(1)
-            if freq is not None:
-                freq_dist = torch.tensor(freq, dtype=torch.float32)
-                target_dist = freq_dist.unsqueeze(0).log() + target_dist
-            pred = (-target_dist).argsort(1)  # prediction id in descending order of score
             answer_ranks = (pred.T == answers).T
             answer_ranks = torch.arange(answer_ranks.shape[1]).unsqueeze(0).expand_as(answer_ranks)[answer_ranks]+1
             topk = (
                     torch.arange(pred.shape[1]).unsqueeze(0).expand(answer_ranks.shape[0], -1) >=
                     answer_ranks.unsqueeze(1).expand(-1, pred.shape[1])
             ).sum(0)
-            return pred, answer_ranks, topk
+            return answer_ranks, topk
 
-        pred, answer_ranks, topk = get_answer_ranks(answers)
+        answer_ranks, topk = get_answer_ranks(answers)
         if alternatives != None:
-            pred_alt, alt_ranks, topk_alt = get_answer_ranks(alternatives)
+            alt_ranks, topk_alt = get_answer_ranks(alternatives)
         else:
             alt_ranks = torch.zeros(answer_ranks.shape)
 
         self.force_single_token = single_option
         # The following line is super time consuming!
         # pred = [util.tokenizer.convert_ids_to_tokens(line) for line in pred]
-        return pred, answer_ranks, topk, alt_ranks
+        return pred, answer_ranks, topk, alt_ranks, target_dist
 
     def sample_entities(
             self,

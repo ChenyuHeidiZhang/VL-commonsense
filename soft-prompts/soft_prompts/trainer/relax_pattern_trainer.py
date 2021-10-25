@@ -227,7 +227,7 @@ class RPTrainer:
 
         opt = optim.Adam(model.parameters())
 
-        before_pred, answer_ranks, answer_topk, alt_ranks = model.conditional_generate_single_slot(self.batch_size_no_grad, test_set)
+        before_pred, answer_ranks, answer_topk, alt_ranks, target_dist = model.conditional_generate_single_slot(self.batch_size_no_grad, test_set)
         ret = {
             'before': {
                 'top1': int(answer_topk[1]),
@@ -279,7 +279,7 @@ class RPTrainer:
             pickle.dump(best_state, fp)
         model.load(best_state)
         freq = train_set.y_dist(self.smoothing_factor) if self.frequent else None
-        after_pred, answer_ranks, answer_topk, alt_ranks = model.conditional_generate_single_slot(
+        after_pred, answer_ranks, answer_topk, alt_ranks, target_dist = model.conditional_generate_single_slot(
             self.batch_size_no_grad, test_set, freq
         )
         ret['after'] = {
@@ -290,7 +290,7 @@ class RPTrainer:
         }
         ret['effective_pattern_num'] = effective_pattern_num
         logger.info(f'Test precision after training: {int(answer_topk[1]) / len(test_set)}')
-        logger.info(f'Test accuracy before training: {(answer_ranks < alt_ranks).sum() / len(answer_ranks)}')
+        logger.info(f'Test accuracy after training: {(answer_ranks < alt_ranks).sum() / len(answer_ranks)}')
         # ret['model'] = model
 
         return ret
