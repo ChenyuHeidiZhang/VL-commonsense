@@ -168,7 +168,7 @@ def mine_size(print_every=1000, max_imgs=1000000):
     out_file.close()
     print(f'finished processing {img_num} images')
 
-def extract_size(smaller=True):
+def extract_size(smaller=True, num_samples=2000):
     dir = 'size_db/'
     words_dict = {'tiny': [], 'small': [], 'medium': [], 'large': [], 'xlarge': []}
     import os, glob
@@ -180,7 +180,7 @@ def extract_size(smaller=True):
                 words_dict[size].append(line.strip())
     # print(words_dict)
     sampled_pairs = {}  # {(sub, obj): alt} dict
-    count = 2000
+    count = num_samples
     sizes = ['tiny', 'small', 'medium', 'large', 'xlarge']
     while count > 0:
         sub_size_id = random.randint(1,3)  # choose int from [1,2,3]
@@ -188,8 +188,8 @@ def extract_size(smaller=True):
             obj_size_id = random.randint(sub_size_id+1, 4)
             alt_size_id = random.randint(0, sub_size_id-1)
         else:
-            obj_size_id = random.randint(0, sub_size_id)
-            alt_size_id = random.randint(sub_size_id+1, 5)
+            obj_size_id = random.randint(0, sub_size_id-1)
+            alt_size_id = random.randint(sub_size_id+1, 4)
         sub = random.choice(words_dict[sizes[sub_size_id]])
         obj = random.choice(words_dict[sizes[obj_size_id]])
         alt = random.choice(words_dict[sizes[alt_size_id]])
@@ -218,4 +218,4 @@ if __name__ == "__main__":
     # mine_attributes('material')
     # mine_size()
     # mine_cooccurrence()
-    extract_size()
+    extract_size(smaller=False)
