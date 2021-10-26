@@ -1,5 +1,5 @@
 trainer:
-  device: &device cpu
+  device: &device cuda
   random_seed: 42
   batch_size_no_grad: 64
   load_model: false

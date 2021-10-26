@@ -73,7 +73,7 @@ def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
     error_tuples = []
     for idx in idxs:
         error_tuples.append((subjects[idx], answer_tokens[idx], predicted_tokens[idx]))
-    print('\n'.join([', '.join(tup) for tup in error_tuples]))
+    #print('\n'.join([', '.join(tup) for tup in error_tuples]))
 
     return error_tuples, vg_dist_wrong, model_dist_wrong
 
@@ -83,11 +83,12 @@ def run(lm_name, log_path=''):
     cfg= kwargs.pop('trainer')
 
     lm = construct_lm(**kwargs.pop(lm_name))
+    print('lm:', lm.model_type)
     relation_db = load_db_general(**kwargs.get('db'))
     pattern_db = load_templates(**kwargs.pop('template'))
 
     for rel_type, pb in pattern_db.items():
-        if rel_type != 'shape': continue
+        if rel_type != 'material': continue
 
         splits = list()
         if rel_type not in relation_db['train'].banks:
@@ -114,6 +115,6 @@ def run(lm_name, log_path=''):
 
 
 if __name__ == '__main__':
-    #error_tuples, vg_dist_wrong, model_dist_wrong = run('lm', log_path='logs/vl')
-    #error_tuples2, vg_dist_wrong2, model_dist_wrong2 = run('lm2', log_path='logs/vl-oscar')
-    error_tuples3, vg_dist_wrong3, model_dist_wrong3 = run('lm3', log_path='logs/vl-distilbert')
+    error_tuples, vg_dist_wrong, model_dist_wrong = run('lm', log_path='logs/vl')
+    error_tuples2, vg_dist_wrong2, model_dist_wrong2 = run('lm2', log_path='logs/vl-oscar')
+    error_tuples3, vg_dist_wrong3, model_dist_wrong3 = run('lm3', log_path='logs/vl-dstilbert')

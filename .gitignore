@@ -2,6 +2,9 @@ mine-data/annotations
 mine-data/prompts
 mine-data/attributes.json
 mine-data/size_att_mined.jsonl
+mine-data/co-occurrence_mined.jsonl
+mine-data/cooccur-dist-copy.jsonl
+mine-data/distributions/cooccur-dist.jsonl
 azcopy
 out_roberta.csv
 output.csv

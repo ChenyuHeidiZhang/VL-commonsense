@@ -3,7 +3,7 @@ import json
 
 attributes_file = 'attributes.json'
 
-def mine_attributes(type, single_slot=True, print_every=1000, max_imgs=1000000):
+def mine_attribute_dist(type, single_slot=True, print_every=1000, max_imgs=1000000):
     # read a list of attributes and find corresponding subjects in Visual Genome
     # output obtained pairs to file
     objs_file = f'{type}-words.txt'
@@ -41,7 +41,7 @@ def mine_attributes(type, single_slot=True, print_every=1000, max_imgs=1000000):
                         continue  # skip cases when the subject is something like "red box"
                     if sub not in sub_dist:
                         # sub_dist[sub] = np.zeros(len(objs_ls))
-                        sub_dist[sub] =[0] * len(objs_ls)
+                        sub_dist[sub] = [0] * len(objs_ls)
                     sub_dist[sub][objs_ls.index(att)] += 1
         if img_num == max_imgs:
             break
@@ -59,4 +59,4 @@ def mine_attributes(type, single_slot=True, print_every=1000, max_imgs=1000000):
         #     out.write('\n')
 
 if __name__ == "__main__":
-    mine_attributes('shape')
+    mine_attribute_dist('color')
