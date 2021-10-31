@@ -303,6 +303,7 @@ class RPTrainer:
         returns = dict()
         n_cur, n_total = 0, len(pattern_db)
         for rel_type, pb in pattern_db.items():
+            if not rel_type in ['size_smaller', 'size_larger']: continue
             since = time.time()
             n_cur += 1
             logger.info(f'Now processing the {n_cur}-th / {n_total} relation.')

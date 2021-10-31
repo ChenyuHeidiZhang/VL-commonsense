@@ -5,11 +5,12 @@ from ..lm import construct_lm
 from .experiment import read_kwargs
 from .. import util
 
+import math
 import numpy as np
 from scipy.stats.stats import pearsonr
 import torch
 import json
-import os
+import os, glob
 import pickle
 import logging
 logger = logging.getLogger(__name__)
@@ -78,6 +79,57 @@ def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
     return error_tuples, vg_dist_wrong, model_dist_wrong
 
 
+def size_correctness(rel_type, test_set, preds):
+    assert rel_type in ['size_smaller', 'size_larger']
+    # Retrieve the set of words in different size categories.
+    dir = '/home/heidi/VL-commonsense/mine-data/size_db/'
+    sizes = ['tiny', 'small', 'medium', 'large', 'xlarge']
+    words_dict = {sz:[] for sz in sizes}
+    for filename in glob.glob(os.path.join(dir, '*.txt')):
+        size = filename.split('/')[-1].split('-')[0]
+        if size not in words_dict: continue
+        with open(filename, 'r') as f:
+            for line in f.readlines():
+                words_dict[size].append(line.strip())
+    word_dict_ids = {}
+    for size in words_dict:
+        word_dict_ids[size] = util.tokenizer.convert_tokens_to_ids(words_dict[size])
+
+    # Get the subject words. For each sub, find its category and those words that are
+    # larger and smaller than the word, convert them to ids. 
+    subjects = [rel_ins.entities[0] for rel_ins in test_set]
+    list_sm_lg = []
+    for sub in subjects:
+        for i in range(1,4):
+            if sub in words_dict[sizes[i]]:
+                sm = []
+                [sm.extend(word_dict_ids[sz]) for sz in sizes[:i]]
+                lg = []
+                [lg.extend(word_dict_ids[sz]) for sz in sizes[i+1:]]
+                list_sm_lg.append([sm, lg])
+                break
+    assert len(list_sm_lg) == len(subjects)
+    #print(len(subjects))
+
+    # Report the percentage of smaller and larger words in the appropriate quantile of 
+    # the predicted ids.
+    percents = []
+    vocab_size_half = int(math.ceil(preds.size(1)/2))
+    print(preds.size(1))
+    print(vocab_size_half)
+    id = 0 if 'small' in rel_type else 1
+    for i in range(len(subjects)):
+        overlap_l = np.intersect1d(preds[i][:vocab_size_half], list_sm_lg[i][id]).shape[0]
+        overlap_r = np.intersect1d(preds[i][vocab_size_half:], list_sm_lg[i][1-id]).shape[0]
+        print(preds[i][vocab_size_half:][:10])
+        print(list_sm_lg[i][1-id])
+        #print(overlap_l, overlap_r)
+        percents.append(
+            (overlap_l + overlap_r) / (len(list_sm_lg[i][0]) + len(list_sm_lg[i][1])))
+    avg_perc = sum(percents) / len(percents)
+    print('Percentage of size ranks that are correct:', avg_perc)
+
+
 def run(lm_name, log_path=''):
     kwargs = read_kwargs()
     cfg= kwargs.pop('trainer')
@@ -88,7 +140,7 @@ def run(lm_name, log_path=''):
     pattern_db = load_templates(**kwargs.pop('template'))
 
     for rel_type, pb in pattern_db.items():
-        if rel_type != 'material': continue
+        if not rel_type in ['size_smaller', 'size_larger']: continue
 
         splits = list()
         if rel_type not in relation_db['train'].banks:
@@ -99,22 +151,28 @@ def run(lm_name, log_path=''):
 
         print(f'rel_type {rel_type} with {len(pb)} patterns.')
         model = PatternModel(
-            pb, cfg.pop('device'), lm, cfg.pop('max_layer'), force_single_token=cfg.pop('force_single_token', False),
-            vocab_file=cfg.pop('vocab_file', None), conditional_prompt=cfg.pop('conditional_prompt', False)
+            pb, cfg.get('device'), lm, cfg.get('max_layer'), force_single_token=cfg.get('force_single_token', False),
+            vocab_file=cfg.get('vocab_file', None), conditional_prompt=cfg.get('conditional_prompt', False)
         )
         if cfg.get('load_model'):
             filename = os.path.join(log_path, f'model.{rel_type}.pkl')
             best_state = pickle.load(open(filename, 'rb'))
             model.load(best_state)
-        after_pred, answer_ranks, answer_topk, alt_ranks, target_dist = model.conditional_generate_single_slot(
-            cfg.pop('batch_size_no_grad'), test_set, None
+        preds, answer_ranks, answer_topk, alt_ranks, target_dist = model.conditional_generate_single_slot(
+            cfg.get('batch_size_no_grad'), test_set, None
         )
         print(f'Test precision: {int(answer_topk[1]) / len(test_set)}')
 
-        return analyze_distributions(rel_type, target_dist, test_set, answer_ranks, after_pred)
+        if rel_type in ['size_smaller', 'size_larger']:
+            size_correctness(rel_type, test_set, preds)
+        else:
+            return analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds)
 
 
 if __name__ == '__main__':
-    error_tuples, vg_dist_wrong, model_dist_wrong = run('lm', log_path='logs/vl')
-    error_tuples2, vg_dist_wrong2, model_dist_wrong2 = run('lm2', log_path='logs/vl-oscar')
-    error_tuples3, vg_dist_wrong3, model_dist_wrong3 = run('lm3', log_path='logs/vl-dstilbert')
+    # error_tuples, vg_dist_wrong, model_dist_wrong = run('lm', log_path='logs/vl')
+    # error_tuples2, vg_dist_wrong2, model_dist_wrong2 = run('lm2', log_path='logs/vl-oscar')
+    # error_tuples3, vg_dist_wrong3, model_dist_wrong3 = run('lm3', log_path='logs/vl-dstilbert')
+    run('lm', log_path='logs/vl')
+    # run('lm2', log_path='logs/vl-oscar')
+    # run('lm3', log_path='logs/vl-dstilbert')
