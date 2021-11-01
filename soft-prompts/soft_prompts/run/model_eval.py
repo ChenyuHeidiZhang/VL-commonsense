@@ -81,7 +81,7 @@ def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
 
 def size_correctness(rel_type, test_set, preds):
     assert rel_type in ['size_smaller', 'size_larger']
-    # Retrieve the set of words in different size categories.
+    # Retrieve the set of words in different size categories and convert them to ids.
     dir = '/home/heidi/VL-commonsense/mine-data/size_db/'
     sizes = ['tiny', 'small', 'medium', 'large', 'xlarge']
     words_dict = {sz:[] for sz in sizes}
@@ -95,8 +95,8 @@ def size_correctness(rel_type, test_set, preds):
     for size in words_dict:
         word_dict_ids[size] = util.tokenizer.convert_tokens_to_ids(words_dict[size])
 
-    # Get the subject words. For each sub, find its category and those words that are
-    # larger and smaller than the word, convert them to ids. 
+    # Get the subject words. For each sub, find its category and those word ids that are
+    # larger and smaller than the word. 
     subjects = [rel_ins.entities[0] for rel_ins in test_set]
     list_sm_lg = []
     for sub in subjects:
@@ -109,23 +109,22 @@ def size_correctness(rel_type, test_set, preds):
                 list_sm_lg.append([sm, lg])
                 break
     assert len(list_sm_lg) == len(subjects)
-    #print(len(subjects))
 
-    # Report the percentage of smaller and larger words in the appropriate quantile of 
-    # the predicted ids.
+    # For each subject, create a dict from comparable tokens to its rank in preds,
+    # and sort the keys by ranks, and report the
+    # percentage of smaller / larger tokens in the correct half of the ranks.
     percents = []
-    vocab_size_half = int(math.ceil(preds.size(1)/2))
-    print(preds.size(1))
-    print(vocab_size_half)
     id = 0 if 'small' in rel_type else 1
     for i in range(len(subjects)):
-        overlap_l = np.intersect1d(preds[i][:vocab_size_half], list_sm_lg[i][id]).shape[0]
-        overlap_r = np.intersect1d(preds[i][vocab_size_half:], list_sm_lg[i][1-id]).shape[0]
-        print(preds[i][vocab_size_half:][:10])
-        print(list_sm_lg[i][1-id])
-        #print(overlap_l, overlap_r)
-        percents.append(
-            (overlap_l + overlap_r) / (len(list_sm_lg[i][0]) + len(list_sm_lg[i][1])))
+        comp_tks = list_sm_lg[i][0] + list_sm_lg[i][1]  # some of these may be [UNK]
+        pred_ls = preds[i].tolist()
+        rank_dict = {pred_ls.index(tk):tk for tk in comp_tks}
+        ranked_tks = [v for (k,v) in sorted(rank_dict.items(), key=lambda item:item[0])]
+        tks_sz_half = int(math.ceil(len(ranked_tks)/2))
+        overlap_l = np.intersect1d(ranked_tks[:tks_sz_half], list_sm_lg[i][id]).shape[0]
+        overlap_r = np.intersect1d(ranked_tks[tks_sz_half:], list_sm_lg[i][1-id]).shape[0]
+        # print(overlap_l, overlap_r)
+        percents.append((overlap_l + overlap_r) / len(ranked_tks))
     avg_perc = sum(percents) / len(percents)
     print('Percentage of size ranks that are correct:', avg_perc)
 
@@ -140,7 +139,8 @@ def run(lm_name, log_path=''):
     pattern_db = load_templates(**kwargs.pop('template'))
 
     for rel_type, pb in pattern_db.items():
-        if not rel_type in ['size_smaller', 'size_larger']: continue
+        #if not rel_type in ['size_smaller', 'size_larger']: continue
+        if not rel_type in ['shape']: continue
 
         splits = list()
         if rel_type not in relation_db['train'].banks:
@@ -174,5 +174,5 @@ if __name__ == '__main__':
     # error_tuples2, vg_dist_wrong2, model_dist_wrong2 = run('lm2', log_path='logs/vl-oscar')
     # error_tuples3, vg_dist_wrong3, model_dist_wrong3 = run('lm3', log_path='logs/vl-dstilbert')
     run('lm', log_path='logs/vl')
-    # run('lm2', log_path='logs/vl-oscar')
-    # run('lm3', log_path='logs/vl-dstilbert')
+    run('lm2', log_path='logs/vl-oscar')
+    run('lm3', log_path='logs/vl-dstilbert')
