@@ -7,7 +7,7 @@ from .. import util
 
 import math
 import numpy as np
-from scipy.stats.stats import pearsonr
+from scipy.stats.stats import pearsonr, spearmanr
 import torch
 import json
 import os, glob
@@ -19,11 +19,12 @@ logger = logging.getLogger(__name__)
 def get_correlation(vg_dist, model_dist):
     # Compute correlation between the VG distribution and model distribution
     corr = [pearsonr(vg_dist[i], model_dist[i]) for i in range(vg_dist.shape[0])]
+    corr_sp = [spearmanr(vg_dist[i], model_dist[i]) for i in range(vg_dist.shape[0])]
     avg_corr = np.mean([cor[0] for cor in corr])
-    print(avg_corr)  # bert: 0.321, 0.606; oscar: 0.433, 0.411
-    corr_flatten = pearsonr(vg_dist.flatten(), model_dist.flatten())
-    print(corr_flatten)  # bert: 0.128, 0.224; oscar: 0.164, 0.147
-    return corr, corr_flatten
+    avg_corr_sp = np.mean([corr_sp[0] for cor in corr])
+    #print(avg_corr)  # bert: 0.321, 0.606; oscar: 0.433, 0.411
+    print(avg_corr_sp)
+    return corr, corr_sp
 
 
 def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
@@ -38,25 +39,18 @@ def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
         objs_ls.append(line.strip())
     obj_ids = torch.tensor(util.tokenizer.convert_tokens_to_ids(objs_ls))
 
-    model_dist = np.array(torch.index_select(target_dist, 1, obj_ids))
+    model_dist = np.array(torch.index_select(target_dist, 1, obj_ids))  # keeps the order of obj_ids
     # print(model_dist.shape)  # [69, num_objs]
 
     # load Visual Genome distribution across objects for the test subjects
     subjects = [rel_ins.entities[0] for rel_ins in test_set]
     # print(len(subjects))  # [69]
-    dist_file = f'/home/heidi/VL-commonsense/mine-data/{rel_type}-dist.jsonl'
+    dist_file = f'/home/heidi/VL-commonsense/mine-data/distributions/{rel_type}-dist.jsonl'
     vg_dist_dict = json.load(open(dist_file, 'r'))
     vg_dist = np.array([vg_dist_dict[sub] for sub in subjects])
-    # vg_dist = []  # not necessary because normalization does not change pearson correlation
-    # for sub in subjects:
-    #     dist = np.array(vg_dist_dict[sub])
-    #     dist = dist / dist.sum()
-    #     vg_dist.append(dist)
-    # vg_dist = np.array(vg_dist)
-    # print(vg_dist.shape)    # [69, num_objs]
 
     print('Correlation of VG and model distributions:')
-    corr, corr_flatten = get_correlation(vg_dist, model_dist)
+    corr, corr_sp = get_correlation(vg_dist, model_dist)
 
     answer_tokens = [rel_ins.entities[1] for rel_ins in test_set]
     predicted_tokens = util.tokenizer.convert_ids_to_tokens(preds.T[0])
@@ -69,7 +63,7 @@ def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
     vg_dist_wrong = vg_dist[idxs]
     model_dist_wrong = model_dist[idxs]
     print('Correlation of distributions when prediction is off:')
-    corr2, corr_flatten2 = get_correlation(vg_dist_wrong, model_dist_wrong)
+    corr2, corr_sp = get_correlation(vg_dist_wrong, model_dist_wrong)
 
     error_tuples = []
     for idx in idxs:
@@ -106,7 +100,7 @@ def size_correctness(rel_type, test_set, preds):
                 [sm.extend(word_dict_ids[sz]) for sz in sizes[:i]]
                 lg = []
                 [lg.extend(word_dict_ids[sz]) for sz in sizes[i+1:]]
-                list_sm_lg.append([sm, lg])
+                list_sm_lg.append([np.unique(sm).tolist(), np.unique(lg).tolist()])
                 break
     assert len(list_sm_lg) == len(subjects)
 
@@ -116,11 +110,12 @@ def size_correctness(rel_type, test_set, preds):
     percents = []
     id = 0 if 'small' in rel_type else 1
     for i in range(len(subjects)):
-        comp_tks = list_sm_lg[i][0] + list_sm_lg[i][1]  # some of these may be [UNK]
+        comp_tks = list_sm_lg[i][0] + list_sm_lg[i][1]  # one of each may be [UNK] (100)
         pred_ls = preds[i].tolist()
         rank_dict = {pred_ls.index(tk):tk for tk in comp_tks}
         ranked_tks = [v for (k,v) in sorted(rank_dict.items(), key=lambda item:item[0])]
-        tks_sz_half = int(math.ceil(len(ranked_tks)/2))
+        # print(len(comp_tks), len(ranked_tks))
+        tks_sz_half = len(list_sm_lg[i][id])
         overlap_l = np.intersect1d(ranked_tks[:tks_sz_half], list_sm_lg[i][id]).shape[0]
         overlap_r = np.intersect1d(ranked_tks[tks_sz_half:], list_sm_lg[i][1-id]).shape[0]
         # print(overlap_l, overlap_r)
@@ -139,8 +134,8 @@ def run(lm_name, log_path=''):
     pattern_db = load_templates(**kwargs.pop('template'))
 
     for rel_type, pb in pattern_db.items():
-        #if not rel_type in ['size_smaller', 'size_larger']: continue
-        if not rel_type in ['shape']: continue
+        if not rel_type in ['size_smaller', 'size_larger']: continue
+        #if not rel_type in ['color']: continue
 
         splits = list()
         if rel_type not in relation_db['train'].banks:
