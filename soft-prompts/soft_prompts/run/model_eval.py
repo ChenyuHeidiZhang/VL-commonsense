@@ -15,16 +15,18 @@ import pickle
 import logging
 logger = logging.getLogger(__name__)
 
+#relations = ['size_smaller', 'size_larger']
+relations = ['color']  # shape, color, material
+
 
 def get_correlation(vg_dist, model_dist):
     # Compute correlation between the VG distribution and model distribution
-    corr = [pearsonr(vg_dist[i], model_dist[i]) for i in range(vg_dist.shape[0])]
     corr_sp = [spearmanr(vg_dist[i], model_dist[i]) for i in range(vg_dist.shape[0])]
-    avg_corr = np.mean([cor[0] for cor in corr])
-    avg_corr_sp = np.mean([corr_sp[0] for cor in corr])
-    #print(avg_corr)  # bert: 0.321, 0.606; oscar: 0.433, 0.411
-    print(avg_corr_sp)
-    return corr, corr_sp
+    corrs = [cor[0] for cor in corr_sp]
+    print(np.mean(corrs), np.var(corrs))
+
+    indices = np.argsort(corrs)[::-1]  # indices sorted and reversed
+    return np.array(corr_sp), indices
 
 
 def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
@@ -50,27 +52,32 @@ def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
     vg_dist = np.array([vg_dist_dict[sub] for sub in subjects])
 
     print('Correlation of VG and model distributions:')
-    corr, corr_sp = get_correlation(vg_dist, model_dist)
+    corr_sp, indices = get_correlation(vg_dist, model_dist)
+    print('High correlation subjects:', [subjects[i] for i in indices[:10]])
+    print('Corr and p-val:', [corr_sp[i] for i in indices[:10]])
+    print('Low correlation subjects:', [subjects[i] for i in indices[-10:]])
+    print('Corr and p-val:', [corr_sp[i] for i in indices[-10:]])
 
-    answer_tokens = [rel_ins.entities[1] for rel_ins in test_set]
-    predicted_tokens = util.tokenizer.convert_ids_to_tokens(preds.T[0])
-    # Get model distribution and VG distribution for instances where answer_rank > 3,
-    # compute the correlation of two distributions,
-    # print the error (sub, true_target, predicted) tuple,
-    # return the error tuples and model distributions for cross-model comparisons.
-    idxs = torch.nonzero(answer_ranks > 3).squeeze(1)
-    print(f'predictions are off for {len(idxs)} out of {len(test_set)} instances')
-    vg_dist_wrong = vg_dist[idxs]
-    model_dist_wrong = model_dist[idxs]
-    print('Correlation of distributions when prediction is off:')
-    corr2, corr_sp = get_correlation(vg_dist_wrong, model_dist_wrong)
+    # answer_tokens = [rel_ins.entities[1] for rel_ins in test_set]
+    # predicted_tokens = util.tokenizer.convert_ids_to_tokens(preds.T[0])
+    # # Get model distribution and VG distribution for instances where answer_rank > 3,
+    # # compute the correlation of two distributions,
+    # # print the error (sub, true_target, predicted) tuple,
+    # # return the error tuples and model distributions for cross-model comparisons.
+    # idxs = torch.nonzero(answer_ranks > 3).squeeze(1)
+    # print(f'predictions are off for {len(idxs)} out of {len(test_set)} instances')
+    # vg_dist_wrong = vg_dist[idxs]
+    # model_dist_wrong = model_dist[idxs]
+    # print('Correlation of distributions when prediction is off:')
+    # corr_sp_off, indices = get_correlation(vg_dist_wrong, model_dist_wrong)
 
-    error_tuples = []
-    for idx in idxs:
-        error_tuples.append((subjects[idx], answer_tokens[idx], predicted_tokens[idx]))
-    #print('\n'.join([', '.join(tup) for tup in error_tuples]))
+    # error_tuples = []
+    # for idx in idxs:
+    #     error_tuples.append((subjects[idx], answer_tokens[idx], predicted_tokens[idx]))
+    # #print('\n'.join([', '.join(tup) for tup in error_tuples]))
 
-    return error_tuples, vg_dist_wrong, model_dist_wrong
+    #return error_tuples, vg_dist_wrong, model_dist_wrong
+    return corr_sp, model_dist, subjects
 
 
 def size_correctness(rel_type, test_set, preds):
@@ -134,8 +141,7 @@ def run(lm_name, log_path=''):
     pattern_db = load_templates(**kwargs.pop('template'))
 
     for rel_type, pb in pattern_db.items():
-        if not rel_type in ['size_smaller', 'size_larger']: continue
-        #if not rel_type in ['color']: continue
+        if not rel_type in relations: continue
 
         splits = list()
         if rel_type not in relation_db['train'].banks:
@@ -163,11 +169,77 @@ def run(lm_name, log_path=''):
         else:
             return analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds)
 
+def cross_model_corr(corr_sp1, corr_sp2, subjects):
+    corr1 = [corr[0] for corr in corr_sp1]
+    corr2 = [corr[0] for corr in corr_sp2]
+    cor_corr = spearmanr(corr1, corr2)
+    first_better = []
+    second_better = []
+    for i in range(len(corr1)):
+        if corr1[i] - corr2[i] > 0.1:
+            first_better.append(subjects[i])
+        elif corr2[i] - corr1[i] > 0.1:
+            second_better.append(subjects[i])
+    return cor_corr, first_better, second_better
+
+def common_subs(subs1, subs2, subs3):
+    idx = np.argmin([len(subs1), len(subs2), len(subs3)])
+    sub_lst = [subs1, subs2, subs3]
+    subs = sub_lst[idx]
+    indices = []
+    for i in range(3):
+        if i == idx: 
+            indices.append(np.ones(len(subs), dtype=bool))
+        else:
+            idx_lst = []
+            k = 0
+            for subj in sub_lst[i]:
+                if subj == subs[k]:
+                    idx_lst.append(True)
+                    k += 1
+                else:
+                    idx_lst.append(False)
+            indices.append(np.array(idx_lst))
+    return subs, indices
 
 if __name__ == '__main__':
-    # error_tuples, vg_dist_wrong, model_dist_wrong = run('lm', log_path='logs/vl')
-    # error_tuples2, vg_dist_wrong2, model_dist_wrong2 = run('lm2', log_path='logs/vl-oscar')
-    # error_tuples3, vg_dist_wrong3, model_dist_wrong3 = run('lm3', log_path='logs/vl-dstilbert')
-    run('lm', log_path='logs/vl')
-    run('lm2', log_path='logs/vl-oscar')
-    run('lm3', log_path='logs/vl-dstilbert')
+    if len(relations) == 1:
+        corr_sp1, model_dist1, subjects1 = run('lm', log_path='logs/vl')
+        corr_sp2, model_dist2, subjects2 = run('lm2', log_path='logs/vl-oscar')
+        corr_sp3, model_dist3, subjects3 = run('lm3', log_path='logs/vl-dstilbert')
+        if not (len(subjects1) == len(subjects2) and len(subjects2) == len(subjects3)):
+            subjects, indices = common_subs(subjects1, subjects2, subjects3)
+            corr_sp1 = corr_sp1[indices[0]]
+            corr_sp2 = corr_sp2[indices[1]]
+            corr_sp3 = corr_sp3[indices[2]]
+            model_dist1 = model_dist1[indices[0]]
+            model_dist2 = model_dist2[indices[1]]
+            model_dist3 = model_dist3[indices[2]]
+            print('obtained common subjects:', len(subjects))
+        else:
+            subjects = subjects1
+            print('num subjects:', len(subjects))
+
+        cor_corr12, bo_bert, bo_oscar = cross_model_corr(corr_sp1, corr_sp2, subjects)
+        print()
+        print('Corr of bert & oscar correlations:', cor_corr12)
+        print('Mean and var of corr of bert & oscar dists:')
+        _, _ = get_correlation(model_dist1, model_dist2)
+        print(bo_bert)
+        print(bo_oscar)
+        cor_corr23, od_oscar, od_distil = cross_model_corr(corr_sp2, corr_sp3, subjects)
+        print('Corr of oscar & distil_bert correlations:', cor_corr23)
+        print('Mean and var of corr of oscar & distil_bert dists:')
+        _, _ = get_correlation(model_dist2, model_dist3)
+        print(od_oscar)
+        print(od_distil)
+        cor_corr13, bd_bert, bd_distil = cross_model_corr(corr_sp1, corr_sp3, subjects)
+        print('Corr of bert & distil_bert correlations:', cor_corr13)
+        print('Mean and var of corr of bert & distil_bert dists:')
+        _, _ = get_correlation(model_dist1, model_dist3)
+        print(bd_bert)
+        print(bd_distil)
+    else:
+        run('lm', log_path='logs/vl')
+        run('lm2', log_path='logs/vl-oscar')
+        run('lm3', log_path='logs/vl-dstilbert')
