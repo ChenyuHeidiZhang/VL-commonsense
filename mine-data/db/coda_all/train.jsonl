@@ -1,0 +1,311 @@
+{"sub": "ruler", "obj": "brown", "alt": "black"}
+{"sub": "toothbrush", "obj": "blue", "alt": "orange"}
+{"sub": "jellyfish", "obj": "white", "alt": "black"}
+{"sub": "house", "obj": "white", "alt": "orange"}
+{"sub": "stationary bicycle", "obj": "black", "alt": "green"}
+{"sub": "cake", "obj": "white", "alt": "black"}
+{"sub": "parachute", "obj": "white", "alt": "pink"}
+{"sub": "glove", "obj": "black", "alt": "green"}
+{"sub": "fish", "obj": "gray", "alt": "purple"}
+{"sub": "dragonfly", "obj": "green", "alt": "pink"}
+{"sub": "umbrella", "obj": "black", "alt": "orange"}
+{"sub": "billboard", "obj": "blue", "alt": "pink"}
+{"sub": "starfish", "obj": "brown", "alt": "blue"}
+{"sub": "screwdriver", "obj": "yellow", "alt": "blue"}
+{"sub": "truck", "obj": "black", "alt": "pink"}
+{"sub": "mix bowl", "obj": "white", "alt": "black"}
+{"sub": "snowboard", "obj": "purple", "alt": "brown"}
+{"sub": "sun hat", "obj": "yellow", "alt": "black"}
+{"sub": "human hair", "obj": "brown", "alt": "green"}
+{"sub": "chime", "obj": "gray", "alt": "blue"}
+{"sub": "wire", "obj": "black", "alt": "brown"}
+{"sub": "football helmet", "obj": "white", "alt": "pink"}
+{"sub": "lollipop", "obj": "green", "alt": "black"}
+{"sub": "fruit", "obj": "green", "alt": "black"}
+{"sub": "teddy bear", "obj": "brown", "alt": "blue"}
+{"sub": "mixer", "obj": "white", "alt": "pink"}
+{"sub": "necklace", "obj": "yellow", "alt": "blue"}
+{"sub": "snowmobile", "obj": "gray", "alt": "pink"}
+{"sub": "mold", "obj": "black", "alt": "purple"}
+{"sub": "suit", "obj": "black", "alt": "purple"}
+{"sub": "skateboard", "obj": "black", "alt": "pink"}
+{"sub": "poster", "obj": "gray", "alt": "black"}
+{"sub": "plastic bag", "obj": "white", "alt": "orange"}
+{"sub": "couch", "obj": "gray", "alt": "pink"}
+{"sub": "coffee cup", "obj": "white", "alt": "gray"}
+{"sub": "paddle", "obj": "brown", "alt": "blue"}
+{"sub": "infant bed", "obj": "pink", "alt": "green"}
+{"sub": "headphone", "obj": "black", "alt": "orange"}
+{"sub": "snake", "obj": "brown", "alt": "pink"}
+{"sub": "wall clock", "obj": "white", "alt": "green"}
+{"sub": "balloon", "obj": "blue", "alt": "brown"}
+{"sub": "beetle", "obj": "brown", "alt": "pink"}
+{"sub": "sunglass", "obj": "black", "alt": "green"}
+{"sub": "tie", "obj": "blue", "alt": "orange"}
+{"sub": "coffee table", "obj": "brown", "alt": "orange"}
+{"sub": "coat", "obj": "black", "alt": "pink"}
+{"sub": "hat", "obj": "black", "alt": "orange"}
+{"sub": "curtain", "obj": "white", "alt": "gray"}
+{"sub": "ipod", "obj": "white", "alt": "orange"}
+{"sub": "sofa bed", "obj": "black", "alt": "blue"}
+{"sub": "lamp", "obj": "yellow", "alt": "blue"}
+{"sub": "sock", "obj": "blue", "alt": "pink"}
+{"sub": "vehicle", "obj": "gray", "alt": "pink"}
+{"sub": "loveseat", "obj": "black", "alt": "yellow"}
+{"sub": "kite", "obj": "green", "alt": "brown"}
+{"sub": "alarm clock", "obj": "white", "alt": "orange"}
+{"sub": "dress", "obj": "red", "alt": "brown"}
+{"sub": "soap dispenser", "obj": "white", "alt": "blue"}
+{"sub": "tablet computer", "obj": "black", "alt": "blue"}
+{"sub": "shirt", "obj": "white", "alt": "brown"}
+{"sub": "footwear", "obj": "white", "alt": "green"}
+{"sub": "suitcase", "obj": "black", "alt": "green"}
+{"sub": "cocktail", "obj": "pink", "alt": "black"}
+{"sub": "toy", "obj": "red", "alt": "brown"}
+{"sub": "ball", "obj": "white", "alt": "black"}
+{"sub": "ski", "obj": "blue", "alt": "pink"}
+{"sub": "surfboard", "obj": "blue", "alt": "pink"}
+{"sub": "flower", "obj": "yellow", "alt": "black"}
+{"sub": "flag", "obj": "blue", "alt": "brown"}
+{"sub": "shellfish", "obj": "gray", "alt": "blue"}
+{"sub": "pasta", "obj": "yellow", "alt": "black"}
+{"sub": "porch", "obj": "gray", "alt": "orange"}
+{"sub": "fedora", "obj": "brown", "alt": "blue"}
+{"sub": "kettle", "obj": "gray", "alt": "brown"}
+{"sub": "golf cart", "obj": "white", "alt": "blue"}
+{"sub": "shrimp", "obj": "pink", "alt": "black"}
+{"sub": "bed", "obj": "brown", "alt": "orange"}
+{"sub": "ring binder", "obj": "black", "alt": "orange"}
+{"sub": "sandal", "obj": "brown", "alt": "orange"}
+{"sub": "shelf", "obj": "brown", "alt": "blue"}
+{"sub": "bean", "obj": "brown", "alt": "blue"}
+{"sub": "monkey", "obj": "brown", "alt": "blue"}
+{"sub": "door", "obj": "white", "alt": "orange"}
+{"sub": "crown", "obj": "yellow", "alt": "black"}
+{"sub": "horse", "obj": "black", "alt": "blue"}
+{"sub": "submarine", "obj": "gray", "alt": "orange"}
+{"sub": "olive", "obj": "green", "alt": "blue"}
+{"sub": "caterpillar", "obj": "green", "alt": "blue"}
+{"sub": "leopard", "obj": "yellow", "alt": "blue"}
+{"sub": "cake stand", "obj": "white", "alt": "green"}
+{"sub": "traffic sign", "obj": "red", "alt": "brown"}
+{"sub": "human eye", "obj": "brown", "alt": "orange"}
+{"sub": "tortoise", "obj": "green", "alt": "blue"}
+{"sub": "doughnut", "obj": "brown", "alt": "black"}
+{"sub": "lip", "obj": "red", "alt": "blue"}
+{"sub": "turkey", "obj": "brown", "alt": "green"}
+{"sub": "lipstick", "obj": "red", "alt": "blue"}
+{"sub": "rugby ball", "obj": "white", "alt": "pink"}
+{"sub": "geese", "obj": "white", "alt": "blue"}
+{"sub": "spider", "obj": "black", "alt": "blue"}
+{"sub": "fox", "obj": "brown", "alt": "blue"}
+{"sub": "computer keyboard", "obj": "black", "alt": "brown"}
+{"sub": "cloud", "obj": "white", "alt": "brown"}
+{"sub": "squirrel", "obj": "brown", "alt": "blue"}
+{"sub": "fire", "obj": "red", "alt": "black"}
+{"sub": "scale", "obj": "gray", "alt": "blue"}
+{"sub": "jug", "obj": "white", "alt": "green"}
+{"sub": "rose", "obj": "red", "alt": "blue"}
+{"sub": "microphone", "obj": "black", "alt": "blue"}
+{"sub": "measure cup", "obj": "white", "alt": "black"}
+{"sub": "ceiling fan", "obj": "brown", "alt": "pink"}
+{"sub": "dumbbell", "obj": "gray", "alt": "blue"}
+{"sub": "punching bag", "obj": "black", "alt": "green"}
+{"sub": "baked good", "obj": "brown", "alt": "orange"}
+{"sub": "sombreros", "obj": "brown", "alt": "blue"}
+{"sub": "furniture", "obj": "brown", "alt": "orange"}
+{"sub": "cauliflower", "obj": "white", "alt": "black"}
+{"sub": "cabbage", "obj": "green", "alt": "black"}
+{"sub": "dishwasher", "obj": "gray", "alt": "green"}
+{"sub": "tank", "obj": "green", "alt": "blue"}
+{"sub": "hair dryer", "obj": "black", "alt": "green"}
+{"sub": "tulip", "obj": "yellow", "alt": "black"}
+{"sub": "grapefruit", "obj": "yellow", "alt": "black"}
+{"sub": "sea turtle", "obj": "green", "alt": "orange"}
+{"sub": "cookie", "obj": "brown", "alt": "blue"}
+{"sub": "camera", "obj": "black", "alt": "blue"}
+{"sub": "microwave oven", "obj": "black", "alt": "blue"}
+{"sub": "segway", "obj": "black", "alt": "blue"}
+{"sub": "auto part", "obj": "black", "alt": "blue"}
+{"sub": "pelican", "obj": "white", "alt": "blue"}
+{"sub": "centipede", "obj": "brown", "alt": "blue"}
+{"sub": "bookcase", "obj": "brown", "alt": "pink"}
+{"sub": "pastry", "obj": "brown", "alt": "blue"}
+{"sub": "toaster", "obj": "gray", "alt": "green"}
+{"sub": "parrot", "obj": "green", "alt": "black"}
+{"sub": "ladle", "obj": "gray", "alt": "blue"}
+{"sub": "trouser", "obj": "black", "alt": "orange"}
+{"sub": "drawer", "obj": "brown", "alt": "blue"}
+{"sub": "oven", "obj": "black", "alt": "blue"}
+{"sub": "ant", "obj": "red", "alt": "blue"}
+{"sub": "hot dog", "obj": "red", "alt": "blue"}
+{"sub": "bus", "obj": "yellow", "alt": "black"}
+{"sub": "belt", "obj": "brown", "alt": "blue"}
+{"sub": "rat", "obj": "brown", "alt": "blue"}
+{"sub": "chainsaw", "obj": "gray", "alt": "blue"}
+{"sub": "briefcase", "obj": "brown", "alt": "green"}
+{"sub": "whale", "obj": "gray", "alt": "brown"}
+{"sub": "vase", "obj": "white", "alt": "red"}
+{"sub": "door handle", "obj": "gray", "alt": "blue"}
+{"sub": "window blind", "obj": "white", "alt": "green"}
+{"sub": "wine", "obj": "red", "alt": "black"}
+{"sub": "ladybug", "obj": "red", "alt": "blue"}
+{"sub": "seahorse", "obj": "brown", "alt": "blue"}
+{"sub": "drum", "obj": "brown", "alt": "green"}
+{"sub": "rifle", "obj": "brown", "alt": "blue"}
+{"sub": "envelope", "obj": "white", "alt": "purple"}
+{"sub": "stapler", "obj": "gray", "alt": "blue"}
+{"sub": "lobster", "obj": "red", "alt": "blue"}
+{"sub": "salad", "obj": "green", "alt": "blue"}
+{"sub": "fire hydrant", "obj": "red", "alt": "pink"}
+{"sub": "motorcycle", "obj": "black", "alt": "orange"}
+{"sub": "ferret", "obj": "brown", "alt": "green"}
+{"sub": "gas stove", "obj": "black", "alt": "blue"}
+{"sub": "eraser", "obj": "white", "alt": "blue"}
+{"sub": "onion", "obj": "white", "alt": "black"}
+{"sub": "bread", "obj": "brown", "alt": "blue"}
+{"sub": "snowplow", "obj": "brown", "alt": "blue"}
+{"sub": "boat", "obj": "white", "alt": "orange"}
+{"sub": "baseball bat", "obj": "brown", "alt": "orange"}
+{"sub": "ostrich", "obj": "black", "alt": "blue"}
+{"sub": "crutch", "obj": "gray", "alt": "black"}
+{"sub": "frog", "obj": "green", "alt": "pink"}
+{"sub": "bottle opener", "obj": "gray", "alt": "blue"}
+{"sub": "telephone", "obj": "gray", "alt": "brown"}
+{"sub": "paper cutter", "obj": "gray", "alt": "blue"}
+{"sub": "tennis racket", "obj": "brown", "alt": "green"}
+{"sub": "table", "obj": "brown", "alt": "green"}
+{"sub": "dinosaur", "obj": "brown", "alt": "pink"}
+{"sub": "jean", "obj": "blue", "alt": "orange"}
+{"sub": "guitar", "obj": "brown", "alt": "green"}
+{"sub": "sea lion", "obj": "gray", "alt": "blue"}
+{"sub": "rocket", "obj": "black", "alt": "blue"}
+{"sub": "can opener", "obj": "gray", "alt": "brown"}
+{"sub": "traffic light", "obj": "green", "alt": "black"}
+{"sub": "raccoon", "obj": "gray", "alt": "blue"}
+{"sub": "bicycle wheel", "obj": "black", "alt": "brown"}
+{"sub": "oyster", "obj": "gray", "alt": "blue"}
+{"sub": "sushi", "obj": "white", "alt": "blue"}
+{"sub": "flute", "obj": "gray", "alt": "blue"}
+{"sub": "cook spray", "obj": "yellow", "alt": "black"}
+{"sub": "sunflower", "obj": "yellow", "alt": "blue"}
+{"sub": "pear", "obj": "green", "alt": "black"}
+{"sub": "eagle", "obj": "brown", "alt": "blue"}
+{"sub": "hand dryer", "obj": "white", "alt": "blue"}
+{"sub": "wedding dress", "obj": "white", "alt": "black"}
+{"sub": "zucchini", "obj": "green", "alt": "black"}
+{"sub": "watermelon", "obj": "green", "alt": "black"}
+{"sub": "rice", "obj": "white", "alt": "blue"}
+{"sub": "football", "obj": "brown", "alt": "blue"}
+{"sub": "swan", "obj": "white", "alt": "blue"}
+{"sub": "mangoe", "obj": "orange", "alt": "black"}
+{"sub": "computer monitor", "obj": "black", "alt": "blue"}
+{"sub": "sink", "obj": "gray", "alt": "black"}
+{"sub": "tangerine", "obj": "orange", "alt": "black"}
+{"sub": "mustard", "obj": "yellow", "alt": "black"}
+{"sub": "porcupine", "obj": "brown", "alt": "blue"}
+{"sub": "box", "obj": "brown", "alt": "blue"}
+{"sub": "blood", "obj": "red", "alt": "black"}
+{"sub": "broccoli", "obj": "green", "alt": "black"}
+{"sub": "potato", "obj": "brown", "alt": "blue"}
+{"sub": "pea", "obj": "green", "alt": "black"}
+{"sub": "tooth", "obj": "white", "alt": "blue"}
+{"sub": "rhinocero", "obj": "gray", "alt": "blue"}
+{"sub": "diaper", "obj": "white", "alt": "black"}
+{"sub": "flour", "obj": "white", "alt": "blue"}
+{"sub": "hamster", "obj": "brown", "alt": "blue"}
+{"sub": "carrot", "obj": "orange", "alt": "black"}
+{"sub": "tennis ball", "obj": "yellow", "alt": "black"}
+{"sub": "tin can", "obj": "gray", "alt": "black"}
+{"sub": "kangaroo", "obj": "brown", "alt": "black"}
+{"sub": "croissant", "obj": "brown", "alt": "black"}
+{"sub": "apricot", "obj": "orange", "alt": "black"}
+{"sub": "paper towel", "obj": "white", "alt": "black"}
+{"sub": "christmas tree", "obj": "green", "alt": "black"}
+{"sub": "raspberry", "obj": "red", "alt": "blue"}
+{"sub": "sugar", "obj": "white", "alt": "black"}
+{"sub": "honey", "obj": "yellow", "alt": "blue"}
+{"sub": "otter", "obj": "brown", "alt": "blue"}
+{"sub": "hamburger", "obj": "brown", "alt": "blue"}
+{"sub": "baseball glove", "obj": "brown", "alt": "blue"}
+{"sub": "canoe", "obj": "brown", "alt": "blue"}
+{"sub": "bone", "obj": "white", "alt": "black"}
+{"sub": "stop sign", "obj": "red", "alt": "black"}
+{"sub": "mayonnaise", "obj": "white", "alt": "black"}
+{"sub": "bagel", "obj": "brown", "alt": "black"}
+{"sub": "cheese", "obj": "yellow", "alt": "black"}
+{"sub": "whiteboard", "obj": "white", "alt": "black"}
+{"sub": "lighthouse", "obj": "white", "alt": "blue"}
+{"sub": "trumpet", "obj": "yellow", "alt": "black"}
+{"sub": "coconut", "obj": "brown", "alt": "black"}
+{"sub": "light bulb", "obj": "white", "alt": "black"}
+{"sub": "dagger", "obj": "gray", "alt": "blue"}
+{"sub": "snowman", "obj": "white", "alt": "blue"}
+{"sub": "hippopotamuse", "obj": "gray", "alt": "black"}
+{"sub": "tuxedo", "obj": "black", "alt": "green"}
+{"sub": "ladder", "obj": "gray", "alt": "blue"}
+{"sub": "chocolate", "obj": "brown", "alt": "blue"}
+{"sub": "palm tree", "obj": "green", "alt": "black"}
+{"sub": "tongue", "obj": "red", "alt": "black"}
+{"sub": "brown bear", "obj": "brown", "alt": "black"}
+{"sub": "jade", "obj": "green", "alt": "blue"}
+{"sub": "wood", "obj": "brown", "alt": "blue"}
+{"sub": "seal", "obj": "gray", "alt": "blue"}
+{"sub": "guacamole", "obj": "green", "alt": "black"}
+{"sub": "clock", "obj": "white", "alt": "blue"}
+{"sub": "skull", "obj": "white", "alt": "blue"}
+{"sub": "raven", "obj": "black", "alt": "blue"}
+{"sub": "deer", "obj": "brown", "alt": "black"}
+{"sub": "cucumber", "obj": "green", "alt": "black"}
+{"sub": "blue jay", "obj": "blue", "alt": "brown"}
+{"sub": "kiwis", "obj": "green", "alt": "black"}
+{"sub": "bomb", "obj": "black", "alt": "blue"}
+{"sub": "popcorn", "obj": "white", "alt": "black"}
+{"sub": "garlic", "obj": "white", "alt": "blue"}
+{"sub": "soil", "obj": "brown", "alt": "blue"}
+{"sub": "pretzel", "obj": "brown", "alt": "black"}
+{"sub": "ketchup", "obj": "red", "alt": "black"}
+{"sub": "camel", "obj": "brown", "alt": "black"}
+{"sub": "tea", "obj": "brown", "alt": "blue"}
+{"sub": "light switch", "obj": "white", "alt": "blue"}
+{"sub": "sand", "obj": "brown", "alt": "black"}
+{"sub": "steel", "obj": "gray", "alt": "black"}
+{"sub": "egg yolk", "obj": "yellow", "alt": "black"}
+{"sub": "remote control", "obj": "black", "alt": "blue"}
+{"sub": "wheelchair", "obj": "gray", "alt": "blue"}
+{"sub": "blueberry", "obj": "blue", "alt": "black"}
+{"sub": "elephant", "obj": "gray", "alt": "black"}
+{"sub": "pizza cutter", "obj": "gray", "alt": "blue"}
+{"sub": "waffle", "obj": "brown", "alt": "black"}
+{"sub": "scissor", "obj": "gray", "alt": "brown"}
+{"sub": "snail", "obj": "brown", "alt": "blue"}
+{"sub": "tomato", "obj": "red", "alt": "black"}
+{"sub": "koala", "obj": "gray", "alt": "black"}
+{"sub": "snow", "obj": "white", "alt": "black"}
+{"sub": "lynx", "obj": "brown", "alt": "blue"}
+{"sub": "salt", "obj": "white", "alt": "blue"}
+{"sub": "pineapple", "obj": "yellow", "alt": "black"}
+{"sub": "chopstick", "obj": "brown", "alt": "blue"}
+{"sub": "pillow", "obj": "white", "alt": "black"}
+{"sub": "penguin", "obj": "black", "alt": "blue"}
+{"sub": "ruby", "obj": "red", "alt": "black"}
+{"sub": "swimming pool", "obj": "blue", "alt": "brown"}
+{"sub": "television", "obj": "black", "alt": "blue"}
+{"sub": "lizard", "obj": "green", "alt": "black"}
+{"sub": "basketball", "obj": "orange", "alt": "black"}
+{"sub": "crow", "obj": "black", "alt": "blue"}
+{"sub": "coffee", "obj": "brown", "alt": "blue"}
+{"sub": "spoon", "obj": "gray", "alt": "black"}
+{"sub": "skyscraper", "obj": "gray", "alt": "brown"}
+{"sub": "mouse", "obj": "white", "alt": "blue"}
+{"sub": "peach", "obj": "orange", "alt": "black"}
+{"sub": "picnic basket", "obj": "brown", "alt": "black"}
+{"sub": "cattle", "obj": "brown", "alt": "blue"}
+{"sub": "flamingos", "obj": "pink", "alt": "black"}
+{"sub": "tripod", "obj": "black", "alt": "blue"}
+{"sub": "burritos", "obj": "brown", "alt": "blue"}
+{"sub": "coffeemaker", "obj": "black", "alt": "blue"}
+{"sub": "fire extinguisher", "obj": "red", "alt": "black"}
+{"sub": "orange", "obj": "orange", "alt": "blue"}
+{"sub": "willow", "obj": "green", "alt": "black"}
+{"sub": "egg", "obj": "white", "alt": "black"}

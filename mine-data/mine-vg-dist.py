@@ -6,7 +6,7 @@ attributes_file = 'attributes.json'
 def mine_attribute_dist(type, single_slot=True, print_every=1000, max_imgs=1000000):
     # read a list of attributes and find corresponding subjects in Visual Genome
     # output obtained pairs to file
-    objs_file = f'{type}-words.txt'
+    objs_file = f'words/{type}-words.txt'
 
     print(f'loading objects file of type {type}...')
     objs_f = open(objs_file, 'r').readlines()

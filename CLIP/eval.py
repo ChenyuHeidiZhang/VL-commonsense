@@ -16,13 +16,12 @@ from modeling_bert import BertImgModel
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model, preprocess = clip.load('ViT-B/32', device)
 # bert
-# bert_model = BertModel.from_pretrained("bert-base-cased").to(device)
-# bert_tokenizer = BertTokenizer.from_pretrained("bert-base-cased")
+bert_model = BertModel.from_pretrained("bert-base-cased").to(device)
+bert_tokenizer = BertTokenizer.from_pretrained("bert-base-cased")
 # oscar
-config = BertConfig.from_pretrained("Oscar/pretrained_base/checkpoint-2000000/config.json")
-bert_model = BertImgModel.from_pretrained("Oscar/pretrained_base/checkpoint-2000000/pytorch_model.bin", config=config).to(device)
-bert_tokenizer = BertTokenizer.from_pretrained("Oscar/pretrained_base/checkpoint-2000000/")
-# pred = model.masked_lm(text_input, bert_model.cls)
+# config = BertConfig.from_pretrained("Oscar/pretrained_base/checkpoint-2000000/config.json")
+# bert_model = BertImgModel.from_pretrained("Oscar/pretrained_base/checkpoint-2000000/pytorch_model.bin", config=config).to(device)
+# bert_tokenizer = BertTokenizer.from_pretrained("Oscar/pretrained_base/checkpoint-2000000/")
 
 # Prepare the inputs
 def get_data(file):
@@ -36,13 +35,13 @@ def get_data(file):
     return data, list(objs)
 
 relation = 'color'
-group = 'any'
+group = 'multi'
 template = 'the {} of {}'
 train_data, objs = get_data(f'mine-data/db/{relation}/{group}/train.jsonl')
 test_data, _ = get_data(f'mine-data/db/{relation}/{group}/test.jsonl')
 
 # Calculate features
-def get_features(data, objs, model_name='oscar'):
+def get_features(data, objs, model_name='bert'):
     all_features = []
     all_labels = []
     with torch.no_grad():
@@ -52,13 +51,15 @@ def get_features(data, objs, model_name='oscar'):
                 input_ids = torch.tensor([bert_tokenizer.encode(text)]).to(device)
                 emb = bert_model.embeddings(input_ids=input_ids)
                 features = torch.mean(bert_model.encoder(emb)[0], dim=1)
-            if model_name=='oscar':
+            elif model_name=='oscar':
                 input_ids = torch.tensor([bert_tokenizer.encode(text)]).to(device)
                 output = bert_model(input_ids=input_ids)
                 features = torch.mean(output, dim=1)
-            else:
+            elif model_name=='clip':
                 text_input = clip.tokenize(text).to(device)
                 features = model.encode_text(text_input)
+            else:
+                print(f'wrong model name {model_name}')
             all_features.append(features)
             if obj not in objs:
                 all_labels.append(-1)
