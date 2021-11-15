@@ -36,22 +36,23 @@ def get_data(file):
     return data, list(objs)
 
 relation = 'color'
+group = 'any'
 template = 'the {} of {}'
-train_data, objs = get_data(f'mine-data/db/{relation}/train.jsonl')
-test_data, _ = get_data(f'mine-data/db/{relation}/test.jsonl')
+train_data, objs = get_data(f'mine-data/db/{relation}/{group}/train.jsonl')
+test_data, _ = get_data(f'mine-data/db/{relation}/{group}/test.jsonl')
 
 # Calculate features
-def get_features(data, objs, model='oscar'):
+def get_features(data, objs, model_name='oscar'):
     all_features = []
     all_labels = []
     with torch.no_grad():
         for sub, obj in tqdm(data):
             text = template.format(relation, sub)
-            if model=='bert':
+            if model_name=='bert':
                 input_ids = torch.tensor([bert_tokenizer.encode(text)]).to(device)
                 emb = bert_model.embeddings(input_ids=input_ids)
                 features = torch.mean(bert_model.encoder(emb)[0], dim=1)
-            if model=='oscar':
+            if model_name=='oscar':
                 input_ids = torch.tensor([bert_tokenizer.encode(text)]).to(device)
                 output = bert_model(input_ids=input_ids)
                 features = torch.mean(output, dim=1)
@@ -82,6 +83,3 @@ accuracy = np.mean((test_labels == predictions).astype(float)) * 100.
 print(f"Accuracy = {accuracy:.3f}")
 
 # num objs: shape: 13, material: 21, color: 44
-# CLIP accuracy: shape: 44.595, 24.118, 16.435
-# bert accuracy: shape: 45.946, 22.059, 15.368
-# oscar accuracy: shape: 43.243, 23.235, 16.222

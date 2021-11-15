@@ -31,9 +31,9 @@ def split_groups(dir, spl, dist_json):
         if not os.path.isdir(path):
             os.mkdir(path)
         if spl == 'train':
-            write_data(os.path.join(path, spl), data_pts[i], mode='w')
+            write_data(os.path.join(path, 'train.jsonl'), data_pts[i], mode='w')
         else:  # dev and test splits are combined
-            write_data(os.path.join(path, 'test'), data_pts[i], mode='a')
+            write_data(os.path.join(path, 'test.jsonl'), data_pts[i], mode='a')
 
 relation = 'color'
 dist_file = f'distributions/{relation}-dist.jsonl'
