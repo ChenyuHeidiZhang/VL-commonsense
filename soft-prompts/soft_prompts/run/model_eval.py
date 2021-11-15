@@ -16,14 +16,14 @@ import logging
 logger = logging.getLogger(__name__)
 
 #relations = ['size_smaller', 'size_larger']
-relations = ['color']  # shape, color, material
-
+relations = ['coda_multi']  # shape, color, material
+verbose = False
 
 def get_correlation(vg_dist, model_dist):
     # Compute correlation between the VG distribution and model distribution
     corr_sp = [spearmanr(vg_dist[i], model_dist[i]) for i in range(vg_dist.shape[0])]
     corrs = [cor[0] for cor in corr_sp]
-    print(np.mean(corrs), np.var(corrs))
+    print(np.mean(corrs), np.std(corrs))
 
     indices = np.argsort(corrs)[::-1]  # indices sorted and reversed
     return np.array(corr_sp), indices
@@ -31,7 +31,9 @@ def get_correlation(vg_dist, model_dist):
 
 def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
     # get the list of object ids, and find model distribution across the objects
-    objs_file = f'/home/heidi/VL-commonsense/mine-data/{rel_type}-words.txt'
+    if 'coda' in rel_type:
+        rel_type = rel_type.split('_')[0]
+    objs_file = f'/home/heidi/VL-commonsense/mine-data/words/{rel_type}-words.txt'
     objs_f = open(objs_file, 'r').readlines()
     objs_ls = []
     single_token = True
@@ -53,10 +55,10 @@ def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
 
     print('Correlation of VG and model distributions:')
     corr_sp, indices = get_correlation(vg_dist, model_dist)
-    print('High correlation subjects:', [subjects[i] for i in indices[:10]])
-    print('Corr and p-val:', [corr_sp[i] for i in indices[:10]])
-    print('Low correlation subjects:', [subjects[i] for i in indices[-10:]])
-    print('Corr and p-val:', [corr_sp[i] for i in indices[-10:]])
+    # print('High correlation subjects:', [subjects[i] for i in indices[:10]])
+    # print('Corr and p-val:', [corr_sp[i] for i in indices[:10]])
+    # print('Low correlation subjects:', [subjects[i] for i in indices[-10:]])
+    # print('Corr and p-val:', [corr_sp[i] for i in indices[-10:]])
 
     # answer_tokens = [rel_ins.entities[1] for rel_ins in test_set]
     # predicted_tokens = util.tokenizer.convert_ids_to_tokens(preds.T[0])
@@ -207,38 +209,39 @@ if __name__ == '__main__':
         corr_sp1, model_dist1, subjects1 = run('lm', log_path='logs/vl')
         corr_sp2, model_dist2, subjects2 = run('lm2', log_path='logs/vl-oscar')
         corr_sp3, model_dist3, subjects3 = run('lm3', log_path='logs/vl-dstilbert')
-        if not (len(subjects1) == len(subjects2) and len(subjects2) == len(subjects3)):
-            subjects, indices = common_subs(subjects1, subjects2, subjects3)
-            corr_sp1 = corr_sp1[indices[0]]
-            corr_sp2 = corr_sp2[indices[1]]
-            corr_sp3 = corr_sp3[indices[2]]
-            model_dist1 = model_dist1[indices[0]]
-            model_dist2 = model_dist2[indices[1]]
-            model_dist3 = model_dist3[indices[2]]
-            print('obtained common subjects:', len(subjects))
-        else:
-            subjects = subjects1
-            print('num subjects:', len(subjects))
+        if verbose:
+            if not (len(subjects1) == len(subjects2) and len(subjects2) == len(subjects3)):
+                subjects, indices = common_subs(subjects1, subjects2, subjects3)
+                corr_sp1 = corr_sp1[indices[0]]
+                corr_sp2 = corr_sp2[indices[1]]
+                corr_sp3 = corr_sp3[indices[2]]
+                model_dist1 = model_dist1[indices[0]]
+                model_dist2 = model_dist2[indices[1]]
+                model_dist3 = model_dist3[indices[2]]
+                print('obtained common subjects:', len(subjects))
+            else:
+                subjects = subjects1
+                print('num subjects:', len(subjects))
 
-        cor_corr12, bo_bert, bo_oscar = cross_model_corr(corr_sp1, corr_sp2, subjects)
-        print()
-        print('Corr of bert & oscar correlations:', cor_corr12)
-        print('Mean and var of corr of bert & oscar dists:')
-        _, _ = get_correlation(model_dist1, model_dist2)
-        print(bo_bert)
-        print(bo_oscar)
-        cor_corr23, od_oscar, od_distil = cross_model_corr(corr_sp2, corr_sp3, subjects)
-        print('Corr of oscar & distil_bert correlations:', cor_corr23)
-        print('Mean and var of corr of oscar & distil_bert dists:')
-        _, _ = get_correlation(model_dist2, model_dist3)
-        print(od_oscar)
-        print(od_distil)
-        cor_corr13, bd_bert, bd_distil = cross_model_corr(corr_sp1, corr_sp3, subjects)
-        print('Corr of bert & distil_bert correlations:', cor_corr13)
-        print('Mean and var of corr of bert & distil_bert dists:')
-        _, _ = get_correlation(model_dist1, model_dist3)
-        print(bd_bert)
-        print(bd_distil)
+            cor_corr12, bo_bert, bo_oscar = cross_model_corr(corr_sp1, corr_sp2, subjects)
+            print()
+            print('Corr of bert & oscar correlations:', cor_corr12)
+            print('Mean and var of corr of bert & oscar dists:')
+            _, _ = get_correlation(model_dist1, model_dist2)
+            print(bo_bert)
+            print(bo_oscar)
+            cor_corr23, od_oscar, od_distil = cross_model_corr(corr_sp2, corr_sp3, subjects)
+            print('Corr of oscar & distil_bert correlations:', cor_corr23)
+            print('Mean and var of corr of oscar & distil_bert dists:')
+            _, _ = get_correlation(model_dist2, model_dist3)
+            print(od_oscar)
+            print(od_distil)
+            cor_corr13, bd_bert, bd_distil = cross_model_corr(corr_sp1, corr_sp3, subjects)
+            print('Corr of bert & distil_bert correlations:', cor_corr13)
+            print('Mean and var of corr of bert & distil_bert dists:')
+            _, _ = get_correlation(model_dist1, model_dist3)
+            print(bd_bert)
+            print(bd_distil)
     else:
         run('lm', log_path='logs/vl')
         run('lm2', log_path='logs/vl-oscar')
