@@ -1,0 +1,6 @@
+{"sub": "logo", "obj": "square", "alt": "parallelogram", "count": 4}
+{"sub": "sign", "obj": "hexagon", "alt": "parallelogram", "count": 3}
+{"sub": "logo", "obj": "oval", "alt": "rectangle", "count": 6}
+{"sub": "design", "obj": "oval", "alt": "pentagon", "count": 5}
+{"sub": "symbol", "obj": "round", "alt": "rhombus", "count": 11}
+{"sub": "design", "obj": "round", "alt": "octagon", "count": 16}
