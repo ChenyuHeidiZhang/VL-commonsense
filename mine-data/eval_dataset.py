@@ -1,6 +1,7 @@
 import json
 import numpy as np
-from scipy.stats.stats import pearsonr, spearmanr
+from scipy.stats.stats import pearsonr, spearmanr, kendalltau
+from scipy.spatial import distance
 from datasets import load_dataset
 
 import warnings
@@ -47,15 +48,17 @@ for split in ['train']:  #, 'validation', 'test'
             vg_dist = np.take(vg_dist_dict[ngram], color_ids)
             if np.sum(vg_dist) == 0:  # sp corr would be undefined if all elements of an array are 0
                 continue
-            sp = pearsonr(vg_dist, color_dist)
-            sp_corrs.append(sp[0])
-            p_vals.append(sp[1])
-            sp_corrs_per_group[instance['object_group']].append(sp[0])
+            #sp = kendalltau(vg_dist, color_dist)
+            js_div = distance.jensenshannon(vg_dist, color_dist)**2
+            val = js_div
+            sp_corrs.append(val)
+            #p_vals.append(sp[1])
+            sp_corrs_per_group[instance['object_group']].append(val)
             objs[instance['object_group']].append(ngram)
-            if sp[0] < 0.5:
+            if val < 0.5:
                 objs_weak_corr[instance['object_group']].append((ngram, color_dist, vg_dist))
             common_subs.append(ngram)
-    print(np.median(p_vals))
+    #print(np.median(p_vals))
     print('mean and std of sp corr:', np.mean(sp_corrs), np.std(sp_corrs))
     print('for Single group:', np.mean(sp_corrs_per_group[0]), np.std(sp_corrs_per_group[0]))
     print('for Multi group:', np.mean(sp_corrs_per_group[1]), np.std(sp_corrs_per_group[1]))
