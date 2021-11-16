@@ -38,7 +38,7 @@ with open('prompts/coda.jsonl', 'w') as f:
 groups = ['single', 'multi', 'any']
 for spl in ['train', 'validation', 'test']:
     split = 'dev' if spl=='validation' else spl
-    with open(f'db/coda_all/{split}.jsonl', 'w') as f:
+    with open(f'db/coda/{split}.jsonl', 'w') as f:
         for data in data_all[spl]:
             json.dump(data, f)
             f.write('\n')
