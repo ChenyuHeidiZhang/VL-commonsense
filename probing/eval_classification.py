@@ -89,7 +89,7 @@ def run():
                         help='group to evaluate (single, multi, any, or '' for all))')
     parser.add_argument('--seed', type=int, default=1,
                         help='numpy random seed')
-    parser.add_argument('--step', type=int, default=50,
+    parser.add_argument('--step', type=int, default=-1,
                         help='step size of increasing training size')
     args = parser.parse_args()
     np.random.seed(args.seed)
@@ -116,7 +116,8 @@ def run():
     dist_file = f'mine-data/distributions/{rel_name}-dist.jsonl'
     dist_dict = json.load(open(dist_file, 'r'))
 
-    for train_data_size in range(args.step, len(train_labels_all), args.step):
+    step = len(train_labels_all) if args.step == -1 else args.step    
+    for train_data_size in range(step, len(train_labels_all)+1, step):
         print()
         p = np.random.permutation(len(train_labels_all))
         train_features = train_features_all[p][:train_data_size]
@@ -126,7 +127,7 @@ def run():
         print(f'num train examples: {len(train_labels)}, num test examples: {len(test_labels)}')
 
         # Perform logistic regression
-        classifier = LogisticRegression(random_state=0, C=0.316, max_iter=1000, verbose=0)
+        classifier = LogisticRegression(random_state=0, C=0.316, max_iter=2000, verbose=0)
         classifier.fit(train_features, train_labels)
 
         # Evaluate using the logistic regression classifier
@@ -143,8 +144,9 @@ def run():
         idx = 0
         for i in test_ids:
             true_dist = np.take(dist_dict[test_data[i][0]], word_ids)
-            sp_corrs.append(spearmanr(true_dist, logprob[idx]))
+            sp = spearmanr(true_dist, logprob[idx])[0]
             idx += 1
+            if np.sum(true_dist) != 0: sp_corrs.append(sp)
         sp_corr = np.mean(sp_corrs)
         print('avg sp corr:', sp_corr)
 

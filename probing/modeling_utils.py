@@ -685,13 +685,6 @@ class ImgPreTrainedModel(PreTrainedModel):
     def __init__(self, config, *inputs, **kwargs):
         super(ImgPreTrainedModel, self).__init__(config, *inputs, **kwargs)
 
-    @property
-    def base_model(self):
-        """
-        :obj:`torch.nn.Module`: The main body of the model.
-        """
-        return getattr(self, self.base_model_prefix, self)
-
     @classmethod
     def from_pretrained(cls, pretrained_model_name_or_path, *model_args, **kwargs):
         r"""Instantiate a pretrained pytorch model from a pre-trained model configuration.
