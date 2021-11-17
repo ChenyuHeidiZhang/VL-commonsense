@@ -212,7 +212,7 @@ def extract_size(smaller=True, num_samples=2000):
 
 
 if __name__ == "__main__":
-    mine_attributes('material', thres=utils.THRES_MATERIAL)
+    mine_attributes('color', thres=utils.THRES_COLOR)
     # mine_size()
     # mine_cooccurrence()
     # extract_size(smaller=False)

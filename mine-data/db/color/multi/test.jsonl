@@ -1,835 +1,590 @@
-{"sub": "sky", "obj": "azure", "alt": "indigo", "count": 8}
-{"sub": "stove", "obj": "beige", "alt": "pumpkin", "count": 3}
-{"sub": "fridge", "obj": "beige", "alt": "pastel", "count": 3}
-{"sub": "keyboard", "obj": "black", "alt": "pale", "count": 793}
-{"sub": "microwave oven", "obj": "black", "alt": "viridian", "count": 20}
-{"sub": "dog", "obj": "black", "alt": "chartreuse", "count": 1488}
-{"sub": "street", "obj": "black", "alt": "emerald", "count": 207}
-{"sub": "spots", "obj": "black", "alt": "periwinkle", "count": 154}
-{"sub": "electrical cords", "obj": "black", "alt": "pastel", "count": 3}
-{"sub": "mini fridge", "obj": "black", "alt": "maroon", "count": 4}
-{"sub": "chair seat", "obj": "black", "alt": "turquoise", "count": 3}
-{"sub": "stem", "obj": "black", "alt": "periwinkle", "count": 30}
-{"sub": "appliance", "obj": "black", "alt": "azure", "count": 13}
-{"sub": "cat tail", "obj": "black", "alt": "amethyst", "count": 8}
-{"sub": "end table", "obj": "black", "alt": "umber", "count": 10}
-{"sub": "wave", "obj": "black", "alt": "orange", "count": 3}
-{"sub": "contraption", "obj": "black", "alt": "coral", "count": 3}
-{"sub": "trashcans", "obj": "black", "alt": "silver", "count": 6}
+{"sub": "dog", "obj": "beige", "alt": "olive", "count": 35}
+{"sub": "refrigerator", "obj": "beige", "alt": "ruby", "count": 8}
+{"sub": "balcony", "obj": "black", "alt": "emerald", "count": 49}
+{"sub": "hinge", "obj": "black", "alt": "fuchsia", "count": 61}
+{"sub": "coffee table", "obj": "black", "alt": "aqua", "count": 33}
+{"sub": "arrow", "obj": "black", "alt": "apricot", "count": 407}
+{"sub": "line", "obj": "black", "alt": "taupe", "count": 570}
+{"sub": "cuff", "obj": "black", "alt": "cerulean", "count": 20}
+{"sub": "hoof", "obj": "black", "alt": "cardinal", "count": 375}
+{"sub": "guitar", "obj": "black", "alt": "chartreuse", "count": 35}
+{"sub": "range", "obj": "black", "alt": "apricot", "count": 18}
+{"sub": "kickstand", "obj": "black", "alt": "terracotta", "count": 36}
+{"sub": "bookshelf", "obj": "black", "alt": "scarlet", "count": 16}
+{"sub": "lantern", "obj": "black", "alt": "viridian", "count": 22}
+{"sub": "clock face", "obj": "black", "alt": "sepia", "count": 50}
+{"sub": "detail", "obj": "black", "alt": "puce", "count": 6}
+{"sub": "tablet", "obj": "black", "alt": "purple", "count": 27}
+{"sub": "book bag", "obj": "black", "alt": "burgundy", "count": 22}
+{"sub": "chicken", "obj": "black", "alt": "sepia", "count": 18}
+{"sub": "bar stool", "obj": "black", "alt": "pumpkin", "count": 11}
+{"sub": "pump", "obj": "black", "alt": "violet", "count": 11}
+{"sub": "sheep", "obj": "black", "alt": "blond", "count": 428}
+{"sub": "saddle", "obj": "black", "alt": "blond", "count": 56}
+{"sub": "eyeglass", "obj": "black", "alt": "maroon", "count": 60}
+{"sub": "umpire", "obj": "black", "alt": "coral", "count": 23}
+{"sub": "penguin", "obj": "black", "alt": "terracotta", "count": 14}
+{"sub": "sailboat", "obj": "black", "alt": "fuchsia", "count": 8}
+{"sub": "control", "obj": "black", "alt": "cerulean", "count": 24}
 {"sub": "doorknob", "obj": "black", "alt": "carmine", "count": 6}
-{"sub": "tuxedo", "obj": "black", "alt": "indigo", "count": 16}
-{"sub": "cooktop", "obj": "black", "alt": "azure", "count": 6}
-{"sub": "tennis shorts", "obj": "black", "alt": "pastel", "count": 5}
-{"sub": "swan", "obj": "black", "alt": "yellow", "count": 7}
-{"sub": "batting glove", "obj": "black", "alt": "rose", "count": 6}
-{"sub": "baseboard", "obj": "black", "alt": "pastel", "count": 12}
-{"sub": "baseball cleats", "obj": "black", "alt": "ultramarine", "count": 5}
-{"sub": "paw print", "obj": "black", "alt": "olive", "count": 4}
-{"sub": "eye brow", "obj": "black", "alt": "indigo", "count": 10}
-{"sub": "kitty", "obj": "black", "alt": "carmine", "count": 5}
-{"sub": "letter t", "obj": "black", "alt": "violet", "count": 4}
-{"sub": "goose", "obj": "black", "alt": "silver", "count": 6}
-{"sub": "goats", "obj": "black", "alt": "cardinal", "count": 5}
-{"sub": "suitcoat", "obj": "black", "alt": "viridian", "count": 3}
-{"sub": "stocking", "obj": "black", "alt": "mahogany", "count": 10}
-{"sub": "octagon", "obj": "black", "alt": "brown", "count": 4}
-{"sub": "snow shoes", "obj": "black", "alt": "blue", "count": 4}
-{"sub": "drums", "obj": "black", "alt": "teal", "count": 3}
-{"sub": "spokes", "obj": "black", "alt": "lavender", "count": 5}
-{"sub": "number one", "obj": "black", "alt": "pastel", "count": 3}
-{"sub": "barcode", "obj": "black", "alt": "cerulean", "count": 11}
-{"sub": "shoe lace", "obj": "black", "alt": "sepia", "count": 9}
-{"sub": "smoke stack", "obj": "black", "alt": "maroon", "count": 17}
-{"sub": "skies", "obj": "black", "alt": "apricot", "count": 10}
-{"sub": "ocean", "obj": "black", "alt": "olive", "count": 3}
-{"sub": "dog's nose", "obj": "black", "alt": "emerald", "count": 8}
-{"sub": "left boot", "obj": "black", "alt": "red", "count": 5}
-{"sub": "menu sign", "obj": "black", "alt": "orange", "count": 4}
-{"sub": "letter p", "obj": "black", "alt": "lavender", "count": 3}
-{"sub": "protection", "obj": "black", "alt": "olive", "count": 3}
-{"sub": "projector", "obj": "black", "alt": "viridian", "count": 9}
-{"sub": "iris", "obj": "black", "alt": "blond", "count": 4}
-{"sub": "lipstick", "obj": "black", "alt": "cerulean", "count": 4}
-{"sub": "light switch", "obj": "black", "alt": "ebony", "count": 5}
-{"sub": "bicycle rack", "obj": "black", "alt": "tan", "count": 4}
-{"sub": "shift key", "obj": "black", "alt": "taupe", "count": 5}
-{"sub": "hove", "obj": "black", "alt": "viridian", "count": 4}
-{"sub": "9", "obj": "black", "alt": "chartreuse", "count": 3}
-{"sub": "lashes", "obj": "black", "alt": "khaki", "count": 5}
-{"sub": "bike tire", "obj": "black", "alt": "lavender", "count": 6}
-{"sub": "knee guard", "obj": "black", "alt": "aquamarine", "count": 11}
-{"sub": "battery", "obj": "black", "alt": "ocher", "count": 9}
-{"sub": "front legs", "obj": "black", "alt": "cyan", "count": 7}
-{"sub": "bear's eye", "obj": "black", "alt": "turquoise", "count": 3}
-{"sub": "chest protector", "obj": "black", "alt": "amethyst", "count": 3}
-{"sub": "pants.", "obj": "black", "alt": "amber", "count": 3}
-{"sub": "nike cleat", "obj": "black", "alt": "blue", "count": 3}
-{"sub": "snow glove", "obj": "black", "alt": "puce", "count": 9}
-{"sub": "cubicle dividers", "obj": "black", "alt": "rainbow", "count": 3}
-{"sub": "hot dog", "obj": "black", "alt": "magenta", "count": 6}
-{"sub": "train front", "obj": "black", "alt": "crimson", "count": 3}
-{"sub": "leather chair", "obj": "black", "alt": "amethyst", "count": 4}
-{"sub": "barstool", "obj": "black", "alt": "periwinkle", "count": 6}
-{"sub": "number 15", "obj": "black", "alt": "brown", "count": 3}
-{"sub": "spec", "obj": "black", "alt": "russet", "count": 5}
-{"sub": "storage compartment", "obj": "black", "alt": "azure", "count": 3}
-{"sub": "sky", "obj": "blue", "alt": "russet", "count": 19158}
-{"sub": "street", "obj": "blue", "alt": "carmine", "count": 10}
-{"sub": "stove", "obj": "blue", "alt": "puce", "count": 7}
-{"sub": "button down", "obj": "blue", "alt": "periwinkle", "count": 3}
-{"sub": "bay", "obj": "blue", "alt": "pastel", "count": 3}
-{"sub": "obstacle", "obj": "blue", "alt": "crimson", "count": 4}
-{"sub": "sea water", "obj": "blue", "alt": "charcoal", "count": 6}
-{"sub": "roll", "obj": "blue", "alt": "coral", "count": 5}
-{"sub": "laptop screen", "obj": "blue", "alt": "saffron", "count": 4}
-{"sub": "oven", "obj": "blue", "alt": "blond", "count": 4}
-{"sub": "egg", "obj": "blue", "alt": "pale", "count": 6}
-{"sub": "baseball helmet", "obj": "blue", "alt": "emerald", "count": 15}
-{"sub": "storage bin", "obj": "blue", "alt": "grey", "count": 3}
-{"sub": "sweatband", "obj": "blue", "alt": "jade", "count": 12}
-{"sub": "fruit", "obj": "blue", "alt": "jade", "count": 4}
-{"sub": "advertisements", "obj": "blue", "alt": "aqua", "count": 4}
-{"sub": "gap", "obj": "blue", "alt": "rainbow", "count": 3}
-{"sub": "head gear", "obj": "blue", "alt": "umber", "count": 3}
-{"sub": "bus seat", "obj": "blue", "alt": "ocher", "count": 4}
-{"sub": "dolphin", "obj": "blue", "alt": "indigo", "count": 7}
-{"sub": "ocean waves", "obj": "blue", "alt": "terracotta", "count": 56}
-{"sub": "ski sticks", "obj": "blue", "alt": "olive", "count": 3}
-{"sub": "light bulb", "obj": "blue", "alt": "emerald", "count": 12}
-{"sub": "christmas light", "obj": "blue", "alt": "terracotta", "count": 5}
-{"sub": "jet fighter", "obj": "blue", "alt": "umber", "count": 5}
-{"sub": "baseball cleat", "obj": "blue", "alt": "crimson", "count": 3}
-{"sub": "mulch", "obj": "brown", "alt": "blue", "count": 46}
-{"sub": "closet", "obj": "brown", "alt": "emerald", "count": 6}
-{"sub": "dirt", "obj": "brown", "alt": "azure", "count": 1097}
-{"sub": "night table", "obj": "brown", "alt": "tan", "count": 5}
-{"sub": "footboard", "obj": "brown", "alt": "khaki", "count": 10}
-{"sub": "ducks", "obj": "brown", "alt": "jade", "count": 9}
-{"sub": "street", "obj": "brown", "alt": "cardinal", "count": 14}
-{"sub": "roll", "obj": "brown", "alt": "indigo", "count": 15}
-{"sub": "blind", "obj": "brown", "alt": "lavender", "count": 7}
-{"sub": "beer bottle", "obj": "brown", "alt": "charcoal", "count": 23}
-{"sub": "tree trunks", "obj": "brown", "alt": "ebony", "count": 11}
-{"sub": "stove", "obj": "brown", "alt": "sienna", "count": 7}
-{"sub": "baseball field", "obj": "brown", "alt": "ivory", "count": 11}
-{"sub": "baseball glove", "obj": "brown", "alt": "ivory", "count": 53}
-{"sub": "patches", "obj": "brown", "alt": "purple", "count": 60}
-{"sub": "tv stand", "obj": "brown", "alt": "aqua", "count": 12}
-{"sub": "hutch", "obj": "brown", "alt": "gray", "count": 6}
-{"sub": "toast", "obj": "brown", "alt": "sepia", "count": 29}
-{"sub": "seaweed", "obj": "brown", "alt": "indigo", "count": 7}
-{"sub": "hot dog", "obj": "brown", "alt": "gold", "count": 31}
-{"sub": "woods", "obj": "brown", "alt": "ebony", "count": 26}
-{"sub": "butt", "obj": "brown", "alt": "yellow", "count": 4}
-{"sub": "lamb", "obj": "brown", "alt": "amethyst", "count": 8}
-{"sub": "tarmac", "obj": "brown", "alt": "purple", "count": 8}
-{"sub": "palm trees", "obj": "brown", "alt": "sepia", "count": 7}
-{"sub": "antelope", "obj": "brown", "alt": "scarlet", "count": 24}
-{"sub": "cracker", "obj": "brown", "alt": "ecru", "count": 16}
-{"sub": "hamburger bun", "obj": "brown", "alt": "black", "count": 3}
-{"sub": "gazelle", "obj": "brown", "alt": "jade", "count": 26}
-{"sub": "cliffs", "obj": "brown", "alt": "pastel", "count": 4}
-{"sub": "steak", "obj": "brown", "alt": "grey", "count": 9}
-{"sub": "pitcher's mound", "obj": "brown", "alt": "sepia", "count": 6}
-{"sub": "grizzly bear", "obj": "brown", "alt": "violet", "count": 4}
-{"sub": "dog head", "obj": "brown", "alt": "pale", "count": 4}
-{"sub": "foal", "obj": "brown", "alt": "crimson", "count": 5}
-{"sub": "nostril", "obj": "brown", "alt": "ebony", "count": 7}
-{"sub": "seed", "obj": "brown", "alt": "ocher", "count": 7}
-{"sub": "honey", "obj": "brown", "alt": "cerulean", "count": 3}
-{"sub": "collie", "obj": "brown", "alt": "maroon", "count": 3}
-{"sub": "dowel", "obj": "brown", "alt": "mahogany", "count": 3}
-{"sub": "giraffe leg", "obj": "brown", "alt": "aqua", "count": 6}
-{"sub": "foil", "obj": "gold", "alt": "buff", "count": 13}
-{"sub": "key", "obj": "gold", "alt": "azure", "count": 3}
-{"sub": "roller", "obj": "gold", "alt": "emerald", "count": 3}
-{"sub": "fixtures", "obj": "gold", "alt": "ebony", "count": 7}
-{"sub": "computer speaker", "obj": "gray", "alt": "teal", "count": 4}
-{"sub": "squirrel", "obj": "gray", "alt": "purple", "count": 4}
-{"sub": "pier", "obj": "gray", "alt": "ebony", "count": 6}
-{"sub": "hands", "obj": "gray", "alt": "azure", "count": 5}
-{"sub": "wet suit", "obj": "gray", "alt": "chartreuse", "count": 10}
-{"sub": "stem", "obj": "gray", "alt": "carmine", "count": 3}
-{"sub": "vent", "obj": "gray", "alt": "purple", "count": 11}
-{"sub": "fridge", "obj": "gray", "alt": "amethyst", "count": 4}
-{"sub": "crack", "obj": "gray", "alt": "amethyst", "count": 3}
-{"sub": "weeds", "obj": "green", "alt": "auburn", "count": 186}
-{"sub": "palm trees", "obj": "green", "alt": "white", "count": 26}
-{"sub": "grass area", "obj": "green", "alt": "rainbow", "count": 5}
-{"sub": "windscreen", "obj": "green", "alt": "russet", "count": 4}
-{"sub": "wine", "obj": "green", "alt": "mauve", "count": 4}
-{"sub": "baseball field", "obj": "green", "alt": "scarlet", "count": 27}
-{"sub": "horse", "obj": "green", "alt": "saffron", "count": 3}
-{"sub": "roofing", "obj": "green", "alt": "terracotta", "count": 4}
-{"sub": "direction sign", "obj": "green", "alt": "pastel", "count": 6}
-{"sub": "pineapple", "obj": "green", "alt": "rainbow", "count": 12}
-{"sub": "tree limb", "obj": "green", "alt": "sienna", "count": 7}
-{"sub": "dog", "obj": "green", "alt": "burgundy", "count": 5}
-{"sub": "squash", "obj": "green", "alt": "umber", "count": 21}
-{"sub": "points", "obj": "green", "alt": "sienna", "count": 6}
-{"sub": "dollar sign", "obj": "green", "alt": "turquoise", "count": 3}
-{"sub": "vent", "obj": "green", "alt": "terracotta", "count": 3}
-{"sub": "tree leaf", "obj": "green", "alt": "mahogany", "count": 8}
-{"sub": "banana bunch", "obj": "green", "alt": "scarlet", "count": 22}
-{"sub": "traffic cone", "obj": "green", "alt": "ivory", "count": 3}
-{"sub": "dustbin", "obj": "green", "alt": "ruby", "count": 3}
-{"sub": "lead", "obj": "green", "alt": "ebony", "count": 12}
-{"sub": "space", "obj": "green", "alt": "aquamarine", "count": 19}
-{"sub": "noodles", "obj": "green", "alt": "violet", "count": 3}
-{"sub": "semi truck", "obj": "green", "alt": "pink", "count": 3}
-{"sub": "microwave", "obj": "grey", "alt": "carmine", "count": 21}
-{"sub": "bark", "obj": "grey", "alt": "crimson", "count": 26}
-{"sub": "asphalt", "obj": "grey", "alt": "khaki", "count": 23}
-{"sub": "light switch", "obj": "grey", "alt": "sepia", "count": 3}
-{"sub": "tarmac", "obj": "grey", "alt": "aqua", "count": 40}
-{"sub": "skies", "obj": "grey", "alt": "fuchsia", "count": 32}
-{"sub": "horns", "obj": "grey", "alt": "rainbow", "count": 10}
-{"sub": "fog", "obj": "grey", "alt": "lavender", "count": 6}
-{"sub": "ostrich", "obj": "grey", "alt": "olive", "count": 6}
-{"sub": "parking meters", "obj": "grey", "alt": "mauve", "count": 4}
-{"sub": "hill", "obj": "grey", "alt": "buff", "count": 7}
-{"sub": "stacks", "obj": "grey", "alt": "aquamarine", "count": 4}
-{"sub": "elephant's foot", "obj": "grey", "alt": "white", "count": 3}
-{"sub": "flaps", "obj": "grey", "alt": "pale", "count": 3}
-{"sub": "rubber", "obj": "orange", "alt": "crimson", "count": 3}
-{"sub": "stem", "obj": "orange", "alt": "taupe", "count": 6}
-{"sub": "beaks", "obj": "orange", "alt": "fuchsia", "count": 11}
-{"sub": "skates", "obj": "orange", "alt": "turquoise", "count": 8}
-{"sub": "noodles", "obj": "orange", "alt": "terracotta", "count": 3}
-{"sub": "caution cones", "obj": "orange", "alt": "rainbow", "count": 5}
-{"sub": "paw", "obj": "orange", "alt": "goldenrod", "count": 12}
-{"sub": "safety jacket", "obj": "orange", "alt": "rainbow", "count": 4}
-{"sub": "crust", "obj": "orange", "alt": "violet", "count": 4}
-{"sub": "led light", "obj": "pink", "alt": "pumpkin", "count": 5}
-{"sub": "gums", "obj": "pink", "alt": "purple", "count": 6}
-{"sub": "lip", "obj": "pink", "alt": "buff", "count": 30}
-{"sub": "ham", "obj": "pink", "alt": "terracotta", "count": 31}
-{"sub": "fingernails", "obj": "pink", "alt": "ecru", "count": 3}
-{"sub": "cow", "obj": "pink", "alt": "rainbow", "count": 3}
-{"sub": "sheep", "obj": "pink", "alt": "khaki", "count": 5}
-{"sub": "rubber ducky", "obj": "pink", "alt": "jade", "count": 3}
-{"sub": "fanny pack", "obj": "pink", "alt": "sapphire", "count": 3}
-{"sub": "light bulb", "obj": "purple", "alt": "terracotta", "count": 8}
-{"sub": "roses", "obj": "purple", "alt": "khaki", "count": 6}
-{"sub": "fruit", "obj": "purple", "alt": "carmine", "count": 12}
-{"sub": "potato", "obj": "purple", "alt": "ecru", "count": 3}
-{"sub": "candy-coated chocolates", "obj": "purple", "alt": "jade", "count": 5}
-{"sub": "vent", "obj": "red", "alt": "ivory", "count": 3}
-{"sub": "sky", "obj": "red", "alt": "mauve", "count": 53}
-{"sub": "camera strap", "obj": "red", "alt": "crimson", "count": 3}
-{"sub": "smokestack", "obj": "red", "alt": "magenta", "count": 6}
-{"sub": "wetsuit", "obj": "red", "alt": "cerulean", "count": 50}
-{"sub": "tennis ball", "obj": "red", "alt": "purple", "count": 9}
-{"sub": "dog", "obj": "red", "alt": "magenta", "count": 30}
-{"sub": "passenger bus", "obj": "red", "alt": "rose", "count": 3}
-{"sub": "shopping cart", "obj": "red", "alt": "viridian", "count": 7}
-{"sub": "lug", "obj": "red", "alt": "amethyst", "count": 4}
-{"sub": "lodge", "obj": "red", "alt": "jade", "count": 3}
-{"sub": "bell peppers", "obj": "red", "alt": "pale", "count": 11}
-{"sub": "second hand", "obj": "red", "alt": "sapphire", "count": 7}
-{"sub": "preserver", "obj": "red", "alt": "vermilion", "count": 4}
-{"sub": "truck.", "obj": "red", "alt": "orange", "count": 3}
-{"sub": "grapefruit", "obj": "red", "alt": "teal", "count": 3}
-{"sub": "baseball glove", "obj": "red", "alt": "ultramarine", "count": 5}
-{"sub": "no parking sign", "obj": "red", "alt": "apricot", "count": 4}
-{"sub": "chest guard", "obj": "red", "alt": "terracotta", "count": 3}
-{"sub": "stockings", "obj": "red", "alt": "khaki", "count": 5}
-{"sub": "protective gear", "obj": "red", "alt": "tan", "count": 4}
-{"sub": "number 10", "obj": "red", "alt": "scarlet", "count": 4}
-{"sub": "cardboard box", "obj": "red", "alt": "ebony", "count": 5}
-{"sub": "fridge", "obj": "red", "alt": "amethyst", "count": 9}
-{"sub": "beets", "obj": "red", "alt": "goldenrod", "count": 6}
-{"sub": "roast beef", "obj": "red", "alt": "scarlet", "count": 3}
-{"sub": "photo", "obj": "red", "alt": "charcoal", "count": 4}
-{"sub": "sink", "obj": "red", "alt": "ultramarine", "count": 6}
-{"sub": "t", "obj": "red", "alt": "puce", "count": 6}
-{"sub": "clocks", "obj": "red", "alt": "pink", "count": 7}
-{"sub": "rims", "obj": "red", "alt": "ocher", "count": 8}
-{"sub": "bump", "obj": "red", "alt": "aqua", "count": 8}
-{"sub": "rubber ducky", "obj": "red", "alt": "azure", "count": 3}
-{"sub": "exit", "obj": "red", "alt": "burgundy", "count": 4}
-{"sub": "shrimp", "obj": "red", "alt": "pumpkin", "count": 3}
-{"sub": "traffic signals", "obj": "red", "alt": "olive", "count": 3}
-{"sub": "chin strap", "obj": "red", "alt": "coral", "count": 3}
-{"sub": "light signal", "obj": "red", "alt": "magenta", "count": 3}
-{"sub": "wake board", "obj": "red", "alt": "pink", "count": 4}
-{"sub": "backs", "obj": "red", "alt": "grey", "count": 3}
-{"sub": "giraffe", "obj": "red", "alt": "apricot", "count": 3}
-{"sub": "stepping stone", "obj": "red", "alt": "pink", "count": 5}
-{"sub": "muffin", "obj": "red", "alt": "olive", "count": 4}
-{"sub": "keyboard", "obj": "silver", "alt": "vermilion", "count": 167}
-{"sub": "drain plug", "obj": "silver", "alt": "crimson", "count": 3}
-{"sub": "floor lamp", "obj": "silver", "alt": "rose", "count": 6}
-{"sub": "forks", "obj": "silver", "alt": "khaki", "count": 20}
-{"sub": "spokes", "obj": "silver", "alt": "aqua", "count": 59}
-{"sub": "buckles", "obj": "silver", "alt": "pumpkin", "count": 6}
-{"sub": "shopping cart", "obj": "silver", "alt": "carmine", "count": 3}
-{"sub": "hub cap", "obj": "silver", "alt": "azure", "count": 11}
-{"sub": "pans", "obj": "silver", "alt": "teal", "count": 12}
-{"sub": "skillet", "obj": "silver", "alt": "goldenrod", "count": 3}
-{"sub": "hardware", "obj": "silver", "alt": "cardinal", "count": 19}
-{"sub": "cylinders", "obj": "silver", "alt": "umber", "count": 6}
-{"sub": "pizza pan", "obj": "silver", "alt": "jade", "count": 10}
-{"sub": "paper dispenser", "obj": "silver", "alt": "amber", "count": 5}
-{"sub": "hub", "obj": "silver", "alt": "pale", "count": 3}
-{"sub": "tail pipe", "obj": "silver", "alt": "rainbow", "count": 4}
-{"sub": "cabinet handle", "obj": "silver", "alt": "indigo", "count": 10}
-{"sub": "bit", "obj": "silver", "alt": "sepia", "count": 3}
-{"sub": "door hinge", "obj": "silver", "alt": "scarlet", "count": 8}
-{"sub": "rib", "obj": "silver", "alt": "cerulean", "count": 5}
-{"sub": "cell", "obj": "silver", "alt": "fuchsia", "count": 3}
-{"sub": "dirt", "obj": "tan", "alt": "terracotta", "count": 71}
-{"sub": "stem", "obj": "tan", "alt": "indigo", "count": 5}
-{"sub": "sheep", "obj": "tan", "alt": "cardinal", "count": 80}
-{"sub": "wool", "obj": "tan", "alt": "sienna", "count": 3}
-{"sub": "paw", "obj": "tan", "alt": "ecru", "count": 24}
-{"sub": "underbelly", "obj": "tan", "alt": "indigo", "count": 3}
-{"sub": "horns", "obj": "tan", "alt": "mauve", "count": 9}
-{"sub": "weeds", "obj": "tan", "alt": "scarlet", "count": 3}
-{"sub": "tree trunk", "obj": "tan", "alt": "jade", "count": 3}
-{"sub": "box truck", "obj": "white", "alt": "sienna", "count": 10}
-{"sub": "cabinets", "obj": "white", "alt": "saffron", "count": 233}
-{"sub": "baseboard", "obj": "white", "alt": "indigo", "count": 89}
-{"sub": "keys", "obj": "white", "alt": "cyan", "count": 84}
-{"sub": "flakes", "obj": "white", "alt": "rainbow", "count": 3}
-{"sub": "blind", "obj": "white", "alt": "cyan", "count": 70}
-{"sub": "oven handle", "obj": "white", "alt": "saffron", "count": 3}
-{"sub": "rice", "obj": "white", "alt": "buff", "count": 174}
-{"sub": "grout", "obj": "white", "alt": "ecru", "count": 45}
-{"sub": "paw", "obj": "white", "alt": "ruby", "count": 524}
-{"sub": "ocean", "obj": "white", "alt": "pale", "count": 150}
-{"sub": "toilet seat", "obj": "white", "alt": "russet", "count": 215}
-{"sub": "nightstand", "obj": "white", "alt": "mauve", "count": 17}
-{"sub": "lightbulb", "obj": "white", "alt": "cyan", "count": 3}
-{"sub": "salt", "obj": "white", "alt": "blue", "count": 12}
-{"sub": "cattle", "obj": "white", "alt": "umber", "count": 14}
-{"sub": "daisy", "obj": "white", "alt": "sienna", "count": 28}
-{"sub": "sleeve shirt", "obj": "white", "alt": "ebony", "count": 3}
-{"sub": "tennis uniform", "obj": "white", "alt": "cerulean", "count": 7}
-{"sub": "dishcloth", "obj": "white", "alt": "mauve", "count": 8}
-{"sub": "number 11", "obj": "white", "alt": "tan", "count": 3}
-{"sub": "penguin", "obj": "white", "alt": "goldenrod", "count": 12}
-{"sub": "life preserver", "obj": "white", "alt": "apricot", "count": 26}
-{"sub": "game console", "obj": "white", "alt": "violet", "count": 4}
-{"sub": "night stand", "obj": "white", "alt": "scarlet", "count": 11}
-{"sub": "dogs", "obj": "white", "alt": "buff", "count": 18}
-{"sub": "ocean waves", "obj": "white", "alt": "emerald", "count": 108}
-{"sub": "fire alarm", "obj": "white", "alt": "fuchsia", "count": 7}
-{"sub": "business card", "obj": "white", "alt": "mauve", "count": 7}
-{"sub": "hairs", "obj": "white", "alt": "beige", "count": 15}
-{"sub": "horns", "obj": "white", "alt": "sepia", "count": 44}
-{"sub": "slope", "obj": "white", "alt": "indigo", "count": 39}
-{"sub": "hub cap", "obj": "white", "alt": "umber", "count": 3}
-{"sub": "city", "obj": "white", "alt": "magenta", "count": 5}
-{"sub": "manes", "obj": "white", "alt": "olive", "count": 4}
-{"sub": "electric outlet", "obj": "white", "alt": "amethyst", "count": 8}
-{"sub": "terminal", "obj": "white", "alt": "puce", "count": 4}
-{"sub": "tablecloths", "obj": "white", "alt": "mauve", "count": 8}
-{"sub": "plugs", "obj": "white", "alt": "ebony", "count": 3}
-{"sub": "shampoo bottle", "obj": "white", "alt": "vermilion", "count": 3}
-{"sub": "dough", "obj": "white", "alt": "sepia", "count": 15}
-{"sub": "eyelashes", "obj": "white", "alt": "auburn", "count": 5}
-{"sub": "spokes", "obj": "white", "alt": "aqua", "count": 4}
-{"sub": "license tag", "obj": "white", "alt": "amethyst", "count": 4}
-{"sub": "plume", "obj": "white", "alt": "periwinkle", "count": 3}
-{"sub": "zebra's head", "obj": "white", "alt": "purple", "count": 3}
-{"sub": "front legs", "obj": "white", "alt": "auburn", "count": 13}
-{"sub": "tent top", "obj": "white", "alt": "jade", "count": 10}
-{"sub": "applique", "obj": "white", "alt": "burgundy", "count": 3}
-{"sub": "toilet cover", "obj": "white", "alt": "taupe", "count": 9}
-{"sub": "cupboard door", "obj": "white", "alt": "purple", "count": 16}
-{"sub": "crust", "obj": "white", "alt": "silver", "count": 31}
-{"sub": "brace", "obj": "white", "alt": "charcoal", "count": 12}
-{"sub": "traffic line", "obj": "white", "alt": "blond", "count": 6}
-{"sub": "embroidery", "obj": "white", "alt": "azure", "count": 4}
-{"sub": "scrub brush", "obj": "white", "alt": "khaki", "count": 3}
-{"sub": "baseball glove", "obj": "white", "alt": "mauve", "count": 10}
-{"sub": "fixtures", "obj": "white", "alt": "charcoal", "count": 3}
-{"sub": "teddy bears", "obj": "white", "alt": "charcoal", "count": 4}
-{"sub": "space bar", "obj": "white", "alt": "charcoal", "count": 8}
-{"sub": "elephant", "obj": "white", "alt": "saffron", "count": 31}
-{"sub": "contrail", "obj": "white", "alt": "periwinkle", "count": 13}
-{"sub": "window ledge", "obj": "white", "alt": "amethyst", "count": 5}
-{"sub": "hove", "obj": "white", "alt": "olive", "count": 4}
-{"sub": "heating vent", "obj": "white", "alt": "auburn", "count": 3}
-{"sub": "caulk", "obj": "white", "alt": "umber", "count": 3}
-{"sub": "brush holder", "obj": "white", "alt": "amber", "count": 3}
-{"sub": "poster board", "obj": "white", "alt": "indigo", "count": 3}
-{"sub": "banister", "obj": "white", "alt": "saffron", "count": 4}
-{"sub": "tanks", "obj": "white", "alt": "silver", "count": 5}
-{"sub": "cow head", "obj": "white", "alt": "puce", "count": 4}
-{"sub": "christmas stocking", "obj": "white", "alt": "goldenrod", "count": 3}
-{"sub": "mixing bowl", "obj": "white", "alt": "carmine", "count": 3}
-{"sub": "clouds sky", "obj": "white", "alt": "magenta", "count": 18}
-{"sub": "front light", "obj": "white", "alt": "chartreuse", "count": 6}
-{"sub": "numbering", "obj": "white", "alt": "ebony", "count": 3}
-{"sub": "vent hood", "obj": "white", "alt": "pale", "count": 3}
-{"sub": "tulle", "obj": "white", "alt": "auburn", "count": 3}
-{"sub": "window seal", "obj": "white", "alt": "aquamarine", "count": 3}
-{"sub": "tg friday's sign", "obj": "white", "alt": "ebony", "count": 5}
-{"sub": "grout line", "obj": "white", "alt": "amethyst", "count": 4}
-{"sub": "mosaic tile", "obj": "white", "alt": "amber", "count": 4}
-{"sub": "jet plane", "obj": "white", "alt": "green", "count": 3}
-{"sub": "oranges", "obj": "white", "alt": "turquoise", "count": 5}
-{"sub": "metal leg", "obj": "white", "alt": "buff", "count": 4}
-{"sub": "texts", "obj": "white", "alt": "sepia", "count": 4}
-{"sub": "soap container", "obj": "white", "alt": "jade", "count": 3}
-{"sub": "footwear", "obj": "white", "alt": "puce", "count": 5}
-{"sub": "dandelions", "obj": "white", "alt": "brown", "count": 3}
-{"sub": "oven", "obj": "yellow", "alt": "russet", "count": 3}
-{"sub": "field", "obj": "yellow", "alt": "ruby", "count": 48}
-{"sub": "backhoe", "obj": "yellow", "alt": "ivory", "count": 8}
-{"sub": "sponge", "obj": "yellow", "alt": "scarlet", "count": 42}
-{"sub": "stem", "obj": "yellow", "alt": "burgundy", "count": 25}
-{"sub": "caution tape", "obj": "yellow", "alt": "mahogany", "count": 23}
-{"sub": "giraffe", "obj": "yellow", "alt": "indigo", "count": 111}
-{"sub": "orange", "obj": "yellow", "alt": "ebony", "count": 42}
-{"sub": "hands", "obj": "yellow", "alt": "sienna", "count": 10}
-{"sub": "dandelions", "obj": "yellow", "alt": "chartreuse", "count": 13}
-{"sub": "bell pepper", "obj": "yellow", "alt": "auburn", "count": 11}
-{"sub": "mangoes", "obj": "yellow", "alt": "gray", "count": 4}
-{"sub": "noodles", "obj": "yellow", "alt": "blue", "count": 11}
-{"sub": "paw", "obj": "yellow", "alt": "purple", "count": 7}
-{"sub": "mango", "obj": "yellow", "alt": "ruby", "count": 17}
-{"sub": "licence plate", "obj": "yellow", "alt": "cyan", "count": 9}
-{"sub": "elephant tusk", "obj": "yellow", "alt": "puce", "count": 3}
-{"sub": "sandwich", "obj": "yellow", "alt": "russet", "count": 5}
-{"sub": "flames", "obj": "yellow", "alt": "tan", "count": 10}
-{"sub": "condiment", "obj": "yellow", "alt": "aqua", "count": 6}
-{"sub": "skies", "obj": "yellow", "alt": "pumpkin", "count": 4}
-{"sub": "asphalt", "obj": "yellow", "alt": "saffron", "count": 3}
-{"sub": "wildflower", "obj": "yellow", "alt": "tan", "count": 9}
-{"sub": "street signs", "obj": "yellow", "alt": "taupe", "count": 3}
-{"sub": "macaroni", "obj": "yellow", "alt": "ebony", "count": 4}
-{"sub": "broccoli florets", "obj": "yellow", "alt": "gold", "count": 5}
-{"sub": "grease", "obj": "yellow", "alt": "buff", "count": 3}
-{"sub": "cat eyes", "obj": "yellow", "alt": "rose", "count": 4}
-{"sub": "luggage piece", "obj": "yellow", "alt": "vermilion", "count": 4}
-{"sub": "wine", "obj": "yellow", "alt": "ultramarine", "count": 3}
-{"sub": "computer speaker", "obj": "black", "alt": "lavender", "count": 9}
-{"sub": "tv", "obj": "black", "alt": "purple", "count": 355}
-{"sub": "license plate", "obj": "black", "alt": "khaki", "count": 185}
-{"sub": "coffee table", "obj": "black", "alt": "blond", "count": 33}
-{"sub": "c", "obj": "black", "alt": "khaki", "count": 4}
-{"sub": "spare tire", "obj": "black", "alt": "cyan", "count": 4}
-{"sub": "microwave", "obj": "black", "alt": "fuchsia", "count": 247}
-{"sub": "keys", "obj": "black", "alt": "ocher", "count": 180}
-{"sub": "outlet", "obj": "black", "alt": "ivory", "count": 24}
-{"sub": "sprayer", "obj": "black", "alt": "carmine", "count": 4}
-{"sub": "saucer", "obj": "black", "alt": "violet", "count": 6}
-{"sub": "door handle", "obj": "black", "alt": "lavender", "count": 23}
-{"sub": "beaks", "obj": "black", "alt": "apricot", "count": 5}
-{"sub": "paved road", "obj": "black", "alt": "taupe", "count": 4}
-{"sub": "caution tape", "obj": "black", "alt": "magenta", "count": 5}
-{"sub": "brow", "obj": "black", "alt": "violet", "count": 3}
-{"sub": "pumps", "obj": "black", "alt": "sienna", "count": 4}
-{"sub": "trash bag", "obj": "black", "alt": "maroon", "count": 35}
-{"sub": "baseball helmet", "obj": "black", "alt": "cardinal", "count": 19}
-{"sub": "phones", "obj": "black", "alt": "maroon", "count": 5}
-{"sub": "penguin", "obj": "black", "alt": "rose", "count": 12}
-{"sub": "apple logo", "obj": "black", "alt": "amethyst", "count": 4}
-{"sub": "man hair", "obj": "black", "alt": "auburn", "count": 3}
-{"sub": "spacebar", "obj": "black", "alt": "russet", "count": 7}
-{"sub": "toenails", "obj": "black", "alt": "magenta", "count": 4}
-{"sub": "wine bottle", "obj": "black", "alt": "chartreuse", "count": 8}
-{"sub": "street signs", "obj": "black", "alt": "aquamarine", "count": 3}
-{"sub": "h", "obj": "black", "alt": "burgundy", "count": 6}
-{"sub": "pepper", "obj": "black", "alt": "ivory", "count": 34}
-{"sub": "main", "obj": "black", "alt": "carmine", "count": 4}
-{"sub": "gorilla", "obj": "black", "alt": "red", "count": 3}
-{"sub": "l", "obj": "black", "alt": "crimson", "count": 6}
-{"sub": "tanker", "obj": "black", "alt": "teal", "count": 7}
-{"sub": "curly hair", "obj": "black", "alt": "terracotta", "count": 3}
-{"sub": "baseball shoe", "obj": "black", "alt": "yellow", "count": 8}
-{"sub": "sweatband", "obj": "black", "alt": "tan", "count": 31}
-{"sub": "blind", "obj": "black", "alt": "khaki", "count": 5}
-{"sub": "reign", "obj": "black", "alt": "goldenrod", "count": 3}
-{"sub": "letter d", "obj": "black", "alt": "sienna", "count": 3}
-{"sub": "booties", "obj": "black", "alt": "jade", "count": 4}
-{"sub": "blinder", "obj": "black", "alt": "vermilion", "count": 10}
-{"sub": "manhole", "obj": "black", "alt": "rose", "count": 6}
-{"sub": "whip", "obj": "black", "alt": "white", "count": 3}
-{"sub": "raisin", "obj": "black", "alt": "vermilion", "count": 9}
-{"sub": "sensor", "obj": "black", "alt": "gray", "count": 8}
-{"sub": "watchband", "obj": "black", "alt": "goldenrod", "count": 5}
-{"sub": "pepper shaker", "obj": "black", "alt": "emerald", "count": 5}
-{"sub": "grass", "obj": "black", "alt": "ecru", "count": 12}
-{"sub": "grills", "obj": "black", "alt": "scarlet", "count": 5}
-{"sub": "i", "obj": "black", "alt": "amber", "count": 4}
-{"sub": "sharpie", "obj": "black", "alt": "silver", "count": 3}
-{"sub": "bears", "obj": "black", "alt": "gray", "count": 27}
-{"sub": "pans", "obj": "black", "alt": "ruby", "count": 3}
-{"sub": "lighthouse", "obj": "black", "alt": "crimson", "count": 12}
-{"sub": "number 8", "obj": "black", "alt": "carmine", "count": 6}
-{"sub": "horse's mane", "obj": "black", "alt": "tan", "count": 3}
-{"sub": "figures", "obj": "black", "alt": "green", "count": 4}
-{"sub": "panda bear", "obj": "black", "alt": "turquoise", "count": 13}
-{"sub": "guards", "obj": "black", "alt": "pumpkin", "count": 5}
-{"sub": "dog nose", "obj": "black", "alt": "blond", "count": 9}
-{"sub": "railroad tracks", "obj": "black", "alt": "saffron", "count": 4}
-{"sub": "ear phones", "obj": "black", "alt": "ecru", "count": 3}
-{"sub": "adaptor", "obj": "black", "alt": "cerulean", "count": 3}
-{"sub": "scanner", "obj": "black", "alt": "saffron", "count": 5}
-{"sub": "soccer cleats", "obj": "black", "alt": "grey", "count": 5}
-{"sub": "steer", "obj": "black", "alt": "crimson", "count": 10}
-{"sub": "ten", "obj": "black", "alt": "ultramarine", "count": 3}
-{"sub": "sail boat", "obj": "black", "alt": "gray", "count": 5}
-{"sub": "gas cap", "obj": "black", "alt": "green", "count": 3}
-{"sub": "asphault", "obj": "black", "alt": "chartreuse", "count": 3}
-{"sub": "base board", "obj": "black", "alt": "sepia", "count": 5}
-{"sub": "grape", "obj": "black", "alt": "yellow", "count": 10}
-{"sub": "metal fencing", "obj": "black", "alt": "fuchsia", "count": 3}
-{"sub": "water ski", "obj": "black", "alt": "crimson", "count": 3}
-{"sub": "green sign", "obj": "black", "alt": "ivory", "count": 4}
-{"sub": "protector", "obj": "black", "alt": "saffron", "count": 7}
-{"sub": "snow gear", "obj": "black", "alt": "apricot", "count": 4}
-{"sub": "bus seat", "obj": "black", "alt": "maroon", "count": 5}
-{"sub": "stacks", "obj": "black", "alt": "beige", "count": 3}
-{"sub": "white plane", "obj": "black", "alt": "jade", "count": 5}
-{"sub": "shower head", "obj": "black", "alt": "viridian", "count": 3}
-{"sub": "butt", "obj": "black", "alt": "periwinkle", "count": 3}
-{"sub": "enter key", "obj": "black", "alt": "cerulean", "count": 3}
-{"sub": "man shorts", "obj": "black", "alt": "ruby", "count": 3}
-{"sub": "signals", "obj": "black", "alt": "white", "count": 3}
-{"sub": "gazelle", "obj": "black", "alt": "cardinal", "count": 10}
-{"sub": "head wrap", "obj": "blue", "alt": "turquoise", "count": 3}
-{"sub": "clock face", "obj": "blue", "alt": "cerulean", "count": 13}
-{"sub": "sea", "obj": "blue", "alt": "saffron", "count": 49}
-{"sub": "keyboard", "obj": "blue", "alt": "burgundy", "count": 11}
-{"sub": "flames", "obj": "blue", "alt": "amber", "count": 6}
-{"sub": "ink pen", "obj": "blue", "alt": "ruby", "count": 3}
-{"sub": "television", "obj": "blue", "alt": "turquoise", "count": 3}
-{"sub": "litter", "obj": "blue", "alt": "periwinkle", "count": 4}
-{"sub": "planes", "obj": "blue", "alt": "vermilion", "count": 19}
-{"sub": "tea cup", "obj": "blue", "alt": "periwinkle", "count": 6}
-{"sub": "tow rope", "obj": "blue", "alt": "ebony", "count": 3}
-{"sub": "fireworks", "obj": "blue", "alt": "grey", "count": 4}
-{"sub": "checkered shirt", "obj": "blue", "alt": "burgundy", "count": 5}
-{"sub": "stabilizer", "obj": "blue", "alt": "pink", "count": 7}
-{"sub": "left wing", "obj": "blue", "alt": "maroon", "count": 3}
-{"sub": "wing tip", "obj": "blue", "alt": "brown", "count": 7}
-{"sub": "tv screen", "obj": "blue", "alt": "indigo", "count": 3}
-{"sub": "key", "obj": "blue", "alt": "ocher", "count": 8}
-{"sub": "water board", "obj": "blue", "alt": "purple", "count": 3}
-{"sub": "plane tail", "obj": "blue", "alt": "jade", "count": 7}
-{"sub": "helemt", "obj": "blue", "alt": "cardinal", "count": 3}
-{"sub": "sky clouds", "obj": "blue", "alt": "green", "count": 3}
-{"sub": "collared shirt", "obj": "blue", "alt": "turquoise", "count": 3}
-{"sub": "pills", "obj": "blue", "alt": "jade", "count": 5}
-{"sub": "lightbulb", "obj": "blue", "alt": "amber", "count": 5}
-{"sub": "jet ski", "obj": "blue", "alt": "auburn", "count": 4}
-{"sub": "pony tail", "obj": "blond", "alt": "scarlet", "count": 3}
-{"sub": "kiwi", "obj": "brown", "alt": "puce", "count": 12}
-{"sub": "spot", "obj": "brown", "alt": "maroon", "count": 2643}
-{"sub": "hay", "obj": "brown", "alt": "fuchsia", "count": 82}
-{"sub": "wooden table", "obj": "brown", "alt": "fuchsia", "count": 25}
-{"sub": "hills", "obj": "brown", "alt": "teal", "count": 19}
-{"sub": "framed mirror", "obj": "brown", "alt": "sepia", "count": 3}
-{"sub": "pallet", "obj": "brown", "alt": "jade", "count": 10}
-{"sub": "filling", "obj": "brown", "alt": "teal", "count": 4}
-{"sub": "hut", "obj": "brown", "alt": "magenta", "count": 12}
-{"sub": "soil", "obj": "brown", "alt": "charcoal", "count": 67}
-{"sub": "horse tail", "obj": "brown", "alt": "chartreuse", "count": 8}
-{"sub": "eggs", "obj": "brown", "alt": "aqua", "count": 30}
-{"sub": "rust", "obj": "brown", "alt": "sepia", "count": 27}
-{"sub": "green grass", "obj": "brown", "alt": "teal", "count": 15}
-{"sub": "savannah", "obj": "brown", "alt": "black", "count": 3}
-{"sub": "crumb", "obj": "brown", "alt": "indigo", "count": 21}
-{"sub": "nuts", "obj": "brown", "alt": "gold", "count": 20}
-{"sub": "hairs", "obj": "brown", "alt": "coral", "count": 7}
-{"sub": "antlers", "obj": "brown", "alt": "blue", "count": 3}
-{"sub": "pony", "obj": "brown", "alt": "azure", "count": 64}
-{"sub": "long hair", "obj": "brown", "alt": "cardinal", "count": 6}
-{"sub": "mushrooms", "obj": "brown", "alt": "maroon", "count": 21}
-{"sub": "muffin", "obj": "brown", "alt": "magenta", "count": 14}
-{"sub": "pet", "obj": "brown", "alt": "teal", "count": 3}
-{"sub": "ocean", "obj": "brown", "alt": "cardinal", "count": 11}
-{"sub": "mule", "obj": "brown", "alt": "teal", "count": 4}
-{"sub": "floor board", "obj": "brown", "alt": "rainbow", "count": 3}
-{"sub": "beans", "obj": "brown", "alt": "chartreuse", "count": 23}
-{"sub": "mantle", "obj": "brown", "alt": "amethyst", "count": 11}
-{"sub": "zebras", "obj": "brown", "alt": "azure", "count": 4}
-{"sub": "wood plank", "obj": "brown", "alt": "pumpkin", "count": 3}
-{"sub": "vent", "obj": "brown", "alt": "amethyst", "count": 4}
-{"sub": "vegetables", "obj": "brown", "alt": "charcoal", "count": 3}
-{"sub": "raisin", "obj": "brown", "alt": "teal", "count": 3}
-{"sub": "freckles", "obj": "brown", "alt": "emerald", "count": 7}
-{"sub": "door trim", "obj": "brown", "alt": "charcoal", "count": 3}
-{"sub": "table surface", "obj": "brown", "alt": "indigo", "count": 7}
-{"sub": "large elephant", "obj": "brown", "alt": "amber", "count": 3}
-{"sub": "back legs", "obj": "brown", "alt": "amethyst", "count": 3}
-{"sub": "bear paw", "obj": "brown", "alt": "cyan", "count": 4}
-{"sub": "elephant leg", "obj": "brown", "alt": "cyan", "count": 3}
-{"sub": "door handle", "obj": "gold", "alt": "ecru", "count": 15}
-{"sub": "name plate", "obj": "gold", "alt": "lavender", "count": 3}
-{"sub": "trumpet", "obj": "gold", "alt": "mauve", "count": 3}
-{"sub": "nose", "obj": "gold", "alt": "amber", "count": 3}
-{"sub": "monitor", "obj": "gray", "alt": "sepia", "count": 28}
-{"sub": "street", "obj": "gray", "alt": "olive", "count": 236}
-{"sub": "bark", "obj": "gray", "alt": "pumpkin", "count": 18}
-{"sub": "asphalt", "obj": "gray", "alt": "gold", "count": 44}
-{"sub": "elephants", "obj": "gray", "alt": "umber", "count": 71}
-{"sub": "sink", "obj": "gray", "alt": "saffron", "count": 11}
-{"sub": "baseball player", "obj": "gray", "alt": "gold", "count": 4}
-{"sub": "stump", "obj": "gray", "alt": "pale", "count": 3}
-{"sub": "refrigerator", "obj": "gray", "alt": "pale", "count": 4}
-{"sub": "spots", "obj": "gray", "alt": "apricot", "count": 5}
-{"sub": "satellite", "obj": "gray", "alt": "lavender", "count": 3}
-{"sub": "tree bark", "obj": "gray", "alt": "mauve", "count": 3}
-{"sub": "grey suit", "obj": "gray", "alt": "coral", "count": 3}
-{"sub": "baggage cart", "obj": "gray", "alt": "umber", "count": 3}
-{"sub": "stem", "obj": "green", "alt": "charcoal", "count": 450}
-{"sub": "exit sign", "obj": "green", "alt": "chartreuse", "count": 10}
-{"sub": "apples", "obj": "green", "alt": "ocher", "count": 181}
-{"sub": "trafficlight", "obj": "green", "alt": "ebony", "count": 5}
-{"sub": "garden", "obj": "green", "alt": "magenta", "count": 8}
-{"sub": "vegetables", "obj": "green", "alt": "taupe", "count": 252}
-{"sub": "lines", "obj": "green", "alt": "aquamarine", "count": 16}
-{"sub": "branch", "obj": "green", "alt": "maroon", "count": 145}
-{"sub": "infield", "obj": "green", "alt": "indigo", "count": 5}
-{"sub": "plantain", "obj": "green", "alt": "crimson", "count": 9}
-{"sub": "tennis net", "obj": "green", "alt": "umber", "count": 3}
-{"sub": "plantains", "obj": "green", "alt": "terracotta", "count": 10}
-{"sub": "flower stem", "obj": "green", "alt": "mahogany", "count": 3}
-{"sub": "waters", "obj": "green", "alt": "red", "count": 3}
-{"sub": "page", "obj": "green", "alt": "ebony", "count": 3}
-{"sub": "seasoning", "obj": "green", "alt": "ebony", "count": 13}
-{"sub": "giraffe", "obj": "green", "alt": "sapphire", "count": 4}
-{"sub": "elephant", "obj": "green", "alt": "cyan", "count": 11}
-{"sub": "tree trunk", "obj": "green", "alt": "saffron", "count": 6}
-{"sub": "algae", "obj": "green", "alt": "orange", "count": 3}
-{"sub": "tennis balls", "obj": "green", "alt": "pale", "count": 4}
-{"sub": "patio chair", "obj": "green", "alt": "ocher", "count": 3}
-{"sub": "trimming", "obj": "green", "alt": "turquoise", "count": 5}
-{"sub": "speckle", "obj": "green", "alt": "pastel", "count": 5}
-{"sub": "paper plate", "obj": "green", "alt": "amethyst", "count": 4}
-{"sub": "keys", "obj": "grey", "alt": "jade", "count": 13}
-{"sub": "line", "obj": "grey", "alt": "taupe", "count": 32}
-{"sub": "mane", "obj": "grey", "alt": "pumpkin", "count": 10}
-{"sub": "outlet", "obj": "grey", "alt": "teal", "count": 3}
-{"sub": "park", "obj": "grey", "alt": "cerulean", "count": 3}
-{"sub": "mobile", "obj": "grey", "alt": "auburn", "count": 3}
-{"sub": "zebra", "obj": "grey", "alt": "pink", "count": 9}
-{"sub": "elephant trunk", "obj": "grey", "alt": "ruby", "count": 12}
-{"sub": "dishwasher", "obj": "grey", "alt": "azure", "count": 3}
-{"sub": "tusk", "obj": "ivory", "alt": "terracotta", "count": 142}
-{"sub": "cones", "obj": "orange", "alt": "chartreuse", "count": 202}
-{"sub": "traffic barrier", "obj": "orange", "alt": "amber", "count": 8}
-{"sub": "blockade", "obj": "orange", "alt": "cyan", "count": 6}
-{"sub": "license plate", "obj": "orange", "alt": "carmine", "count": 9}
-{"sub": "vine", "obj": "orange", "alt": "ocher", "count": 4}
-{"sub": "buoys", "obj": "orange", "alt": "sepia", "count": 9}
-{"sub": "grapefruit", "obj": "orange", "alt": "beige", "count": 8}
-{"sub": "tennis shoes", "obj": "orange", "alt": "scarlet", "count": 3}
-{"sub": "bell pepper", "obj": "orange", "alt": "buff", "count": 7}
-{"sub": "rust", "obj": "orange", "alt": "maroon", "count": 3}
-{"sub": "tennis ball", "obj": "orange", "alt": "cyan", "count": 4}
-{"sub": "drooping flowers", "obj": "orange", "alt": "jade", "count": 4}
-{"sub": "carnations", "obj": "pink", "alt": "lavender", "count": 3}
-{"sub": "spot", "obj": "pink", "alt": "viridian", "count": 23}
-{"sub": "sports bra", "obj": "pink", "alt": "sienna", "count": 3}
-{"sub": "grapefruit", "obj": "pink", "alt": "puce", "count": 5}
-{"sub": "cupcakes", "obj": "pink", "alt": "aquamarine", "count": 3}
-{"sub": "stove", "obj": "pink", "alt": "aqua", "count": 4}
-{"sub": "grapes", "obj": "purple", "alt": "russet", "count": 54}
-{"sub": "wetsuit", "obj": "purple", "alt": "rainbow", "count": 4}
-{"sub": "line", "obj": "purple", "alt": "crimson", "count": 11}
-{"sub": "tongue", "obj": "purple", "alt": "pumpkin", "count": 6}
-{"sub": "wildflowers", "obj": "purple", "alt": "jade", "count": 3}
-{"sub": "apple", "obj": "red", "alt": "russet", "count": 766}
-{"sub": "roses", "obj": "red", "alt": "aqua", "count": 70}
-{"sub": "lifesaver", "obj": "red", "alt": "scarlet", "count": 9}
-{"sub": "bumper sticker", "obj": "red", "alt": "grey", "count": 4}
-{"sub": "street", "obj": "red", "alt": "mauve", "count": 18}
-{"sub": "dirt", "obj": "red", "alt": "pastel", "count": 106}
-{"sub": "watermelon", "obj": "red", "alt": "black", "count": 11}
-{"sub": "coca-cola can", "obj": "red", "alt": "purple", "count": 3}
-{"sub": "decker bus", "obj": "red", "alt": "mahogany", "count": 3}
-{"sub": "nose", "obj": "red", "alt": "indigo", "count": 92}
-{"sub": "peppers", "obj": "red", "alt": "ocher", "count": 107}
-{"sub": "grape", "obj": "red", "alt": "sienna", "count": 63}
-{"sub": "soil", "obj": "red", "alt": "sepia", "count": 8}
-{"sub": "rider", "obj": "red", "alt": "auburn", "count": 5}
-{"sub": "vehicles", "obj": "red", "alt": "terracotta", "count": 5}
-{"sub": "peach", "obj": "red", "alt": "cerulean", "count": 12}
-{"sub": "anchor", "obj": "red", "alt": "charcoal", "count": 4}
-{"sub": "exit sign", "obj": "red", "alt": "jade", "count": 29}
-{"sub": "stabilizer", "obj": "red", "alt": "mauve", "count": 7}
-{"sub": "leg wrap", "obj": "red", "alt": "burgundy", "count": 3}
-{"sub": "cabbage", "obj": "red", "alt": "vermilion", "count": 24}
-{"sub": "lip", "obj": "red", "alt": "amethyst", "count": 11}
-{"sub": "octagon", "obj": "red", "alt": "goldenrod", "count": 9}
-{"sub": "orange", "obj": "red", "alt": "ecru", "count": 7}
-{"sub": "refrigerator", "obj": "red", "alt": "ivory", "count": 15}
-{"sub": "punch", "obj": "red", "alt": "crimson", "count": 3}
-{"sub": "beef", "obj": "red", "alt": "goldenrod", "count": 3}
-{"sub": "bricked wall", "obj": "red", "alt": "teal", "count": 3}
-{"sub": "9", "obj": "red", "alt": "teal", "count": 3}
-{"sub": "white plane", "obj": "red", "alt": "maroon", "count": 4}
-{"sub": "drizzle", "obj": "red", "alt": "russet", "count": 3}
-{"sub": "nub", "obj": "red", "alt": "saffron", "count": 8}
-{"sub": "corvette", "obj": "red", "alt": "green", "count": 4}
-{"sub": "highlight", "obj": "red", "alt": "umber", "count": 5}
-{"sub": "knife", "obj": "silver", "alt": "violet", "count": 626}
-{"sub": "flush lever", "obj": "silver", "alt": "azure", "count": 3}
-{"sub": "doorknob", "obj": "silver", "alt": "vermilion", "count": 38}
-{"sub": "rims", "obj": "silver", "alt": "ocher", "count": 34}
-{"sub": "kitchen sink", "obj": "silver", "alt": "goldenrod", "count": 8}
-{"sub": "heater", "obj": "silver", "alt": "aqua", "count": 3}
-{"sub": "refrigerator", "obj": "silver", "alt": "pale", "count": 77}
-{"sub": "computer speaker", "obj": "silver", "alt": "mahogany", "count": 3}
-{"sub": "headphone", "obj": "silver", "alt": "amber", "count": 3}
-{"sub": "coin", "obj": "silver", "alt": "amethyst", "count": 12}
-{"sub": "kickstand", "obj": "silver", "alt": "turquoise", "count": 12}
-{"sub": "brackets", "obj": "silver", "alt": "rose", "count": 5}
-{"sub": "opener", "obj": "silver", "alt": "maroon", "count": 6}
-{"sub": "colander", "obj": "silver", "alt": "yellow", "count": 8}
-{"sub": "slicer", "obj": "silver", "alt": "mauve", "count": 3}
-{"sub": "plumbing", "obj": "silver", "alt": "violet", "count": 13}
-{"sub": "baking pan", "obj": "silver", "alt": "viridian", "count": 3}
-{"sub": "flusher", "obj": "silver", "alt": "amethyst", "count": 24}
-{"sub": "wetsuit", "obj": "silver", "alt": "ecru", "count": 3}
-{"sub": "wedding band", "obj": "silver", "alt": "teal", "count": 7}
-{"sub": "serving tray", "obj": "silver", "alt": "pumpkin", "count": 3}
-{"sub": "tong", "obj": "silver", "alt": "amber", "count": 11}
-{"sub": "spot", "obj": "silver", "alt": "goldenrod", "count": 3}
-{"sub": "metal chain", "obj": "silver", "alt": "orange", "count": 3}
-{"sub": "cabinets", "obj": "tan", "alt": "amber", "count": 10}
-{"sub": "goat", "obj": "tan", "alt": "maroon", "count": 12}
-{"sub": "lines", "obj": "tan", "alt": "magenta", "count": 5}
-{"sub": "refrigerator", "obj": "tan", "alt": "periwinkle", "count": 7}
-{"sub": "crust", "obj": "tan", "alt": "ivory", "count": 19}
-{"sub": "steer", "obj": "tan", "alt": "rainbow", "count": 3}
-{"sub": "infield", "obj": "tan", "alt": "russet", "count": 3}
-{"sub": "hove", "obj": "tan", "alt": "amethyst", "count": 4}
-{"sub": "cables", "obj": "white", "alt": "pink", "count": 7}
-{"sub": "dishwasher", "obj": "white", "alt": "charcoal", "count": 143}
-{"sub": "yield sign", "obj": "white", "alt": "ultramarine", "count": 11}
-{"sub": "radiator", "obj": "white", "alt": "cardinal", "count": 99}
-{"sub": "hinges", "obj": "white", "alt": "ebony", "count": 4}
-{"sub": "outlet", "obj": "white", "alt": "aqua", "count": 298}
-{"sub": "mantle", "obj": "white", "alt": "crimson", "count": 32}
-{"sub": "i", "obj": "white", "alt": "ultramarine", "count": 9}
-{"sub": "dirt", "obj": "white", "alt": "turquoise", "count": 17}
-{"sub": "pillow cases", "obj": "white", "alt": "mahogany", "count": 5}
-{"sub": "drive", "obj": "white", "alt": "yellow", "count": 6}
-{"sub": "bubbles", "obj": "white", "alt": "maroon", "count": 20}
-{"sub": "drawer handle", "obj": "white", "alt": "ultramarine", "count": 3}
-{"sub": "modem", "obj": "white", "alt": "ebony", "count": 4}
-{"sub": "dashes", "obj": "white", "alt": "amethyst", "count": 9}
-{"sub": "towel holder", "obj": "white", "alt": "orange", "count": 4}
-{"sub": "kitchen sink", "obj": "white", "alt": "pumpkin", "count": 8}
-{"sub": "limo", "obj": "white", "alt": "pale", "count": 3}
-{"sub": "tree trunk", "obj": "white", "alt": "ocher", "count": 20}
-{"sub": "zebra crossing", "obj": "white", "alt": "terracotta", "count": 3}
-{"sub": "trashbag", "obj": "white", "alt": "cerulean", "count": 4}
-{"sub": "tooth", "obj": "white", "alt": "pastel", "count": 72}
-{"sub": "traffic barrier", "obj": "white", "alt": "viridian", "count": 8}
-{"sub": "floor lamp", "obj": "white", "alt": "teal", "count": 10}
-{"sub": "orchid", "obj": "white", "alt": "fuchsia", "count": 5}
-{"sub": "desks", "obj": "white", "alt": "khaki", "count": 4}
-{"sub": "nike swoosh", "obj": "white", "alt": "auburn", "count": 7}
-{"sub": "under shirt", "obj": "white", "alt": "charcoal", "count": 5}
-{"sub": "coca-cola can", "obj": "white", "alt": "turquoise", "count": 3}
-{"sub": "plane wing", "obj": "white", "alt": "ebony", "count": 7}
-{"sub": "seed", "obj": "white", "alt": "crimson", "count": 15}
-{"sub": "power outlet", "obj": "white", "alt": "puce", "count": 9}
-{"sub": "sports car", "obj": "white", "alt": "chartreuse", "count": 4}
-{"sub": "apple", "obj": "white", "alt": "jade", "count": 36}
-{"sub": "company name", "obj": "white", "alt": "mahogany", "count": 3}
-{"sub": "cruise ship", "obj": "white", "alt": "charcoal", "count": 6}
-{"sub": "mushrooms", "obj": "white", "alt": "azure", "count": 16}
-{"sub": "smock", "obj": "white", "alt": "vermilion", "count": 3}
-{"sub": "transit bus", "obj": "white", "alt": "olive", "count": 6}
-{"sub": "cupcakes", "obj": "white", "alt": "coral", "count": 4}
-{"sub": "tennis visor", "obj": "white", "alt": "ecru", "count": 3}
-{"sub": "knee pad", "obj": "white", "alt": "periwinkle", "count": 35}
-{"sub": "showerhead", "obj": "white", "alt": "coral", "count": 3}
-{"sub": "paddle boat", "obj": "white", "alt": "buff", "count": 4}
-{"sub": "toilet seat cover", "obj": "white", "alt": "magenta", "count": 3}
-{"sub": "wrist guard", "obj": "white", "alt": "puce", "count": 7}
-{"sub": "umbrella stand", "obj": "white", "alt": "goldenrod", "count": 3}
-{"sub": "bull", "obj": "white", "alt": "turquoise", "count": 37}
-{"sub": "mist", "obj": "white", "alt": "green", "count": 10}
-{"sub": "ram", "obj": "white", "alt": "rose", "count": 36}
-{"sub": "one way sign", "obj": "white", "alt": "ruby", "count": 12}
-{"sub": "sprayer", "obj": "white", "alt": "cyan", "count": 3}
-{"sub": "maker", "obj": "white", "alt": "burgundy", "count": 3}
-{"sub": "wall plate", "obj": "white", "alt": "red", "count": 7}
-{"sub": "smudge", "obj": "white", "alt": "jade", "count": 7}
-{"sub": "condiment", "obj": "white", "alt": "russet", "count": 6}
-{"sub": "target", "obj": "white", "alt": "crimson", "count": 8}
-{"sub": "gravy", "obj": "white", "alt": "puce", "count": 8}
-{"sub": "thermometer", "obj": "white", "alt": "green", "count": 3}
-{"sub": "window shades", "obj": "white", "alt": "beige", "count": 3}
-{"sub": "trails", "obj": "white", "alt": "periwinkle", "count": 5}
-{"sub": "pamphlets", "obj": "white", "alt": "pink", "count": 3}
-{"sub": "toaster oven", "obj": "white", "alt": "terracotta", "count": 14}
-{"sub": "bike sign", "obj": "white", "alt": "coral", "count": 4}
-{"sub": "bedsheets", "obj": "white", "alt": "amethyst", "count": 7}
-{"sub": "wildflowers", "obj": "white", "alt": "brown", "count": 7}
-{"sub": "diaper", "obj": "white", "alt": "red", "count": 11}
-{"sub": "gazelle", "obj": "white", "alt": "buff", "count": 11}
-{"sub": "zebra's ear", "obj": "white", "alt": "pink", "count": 4}
-{"sub": "check", "obj": "white", "alt": "gray", "count": 11}
-{"sub": "fire engine", "obj": "white", "alt": "magenta", "count": 3}
-{"sub": "letter h", "obj": "white", "alt": "periwinkle", "count": 5}
-{"sub": "filter", "obj": "white", "alt": "vermilion", "count": 7}
-{"sub": "canisters", "obj": "white", "alt": "buff", "count": 5}
-{"sub": "tv stand", "obj": "white", "alt": "viridian", "count": 7}
-{"sub": "cast", "obj": "white", "alt": "magenta", "count": 3}
-{"sub": "sea gull", "obj": "white", "alt": "terracotta", "count": 5}
-{"sub": "pedal", "obj": "white", "alt": "ebony", "count": 10}
-{"sub": "can opener", "obj": "white", "alt": "charcoal", "count": 4}
-{"sub": "bindings", "obj": "white", "alt": "periwinkle", "count": 8}
-{"sub": "yogurt", "obj": "white", "alt": "pumpkin", "count": 4}
-{"sub": "vein", "obj": "white", "alt": "aquamarine", "count": 3}
-{"sub": "hotdog", "obj": "white", "alt": "pale", "count": 3}
-{"sub": "shelve", "obj": "white", "alt": "khaki", "count": 3}
-{"sub": "back legs", "obj": "white", "alt": "ultramarine", "count": 4}
-{"sub": "marshmallow", "obj": "white", "alt": "rainbow", "count": 7}
-{"sub": "blinder", "obj": "white", "alt": "mauve", "count": 3}
-{"sub": "trailers", "obj": "white", "alt": "ruby", "count": 5}
-{"sub": "sprouts", "obj": "white", "alt": "burgundy", "count": 4}
-{"sub": "thigh", "obj": "white", "alt": "khaki", "count": 7}
-{"sub": "road block", "obj": "white", "alt": "cardinal", "count": 4}
-{"sub": "baseball cleat", "obj": "white", "alt": "green", "count": 6}
-{"sub": "kitchen counter", "obj": "white", "alt": "coral", "count": 3}
-{"sub": "knees", "obj": "white", "alt": "mahogany", "count": 4}
-{"sub": "court net", "obj": "white", "alt": "crimson", "count": 3}
-{"sub": "chip", "obj": "white", "alt": "tan", "count": 7}
-{"sub": "cow tail", "obj": "white", "alt": "viridian", "count": 3}
-{"sub": "kitchen floor", "obj": "white", "alt": "ruby", "count": 3}
-{"sub": "toe nails", "obj": "white", "alt": "black", "count": 3}
-{"sub": "landing gear", "obj": "white", "alt": "puce", "count": 8}
-{"sub": "storage tank", "obj": "white", "alt": "vermilion", "count": 5}
-{"sub": "dust", "obj": "white", "alt": "auburn", "count": 6}
-{"sub": "nike shoe", "obj": "white", "alt": "carmine", "count": 3}
-{"sub": "gray cat", "obj": "white", "alt": "blond", "count": 3}
-{"sub": "traffic cones", "obj": "white", "alt": "carmine", "count": 7}
-{"sub": "speed sign", "obj": "white", "alt": "silver", "count": 4}
-{"sub": "stalls", "obj": "white", "alt": "pale", "count": 3}
-{"sub": "bathroom wall", "obj": "white", "alt": "terracotta", "count": 5}
-{"sub": "cuffs", "obj": "white", "alt": "amber", "count": 5}
-{"sub": "marble counter", "obj": "white", "alt": "beige", "count": 3}
-{"sub": "line", "obj": "yellow", "alt": "crimson", "count": 1615}
-{"sub": "hard hat", "obj": "yellow", "alt": "pumpkin", "count": 12}
-{"sub": "toy truck", "obj": "yellow", "alt": "taupe", "count": 3}
-{"sub": "bump", "obj": "yellow", "alt": "buff", "count": 5}
-{"sub": "peel", "obj": "yellow", "alt": "auburn", "count": 46}
-{"sub": "p", "obj": "yellow", "alt": "grey", "count": 4}
-{"sub": "daffodil", "obj": "yellow", "alt": "umber", "count": 15}
-{"sub": "bun", "obj": "yellow", "alt": "buff", "count": 5}
-{"sub": "patches", "obj": "yellow", "alt": "charcoal", "count": 3}
-{"sub": "vegetables", "obj": "yellow", "alt": "auburn", "count": 9}
-{"sub": "post-it notes", "obj": "yellow", "alt": "puce", "count": 3}
-{"sub": "diaper", "obj": "yellow", "alt": "ocher", "count": 3}
-{"sub": "wet suit", "obj": "yellow", "alt": "maroon", "count": 6}
-{"sub": "meat", "obj": "yellow", "alt": "chartreuse", "count": 4}
-{"sub": "birthday candle", "obj": "yellow", "alt": "taupe", "count": 3}
-{"sub": "green grass", "obj": "yellow", "alt": "teal", "count": 7}
-{"sub": "macaroon", "obj": "yellow", "alt": "jade", "count": 3}
-{"sub": "umbrella pole", "obj": "yellow", "alt": "indigo", "count": 3}
-{"sub": "pilons", "obj": "yellow", "alt": "ultramarine", "count": 5}
-{"sub": "sprinkler", "obj": "yellow", "alt": "turquoise", "count": 9}
-{"sub": "wrist bands", "obj": "yellow", "alt": "amethyst", "count": 3}
+{"sub": "ipod", "obj": "black", "alt": "ebony", "count": 26}
+{"sub": "baseball glove", "obj": "black", "alt": "ultramarine", "count": 71}
+{"sub": "lip", "obj": "black", "alt": "magenta", "count": 15}
+{"sub": "shin guard", "obj": "black", "alt": "carmine", "count": 47}
+{"sub": "pizza cutter", "obj": "black", "alt": "indigo", "count": 6}
+{"sub": "baseboard", "obj": "black", "alt": "buff", "count": 15}
+{"sub": "wrist", "obj": "black", "alt": "maroon", "count": 8}
+{"sub": "baseball cleat", "obj": "black", "alt": "sienna", "count": 14}
+{"sub": "ad", "obj": "black", "alt": "carmine", "count": 13}
+{"sub": "arm band", "obj": "black", "alt": "aqua", "count": 12}
+{"sub": "letter e", "obj": "black", "alt": "grey", "count": 11}
+{"sub": "sole", "obj": "black", "alt": "cerulean", "count": 24}
+{"sub": "cardigan", "obj": "black", "alt": "goldenrod", "count": 9}
+{"sub": "dvd player", "obj": "black", "alt": "charcoal", "count": 11}
+{"sub": "wrap", "obj": "black", "alt": "blond", "count": 11}
+{"sub": "zebra tail", "obj": "black", "alt": "aqua", "count": 10}
+{"sub": "filter", "obj": "black", "alt": "ultramarine", "count": 8}
+{"sub": "man's shirt", "obj": "black", "alt": "maroon", "count": 8}
+{"sub": "shoe lace", "obj": "black", "alt": "auburn", "count": 12}
+{"sub": "guard", "obj": "black", "alt": "rainbow", "count": 21}
+{"sub": "chair back", "obj": "black", "alt": "pastel", "count": 7}
+{"sub": "front leg", "obj": "black", "alt": "apricot", "count": 13}
+{"sub": "underwear", "obj": "black", "alt": "goldenrod", "count": 6}
+{"sub": "soil", "obj": "black", "alt": "ecru", "count": 11}
+{"sub": "sky", "obj": "blue", "alt": "viridian", "count": 19350}
+{"sub": "briefcase", "obj": "blue", "alt": "taupe", "count": 7}
+{"sub": "grip", "obj": "blue", "alt": "khaki", "count": 24}
+{"sub": "stroller", "obj": "blue", "alt": "olive", "count": 29}
+{"sub": "tub", "obj": "blue", "alt": "vermilion", "count": 31}
+{"sub": "cabinet", "obj": "blue", "alt": "teal", "count": 27}
+{"sub": "arrow", "obj": "blue", "alt": "pale", "count": 54}
+{"sub": "pajama", "obj": "blue", "alt": "fuchsia", "count": 25}
+{"sub": "boogie board", "obj": "blue", "alt": "gray", "count": 14}
+{"sub": "streamer", "obj": "blue", "alt": "taupe", "count": 18}
+{"sub": "tissue box", "obj": "blue", "alt": "russet", "count": 7}
+{"sub": "mattress", "obj": "blue", "alt": "indigo", "count": 24}
+{"sub": "lock", "obj": "blue", "alt": "ruby", "count": 7}
+{"sub": "arm rest", "obj": "blue", "alt": "terracotta", "count": 6}
+{"sub": "train front", "obj": "blue", "alt": "sepia", "count": 10}
+{"sub": "cupboard", "obj": "blue", "alt": "pale", "count": 8}
+{"sub": "tooth brush", "obj": "blue", "alt": "magenta", "count": 11}
+{"sub": "note", "obj": "blue", "alt": "scarlet", "count": 13}
+{"sub": "drum", "obj": "blue", "alt": "ecru", "count": 6}
+{"sub": "water bottle", "obj": "blue", "alt": "periwinkle", "count": 35}
+{"sub": "wig", "obj": "blue", "alt": "vermilion", "count": 8}
+{"sub": "cape", "obj": "blue", "alt": "sapphire", "count": 8}
+{"sub": "passenger train", "obj": "blue", "alt": "blond", "count": 9}
+{"sub": "kid", "obj": "blue", "alt": "charcoal", "count": 6}
+{"sub": "sprinkler", "obj": "blue", "alt": "ocher", "count": 9}
+{"sub": "cabinet", "obj": "brown", "alt": "aquamarine", "count": 684}
+{"sub": "cement", "obj": "brown", "alt": "blue", "count": 20}
+{"sub": "closet", "obj": "brown", "alt": "crimson", "count": 6}
+{"sub": "dirt", "obj": "brown", "alt": "amethyst", "count": 1097}
+{"sub": "spot", "obj": "brown", "alt": "chartreuse", "count": 3312}
+{"sub": "hill", "obj": "brown", "alt": "ultramarine", "count": 112}
+{"sub": "cabinet door", "obj": "brown", "alt": "pumpkin", "count": 45}
+{"sub": "brick wall", "obj": "brown", "alt": "goldenrod", "count": 15}
+{"sub": "speck", "obj": "brown", "alt": "cerulean", "count": 23}
+{"sub": "backsplash", "obj": "brown", "alt": "saffron", "count": 7}
+{"sub": "mane", "obj": "brown", "alt": "umber", "count": 413}
+{"sub": "sheep", "obj": "brown", "alt": "rainbow", "count": 319}
+{"sub": "cutting board", "obj": "brown", "alt": "aquamarine", "count": 55}
+{"sub": "cone", "obj": "brown", "alt": "rose", "count": 7}
+{"sub": "coffee cup", "obj": "brown", "alt": "aqua", "count": 8}
+{"sub": "seaweed", "obj": "brown", "alt": "amethyst", "count": 7}
+{"sub": "sandwhich", "obj": "brown", "alt": "tan", "count": 13}
+{"sub": "pebble", "obj": "brown", "alt": "goldenrod", "count": 13}
+{"sub": "chip", "obj": "brown", "alt": "scarlet", "count": 19}
+{"sub": "vanity", "obj": "brown", "alt": "buff", "count": 12}
+{"sub": "spatula", "obj": "brown", "alt": "puce", "count": 7}
+{"sub": "left ear", "obj": "brown", "alt": "goldenrod", "count": 10}
+{"sub": "bacon", "obj": "brown", "alt": "sapphire", "count": 18}
+{"sub": "french fry", "obj": "brown", "alt": "charcoal", "count": 38}
+{"sub": "mit", "obj": "brown", "alt": "scarlet", "count": 14}
+{"sub": "raisin", "obj": "brown", "alt": "gold", "count": 7}
+{"sub": "decorative pillow", "obj": "brown", "alt": "rainbow", "count": 7}
+{"sub": "ossicle", "obj": "brown", "alt": "grey", "count": 11}
+{"sub": "elephant", "obj": "gold", "alt": "sepia", "count": 10}
+{"sub": "door handle", "obj": "gold", "alt": "emerald", "count": 15}
+{"sub": "buckle", "obj": "gold", "alt": "amethyst", "count": 24}
+{"sub": "horse", "obj": "gold", "alt": "vermilion", "count": 7}
+{"sub": "fur", "obj": "gray", "alt": "coral", "count": 49}
+{"sub": "train track", "obj": "gray", "alt": "tan", "count": 7}
+{"sub": "knife", "obj": "gray", "alt": "mauve", "count": 13}
+{"sub": "slack", "obj": "gray", "alt": "pink", "count": 14}
+{"sub": "dvd player", "obj": "gray", "alt": "umber", "count": 6}
+{"sub": "land", "obj": "green", "alt": "vermilion", "count": 21}
+{"sub": "folder", "obj": "green", "alt": "ebony", "count": 6}
+{"sub": "coffee cup", "obj": "green", "alt": "indigo", "count": 10}
+{"sub": "reflection", "obj": "green", "alt": "ultramarine", "count": 12}
+{"sub": "spot", "obj": "green", "alt": "saffron", "count": 41}
+{"sub": "watermelon", "obj": "green", "alt": "ruby", "count": 37}
+{"sub": "reed", "obj": "green", "alt": "tan", "count": 6}
+{"sub": "quilt", "obj": "green", "alt": "aqua", "count": 10}
+{"sub": "juice", "obj": "green", "alt": "sapphire", "count": 7}
+{"sub": "ocean wave", "obj": "green", "alt": "apricot", "count": 43}
+{"sub": "window sill", "obj": "green", "alt": "crimson", "count": 6}
+{"sub": "office chair", "obj": "grey", "alt": "violet", "count": 6}
+{"sub": "sink", "obj": "grey", "alt": "ruby", "count": 24}
+{"sub": "nose", "obj": "grey", "alt": "ruby", "count": 42}
+{"sub": "laptop computer", "obj": "grey", "alt": "crimson", "count": 6}
+{"sub": "stove", "obj": "grey", "alt": "carmine", "count": 11}
+{"sub": "sheep", "obj": "grey", "alt": "lavender", "count": 63}
+{"sub": "grout", "obj": "grey", "alt": "umber", "count": 8}
+{"sub": "baby elephant", "obj": "grey", "alt": "white", "count": 6}
+{"sub": "blazer", "obj": "grey", "alt": "indigo", "count": 6}
+{"sub": "metal post", "obj": "grey", "alt": "magenta", "count": 7}
+{"sub": "cone", "obj": "orange", "alt": "ocher", "count": 1513}
+{"sub": "juice", "obj": "orange", "alt": "pale", "count": 101}
+{"sub": "sunflower", "obj": "orange", "alt": "lavender", "count": 7}
+{"sub": "life preserver", "obj": "orange", "alt": "coral", "count": 29}
+{"sub": "stem", "obj": "orange", "alt": "blond", "count": 6}
+{"sub": "shoe lace", "obj": "orange", "alt": "pastel", "count": 14}
+{"sub": "bubble", "obj": "orange", "alt": "ivory", "count": 6}
+{"sub": "sky", "obj": "pink", "alt": "terracotta", "count": 107}
+{"sub": "hair tie", "obj": "pink", "alt": "orange", "count": 8}
+{"sub": "pajama", "obj": "pink", "alt": "rainbow", "count": 12}
+{"sub": "hotdog", "obj": "pink", "alt": "fuchsia", "count": 7}
+{"sub": "apple", "obj": "pink", "alt": "amethyst", "count": 12}
+{"sub": "marshmallow", "obj": "pink", "alt": "burgundy", "count": 6}
+{"sub": "license plate", "obj": "red", "alt": "brown", "count": 32}
+{"sub": "cooler", "obj": "red", "alt": "buff", "count": 86}
+{"sub": "date", "obj": "red", "alt": "viridian", "count": 9}
+{"sub": "dispenser", "obj": "red", "alt": "burgundy", "count": 11}
+{"sub": "store sign", "obj": "red", "alt": "khaki", "count": 9}
+{"sub": "lip", "obj": "red", "alt": "charcoal", "count": 82}
+{"sub": "cliff", "obj": "red", "alt": "ivory", "count": 6}
+{"sub": "grill", "obj": "red", "alt": "violet", "count": 11}
+{"sub": "head band", "obj": "red", "alt": "scarlet", "count": 10}
+{"sub": "smokestack", "obj": "red", "alt": "ebony", "count": 7}
+{"sub": "wetsuit", "obj": "red", "alt": "burgundy", "count": 50}
+{"sub": "ski shoe", "obj": "red", "alt": "ruby", "count": 11}
+{"sub": "stocking", "obj": "red", "alt": "sepia", "count": 16}
+{"sub": "saddle", "obj": "red", "alt": "charcoal", "count": 20}
+{"sub": "boarder", "obj": "red", "alt": "cardinal", "count": 6}
+{"sub": "tram", "obj": "red", "alt": "mahogany", "count": 8}
+{"sub": "parka", "obj": "red", "alt": "sapphire", "count": 12}
+{"sub": "lighthouse", "obj": "red", "alt": "apricot", "count": 34}
+{"sub": "image", "obj": "red", "alt": "cyan", "count": 16}
+{"sub": "comb", "obj": "red", "alt": "indigo", "count": 11}
+{"sub": "spice", "obj": "red", "alt": "silver", "count": 13}
+{"sub": "mini van", "obj": "red", "alt": "puce", "count": 6}
+{"sub": "pillow case", "obj": "red", "alt": "carmine", "count": 10}
+{"sub": "football", "obj": "red", "alt": "carmine", "count": 6}
+{"sub": "rooftop", "obj": "red", "alt": "goldenrod", "count": 18}
+{"sub": "figure", "obj": "red", "alt": "beige", "count": 7}
+{"sub": "toenail", "obj": "red", "alt": "orange", "count": 7}
+{"sub": "2", "obj": "red", "alt": "amber", "count": 6}
+{"sub": "branch", "obj": "red", "alt": "taupe", "count": 10}
+{"sub": "caution sign", "obj": "red", "alt": "auburn", "count": 6}
+{"sub": "stitch", "obj": "red", "alt": "ruby", "count": 6}
+{"sub": "skateboard wheel", "obj": "red", "alt": "cyan", "count": 6}
+{"sub": "b", "obj": "red", "alt": "ivory", "count": 6}
+{"sub": "handkerchief", "obj": "red", "alt": "ruby", "count": 8}
+{"sub": "5", "obj": "red", "alt": "sapphire", "count": 6}
+{"sub": "drawer", "obj": "silver", "alt": "taupe", "count": 12}
+{"sub": "coffee maker", "obj": "silver", "alt": "ocher", "count": 21}
+{"sub": "tv", "obj": "silver", "alt": "cardinal", "count": 90}
+{"sub": "door handle", "obj": "silver", "alt": "pumpkin", "count": 53}
+{"sub": "bar stool", "obj": "silver", "alt": "teal", "count": 7}
+{"sub": "stopper", "obj": "silver", "alt": "aquamarine", "count": 8}
+{"sub": "cylinder", "obj": "silver", "alt": "chartreuse", "count": 8}
+{"sub": "handrail", "obj": "silver", "alt": "magenta", "count": 15}
+{"sub": "computer mouse", "obj": "silver", "alt": "pale", "count": 16}
+{"sub": "grill", "obj": "silver", "alt": "emerald", "count": 47}
+{"sub": "spoke", "obj": "silver", "alt": "ruby", "count": 110}
+{"sub": "horse", "obj": "silver", "alt": "periwinkle", "count": 6}
+{"sub": "trophy", "obj": "silver", "alt": "periwinkle", "count": 8}
+{"sub": "microwave oven", "obj": "silver", "alt": "buff", "count": 6}
+{"sub": "wedding band", "obj": "silver", "alt": "violet", "count": 7}
+{"sub": "fur", "obj": "tan", "alt": "cerulean", "count": 28}
+{"sub": "tile floor", "obj": "tan", "alt": "gold", "count": 10}
+{"sub": "goat", "obj": "tan", "alt": "crimson", "count": 13}
+{"sub": "paw", "obj": "tan", "alt": "aqua", "count": 29}
+{"sub": "bun", "obj": "tan", "alt": "khaki", "count": 13}
+{"sub": "keyboard", "obj": "tan", "alt": "azure", "count": 6}
+{"sub": "keyboard", "obj": "white", "alt": "viridian", "count": 711}
+{"sub": "computer mouse", "obj": "white", "alt": "magenta", "count": 47}
+{"sub": "switch", "obj": "white", "alt": "pale", "count": 148}
+{"sub": "mixer", "obj": "white", "alt": "azure", "count": 28}
+{"sub": "egg", "obj": "white", "alt": "amber", "count": 110}
+{"sub": "lable", "obj": "white", "alt": "emerald", "count": 7}
+{"sub": "mane", "obj": "white", "alt": "coral", "count": 408}
+{"sub": "parking sign", "obj": "white", "alt": "saffron", "count": 26}
+{"sub": "bookshelf", "obj": "white", "alt": "sapphire", "count": 28}
+{"sub": "loveseat", "obj": "white", "alt": "yellow", "count": 7}
+{"sub": "horse", "obj": "white", "alt": "jade", "count": 1256}
+{"sub": "lantern", "obj": "white", "alt": "cyan", "count": 22}
+{"sub": "backsplash", "obj": "white", "alt": "saffron", "count": 31}
+{"sub": "blossom", "obj": "white", "alt": "maroon", "count": 24}
+{"sub": "rice", "obj": "white", "alt": "gold", "count": 174}
+{"sub": "hotel", "obj": "white", "alt": "violet", "count": 11}
+{"sub": "gutter", "obj": "white", "alt": "sapphire", "count": 17}
+{"sub": "side table", "obj": "white", "alt": "carmine", "count": 6}
+{"sub": "television", "obj": "white", "alt": "pumpkin", "count": 15}
+{"sub": "kitchen sink", "obj": "white", "alt": "ebony", "count": 8}
+{"sub": "closet", "obj": "white", "alt": "fuchsia", "count": 7}
+{"sub": "signal", "obj": "white", "alt": "pumpkin", "count": 6}
+{"sub": "archway", "obj": "white", "alt": "charcoal", "count": 20}
+{"sub": "hill", "obj": "white", "alt": "taupe", "count": 40}
+{"sub": "undershirt", "obj": "white", "alt": "buff", "count": 48}
+{"sub": "runner", "obj": "white", "alt": "silver", "count": 9}
+{"sub": "cattle", "obj": "white", "alt": "burgundy", "count": 14}
+{"sub": "lamb", "obj": "white", "alt": "magenta", "count": 126}
+{"sub": "shaker", "obj": "white", "alt": "gray", "count": 18}
+{"sub": "letter s", "obj": "white", "alt": "azure", "count": 18}
+{"sub": "pastry", "obj": "white", "alt": "viridian", "count": 21}
+{"sub": "seed", "obj": "white", "alt": "crimson", "count": 22}
+{"sub": "fringe", "obj": "white", "alt": "cardinal", "count": 22}
+{"sub": "rag", "obj": "white", "alt": "maroon", "count": 33}
+{"sub": "sweat band", "obj": "white", "alt": "scarlet", "count": 34}
+{"sub": "laptop computer", "obj": "white", "alt": "olive", "count": 10}
+{"sub": "pig", "obj": "white", "alt": "pastel", "count": 7}
+{"sub": "number 8", "obj": "white", "alt": "taupe", "count": 6}
+{"sub": "exhaust", "obj": "white", "alt": "magenta", "count": 11}
+{"sub": "layer", "obj": "white", "alt": "orange", "count": 6}
+{"sub": "pocket", "obj": "white", "alt": "pastel", "count": 32}
+{"sub": "speck", "obj": "white", "alt": "vermilion", "count": 33}
+{"sub": "wrap", "obj": "white", "alt": "cyan", "count": 27}
+{"sub": "wrist guard", "obj": "white", "alt": "gold", "count": 7}
+{"sub": "ruler", "obj": "white", "alt": "fuchsia", "count": 6}
+{"sub": "signage", "obj": "white", "alt": "aquamarine", "count": 11}
+{"sub": "batter", "obj": "white", "alt": "magenta", "count": 13}
+{"sub": "knee", "obj": "white", "alt": "mahogany", "count": 15}
+{"sub": "grip", "obj": "white", "alt": "ivory", "count": 55}
+{"sub": "pump", "obj": "white", "alt": "ivory", "count": 17}
+{"sub": "toothpaste", "obj": "white", "alt": "russet", "count": 18}
+{"sub": "hole", "obj": "white", "alt": "teal", "count": 12}
+{"sub": "buckle", "obj": "white", "alt": "amber", "count": 6}
+{"sub": "toaster oven", "obj": "white", "alt": "aqua", "count": 14}
+{"sub": "this", "obj": "white", "alt": "vermilion", "count": 16}
+{"sub": "brick wall", "obj": "white", "alt": "viridian", "count": 14}
+{"sub": "neck tie", "obj": "white", "alt": "buff", "count": 7}
+{"sub": "tea cup", "obj": "white", "alt": "teal", "count": 17}
+{"sub": "2", "obj": "white", "alt": "azure", "count": 9}
+{"sub": "stack", "obj": "white", "alt": "umber", "count": 16}
+{"sub": "saddle", "obj": "white", "alt": "khaki", "count": 6}
+{"sub": "barcode", "obj": "white", "alt": "aqua", "count": 8}
+{"sub": "ripple", "obj": "white", "alt": "pastel", "count": 24}
+{"sub": "rooster", "obj": "white", "alt": "pale", "count": 8}
+{"sub": "rubber", "obj": "white", "alt": "jade", "count": 8}
+{"sub": "skiis", "obj": "white", "alt": "pumpkin", "count": 13}
+{"sub": "chip", "obj": "white", "alt": "crimson", "count": 11}
+{"sub": "elephant", "obj": "white", "alt": "blond", "count": 33}
+{"sub": "safety helmet", "obj": "white", "alt": "cardinal", "count": 11}
+{"sub": "armband", "obj": "white", "alt": "violet", "count": 21}
+{"sub": "soccer cleat", "obj": "white", "alt": "apricot", "count": 8}
+{"sub": "bandanna", "obj": "white", "alt": "crimson", "count": 8}
+{"sub": "zebra tail", "obj": "white", "alt": "rainbow", "count": 6}
+{"sub": "grass", "obj": "yellow", "alt": "rainbow", "count": 756}
+{"sub": "fringe", "obj": "yellow", "alt": "jade", "count": 11}
+{"sub": "sky", "obj": "yellow", "alt": "umber", "count": 82}
+{"sub": "dog", "obj": "yellow", "alt": "pumpkin", "count": 68}
+{"sub": "crossing sign", "obj": "yellow", "alt": "puce", "count": 7}
+{"sub": "cone", "obj": "yellow", "alt": "sapphire", "count": 77}
+{"sub": "squash", "obj": "yellow", "alt": "amethyst", "count": 53}
+{"sub": "trolley", "obj": "yellow", "alt": "mauve", "count": 17}
+{"sub": "hay", "obj": "yellow", "alt": "charcoal", "count": 38}
+{"sub": "station", "obj": "yellow", "alt": "aquamarine", "count": 6}
+{"sub": "chest", "obj": "yellow", "alt": "rose", "count": 11}
+{"sub": "doughnut", "obj": "yellow", "alt": "mahogany", "count": 12}
+{"sub": "skateboard wheel", "obj": "yellow", "alt": "lavender", "count": 10}
+{"sub": "spoon", "obj": "yellow", "alt": "aqua", "count": 6}
+{"sub": "sash", "obj": "yellow", "alt": "rainbow", "count": 7}
+{"sub": "turn signal", "obj": "yellow", "alt": "charcoal", "count": 6}
+{"sub": "sand", "obj": "beige", "alt": "sienna", "count": 57}
+{"sub": "cow", "obj": "beige", "alt": "aquamarine", "count": 12}
+{"sub": "dirt", "obj": "beige", "alt": "magenta", "count": 6}
+{"sub": "stapler", "obj": "black", "alt": "gold", "count": 34}
+{"sub": "picture frame", "obj": "black", "alt": "ivory", "count": 22}
+{"sub": "microwave oven", "obj": "black", "alt": "puce", "count": 20}
+{"sub": "street", "obj": "black", "alt": "fuchsia", "count": 207}
+{"sub": "coffee mug", "obj": "black", "alt": "fuchsia", "count": 20}
+{"sub": "menu", "obj": "black", "alt": "jade", "count": 18}
+{"sub": "carriage", "obj": "black", "alt": "crimson", "count": 43}
+{"sub": "ship", "obj": "black", "alt": "ocher", "count": 29}
+{"sub": "toaster", "obj": "black", "alt": "taupe", "count": 39}
+{"sub": "table lamp", "obj": "black", "alt": "pale", "count": 6}
+{"sub": "door handle", "obj": "black", "alt": "charcoal", "count": 26}
+{"sub": "bang", "obj": "black", "alt": "violet", "count": 15}
+{"sub": "appliance", "obj": "black", "alt": "charcoal", "count": 16}
+{"sub": "curtain rod", "obj": "black", "alt": "fuchsia", "count": 8}
+{"sub": "lamb", "obj": "black", "alt": "indigo", "count": 43}
+{"sub": "numeral", "obj": "black", "alt": "tan", "count": 119}
+{"sub": "end table", "obj": "black", "alt": "aquamarine", "count": 10}
+{"sub": "signpost", "obj": "black", "alt": "charcoal", "count": 7}
+{"sub": "exhaust pipe", "obj": "black", "alt": "gold", "count": 7}
+{"sub": "mask", "obj": "black", "alt": "sienna", "count": 143}
+{"sub": "hair tie", "obj": "black", "alt": "vermilion", "count": 6}
+{"sub": "neck tie", "obj": "black", "alt": "magenta", "count": 27}
+{"sub": "rooftop", "obj": "black", "alt": "pumpkin", "count": 6}
+{"sub": "toenail", "obj": "black", "alt": "scarlet", "count": 6}
+{"sub": "plastic bag", "obj": "black", "alt": "buff", "count": 10}
+{"sub": "brake", "obj": "black", "alt": "blue", "count": 7}
+{"sub": "wrist watch", "obj": "black", "alt": "ruby", "count": 23}
+{"sub": "jumpsuit", "obj": "black", "alt": "pale", "count": 8}
+{"sub": "scene", "obj": "black", "alt": "pumpkin", "count": 10}
+{"sub": "pocket", "obj": "black", "alt": "pumpkin", "count": 12}
+{"sub": "writting", "obj": "black", "alt": "umber", "count": 13}
+{"sub": "cattle", "obj": "black", "alt": "burgundy", "count": 10}
+{"sub": "e", "obj": "black", "alt": "cerulean", "count": 10}
+{"sub": "letter s", "obj": "black", "alt": "ivory", "count": 8}
+{"sub": "wrist guard", "obj": "black", "alt": "aquamarine", "count": 7}
+{"sub": "hair band", "obj": "black", "alt": "ultramarine", "count": 7}
+{"sub": "ostrich", "obj": "black", "alt": "russet", "count": 18}
+{"sub": "ski goggles", "obj": "black", "alt": "puce", "count": 9}
+{"sub": "wine", "obj": "black", "alt": "auburn", "count": 10}
+{"sub": "back leg", "obj": "black", "alt": "blond", "count": 8}
+{"sub": "spike", "obj": "black", "alt": "umber", "count": 17}
+{"sub": "space bar", "obj": "black", "alt": "buff", "count": 7}
+{"sub": "battery", "obj": "black", "alt": "grey", "count": 10}
+{"sub": "head band", "obj": "black", "alt": "olive", "count": 11}
+{"sub": "winter coat", "obj": "black", "alt": "vermilion", "count": 8}
+{"sub": "baseball jersey", "obj": "black", "alt": "carmine", "count": 9}
+{"sub": "chess piece", "obj": "black", "alt": "turquoise", "count": 7}
+{"sub": "notebook", "obj": "blue", "alt": "gold", "count": 14}
+{"sub": "card", "obj": "blue", "alt": "lavender", "count": 24}
+{"sub": "cooler", "obj": "blue", "alt": "mahogany", "count": 82}
+{"sub": "neck tie", "obj": "blue", "alt": "fuchsia", "count": 17}
+{"sub": "baseball hat", "obj": "blue", "alt": "umber", "count": 15}
+{"sub": "bandanna", "obj": "blue", "alt": "auburn", "count": 7}
+{"sub": "x", "obj": "blue", "alt": "mahogany", "count": 11}
+{"sub": "undershirt", "obj": "blue", "alt": "russet", "count": 16}
+{"sub": "lounge chair", "obj": "blue", "alt": "burgundy", "count": 8}
+{"sub": "detail", "obj": "blue", "alt": "saffron", "count": 7}
+{"sub": "saddle", "obj": "blue", "alt": "viridian", "count": 18}
+{"sub": "knife", "obj": "blue", "alt": "ecru", "count": 9}
+{"sub": "shin guard", "obj": "blue", "alt": "saffron", "count": 19}
+{"sub": "right eye", "obj": "blue", "alt": "ultramarine", "count": 7}
+{"sub": "left eye", "obj": "blue", "alt": "pastel", "count": 10}
+{"sub": "ball cap", "obj": "blue", "alt": "ultramarine", "count": 13}
+{"sub": "wing tip", "obj": "blue", "alt": "tan", "count": 7}
+{"sub": "tee", "obj": "blue", "alt": "pumpkin", "count": 6}
+{"sub": "light bulb", "obj": "blue", "alt": "gray", "count": 12}
+{"sub": "child", "obj": "blond", "alt": "coral", "count": 18}
+{"sub": "branch", "obj": "brown", "alt": "goldenrod", "count": 482}
+{"sub": "mulch", "obj": "brown", "alt": "cyan", "count": 46}
+{"sub": "dog", "obj": "brown", "alt": "indigo", "count": 1472}
+{"sub": "bark", "obj": "brown", "alt": "goldenrod", "count": 61}
+{"sub": "goatee", "obj": "brown", "alt": "amethyst", "count": 15}
+{"sub": "ponytail", "obj": "brown", "alt": "purple", "count": 31}
+{"sub": "kitchen cabinet", "obj": "brown", "alt": "carmine", "count": 11}
+{"sub": "barn", "obj": "brown", "alt": "emerald", "count": 11}
+{"sub": "bagel", "obj": "brown", "alt": "lavender", "count": 21}
+{"sub": "ledge", "obj": "brown", "alt": "sienna", "count": 21}
+{"sub": "cattle", "obj": "brown", "alt": "blue", "count": 21}
+{"sub": "chopstick", "obj": "brown", "alt": "apricot", "count": 11}
+{"sub": "calf", "obj": "brown", "alt": "blond", "count": 44}
+{"sub": "hotel", "obj": "brown", "alt": "coral", "count": 8}
+{"sub": "train track", "obj": "brown", "alt": "violet", "count": 66}
+{"sub": "baseball glove", "obj": "brown", "alt": "fuchsia", "count": 53}
+{"sub": "drum", "obj": "brown", "alt": "puce", "count": 6}
+{"sub": "chair back", "obj": "brown", "alt": "ruby", "count": 15}
+{"sub": "loveseat", "obj": "brown", "alt": "crimson", "count": 6}
+{"sub": "green grass", "obj": "brown", "alt": "grey", "count": 16}
+{"sub": "pear", "obj": "brown", "alt": "khaki", "count": 16}
+{"sub": "desktop", "obj": "brown", "alt": "scarlet", "count": 6}
+{"sub": "tarmac", "obj": "brown", "alt": "orange", "count": 8}
+{"sub": "table leg", "obj": "brown", "alt": "amethyst", "count": 8}
+{"sub": "comb", "obj": "brown", "alt": "sapphire", "count": 6}
+{"sub": "pane", "obj": "brown", "alt": "auburn", "count": 9}
+{"sub": "ostrich", "obj": "brown", "alt": "green", "count": 9}
+{"sub": "paneling", "obj": "brown", "alt": "blue", "count": 12}
+{"sub": "bean", "obj": "brown", "alt": "ultramarine", "count": 45}
+{"sub": "sole", "obj": "brown", "alt": "sienna", "count": 8}
+{"sub": "suspender", "obj": "brown", "alt": "mahogany", "count": 8}
+{"sub": "nostril", "obj": "brown", "alt": "ultramarine", "count": 11}
+{"sub": "door knob", "obj": "gold", "alt": "auburn", "count": 38}
+{"sub": "chandelier", "obj": "gold", "alt": "coral", "count": 13}
+{"sub": "doorknob", "obj": "gold", "alt": "fuchsia", "count": 36}
+{"sub": "screw", "obj": "gold", "alt": "teal", "count": 9}
+{"sub": "dial", "obj": "gold", "alt": "burgundy", "count": 7}
+{"sub": "urn", "obj": "gold", "alt": "azure", "count": 6}
+{"sub": "sky", "obj": "gray", "alt": "ultramarine", "count": 1430}
+{"sub": "roadway", "obj": "gray", "alt": "cerulean", "count": 9}
+{"sub": "tree branch", "obj": "gray", "alt": "cyan", "count": 10}
+{"sub": "hoof", "obj": "gray", "alt": "fuchsia", "count": 54}
+{"sub": "cone", "obj": "gray", "alt": "mauve", "count": 9}
+{"sub": "dog", "obj": "gray", "alt": "mahogany", "count": 56}
+{"sub": "ocean", "obj": "gray", "alt": "russet", "count": 46}
+{"sub": "microwave", "obj": "gray", "alt": "goldenrod", "count": 9}
+{"sub": "calculator", "obj": "gray", "alt": "crimson", "count": 7}
+{"sub": "tongue", "obj": "gray", "alt": "khaki", "count": 9}
+{"sub": "wool", "obj": "gray", "alt": "periwinkle", "count": 11}
+{"sub": "fruit", "obj": "green", "alt": "jade", "count": 172}
+{"sub": "traffic light", "obj": "green", "alt": "mauve", "count": 327}
+{"sub": "field", "obj": "green", "alt": "umber", "count": 1303}
+{"sub": "backdrop", "obj": "green", "alt": "umber", "count": 6}
+{"sub": "sponge", "obj": "green", "alt": "russet", "count": 23}
+{"sub": "tree branch", "obj": "green", "alt": "cardinal", "count": 17}
+{"sub": "sauce", "obj": "green", "alt": "khaki", "count": 34}
+{"sub": "ocean", "obj": "green", "alt": "fuchsia", "count": 120}
+{"sub": "wreath", "obj": "green", "alt": "sepia", "count": 9}
+{"sub": "cooler", "obj": "green", "alt": "chartreuse", "count": 20}
+{"sub": "figure", "obj": "green", "alt": "ivory", "count": 19}
+{"sub": "cabbage", "obj": "green", "alt": "ultramarine", "count": 42}
+{"sub": "soda can", "obj": "green", "alt": "ecru", "count": 6}
+{"sub": "padding", "obj": "green", "alt": "azure", "count": 10}
+{"sub": "slice", "obj": "green", "alt": "tan", "count": 13}
+{"sub": "tub", "obj": "green", "alt": "cyan", "count": 18}
+{"sub": "sink", "obj": "green", "alt": "russet", "count": 9}
+{"sub": "seasoning", "obj": "green", "alt": "silver", "count": 18}
+{"sub": "squash", "obj": "green", "alt": "mauve", "count": 21}
+{"sub": "melon", "obj": "green", "alt": "taupe", "count": 27}
+{"sub": "scale", "obj": "green", "alt": "crimson", "count": 6}
+{"sub": "salsa", "obj": "green", "alt": "violet", "count": 6}
+{"sub": "oven mitt", "obj": "green", "alt": "sepia", "count": 6}
+{"sub": "onesie", "obj": "green", "alt": "burgundy", "count": 7}
+{"sub": "oven", "obj": "grey", "alt": "rose", "count": 15}
+{"sub": "sky", "obj": "grey", "alt": "sapphire", "count": 1318}
+{"sub": "microwave", "obj": "grey", "alt": "mahogany", "count": 21}
+{"sub": "computer mouse", "obj": "grey", "alt": "mahogany", "count": 13}
+{"sub": "hoof", "obj": "grey", "alt": "mahogany", "count": 57}
+{"sub": "tarmac", "obj": "grey", "alt": "fuchsia", "count": 40}
+{"sub": "dispenser", "obj": "grey", "alt": "emerald", "count": 6}
+{"sub": "barn", "obj": "grey", "alt": "pale", "count": 7}
+{"sub": "tusk", "obj": "ivory", "alt": "crimson", "count": 193}
+{"sub": "apple", "obj": "maroon", "alt": "amber", "count": 6}
+{"sub": "traffic light", "obj": "orange", "alt": "amethyst", "count": 21}
+{"sub": "sauce", "obj": "orange", "alt": "taupe", "count": 37}
+{"sub": "grapefruit", "obj": "orange", "alt": "buff", "count": 9}
+{"sub": "slice", "obj": "orange", "alt": "jade", "count": 41}
+{"sub": "tulip", "obj": "orange", "alt": "saffron", "count": 23}
+{"sub": "sunset", "obj": "pink", "alt": "green", "count": 10}
+{"sub": "post-it", "obj": "pink", "alt": "crimson", "count": 12}
+{"sub": "remote", "obj": "pink", "alt": "taupe", "count": 8}
+{"sub": "garment", "obj": "pink", "alt": "aqua", "count": 7}
+{"sub": "bow tie", "obj": "pink", "alt": "azure", "count": 6}
+{"sub": "sink", "obj": "pink", "alt": "fuchsia", "count": 15}
+{"sub": "cookie", "obj": "pink", "alt": "magenta", "count": 6}
+{"sub": "snow pant", "obj": "pink", "alt": "jade", "count": 6}
+{"sub": "cone", "obj": "pink", "alt": "taupe", "count": 9}
+{"sub": "tulip", "obj": "purple", "alt": "jade", "count": 10}
+{"sub": "bloom", "obj": "purple", "alt": "ivory", "count": 12}
+{"sub": "spot", "obj": "purple", "alt": "ruby", "count": 6}
+{"sub": "apple", "obj": "red", "alt": "ultramarine", "count": 975}
+{"sub": "lantern", "obj": "red", "alt": "umber", "count": 23}
+{"sub": "tulip", "obj": "red", "alt": "taupe", "count": 49}
+{"sub": "r", "obj": "red", "alt": "jade", "count": 7}
+{"sub": "mulch", "obj": "red", "alt": "beige", "count": 8}
+{"sub": "pickup", "obj": "red", "alt": "charcoal", "count": 10}
+{"sub": "poncho", "obj": "red", "alt": "amber", "count": 7}
+{"sub": "truck cab", "obj": "red", "alt": "khaki", "count": 6}
+{"sub": "soda can", "obj": "red", "alt": "khaki", "count": 22}
+{"sub": "cape", "obj": "red", "alt": "beige", "count": 20}
+{"sub": "firetruck", "obj": "red", "alt": "gold", "count": 33}
+{"sub": "skier", "obj": "red", "alt": "scarlet", "count": 14}
+{"sub": "skiis", "obj": "red", "alt": "ivory", "count": 12}
+{"sub": "trolley", "obj": "red", "alt": "carmine", "count": 23}
+{"sub": "warning sign", "obj": "red", "alt": "teal", "count": 6}
+{"sub": "pavement", "obj": "red", "alt": "mauve", "count": 15}
+{"sub": "batting glove", "obj": "red", "alt": "amethyst", "count": 7}
+{"sub": "station", "obj": "red", "alt": "beige", "count": 7}
+{"sub": "bull", "obj": "red", "alt": "saffron", "count": 9}
+{"sub": "chest", "obj": "red", "alt": "sienna", "count": 9}
+{"sub": "horn", "obj": "red", "alt": "aquamarine", "count": 10}
+{"sub": "plaque", "obj": "red", "alt": "aqua", "count": 6}
+{"sub": "brim", "obj": "red", "alt": "green", "count": 6}
+{"sub": "swimsuit", "obj": "red", "alt": "emerald", "count": 9}
+{"sub": "polish", "obj": "red", "alt": "brown", "count": 16}
+{"sub": "pump", "obj": "red", "alt": "emerald", "count": 9}
+{"sub": "name tag", "obj": "red", "alt": "olive", "count": 6}
+{"sub": "bacon", "obj": "red", "alt": "sapphire", "count": 20}
+{"sub": "valve", "obj": "red", "alt": "taupe", "count": 7}
+{"sub": "sink", "obj": "red", "alt": "azure", "count": 6}
+{"sub": "striped shirt", "obj": "red", "alt": "apricot", "count": 8}
+{"sub": "utensil", "obj": "silver", "alt": "goldenrod", "count": 148}
+{"sub": "cabinet", "obj": "silver", "alt": "violet", "count": 21}
+{"sub": "vent", "obj": "silver", "alt": "burgundy", "count": 39}
+{"sub": "piping", "obj": "silver", "alt": "brown", "count": 13}
+{"sub": "stereo", "obj": "silver", "alt": "coral", "count": 12}
+{"sub": "key", "obj": "silver", "alt": "ruby", "count": 57}
+{"sub": "blade", "obj": "silver", "alt": "sepia", "count": 82}
+{"sub": "macbook", "obj": "silver", "alt": "blond", "count": 11}
+{"sub": "gas tank", "obj": "silver", "alt": "apricot", "count": 12}
+{"sub": "eyeglass", "obj": "silver", "alt": "chartreuse", "count": 10}
+{"sub": "passenger car", "obj": "silver", "alt": "lavender", "count": 9}
+{"sub": "dirt", "obj": "tan", "alt": "saffron", "count": 71}
+{"sub": "sink", "obj": "tan", "alt": "pastel", "count": 15}
+{"sub": "mulch", "obj": "tan", "alt": "scarlet", "count": 14}
+{"sub": "monitor", "obj": "white", "alt": "chartreuse", "count": 182}
+{"sub": "envelope", "obj": "white", "alt": "goldenrod", "count": 35}
+{"sub": "dishwasher", "obj": "white", "alt": "ruby", "count": 143}
+{"sub": "fridge", "obj": "white", "alt": "pumpkin", "count": 266}
+{"sub": "fireplace", "obj": "white", "alt": "pink", "count": 47}
+{"sub": "hinge", "obj": "white", "alt": "sapphire", "count": 36}
+{"sub": "card", "obj": "white", "alt": "pumpkin", "count": 110}
+{"sub": "booth", "obj": "white", "alt": "turquoise", "count": 10}
+{"sub": "dryer", "obj": "white", "alt": "terracotta", "count": 23}
+{"sub": "street", "obj": "white", "alt": "violet", "count": 52}
+{"sub": "island", "obj": "white", "alt": "azure", "count": 8}
+{"sub": "goat", "obj": "white", "alt": "crimson", "count": 150}
+{"sub": "chicken", "obj": "white", "alt": "jade", "count": 62}
+{"sub": "art", "obj": "white", "alt": "lavender", "count": 12}
+{"sub": "rocking chair", "obj": "white", "alt": "charcoal", "count": 7}
+{"sub": "notebook", "obj": "white", "alt": "silver", "count": 17}
+{"sub": "paw", "obj": "white", "alt": "periwinkle", "count": 703}
+{"sub": "church", "obj": "white", "alt": "russet", "count": 31}
+{"sub": "tree trunk", "obj": "white", "alt": "lavender", "count": 22}
+{"sub": "liner", "obj": "white", "alt": "rainbow", "count": 14}
+{"sub": "writting", "obj": "white", "alt": "emerald", "count": 12}
+{"sub": "coffee table", "obj": "white", "alt": "buff", "count": 14}
+{"sub": "snow boot", "obj": "white", "alt": "umber", "count": 9}
+{"sub": "cracker", "obj": "white", "alt": "sapphire", "count": 12}
+{"sub": "stocking", "obj": "white", "alt": "cardinal", "count": 24}
+{"sub": "runway", "obj": "white", "alt": "ruby", "count": 6}
+{"sub": "throw", "obj": "white", "alt": "purple", "count": 8}
+{"sub": "beach chair", "obj": "white", "alt": "chartreuse", "count": 15}
+{"sub": "giraffe", "obj": "white", "alt": "maroon", "count": 611}
+{"sub": "firetruck", "obj": "white", "alt": "teal", "count": 11}
+{"sub": "tablet", "obj": "white", "alt": "olive", "count": 17}
+{"sub": "hanger", "obj": "white", "alt": "indigo", "count": 30}
+{"sub": "interior", "obj": "white", "alt": "blond", "count": 20}
+{"sub": "o", "obj": "white", "alt": "brown", "count": 33}
+{"sub": "knee pad", "obj": "white", "alt": "goldenrod", "count": 57}
+{"sub": "fire alarm", "obj": "white", "alt": "purple", "count": 7}
+{"sub": "tram", "obj": "white", "alt": "carmine", "count": 12}
+{"sub": "ice cream", "obj": "white", "alt": "rose", "count": 9}
+{"sub": "garbage", "obj": "white", "alt": "pastel", "count": 14}
+{"sub": "athletic shoe", "obj": "white", "alt": "olive", "count": 18}
+{"sub": "cream", "obj": "white", "alt": "taupe", "count": 77}
+{"sub": "owl", "obj": "white", "alt": "saffron", "count": 8}
+{"sub": "grill", "obj": "white", "alt": "chartreuse", "count": 13}
+{"sub": "sugar packet", "obj": "white", "alt": "russet", "count": 7}
+{"sub": "daffodil", "obj": "white", "alt": "lavender", "count": 6}
+{"sub": "dial", "obj": "white", "alt": "viridian", "count": 24}
+{"sub": "traffic light", "obj": "white", "alt": "charcoal", "count": 7}
+{"sub": "roman numeral", "obj": "white", "alt": "viridian", "count": 27}
+{"sub": "bloom", "obj": "white", "alt": "saffron", "count": 20}
+{"sub": "eyelash", "obj": "white", "alt": "rose", "count": 7}
+{"sub": "orange", "obj": "white", "alt": "beige", "count": 22}
+{"sub": "corner", "obj": "white", "alt": "emerald", "count": 12}
+{"sub": "letter m", "obj": "white", "alt": "blond", "count": 6}
+{"sub": "spice", "obj": "white", "alt": "ruby", "count": 7}
+{"sub": "number 2", "obj": "white", "alt": "goldenrod", "count": 17}
+{"sub": "grafitti", "obj": "white", "alt": "vermilion", "count": 8}
+{"sub": "map", "obj": "white", "alt": "green", "count": 7}
+{"sub": "stroller", "obj": "white", "alt": "rose", "count": 7}
+{"sub": "space bar", "obj": "white", "alt": "violet", "count": 8}
+{"sub": "capri", "obj": "white", "alt": "sepia", "count": 6}
+{"sub": "cabbage", "obj": "white", "alt": "chartreuse", "count": 6}
+{"sub": "hook", "obj": "white", "alt": "carmine", "count": 11}
+{"sub": "sandwhich", "obj": "white", "alt": "russet", "count": 8}
+{"sub": "wooden post", "obj": "white", "alt": "cyan", "count": 9}
+{"sub": "stone wall", "obj": "white", "alt": "apricot", "count": 6}
+{"sub": "fingernail", "obj": "white", "alt": "magenta", "count": 6}
+{"sub": "line", "obj": "yellow", "alt": "terracotta", "count": 2175}
+{"sub": "apple", "obj": "yellow", "alt": "khaki", "count": 250}
+{"sub": "pear", "obj": "yellow", "alt": "apricot", "count": 30}
+{"sub": "signal", "obj": "yellow", "alt": "burgundy", "count": 67}
+{"sub": "banana", "obj": "yellow", "alt": "mahogany", "count": 1979}
+{"sub": "chip", "obj": "yellow", "alt": "green", "count": 21}
+{"sub": "rice", "obj": "yellow", "alt": "gold", "count": 28}
+{"sub": "tennis ball", "obj": "yellow", "alt": "ecru", "count": 421}
+{"sub": "menu", "obj": "yellow", "alt": "tan", "count": 8}
+{"sub": "post-it note", "obj": "yellow", "alt": "black", "count": 8}
+{"sub": "branch", "obj": "yellow", "alt": "cardinal", "count": 7}
+{"sub": "signal light", "obj": "yellow", "alt": "cerulean", "count": 8}
+{"sub": "notebook", "obj": "yellow", "alt": "violet", "count": 6}
+{"sub": "drawer", "obj": "yellow", "alt": "turquoise", "count": 9}
+{"sub": "box car", "obj": "yellow", "alt": "mahogany", "count": 7}
