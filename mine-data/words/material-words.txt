@@ -1,6 +1,6 @@
 bronze
 ceramic
-chemicals
+chemical
 cloth
 composite materials
 concrete
@@ -13,7 +13,7 @@ gold
 iron
 leather
 metal
-minerals
+mineral
 natural textiles
 paper
 pewter

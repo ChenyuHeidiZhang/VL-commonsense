@@ -1,13 +1,11 @@
 circle
 cross
 diamond
-ellipse
 heart
 heptagon
 hexagon
 octagon
 oval
-parallelogram
 pentagon
 polygon
 rectangle
@@ -17,5 +15,4 @@ round
 semicircle
 square
 star
-trapezoid
 triangle

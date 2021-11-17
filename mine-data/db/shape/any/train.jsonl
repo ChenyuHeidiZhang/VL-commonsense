@@ -1,26 +1,3 @@
-{"sub": "sign", "obj": "circle", "alt": "trapezoid", "count": 58}
-{"sub": "design", "obj": "circle", "alt": "heptagon", "count": 16}
-{"sub": "kite", "obj": "circle", "alt": "rhombus", "count": 5}
-{"sub": "sign", "obj": "cross", "alt": "polygon", "count": 7}
-{"sub": "sign", "obj": "diamond", "alt": "polygon", "count": 41}
-{"sub": "design", "obj": "diamond", "alt": "cross", "count": 17}
-{"sub": "shape", "obj": "diamond", "alt": "cross", "count": 27}
-{"sub": "kite", "obj": "diamond", "alt": "polygon", "count": 12}
-{"sub": "design", "obj": "heart", "alt": "pentagon", "count": 7}
-{"sub": "shape", "obj": "heart", "alt": "cross", "count": 4}
-{"sub": "sign", "obj": "octagon", "alt": "ellipse", "count": 107}
-{"sub": "sign", "obj": "oval", "alt": "parallelogram", "count": 32}
-{"sub": "shape", "obj": "oval", "alt": "pentagon", "count": 6}
-{"sub": "design", "obj": "oval", "alt": "ellipse", "count": 5}
-{"sub": "sign", "obj": "rectangle", "alt": "ellipse", "count": 96}
-{"sub": "kite", "obj": "rectangle", "alt": "star", "count": 5}
-{"sub": "sign", "obj": "rhombus", "alt": "ring", "count": 3}
-{"sub": "sign", "obj": "round", "alt": "semicircle", "count": 415}
-{"sub": "design", "obj": "round", "alt": "cross", "count": 22}
-{"sub": "shape", "obj": "round", "alt": "trapezoid", "count": 4}
-{"sub": "sign", "obj": "square", "alt": "polygon", "count": 279}
-{"sub": "design", "obj": "square", "alt": "heptagon", "count": 14}
-{"sub": "kite", "obj": "square", "alt": "ellipse", "count": 11}
-{"sub": "design", "obj": "star", "alt": "rectangle", "count": 8}
-{"sub": "sign", "obj": "triangle", "alt": "trapezoid", "count": 59}
-{"sub": "shape", "obj": "triangle", "alt": "ellipse", "count": 5}
+{"sub": "sign", "obj": "round", "alt": "hexagon"}
+{"sub": "design", "obj": "round", "alt": "octagon"}
+{"sub": "shape", "obj": "diamond", "alt": "ring"}

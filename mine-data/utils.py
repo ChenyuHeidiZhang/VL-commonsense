@@ -1,9 +1,10 @@
+import json
 from nltk.stem.wordnet import WordNetLemmatizer
 Lem = WordNetLemmatizer()
 
 THRES_COLOR = 5
-THRES_SHAPE = 2
 THRES_MATERIAL = 2
+THRES_SHAPE = 1
 
 def load_word_file(type, single_slot=True):
     words_file = f'words/{type}-words.txt'
@@ -15,11 +16,20 @@ def load_word_file(type, single_slot=True):
             word_ls.append(line.strip())
     return word_ls
 
+def load_dist_file(type):
+    dist_file = f'distributions/{type}-dist.jsonl'
+    with open(dist_file, 'r') as f:
+        vg_dist = json.load(f)
+    return vg_dist
+
 def filter_att(att, type):
     # treat attribute "x colored" the same as "x"
     if type == 'color' and att.split()[-1] == 'colored' \
         and att != 'light colored' and att != 'dark colored':
         att = ' '.join(att.split()[:-1])
+    if type == 'material':
+        if att == 'wooden': att = 'wood'
+        if att.split()[-1] == 'made': att = ' '.join(att.split()[:-1])
     return att
 
 def lemmatize(sub):

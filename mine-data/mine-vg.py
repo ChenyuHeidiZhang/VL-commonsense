@@ -1,9 +1,27 @@
 import json
 import random
 import os
+import numpy as np
 import utils
 
 attributes_file = 'attributes.json'
+
+def get_db_from_dist(type, single_slot=True):
+    word_ls = np.array(utils.load_word_file(type, single_slot))
+    vg_dist_dict = utils.load_dist_file(type)
+
+    i = 0
+    splits = ['train', 'test']
+    out_files = [f'db/{type}/{sp}.jsonl' for sp in splits]
+    with open(out_files[0], 'w') as train_f, open(out_files[1], 'w') as test_f:
+        for sub in vg_dist_dict:
+            dist = np.array(vg_dist_dict[sub])
+            obj = word_ls[np.argmax(dist)]
+            alt = random.choice(word_ls[np.where(dist <= np.median(dist))])
+            out = train_f if i % 10 < 8 else test_f
+            json.dump({"sub": sub, "obj": obj, "alt": alt}, out)
+            out.write('\n')
+            i += 1
 
 def mine_attributes(type, thres=10, single_slot=True, print_every=1000, max_imgs=1000000):
     # read a list of attributes and find corresponding subjects in Visual Genome
@@ -212,7 +230,8 @@ def extract_size(smaller=True, num_samples=2000):
 
 
 if __name__ == "__main__":
-    mine_attributes('color', thres=utils.THRES_COLOR)
+    get_db_from_dist('color')
+    #  mine_attributes('color', thres=utils.THRES_COLOR)
     # mine_size()
     # mine_cooccurrence()
     # extract_size(smaller=False)

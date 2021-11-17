@@ -3,6 +3,7 @@
 import os
 import json
 import numpy as np
+import utils
 
 def write_data(file, data_pts, mode='w'):
     with open(file, mode) as out:
@@ -33,10 +34,9 @@ def split_groups(dir, spl, dist_json):
         if spl == 'train':
             write_data(os.path.join(path, 'train.jsonl'), data_pts[i], mode='w')
         else:  # dev and test splits are combined
-            write_data(os.path.join(path, 'test.jsonl'), data_pts[i], mode='a')
+            write_data(os.path.join(path, 'test.jsonl'), data_pts[i], mode='w')
 
 relation = 'color'
-dist_file = f'distributions/{relation}-dist.jsonl'
-dist_json = json.load(open(dist_file, 'r'))
-for spl in ['train', 'dev', 'test']:
+dist_json = utils.load_dist_file(relation)
+for spl in ['train', 'test']:  # 'dev'
     split_groups(f'db/{relation}', spl, dist_json)

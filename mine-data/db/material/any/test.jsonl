@@ -1,72 +1,15 @@
-{"sub": "elephant", "obj": "bronze", "alt": "cloth", "count": 4}
-{"sub": "cup", "obj": "ceramic", "alt": "leather", "count": 58}
-{"sub": "divider", "obj": "concrete", "alt": "copper", "count": 19}
-{"sub": "counter top", "obj": "glass", "alt": "rubber", "count": 6}
-{"sub": "surface", "obj": "glass", "alt": "plaster", "count": 13}
-{"sub": "building", "obj": "gold", "alt": "plaster", "count": 21}
-{"sub": "dish", "obj": "gold", "alt": "pewter", "count": 7}
-{"sub": "edge", "obj": "gold", "alt": "minerals", "count": 18}
-{"sub": "stand", "obj": "iron", "alt": "copper", "count": 12}
-{"sub": "holder", "obj": "iron", "alt": "rubber", "count": 3}
-{"sub": "box", "obj": "metal", "alt": "copper", "count": 131}
-{"sub": "sculpture", "obj": "metal", "alt": "plastic", "count": 20}
-{"sub": "piece", "obj": "metal", "alt": "stone", "count": 36}
-{"sub": "canister", "obj": "metal", "alt": "plaster", "count": 14}
-{"sub": "dog", "obj": "metal", "alt": "fiber", "count": 4}
-{"sub": "box", "obj": "paper", "alt": "plaster", "count": 17}
-{"sub": "woman", "obj": "plastic", "alt": "fiber", "count": 4}
-{"sub": "holder", "obj": "plastic", "alt": "plaster", "count": 23}
-{"sub": "sheet", "obj": "plastic", "alt": "leather", "count": 10}
-{"sub": "top", "obj": "plastic", "alt": "minerals", "count": 24}
-{"sub": "statue", "obj": "plastic", "alt": "fiber", "count": 3}
-{"sub": "holder", "obj": "silver", "alt": "chemicals", "count": 98}
-{"sub": "building", "obj": "silver", "alt": "denim", "count": 39}
-{"sub": "counter", "obj": "silver", "alt": "iron", "count": 31}
-{"sub": "tag", "obj": "silver", "alt": "iron", "count": 33}
-{"sub": "flower", "obj": "silver", "alt": "denim", "count": 4}
-{"sub": "object", "obj": "silver", "alt": "plaster", "count": 33}
-{"sub": "border", "obj": "silver", "alt": "tin", "count": 5}
-{"sub": "sign", "obj": "stone", "alt": "tin", "count": 4}
-{"sub": "box", "obj": "stone", "alt": "slate", "count": 3}
-{"sub": "ball", "obj": "stone", "alt": "pewter", "count": 3}
-{"sub": "baseball bat", "obj": "wood", "alt": "leather", "count": 6}
-{"sub": "plate", "obj": "ceramic", "alt": "fiber", "count": 248}
-{"sub": "planter", "obj": "concrete", "alt": "iron", "count": 33}
-{"sub": "statue", "obj": "concrete", "alt": "paper", "count": 18}
-{"sub": "roof", "obj": "copper", "alt": "minerals", "count": 3}
-{"sub": "box", "obj": "foam", "alt": "denim", "count": 3}
-{"sub": "top", "obj": "glass", "alt": "minerals", "count": 46}
-{"sub": "building", "obj": "glass", "alt": "plaster", "count": 146}
-{"sub": "counter", "obj": "glass", "alt": "cloth", "count": 14}
-{"sub": "sculpture", "obj": "glass", "alt": "pewter", "count": 4}
-{"sub": "stand", "obj": "glass", "alt": "leather", "count": 13}
-{"sub": "strip", "obj": "gold", "alt": "bronze", "count": 4}
-{"sub": "bird", "obj": "gold", "alt": "stone", "count": 4}
-{"sub": "item", "obj": "gold", "alt": "iron", "count": 5}
-{"sub": "canister", "obj": "gold", "alt": "bronze", "count": 3}
-{"sub": "sheet", "obj": "iron", "alt": "copper", "count": 3}
-{"sub": "case", "obj": "leather", "alt": "concrete", "count": 16}
-{"sub": "sign", "obj": "metal", "alt": "foam", "count": 316}
-{"sub": "stand", "obj": "metal", "alt": "chemicals", "count": 105}
-{"sub": "roof", "obj": "metal", "alt": "minerals", "count": 125}
-{"sub": "edge", "obj": "metal", "alt": "minerals", "count": 23}
-{"sub": "divider", "obj": "metal", "alt": "foam", "count": 6}
-{"sub": "ball", "obj": "metal", "alt": "slate", "count": 11}
-{"sub": "figure", "obj": "metal", "alt": "fiber", "count": 4}
-{"sub": "counter top", "obj": "metal", "alt": "rubber", "count": 6}
-{"sub": "bowl", "obj": "paper", "alt": "foam", "count": 22}
-{"sub": "cup", "obj": "plastic", "alt": "plaster", "count": 564}
-{"sub": "box", "obj": "plastic", "alt": "chemicals", "count": 60}
-{"sub": "tag", "obj": "plastic", "alt": "leather", "count": 13}
-{"sub": "stand", "obj": "plastic", "alt": "slate", "count": 8}
-{"sub": "figure", "obj": "plastic", "alt": "copper", "count": 3}
-{"sub": "plate", "obj": "rubber", "alt": "pewter", "count": 5}
-{"sub": "arm", "obj": "silver", "alt": "minerals", "count": 5}
-{"sub": "sculpture", "obj": "stone", "alt": "chemicals", "count": 15}
-{"sub": "planter", "obj": "stone", "alt": "iron", "count": 14}
-{"sub": "dog", "obj": "stone", "alt": "tin", "count": 3}
-{"sub": "elephant", "obj": "stone", "alt": "leather", "count": 7}
-{"sub": "building", "obj": "tin", "alt": "rubber", "count": 4}
-{"sub": "box", "obj": "wood", "alt": "slate", "count": 32}
-{"sub": "top", "obj": "wood", "alt": "minerals", "count": 9}
-{"sub": "base", "obj": "wood", "alt": "cloth", "count": 12}
+{"sub": "cup", "obj": "plastic", "alt": "fiber"}
+{"sub": "statue", "obj": "stone", "alt": "fiber"}
+{"sub": "top", "obj": "silver", "alt": "pewter"}
+{"sub": "dome", "obj": "gold", "alt": "wood"}
+{"sub": "building", "obj": "stone", "alt": "chemical"}
+{"sub": "barrier", "obj": "concrete", "alt": "denim"}
+{"sub": "strip", "obj": "metal", "alt": "copper"}
+{"sub": "ball", "obj": "gold", "alt": "slate"}
+{"sub": "sculpture", "obj": "metal", "alt": "copper"}
+{"sub": "woman", "obj": "silver", "alt": "bronze"}
+{"sub": "tie", "obj": "gold", "alt": "ceramic"}
+{"sub": "object", "obj": "metal", "alt": "chemical"}
+{"sub": "tag", "obj": "silver", "alt": "foam"}
+{"sub": "umbrella", "obj": "gold", "alt": "ceramic"}
+{"sub": "bird", "obj": "wood", "alt": "denim"}
