@@ -1,340 +1,308 @@
-{"sub": "gate", "obj": "bronze", "alt": "tin", "count": 3}
-{"sub": "coffee mug", "obj": "ceramic", "alt": "slate", "count": 8}
-{"sub": "bowling pin", "obj": "ceramic", "alt": "metal", "count": 5}
-{"sub": "saucer", "obj": "ceramic", "alt": "plastic", "count": 8}
-{"sub": "cat", "obj": "ceramic", "alt": "foam", "count": 4}
-{"sub": "lid", "obj": "ceramic", "alt": "stone", "count": 4}
-{"sub": "spoon", "obj": "ceramic", "alt": "plaster", "count": 8}
-{"sub": "bath tub", "obj": "ceramic", "alt": "foam", "count": 4}
-{"sub": "placemat", "obj": "cloth", "alt": "slate", "count": 11}
-{"sub": "wrist band", "obj": "cloth", "alt": "denim", "count": 4}
-{"sub": "barrier", "obj": "concrete", "alt": "denim", "count": 70}
-{"sub": "steps", "obj": "concrete", "alt": "plastic", "count": 103}
-{"sub": "lightpost", "obj": "concrete", "alt": "rubber", "count": 5}
-{"sub": "staircase", "obj": "concrete", "alt": "foam", "count": 14}
-{"sub": "post", "obj": "concrete", "alt": "cloth", "count": 51}
-{"sub": "flooring", "obj": "concrete", "alt": "rubber", "count": 15}
-{"sub": "platform", "obj": "concrete", "alt": "denim", "count": 111}
-{"sub": "edge", "obj": "concrete", "alt": "plaster", "count": 5}
-{"sub": "legs", "obj": "concrete", "alt": "bronze", "count": 7}
-{"sub": "stairway", "obj": "concrete", "alt": "fiber", "count": 7}
-{"sub": "balcony", "obj": "concrete", "alt": "rubber", "count": 8}
-{"sub": "asphalt", "obj": "concrete", "alt": "gold", "count": 3}
-{"sub": "strip", "obj": "concrete", "alt": "ceramic", "count": 6}
-{"sub": "trim", "obj": "concrete", "alt": "copper", "count": 3}
-{"sub": "deck", "obj": "concrete", "alt": "fiber", "count": 3}
-{"sub": "kettle", "obj": "copper", "alt": "fiber", "count": 5}
-{"sub": "shorts", "obj": "denim", "alt": "slate", "count": 68}
-{"sub": "woman", "obj": "denim", "alt": "foam", "count": 3}
-{"sub": "window", "obj": "glass", "alt": "leather", "count": 3307}
-{"sub": "dome", "obj": "glass", "alt": "bronze", "count": 11}
-{"sub": "bottle", "obj": "glass", "alt": "rubber", "count": 500}
-{"sub": "counter", "obj": "glass", "alt": "chemicals", "count": 14}
-{"sub": "pot", "obj": "glass", "alt": "rubber", "count": 6}
-{"sub": "door cabinet", "obj": "glass", "alt": "pewter", "count": 3}
-{"sub": "panels", "obj": "glass", "alt": "plaster", "count": 9}
-{"sub": "jars", "obj": "glass", "alt": "fiber", "count": 17}
-{"sub": "cake stand", "obj": "glass", "alt": "minerals", "count": 7}
-{"sub": "divider", "obj": "glass", "alt": "copper", "count": 7}
-{"sub": "measuring cup", "obj": "glass", "alt": "cloth", "count": 8}
-{"sub": "eye", "obj": "glass", "alt": "minerals", "count": 9}
-{"sub": "roof", "obj": "glass", "alt": "foam", "count": 17}
-{"sub": "beer", "obj": "glass", "alt": "plastic", "count": 4}
-{"sub": "sliding doors", "obj": "glass", "alt": "cloth", "count": 3}
-{"sub": "walkway", "obj": "glass", "alt": "plaster", "count": 5}
-{"sub": "display window", "obj": "glass", "alt": "fiber", "count": 3}
-{"sub": "cups", "obj": "glass", "alt": "tin", "count": 8}
-{"sub": "building window", "obj": "glass", "alt": "wood", "count": 3}
-{"sub": "frame", "obj": "gold", "alt": "copper", "count": 155}
-{"sub": "sign", "obj": "gold", "alt": "minerals", "count": 73}
-{"sub": "drapes", "obj": "gold", "alt": "slate", "count": 8}
-{"sub": "plate", "obj": "gold", "alt": "chemicals", "count": 38}
-{"sub": "door handle", "obj": "gold", "alt": "rubber", "count": 15}
-{"sub": "shirt", "obj": "gold", "alt": "paper", "count": 39}
-{"sub": "decoration", "obj": "gold", "alt": "chemicals", "count": 39}
-{"sub": "box", "obj": "gold", "alt": "iron", "count": 15}
-{"sub": "curtain", "obj": "gold", "alt": "rubber", "count": 25}
-{"sub": "banner", "obj": "gold", "alt": "glass", "count": 9}
-{"sub": "plaque", "obj": "gold", "alt": "slate", "count": 12}
-{"sub": "circle", "obj": "gold", "alt": "ceramic", "count": 20}
-{"sub": "name plate", "obj": "gold", "alt": "metal", "count": 3}
-{"sub": "bell", "obj": "gold", "alt": "slate", "count": 21}
-{"sub": "surface", "obj": "gold", "alt": "copper", "count": 4}
-{"sub": "detail", "obj": "gold", "alt": "iron", "count": 3}
-{"sub": "minute hand", "obj": "gold", "alt": "plaster", "count": 6}
-{"sub": "sunglasses", "obj": "gold", "alt": "glass", "count": 5}
-{"sub": "bottle", "obj": "gold", "alt": "tin", "count": 11}
-{"sub": "glasses", "obj": "gold", "alt": "pewter", "count": 9}
-{"sub": "sticker", "obj": "gold", "alt": "glass", "count": 9}
-{"sub": "screw", "obj": "gold", "alt": "foam", "count": 8}
-{"sub": "light fixture", "obj": "gold", "alt": "rubber", "count": 6}
-{"sub": "handles", "obj": "gold", "alt": "paper", "count": 11}
-{"sub": "head", "obj": "gold", "alt": "tin", "count": 3}
-{"sub": "napkin", "obj": "gold", "alt": "plastic", "count": 6}
-{"sub": "clock hands", "obj": "gold", "alt": "rubber", "count": 7}
-{"sub": "needle", "obj": "gold", "alt": "cloth", "count": 3}
-{"sub": "dial", "obj": "gold", "alt": "iron", "count": 6}
-{"sub": "lion", "obj": "gold", "alt": "silver", "count": 5}
-{"sub": "decor", "obj": "gold", "alt": "concrete", "count": 6}
-{"sub": "braid", "obj": "gold", "alt": "rubber", "count": 4}
-{"sub": "surfboard", "obj": "gold", "alt": "tin", "count": 3}
-{"sub": "shower curtain", "obj": "gold", "alt": "glass", "count": 3}
-{"sub": "spire", "obj": "gold", "alt": "bronze", "count": 6}
-{"sub": "train car", "obj": "gold", "alt": "cloth", "count": 5}
-{"sub": "bells", "obj": "gold", "alt": "bronze", "count": 3}
-{"sub": "fence", "obj": "iron", "alt": "copper", "count": 221}
-{"sub": "bridge", "obj": "iron", "alt": "fiber", "count": 10}
-{"sub": "grate", "obj": "iron", "alt": "wood", "count": 4}
-{"sub": "door", "obj": "iron", "alt": "minerals", "count": 5}
-{"sub": "rails", "obj": "iron", "alt": "chemicals", "count": 4}
-{"sub": "staircase", "obj": "iron", "alt": "gold", "count": 3}
-{"sub": "jacket", "obj": "leather", "alt": "pewter", "count": 252}
-{"sub": "gloves", "obj": "leather", "alt": "glass", "count": 15}
-{"sub": "hat", "obj": "leather", "alt": "pewter", "count": 15}
-{"sub": "shoes", "obj": "leather", "alt": "fiber", "count": 41}
-{"sub": "outfit", "obj": "leather", "alt": "wood", "count": 4}
-{"sub": "luggage", "obj": "leather", "alt": "concrete", "count": 4}
-{"sub": "chaps", "obj": "leather", "alt": "stone", "count": 6}
-{"sub": "bed", "obj": "leather", "alt": "plaster", "count": 4}
-{"sub": "hand bag", "obj": "leather", "alt": "paper", "count": 6}
-{"sub": "tube", "obj": "metal", "alt": "bronze", "count": 24}
-{"sub": "vent", "obj": "metal", "alt": "denim", "count": 46}
-{"sub": "stairs", "obj": "metal", "alt": "rubber", "count": 52}
-{"sub": "bar", "obj": "metal", "alt": "rubber", "count": 553}
-{"sub": "tracks", "obj": "metal", "alt": "tin", "count": 254}
-{"sub": "light", "obj": "metal", "alt": "fiber", "count": 105}
-{"sub": "gates", "obj": "metal", "alt": "wood", "count": 13}
-{"sub": "barriers", "obj": "metal", "alt": "foam", "count": 6}
-{"sub": "grates", "obj": "metal", "alt": "rubber", "count": 5}
-{"sub": "column", "obj": "metal", "alt": "denim", "count": 11}
-{"sub": "cart", "obj": "metal", "alt": "denim", "count": 60}
-{"sub": "utensil", "obj": "metal", "alt": "glass", "count": 45}
-{"sub": "napkin ring", "obj": "metal", "alt": "gold", "count": 3}
-{"sub": "doors", "obj": "metal", "alt": "cloth", "count": 23}
-{"sub": "candle holder", "obj": "metal", "alt": "leather", "count": 7}
-{"sub": "tray", "obj": "metal", "alt": "iron", "count": 147}
-{"sub": "band", "obj": "metal", "alt": "pewter", "count": 15}
-{"sub": "ramp", "obj": "metal", "alt": "minerals", "count": 27}
-{"sub": "object", "obj": "metal", "alt": "denim", "count": 55}
-{"sub": "foot board", "obj": "metal", "alt": "minerals", "count": 3}
-{"sub": "archway", "obj": "metal", "alt": "tin", "count": 3}
-{"sub": "duct", "obj": "metal", "alt": "cloth", "count": 3}
-{"sub": "colander", "obj": "metal", "alt": "glass", "count": 6}
-{"sub": "bolts", "obj": "metal", "alt": "rubber", "count": 29}
-{"sub": "stairway", "obj": "metal", "alt": "gold", "count": 6}
-{"sub": "walker", "obj": "metal", "alt": "denim", "count": 3}
-{"sub": "spoke", "obj": "metal", "alt": "foam", "count": 89}
-{"sub": "sheet", "obj": "metal", "alt": "chemicals", "count": 12}
-{"sub": "bumper", "obj": "metal", "alt": "cloth", "count": 24}
-{"sub": "doorknob", "obj": "metal", "alt": "fiber", "count": 20}
-{"sub": "letter", "obj": "metal", "alt": "ceramic", "count": 11}
-{"sub": "buckle", "obj": "metal", "alt": "wood", "count": 48}
-{"sub": "fire escape", "obj": "metal", "alt": "pewter", "count": 11}
-{"sub": "key", "obj": "metal", "alt": "foam", "count": 4}
-{"sub": "server", "obj": "metal", "alt": "tin", "count": 7}
-{"sub": "shovel", "obj": "metal", "alt": "stone", "count": 5}
-{"sub": "baseball bat", "obj": "metal", "alt": "copper", "count": 7}
-{"sub": "canopy", "obj": "metal", "alt": "foam", "count": 5}
-{"sub": "nail", "obj": "metal", "alt": "stone", "count": 8}
-{"sub": "tile", "obj": "metal", "alt": "plastic", "count": 8}
-{"sub": "oven rack", "obj": "metal", "alt": "gold", "count": 5}
-{"sub": "screws", "obj": "metal", "alt": "gold", "count": 18}
-{"sub": "unit", "obj": "metal", "alt": "leather", "count": 3}
-{"sub": "storm drain", "obj": "metal", "alt": "plaster", "count": 4}
-{"sub": "umbrella", "obj": "metal", "alt": "leather", "count": 7}
-{"sub": "signal", "obj": "metal", "alt": "plaster", "count": 5}
-{"sub": "surface", "obj": "metal", "alt": "tin", "count": 14}
-{"sub": "stripe", "obj": "metal", "alt": "iron", "count": 3}
-{"sub": "spikes", "obj": "metal", "alt": "wood", "count": 5}
-{"sub": "cabinets", "obj": "metal", "alt": "plaster", "count": 4}
-{"sub": "exhaust pipe", "obj": "metal", "alt": "denim", "count": 11}
-{"sub": "ceiling", "obj": "metal", "alt": "ceramic", "count": 18}
-{"sub": "racket", "obj": "metal", "alt": "chemicals", "count": 7}
-{"sub": "ornament", "obj": "metal", "alt": "rubber", "count": 5}
-{"sub": "soccer goal", "obj": "metal", "alt": "ceramic", "count": 3}
-{"sub": "seats", "obj": "metal", "alt": "minerals", "count": 9}
-{"sub": "boat", "obj": "metal", "alt": "plaster", "count": 31}
-{"sub": "label", "obj": "metal", "alt": "rubber", "count": 3}
-{"sub": "pile", "obj": "metal", "alt": "gold", "count": 3}
-{"sub": "grab bar", "obj": "metal", "alt": "plaster", "count": 5}
-{"sub": "pizza", "obj": "metal", "alt": "leather", "count": 4}
-{"sub": "grater", "obj": "metal", "alt": "cloth", "count": 5}
-{"sub": "stop light", "obj": "metal", "alt": "wood", "count": 3}
-{"sub": "ski", "obj": "metal", "alt": "stone", "count": 5}
-{"sub": "crate", "obj": "metal", "alt": "denim", "count": 4}
-{"sub": "tennis racket", "obj": "metal", "alt": "slate", "count": 5}
-{"sub": "chainlink fence", "obj": "metal", "alt": "leather", "count": 4}
-{"sub": "spike", "obj": "metal", "alt": "bronze", "count": 19}
-{"sub": "segment", "obj": "metal", "alt": "paper", "count": 3}
-{"sub": "sidewalk", "obj": "metal", "alt": "fiber", "count": 3}
-{"sub": "cylinders", "obj": "metal", "alt": "tin", "count": 4}
-{"sub": "finial", "obj": "metal", "alt": "pewter", "count": 3}
-{"sub": "dial", "obj": "metal", "alt": "bronze", "count": 4}
-{"sub": "menu", "obj": "paper", "alt": "bronze", "count": 12}
-{"sub": "plates", "obj": "paper", "alt": "gold", "count": 44}
-{"sub": "holder", "obj": "paper", "alt": "denim", "count": 18}
-{"sub": "liner", "obj": "paper", "alt": "tin", "count": 6}
-{"sub": "card", "obj": "paper", "alt": "glass", "count": 8}
-{"sub": "stack", "obj": "paper", "alt": "gold", "count": 4}
-{"sub": "food tray", "obj": "paper", "alt": "denim", "count": 7}
-{"sub": "water bottle", "obj": "plastic", "alt": "slate", "count": 110}
-{"sub": "trash can", "obj": "plastic", "alt": "copper", "count": 55}
-{"sub": "cups", "obj": "plastic", "alt": "denim", "count": 53}
-{"sub": "box", "obj": "plastic", "alt": "minerals", "count": 56}
-{"sub": "key", "obj": "plastic", "alt": "iron", "count": 31}
-{"sub": "utensil", "obj": "plastic", "alt": "cloth", "count": 19}
-{"sub": "holder", "obj": "plastic", "alt": "concrete", "count": 23}
-{"sub": "object", "obj": "plastic", "alt": "slate", "count": 16}
-{"sub": "curtain", "obj": "plastic", "alt": "pewter", "count": 9}
-{"sub": "ladle", "obj": "plastic", "alt": "leather", "count": 4}
-{"sub": "bowls", "obj": "plastic", "alt": "copper", "count": 7}
-{"sub": "cart", "obj": "plastic", "alt": "concrete", "count": 3}
-{"sub": "handles", "obj": "plastic", "alt": "cloth", "count": 8}
-{"sub": "toy", "obj": "plastic", "alt": "copper", "count": 24}
-{"sub": "clock", "obj": "plastic", "alt": "tin", "count": 3}
-{"sub": "eye", "obj": "plastic", "alt": "tin", "count": 19}
-{"sub": "soap", "obj": "plastic", "alt": "glass", "count": 5}
-{"sub": "sheep", "obj": "plastic", "alt": "wood", "count": 6}
-{"sub": "measuring cup", "obj": "plastic", "alt": "metal", "count": 4}
-{"sub": "net", "obj": "plastic", "alt": "tin", "count": 3}
-{"sub": "outlet", "obj": "plastic", "alt": "pewter", "count": 5}
-{"sub": "dispenser", "obj": "plastic", "alt": "ceramic", "count": 15}
-{"sub": "poncho", "obj": "plastic", "alt": "copper", "count": 3}
-{"sub": "banana", "obj": "plastic", "alt": "concrete", "count": 4}
-{"sub": "cone", "obj": "plastic", "alt": "iron", "count": 28}
-{"sub": "phone", "obj": "plastic", "alt": "tin", "count": 12}
-{"sub": "cutlery", "obj": "plastic", "alt": "leather", "count": 4}
-{"sub": "blind", "obj": "plastic", "alt": "silver", "count": 11}
-{"sub": "woman", "obj": "plastic", "alt": "iron", "count": 3}
-{"sub": "flamingo", "obj": "plastic", "alt": "metal", "count": 3}
-{"sub": "display case", "obj": "plastic", "alt": "fiber", "count": 3}
-{"sub": "air freshner", "obj": "plastic", "alt": "cloth", "count": 3}
-{"sub": "duck", "obj": "rubber", "alt": "metal", "count": 14}
-{"sub": "front wheel", "obj": "rubber", "alt": "glass", "count": 3}
-{"sub": "handlebars", "obj": "rubber", "alt": "copper", "count": 3}
-{"sub": "skids", "obj": "rubber", "alt": "stone", "count": 4}
-{"sub": "wristwatch", "obj": "silver", "alt": "tin", "count": 24}
-{"sub": "vehicle", "obj": "silver", "alt": "foam", "count": 81}
-{"sub": "kettle", "obj": "silver", "alt": "pewter", "count": 81}
-{"sub": "napkin holder", "obj": "silver", "alt": "stone", "count": 6}
-{"sub": "suv", "obj": "silver", "alt": "leather", "count": 101}
-{"sub": "machine", "obj": "silver", "alt": "rubber", "count": 15}
-{"sub": "hydrant", "obj": "silver", "alt": "foam", "count": 56}
-{"sub": "stove", "obj": "silver", "alt": "bronze", "count": 90}
-{"sub": "garage door", "obj": "silver", "alt": "concrete", "count": 3}
-{"sub": "carts", "obj": "silver", "alt": "copper", "count": 6}
-{"sub": "monitor", "obj": "silver", "alt": "paper", "count": 68}
-{"sub": "tracks", "obj": "silver", "alt": "cloth", "count": 31}
-{"sub": "wheel", "obj": "silver", "alt": "concrete", "count": 104}
-{"sub": "pad", "obj": "silver", "alt": "wood", "count": 6}
-{"sub": "television", "obj": "silver", "alt": "rubber", "count": 68}
-{"sub": "basin", "obj": "silver", "alt": "bronze", "count": 5}
-{"sub": "candle holder", "obj": "silver", "alt": "ceramic", "count": 4}
-{"sub": "plane", "obj": "silver", "alt": "minerals", "count": 140}
-{"sub": "emblem", "obj": "silver", "alt": "paper", "count": 16}
-{"sub": "bolt", "obj": "silver", "alt": "fiber", "count": 102}
-{"sub": "mirror", "obj": "silver", "alt": "cloth", "count": 110}
-{"sub": "counter", "obj": "silver", "alt": "plaster", "count": 31}
-{"sub": "butter knife", "obj": "silver", "alt": "paper", "count": 38}
-{"sub": "candelabra", "obj": "silver", "alt": "glass", "count": 3}
-{"sub": "keys", "obj": "silver", "alt": "stone", "count": 15}
-{"sub": "wing", "obj": "silver", "alt": "glass", "count": 56}
-{"sub": "tap", "obj": "silver", "alt": "chemicals", "count": 37}
-{"sub": "paddle", "obj": "silver", "alt": "chemicals", "count": 5}
-{"sub": "buckle", "obj": "silver", "alt": "paper", "count": 71}
-{"sub": "device", "obj": "silver", "alt": "concrete", "count": 11}
-{"sub": "shirt", "obj": "silver", "alt": "concrete", "count": 11}
-{"sub": "range hood", "obj": "silver", "alt": "rubber", "count": 5}
-{"sub": "sticker", "obj": "silver", "alt": "wood", "count": 6}
-{"sub": "containers", "obj": "silver", "alt": "wood", "count": 10}
-{"sub": "drawer pull", "obj": "silver", "alt": "fiber", "count": 16}
-{"sub": "tissue box", "obj": "silver", "alt": "pewter", "count": 5}
-{"sub": "napkin dispenser", "obj": "silver", "alt": "leather", "count": 3}
-{"sub": "gas tank", "obj": "silver", "alt": "iron", "count": 12}
-{"sub": "cross", "obj": "silver", "alt": "minerals", "count": 6}
-{"sub": "face", "obj": "silver", "alt": "bronze", "count": 7}
-{"sub": "ladle", "obj": "silver", "alt": "concrete", "count": 5}
-{"sub": "screws", "obj": "silver", "alt": "fiber", "count": 19}
-{"sub": "towel bar", "obj": "silver", "alt": "plastic", "count": 7}
-{"sub": "cycle", "obj": "silver", "alt": "bronze", "count": 3}
-{"sub": "graffiti", "obj": "silver", "alt": "minerals", "count": 3}
-{"sub": "boots", "obj": "silver", "alt": "plastic", "count": 7}
-{"sub": "fighter jet", "obj": "silver", "alt": "slate", "count": 4}
-{"sub": "chains", "obj": "silver", "alt": "bronze", "count": 11}
-{"sub": "case", "obj": "silver", "alt": "stone", "count": 8}
-{"sub": "earings", "obj": "silver", "alt": "bronze", "count": 3}
-{"sub": "magnet", "obj": "silver", "alt": "tin", "count": 9}
-{"sub": "motor", "obj": "silver", "alt": "gold", "count": 6}
-{"sub": "bleachers", "obj": "silver", "alt": "gold", "count": 11}
-{"sub": "pin", "obj": "silver", "alt": "tin", "count": 4}
-{"sub": "control", "obj": "silver", "alt": "bronze", "count": 3}
-{"sub": "fastener", "obj": "silver", "alt": "denim", "count": 5}
-{"sub": "bracket", "obj": "silver", "alt": "plastic", "count": 25}
-{"sub": "platform", "obj": "silver", "alt": "slate", "count": 5}
-{"sub": "dog", "obj": "silver", "alt": "bronze", "count": 4}
-{"sub": "wheels", "obj": "silver", "alt": "minerals", "count": 14}
-{"sub": "nose", "obj": "silver", "alt": "wood", "count": 11}
-{"sub": "eye", "obj": "silver", "alt": "ceramic", "count": 3}
-{"sub": "vest", "obj": "silver", "alt": "rubber", "count": 9}
-{"sub": "headboard", "obj": "silver", "alt": "glass", "count": 3}
-{"sub": "projector", "obj": "silver", "alt": "plastic", "count": 4}
-{"sub": "pocket watch", "obj": "silver", "alt": "paper", "count": 3}
-{"sub": "showerhead", "obj": "silver", "alt": "cloth", "count": 7}
-{"sub": "aluminum foil", "obj": "silver", "alt": "gold", "count": 4}
-{"sub": "router", "obj": "silver", "alt": "slate", "count": 3}
-{"sub": "wiper", "obj": "silver", "alt": "iron", "count": 3}
-{"sub": "earing", "obj": "silver", "alt": "chemicals", "count": 4}
-{"sub": "pants", "obj": "silver", "alt": "slate", "count": 3}
-{"sub": "panels", "obj": "silver", "alt": "copper", "count": 3}
-{"sub": "toaster oven", "obj": "silver", "alt": "wood", "count": 5}
-{"sub": "fork tine", "obj": "silver", "alt": "rubber", "count": 4}
-{"sub": "toilet paper", "obj": "silver", "alt": "minerals", "count": 4}
-{"sub": "ruler", "obj": "silver", "alt": "wood", "count": 4}
-{"sub": "ceiling light", "obj": "silver", "alt": "ceramic", "count": 4}
-{"sub": "stars", "obj": "silver", "alt": "ceramic", "count": 3}
-{"sub": "freezer", "obj": "silver", "alt": "plastic", "count": 4}
-{"sub": "border", "obj": "silver", "alt": "minerals", "count": 5}
-{"sub": "area", "obj": "silver", "alt": "plaster", "count": 5}
-{"sub": "shoelace holder", "obj": "silver", "alt": "minerals", "count": 4}
-{"sub": "roof", "obj": "slate", "alt": "rubber", "count": 7}
-{"sub": "ground", "obj": "stone", "alt": "fiber", "count": 67}
-{"sub": "pathway", "obj": "stone", "alt": "pewter", "count": 11}
-{"sub": "tiles", "obj": "stone", "alt": "chemicals", "count": 19}
-{"sub": "street", "obj": "stone", "alt": "copper", "count": 26}
-{"sub": "barrier", "obj": "stone", "alt": "tin", "count": 10}
-{"sub": "frame", "obj": "stone", "alt": "ceramic", "count": 4}
-{"sub": "walls", "obj": "stone", "alt": "paper", "count": 14}
-{"sub": "pavement", "obj": "stone", "alt": "bronze", "count": 26}
-{"sub": "benches", "obj": "stone", "alt": "copper", "count": 3}
-{"sub": "planter", "obj": "stone", "alt": "denim", "count": 13}
-{"sub": "slab", "obj": "stone", "alt": "bronze", "count": 11}
-{"sub": "figure", "obj": "stone", "alt": "minerals", "count": 4}
-{"sub": "can", "obj": "tin", "alt": "chemicals", "count": 17}
-{"sub": "shelves", "obj": "wood", "alt": "chemicals", "count": 11}
-{"sub": "mirror", "obj": "wood", "alt": "minerals", "count": 17}
-{"sub": "table top", "obj": "wood", "alt": "foam", "count": 21}
-{"sub": "dresser", "obj": "wood", "alt": "chemicals", "count": 55}
-{"sub": "panel", "obj": "wood", "alt": "leather", "count": 79}
-{"sub": "moulding", "obj": "wood", "alt": "minerals", "count": 5}
-{"sub": "divider", "obj": "wood", "alt": "denim", "count": 4}
-{"sub": "trees", "obj": "wood", "alt": "slate", "count": 3}
-{"sub": "structure", "obj": "wood", "alt": "paper", "count": 27}
-{"sub": "beams", "obj": "wood", "alt": "ceramic", "count": 26}
-{"sub": "base", "obj": "wood", "alt": "paper", "count": 11}
-{"sub": "building", "obj": "wood", "alt": "leather", "count": 41}
-{"sub": "canopy", "obj": "wood", "alt": "minerals", "count": 4}
-{"sub": "wheel", "obj": "wood", "alt": "bronze", "count": 4}
-{"sub": "tree", "obj": "wood", "alt": "paper", "count": 12}
-{"sub": "deck", "obj": "wood", "alt": "glass", "count": 25}
-{"sub": "bed post", "obj": "wood", "alt": "plaster", "count": 3}
-{"sub": "pieces", "obj": "wood", "alt": "cloth", "count": 3}
-{"sub": "snowboard", "obj": "wood", "alt": "pewter", "count": 3}
-{"sub": "platform", "obj": "wood", "alt": "ceramic", "count": 12}
-{"sub": "seats", "obj": "wood", "alt": "paper", "count": 3}
-{"sub": "power pole", "obj": "wood", "alt": "chemicals", "count": 3}
-{"sub": "train tracks", "obj": "wood", "alt": "fiber", "count": 5}
-{"sub": "backrest", "obj": "wood", "alt": "copper", "count": 4}
-{"sub": "racket", "obj": "wood", "alt": "rubber", "count": 6}
-{"sub": "toothpick", "obj": "wood", "alt": "rubber", "count": 3}
-{"sub": "hutch", "obj": "wood", "alt": "foam", "count": 3}
-{"sub": "splinter", "obj": "wood", "alt": "rubber", "count": 5}
+{"sub": "drawer pull", "obj": "bronze", "alt": "chemicals", "count": 6}
+{"sub": "plaque", "obj": "bronze", "alt": "fiber", "count": 4}
+{"sub": "vase", "obj": "ceramic", "alt": "slate", "count": 96}
+{"sub": "plate", "obj": "ceramic", "alt": "fiber", "count": 248}
+{"sub": "owl", "obj": "ceramic", "alt": "wood", "count": 3}
+{"sub": "lid", "obj": "ceramic", "alt": "slate", "count": 4}
+{"sub": "spoon", "obj": "ceramic", "alt": "bronze", "count": 8}
+{"sub": "tile floor", "obj": "ceramic", "alt": "iron", "count": 3}
+{"sub": "pillow", "obj": "cloth", "alt": "metal", "count": 4}
+{"sub": "comforter", "obj": "cloth", "alt": "bronze", "count": 3}
+{"sub": "planter", "obj": "concrete", "alt": "iron", "count": 33}
+{"sub": "fence", "obj": "concrete", "alt": "tin", "count": 22}
+{"sub": "track", "obj": "concrete", "alt": "fiber", "count": 3}
+{"sub": "statue", "obj": "concrete", "alt": "paper", "count": 18}
+{"sub": "post", "obj": "concrete", "alt": "cloth", "count": 59}
+{"sub": "flooring", "obj": "concrete", "alt": "pewter", "count": 15}
+{"sub": "island", "obj": "concrete", "alt": "gold", "count": 4}
+{"sub": "silo", "obj": "concrete", "alt": "cloth", "count": 4}
+{"sub": "barricade", "obj": "concrete", "alt": "chemicals", "count": 5}
+{"sub": "ceiling", "obj": "concrete", "alt": "rubber", "count": 4}
+{"sub": "half pipe", "obj": "concrete", "alt": "fiber", "count": 4}
+{"sub": "vase", "obj": "concrete", "alt": "chemicals", "count": 5}
+{"sub": "trim", "obj": "concrete", "alt": "plastic", "count": 3}
+{"sub": "roof", "obj": "copper", "alt": "minerals", "count": 3}
+{"sub": "clock", "obj": "copper", "alt": "fiber", "count": 5}
+{"sub": "vest", "obj": "denim", "alt": "tin", "count": 7}
+{"sub": "box", "obj": "foam", "alt": "denim", "count": 3}
+{"sub": "top", "obj": "glass", "alt": "minerals", "count": 46}
+{"sub": "building", "obj": "glass", "alt": "plaster", "count": 146}
+{"sub": "counter", "obj": "glass", "alt": "cloth", "count": 14}
+{"sub": "pot", "obj": "glass", "alt": "tin", "count": 8}
+{"sub": "cabinet door", "obj": "glass", "alt": "chemicals", "count": 6}
+{"sub": "tower", "obj": "glass", "alt": "foam", "count": 4}
+{"sub": "window pane", "obj": "glass", "alt": "bronze", "count": 48}
+{"sub": "block", "obj": "glass", "alt": "ceramic", "count": 16}
+{"sub": "frame", "obj": "glass", "alt": "paper", "count": 8}
+{"sub": "fence", "obj": "glass", "alt": "rubber", "count": 3}
+{"sub": "headlight", "obj": "glass", "alt": "copper", "count": 10}
+{"sub": "sculpture", "obj": "glass", "alt": "pewter", "count": 4}
+{"sub": "stand", "obj": "glass", "alt": "leather", "count": 13}
+{"sub": "walkway", "obj": "glass", "alt": "tin", "count": 5}
+{"sub": "circle", "obj": "glass", "alt": "rubber", "count": 4}
+{"sub": "petal", "obj": "glass", "alt": "paper", "count": 5}
+{"sub": "art piece", "obj": "glass", "alt": "copper", "count": 4}
+{"sub": "comforter", "obj": "gold", "alt": "ceramic", "count": 9}
+{"sub": "strip", "obj": "gold", "alt": "bronze", "count": 4}
+{"sub": "candlestick", "obj": "gold", "alt": "bronze", "count": 5}
+{"sub": "glass", "obj": "gold", "alt": "minerals", "count": 13}
+{"sub": "ring", "obj": "gold", "alt": "chemicals", "count": 159}
+{"sub": "minivan", "obj": "gold", "alt": "ceramic", "count": 4}
+{"sub": "letter", "obj": "gold", "alt": "ceramic", "count": 101}
+{"sub": "wallpaper", "obj": "gold", "alt": "wood", "count": 5}
+{"sub": "faucet", "obj": "gold", "alt": "paper", "count": 39}
+{"sub": "buckle", "obj": "gold", "alt": "minerals", "count": 24}
+{"sub": "towel ring", "obj": "gold", "alt": "leather", "count": 3}
+{"sub": "key", "obj": "gold", "alt": "concrete", "count": 5}
+{"sub": "bell", "obj": "gold", "alt": "minerals", "count": 24}
+{"sub": "dining chair", "obj": "gold", "alt": "paper", "count": 8}
+{"sub": "detail", "obj": "gold", "alt": "plaster", "count": 12}
+{"sub": "minute hand", "obj": "gold", "alt": "tin", "count": 6}
+{"sub": "garland", "obj": "gold", "alt": "plastic", "count": 4}
+{"sub": "clock face", "obj": "gold", "alt": "iron", "count": 7}
+{"sub": "wine", "obj": "gold", "alt": "fiber", "count": 3}
+{"sub": "container", "obj": "gold", "alt": "leather", "count": 7}
+{"sub": "liquid", "obj": "gold", "alt": "silver", "count": 5}
+{"sub": "lion", "obj": "gold", "alt": "chemicals", "count": 6}
+{"sub": "latch", "obj": "gold", "alt": "tin", "count": 17}
+{"sub": "suitcase", "obj": "gold", "alt": "denim", "count": 5}
+{"sub": "racket", "obj": "gold", "alt": "iron", "count": 12}
+{"sub": "dot", "obj": "gold", "alt": "denim", "count": 6}
+{"sub": "clock tower", "obj": "gold", "alt": "denim", "count": 5}
+{"sub": "bird", "obj": "gold", "alt": "stone", "count": 4}
+{"sub": "item", "obj": "gold", "alt": "iron", "count": 5}
+{"sub": "runner", "obj": "gold", "alt": "wood", "count": 3}
+{"sub": "globe", "obj": "gold", "alt": "rubber", "count": 3}
+{"sub": "train car", "obj": "gold", "alt": "tin", "count": 6}
+{"sub": "mark", "obj": "gold", "alt": "cloth", "count": 4}
+{"sub": "canister", "obj": "gold", "alt": "bronze", "count": 3}
+{"sub": "handrail", "obj": "iron", "alt": "plastic", "count": 4}
+{"sub": "fencing", "obj": "iron", "alt": "minerals", "count": 11}
+{"sub": "door", "obj": "iron", "alt": "pewter", "count": 6}
+{"sub": "sheet", "obj": "iron", "alt": "copper", "count": 3}
+{"sub": "star", "obj": "iron", "alt": "ceramic", "count": 3}
+{"sub": "armchair", "obj": "leather", "alt": "plastic", "count": 10}
+{"sub": "wallet", "obj": "leather", "alt": "cloth", "count": 26}
+{"sub": "saddle", "obj": "leather", "alt": "wood", "count": 44}
+{"sub": "case", "obj": "leather", "alt": "concrete", "count": 16}
+{"sub": "recliner", "obj": "leather", "alt": "cloth", "count": 12}
+{"sub": "handle", "obj": "leather", "alt": "denim", "count": 21}
+{"sub": "satchel", "obj": "leather", "alt": "foam", "count": 3}
+{"sub": "hand bag", "obj": "leather", "alt": "stone", "count": 6}
+{"sub": "mug", "obj": "metal", "alt": "foam", "count": 6}
+{"sub": "faucet", "obj": "metal", "alt": "plaster", "count": 274}
+{"sub": "lamp post", "obj": "metal", "alt": "tin", "count": 44}
+{"sub": "sign", "obj": "metal", "alt": "foam", "count": 316}
+{"sub": "file cabinet", "obj": "metal", "alt": "chemicals", "count": 4}
+{"sub": "grid", "obj": "metal", "alt": "foam", "count": 11}
+{"sub": "trash can", "obj": "metal", "alt": "pewter", "count": 102}
+{"sub": "tower", "obj": "metal", "alt": "cloth", "count": 131}
+{"sub": "stand", "obj": "metal", "alt": "chemicals", "count": 105}
+{"sub": "roof", "obj": "metal", "alt": "minerals", "count": 125}
+{"sub": "fender", "obj": "metal", "alt": "tin", "count": 14}
+{"sub": "napkin ring", "obj": "metal", "alt": "paper", "count": 3}
+{"sub": "design", "obj": "metal", "alt": "leather", "count": 16}
+{"sub": "bracket", "obj": "metal", "alt": "leather", "count": 103}
+{"sub": "pillar", "obj": "metal", "alt": "cloth", "count": 31}
+{"sub": "street lamp", "obj": "metal", "alt": "wood", "count": 32}
+{"sub": "traffic light", "obj": "metal", "alt": "bronze", "count": 26}
+{"sub": "edge", "obj": "metal", "alt": "minerals", "count": 23}
+{"sub": "archway", "obj": "metal", "alt": "paper", "count": 3}
+{"sub": "detector", "obj": "metal", "alt": "silver", "count": 3}
+{"sub": "spoon", "obj": "metal", "alt": "tin", "count": 192}
+{"sub": "drain cover", "obj": "metal", "alt": "paper", "count": 5}
+{"sub": "chair stack", "obj": "metal", "alt": "stone", "count": 4}
+{"sub": "divider", "obj": "metal", "alt": "foam", "count": 6}
+{"sub": "stair railing", "obj": "metal", "alt": "bronze", "count": 4}
+{"sub": "pail", "obj": "metal", "alt": "denim", "count": 13}
+{"sub": "doorknob", "obj": "metal", "alt": "iron", "count": 20}
+{"sub": "pizza cutter", "obj": "metal", "alt": "cloth", "count": 8}
+{"sub": "belt", "obj": "metal", "alt": "bronze", "count": 8}
+{"sub": "stake", "obj": "metal", "alt": "pewter", "count": 7}
+{"sub": "screw", "obj": "metal", "alt": "leather", "count": 101}
+{"sub": "bus", "obj": "metal", "alt": "pewter", "count": 5}
+{"sub": "wing", "obj": "metal", "alt": "leather", "count": 20}
+{"sub": "clock", "obj": "metal", "alt": "rubber", "count": 89}
+{"sub": "plane", "obj": "metal", "alt": "concrete", "count": 18}
+{"sub": "station", "obj": "metal", "alt": "copper", "count": 4}
+{"sub": "oven rack", "obj": "metal", "alt": "tin", "count": 6}
+{"sub": "paper towel holder", "obj": "metal", "alt": "iron", "count": 3}
+{"sub": "armrest", "obj": "metal", "alt": "plaster", "count": 15}
+{"sub": "flush", "obj": "metal", "alt": "glass", "count": 6}
+{"sub": "platform", "obj": "metal", "alt": "plastic", "count": 21}
+{"sub": "bus stop", "obj": "metal", "alt": "slate", "count": 4}
+{"sub": "trailer", "obj": "metal", "alt": "concrete", "count": 10}
+{"sub": "scissor", "obj": "metal", "alt": "plastic", "count": 4}
+{"sub": "ball", "obj": "metal", "alt": "slate", "count": 11}
+{"sub": "drawer pull", "obj": "metal", "alt": "glass", "count": 7}
+{"sub": "side", "obj": "metal", "alt": "bronze", "count": 11}
+{"sub": "towel holder", "obj": "metal", "alt": "leather", "count": 4}
+{"sub": "rafter", "obj": "metal", "alt": "slate", "count": 6}
+{"sub": "eagle", "obj": "metal", "alt": "wood", "count": 3}
+{"sub": "banister", "obj": "metal", "alt": "rubber", "count": 3}
+{"sub": "plank", "obj": "metal", "alt": "foam", "count": 3}
+{"sub": "window frame", "obj": "metal", "alt": "paper", "count": 4}
+{"sub": "grip", "obj": "metal", "alt": "minerals", "count": 3}
+{"sub": "figure", "obj": "metal", "alt": "fiber", "count": 4}
+{"sub": "counter top", "obj": "metal", "alt": "rubber", "count": 6}
+{"sub": "lamp pole", "obj": "metal", "alt": "glass", "count": 4}
+{"sub": "cooler", "obj": "metal", "alt": "concrete", "count": 3}
+{"sub": "badge", "obj": "metal", "alt": "wood", "count": 4}
+{"sub": "bench support", "obj": "metal", "alt": "glass", "count": 4}
+{"sub": "drum", "obj": "metal", "alt": "plaster", "count": 4}
+{"sub": "sidewalk", "obj": "metal", "alt": "iron", "count": 3}
+{"sub": "corner", "obj": "metal", "alt": "wood", "count": 4}
+{"sub": "urinal", "obj": "metal", "alt": "chemicals", "count": 3}
+{"sub": "bag", "obj": "paper", "alt": "tin", "count": 184}
+{"sub": "towel", "obj": "paper", "alt": "chemicals", "count": 94}
+{"sub": "document", "obj": "paper", "alt": "chemicals", "count": 3}
+{"sub": "magazine", "obj": "paper", "alt": "slate", "count": 3}
+{"sub": "bowl", "obj": "paper", "alt": "foam", "count": 22}
+{"sub": "tie", "obj": "paper", "alt": "glass", "count": 5}
+{"sub": "food tray", "obj": "paper", "alt": "copper", "count": 7}
+{"sub": "water bottle", "obj": "plastic", "alt": "copper", "count": 111}
+{"sub": "cup", "obj": "plastic", "alt": "plaster", "count": 564}
+{"sub": "carrier", "obj": "plastic", "alt": "copper", "count": 3}
+{"sub": "box", "obj": "plastic", "alt": "chemicals", "count": 60}
+{"sub": "cap", "obj": "plastic", "alt": "glass", "count": 16}
+{"sub": "water jug", "obj": "plastic", "alt": "ceramic", "count": 3}
+{"sub": "tag", "obj": "plastic", "alt": "leather", "count": 13}
+{"sub": "carton", "obj": "plastic", "alt": "denim", "count": 4}
+{"sub": "frame", "obj": "plastic", "alt": "rubber", "count": 8}
+{"sub": "trash", "obj": "plastic", "alt": "glass", "count": 8}
+{"sub": "cart", "obj": "plastic", "alt": "cloth", "count": 3}
+{"sub": "toilet", "obj": "plastic", "alt": "tin", "count": 14}
+{"sub": "straw", "obj": "plastic", "alt": "tin", "count": 55}
+{"sub": "pipe", "obj": "plastic", "alt": "stone", "count": 20}
+{"sub": "soap bottle", "obj": "plastic", "alt": "iron", "count": 3}
+{"sub": "sippy cup", "obj": "plastic", "alt": "rubber", "count": 3}
+{"sub": "cone", "obj": "plastic", "alt": "foam", "count": 30}
+{"sub": "stack", "obj": "plastic", "alt": "minerals", "count": 4}
+{"sub": "suitcase", "obj": "plastic", "alt": "denim", "count": 8}
+{"sub": "stand", "obj": "plastic", "alt": "slate", "count": 8}
+{"sub": "cell phone", "obj": "plastic", "alt": "minerals", "count": 3}
+{"sub": "thing", "obj": "plastic", "alt": "iron", "count": 4}
+{"sub": "figure", "obj": "plastic", "alt": "copper", "count": 3}
+{"sub": "paper", "obj": "plastic", "alt": "fiber", "count": 6}
+{"sub": "window blind", "obj": "plastic", "alt": "paper", "count": 5}
+{"sub": "spigot", "obj": "plastic", "alt": "iron", "count": 3}
+{"sub": "shoe", "obj": "plastic", "alt": "foam", "count": 5}
+{"sub": "nose", "obj": "plastic", "alt": "bronze", "count": 6}
+{"sub": "tent", "obj": "plastic", "alt": "concrete", "count": 4}
+{"sub": "plate", "obj": "rubber", "alt": "pewter", "count": 5}
+{"sub": "plug", "obj": "rubber", "alt": "paper", "count": 3}
+{"sub": "cone", "obj": "rubber", "alt": "minerals", "count": 5}
+{"sub": "spatula", "obj": "rubber", "alt": "tin", "count": 5}
+{"sub": "handle", "obj": "silver", "alt": "concrete", "count": 1298}
+{"sub": "oven", "obj": "silver", "alt": "paper", "count": 112}
+{"sub": "candle stick", "obj": "silver", "alt": "chemicals", "count": 4}
+{"sub": "motorcycle", "obj": "silver", "alt": "foam", "count": 160}
+{"sub": "sign post", "obj": "silver", "alt": "leather", "count": 11}
+{"sub": "watch", "obj": "silver", "alt": "minerals", "count": 359}
+{"sub": "flush lever", "obj": "silver", "alt": "paper", "count": 3}
+{"sub": "thermos", "obj": "silver", "alt": "copper", "count": 12}
+{"sub": "ground", "obj": "silver", "alt": "copper", "count": 20}
+{"sub": "hair", "obj": "silver", "alt": "concrete", "count": 22}
+{"sub": "can", "obj": "silver", "alt": "bronze", "count": 114}
+{"sub": "lid", "obj": "silver", "alt": "leather", "count": 80}
+{"sub": "antenna", "obj": "silver", "alt": "plaster", "count": 16}
+{"sub": "radiator", "obj": "silver", "alt": "iron", "count": 12}
+{"sub": "sink faucet", "obj": "silver", "alt": "tin", "count": 18}
+{"sub": "number", "obj": "silver", "alt": "slate", "count": 25}
+{"sub": "bin", "obj": "silver", "alt": "minerals", "count": 12}
+{"sub": "hatchback", "obj": "silver", "alt": "metal", "count": 9}
+{"sub": "stapler", "obj": "silver", "alt": "ceramic", "count": 5}
+{"sub": "shower head", "obj": "silver", "alt": "pewter", "count": 79}
+{"sub": "exhaust", "obj": "silver", "alt": "glass", "count": 31}
+{"sub": "fork tine", "obj": "silver", "alt": "paper", "count": 5}
+{"sub": "computer", "obj": "silver", "alt": "paper", "count": 93}
+{"sub": "wall", "obj": "silver", "alt": "copper", "count": 42}
+{"sub": "guardrail", "obj": "silver", "alt": "plastic", "count": 6}
+{"sub": "cat", "obj": "silver", "alt": "concrete", "count": 8}
+{"sub": "computer speaker", "obj": "silver", "alt": "foam", "count": 3}
+{"sub": "camera", "obj": "silver", "alt": "cloth", "count": 122}
+{"sub": "hammer", "obj": "silver", "alt": "concrete", "count": 3}
+{"sub": "range hood", "obj": "silver", "alt": "paper", "count": 5}
+{"sub": "sticker", "obj": "silver", "alt": "minerals", "count": 8}
+{"sub": "printer", "obj": "silver", "alt": "cloth", "count": 15}
+{"sub": "kickstand", "obj": "silver", "alt": "plaster", "count": 12}
+{"sub": "side mirror", "obj": "silver", "alt": "denim", "count": 9}
+{"sub": "ski pole", "obj": "silver", "alt": "copper", "count": 61}
+{"sub": "cross", "obj": "silver", "alt": "ceramic", "count": 6}
+{"sub": "bell", "obj": "silver", "alt": "slate", "count": 35}
+{"sub": "symbol", "obj": "silver", "alt": "plastic", "count": 7}
+{"sub": "tie", "obj": "silver", "alt": "copper", "count": 39}
+{"sub": "opener", "obj": "silver", "alt": "minerals", "count": 6}
+{"sub": "pull", "obj": "silver", "alt": "wood", "count": 9}
+{"sub": "grate", "obj": "silver", "alt": "bronze", "count": 14}
+{"sub": "crown", "obj": "silver", "alt": "minerals", "count": 4}
+{"sub": "hardware", "obj": "silver", "alt": "chemicals", "count": 19}
+{"sub": "bottom", "obj": "silver", "alt": "bronze", "count": 11}
+{"sub": "back", "obj": "silver", "alt": "minerals", "count": 5}
+{"sub": "safety rail", "obj": "silver", "alt": "wood", "count": 3}
+{"sub": "head", "obj": "silver", "alt": "slate", "count": 12}
+{"sub": "arm", "obj": "silver", "alt": "minerals", "count": 5}
+{"sub": "wrapper", "obj": "silver", "alt": "glass", "count": 3}
+{"sub": "brush", "obj": "silver", "alt": "gold", "count": 4}
+{"sub": "oven door", "obj": "silver", "alt": "stone", "count": 6}
+{"sub": "leash", "obj": "silver", "alt": "bronze", "count": 5}
+{"sub": "grommet", "obj": "silver", "alt": "iron", "count": 5}
+{"sub": "background", "obj": "silver", "alt": "cloth", "count": 3}
+{"sub": "plug", "obj": "silver", "alt": "glass", "count": 7}
+{"sub": "railroad track", "obj": "silver", "alt": "paper", "count": 5}
+{"sub": "cheese grater", "obj": "silver", "alt": "wood", "count": 3}
+{"sub": "metal fork", "obj": "silver", "alt": "copper", "count": 11}
+{"sub": "lining", "obj": "silver", "alt": "ceramic", "count": 3}
+{"sub": "showerhead", "obj": "silver", "alt": "paper", "count": 7}
+{"sub": "dinner fork", "obj": "silver", "alt": "glass", "count": 4}
+{"sub": "baking sheet", "obj": "silver", "alt": "rubber", "count": 6}
+{"sub": "luggage cart", "obj": "silver", "alt": "bronze", "count": 4}
+{"sub": "pickup", "obj": "silver", "alt": "glass", "count": 4}
+{"sub": "pizza", "obj": "silver", "alt": "iron", "count": 3}
+{"sub": "lap top", "obj": "silver", "alt": "bronze", "count": 8}
+{"sub": "phone booth", "obj": "silver", "alt": "cloth", "count": 3}
+{"sub": "watch band", "obj": "silver", "alt": "plastic", "count": 4}
+{"sub": "nose ring", "obj": "silver", "alt": "tin", "count": 4}
+{"sub": "trash bin", "obj": "silver", "alt": "iron", "count": 8}
+{"sub": "shovel", "obj": "silver", "alt": "tin", "count": 3}
+{"sub": "toolbox", "obj": "silver", "alt": "fiber", "count": 3}
+{"sub": "metal chain", "obj": "silver", "alt": "concrete", "count": 3}
+{"sub": "fence pole", "obj": "silver", "alt": "denim", "count": 7}
+{"sub": "sidewalk", "obj": "stone", "alt": "rubber", "count": 70}
+{"sub": "column", "obj": "stone", "alt": "rubber", "count": 88}
+{"sub": "sculpture", "obj": "stone", "alt": "chemicals", "count": 15}
+{"sub": "planter", "obj": "stone", "alt": "iron", "count": 14}
+{"sub": "countertop", "obj": "stone", "alt": "leather", "count": 10}
+{"sub": "ledge", "obj": "stone", "alt": "pewter", "count": 21}
+{"sub": "dog", "obj": "stone", "alt": "tin", "count": 3}
+{"sub": "clock tower", "obj": "stone", "alt": "ceramic", "count": 16}
+{"sub": "face", "obj": "stone", "alt": "rubber", "count": 4}
+{"sub": "elephant", "obj": "stone", "alt": "leather", "count": 7}
+{"sub": "bear", "obj": "stone", "alt": "cloth", "count": 6}
+{"sub": "marker", "obj": "stone", "alt": "glass", "count": 4}
+{"sub": "building", "obj": "tin", "alt": "rubber", "count": 4}
+{"sub": "cabinet", "obj": "wood", "alt": "rubber", "count": 428}
+{"sub": "box", "obj": "wood", "alt": "slate", "count": 32}
+{"sub": "pole", "obj": "wood", "alt": "leather", "count": 260}
+{"sub": "dock", "obj": "wood", "alt": "glass", "count": 36}
+{"sub": "nightstand", "obj": "wood", "alt": "iron", "count": 21}
+{"sub": "handrail", "obj": "wood", "alt": "bronze", "count": 6}
+{"sub": "top", "obj": "wood", "alt": "minerals", "count": 9}
+{"sub": "picture", "obj": "wood", "alt": "tin", "count": 7}
+{"sub": "fireplace", "obj": "wood", "alt": "copper", "count": 3}
+{"sub": "base", "obj": "wood", "alt": "cloth", "count": 12}
+{"sub": "fence post", "obj": "wood", "alt": "chemicals", "count": 17}
+{"sub": "bunkbed", "obj": "wood", "alt": "foam", "count": 4}
+{"sub": "wheel", "obj": "wood", "alt": "foam", "count": 6}
+{"sub": "branch", "obj": "wood", "alt": "iron", "count": 12}
+{"sub": "spatula", "obj": "wood", "alt": "ceramic", "count": 7}
+{"sub": "cupboard", "obj": "wood", "alt": "ceramic", "count": 26}
+{"sub": "snowboard", "obj": "wood", "alt": "concrete", "count": 3}
+{"sub": "knife", "obj": "wood", "alt": "iron", "count": 6}
+{"sub": "knife block", "obj": "wood", "alt": "minerals", "count": 8}
+{"sub": "dining chair", "obj": "wood", "alt": "denim", "count": 7}
+{"sub": "boardwalk", "obj": "wood", "alt": "concrete", "count": 4}
+{"sub": "support beam", "obj": "wood", "alt": "plastic", "count": 6}
+{"sub": "shaving", "obj": "wood", "alt": "rubber", "count": 3}
+{"sub": "tower", "obj": "wood", "alt": "chemicals", "count": 5}
+{"sub": "splinter", "obj": "wood", "alt": "plastic", "count": 5}
