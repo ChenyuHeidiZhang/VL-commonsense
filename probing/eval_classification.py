@@ -1,9 +1,10 @@
 # evaluate visual commonsense
+# run in the parent directory
 
 import os
 import json
 import numpy as np
-from scipy.stats.stats import pearsonr, spearmanr
+from scipy.stats.stats import kendalltau, pearsonr, spearmanr
 from tqdm import tqdm
 from sklearn.linear_model import LogisticRegression
 import clip
@@ -48,9 +49,9 @@ def get_features(data, objs, relation, model, tokenizer, model_name):
                 print(f'test obj {obj} not in train objs')
                 continue
             all_labels.append(objs.index(obj))
-            #text = get_coda_template(sub)
-            #if text == None:
-            text = template.format(relation, sub)
+            # text = get_coda_template(sub)
+            # if text == None:
+            #     text = template.format(relation, sub)
             if model_name=='bert':
                 input_ids = torch.tensor([tokenizer.encode(text)]).to(device)
                 emb = model.embeddings(input_ids=input_ids)
@@ -83,6 +84,8 @@ def run():
     parser = argparse.ArgumentParser(description='eval parser')
     parser.add_argument('--model', type=str, default='bert',
                         help='name of the model (bert, oscar, or clip)')
+    parser.add_argument('--model_size', type=str, default='base',
+                        help='size of the model (base, large)')
     parser.add_argument('--relation', type=str, default='shape',
                         help='relation to evaluate (shape, material, color, coda, coda_any...)')
     parser.add_argument('--group', type=str, default='',
@@ -96,7 +99,7 @@ def run():
 
     # Load the model
     model_name = args.model
-    model, tokenizer = init_model(model_name, device)
+    model, tokenizer = init_model(model_name, args.model_size, device)
     relation = args.relation
     group = args.group
     train_data, objs = get_data(f'mine-data/db/{relation}/{group}/train.jsonl')
@@ -145,6 +148,7 @@ def run():
         for i in test_ids:
             true_dist = np.take(dist_dict[test_data[i][0]], word_ids)
             sp = spearmanr(true_dist, logprob[idx])[0]
+            # sp = (kendalltau(true_dist, logprob[idx])[0] + sp) / 2
             idx += 1
             if np.sum(true_dist) != 0: sp_corrs.append(sp)
         sp_corr = np.mean(sp_corrs)

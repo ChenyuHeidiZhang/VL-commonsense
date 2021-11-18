@@ -10,6 +10,7 @@ def load_db_general(path, **kwargs):
     for sp in ret:
         files = {sub: os.path.join(path, sub, f'{sp}.jsonl') for sub in subs}
         if '/vl' in path:
+            # if ret == 'dev': continue  # don't need dev
             ret[sp] = VLdb(files, **kwargs)
         else:
             ret[sp] = TREx(files, **kwargs)

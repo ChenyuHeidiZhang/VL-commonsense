@@ -16,7 +16,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 #relations = ['size_smaller', 'size_larger']
-relations = ['coda_multi']  # shape, color, material
+relations = ['coda_single']  # shape, color, material
 verbose = False
 
 def get_correlation(vg_dist, model_dist):
@@ -55,10 +55,10 @@ def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
 
     print('Correlation of VG and model distributions:')
     corr_sp, indices = get_correlation(vg_dist, model_dist)
-    # print('High correlation subjects:', [subjects[i] for i in indices[:10]])
-    # print('Corr and p-val:', [corr_sp[i] for i in indices[:10]])
-    # print('Low correlation subjects:', [subjects[i] for i in indices[-10:]])
-    # print('Corr and p-val:', [corr_sp[i] for i in indices[-10:]])
+    print('High correlation subjects:', [subjects[i] for i in indices[:10]])
+    print('Corr and p-val:', [corr_sp[i] for i in indices[:10]])
+    print('Low correlation subjects:', [subjects[i] for i in indices[-10:]])
+    print('Corr and p-val:', [corr_sp[i] for i in indices[-10:]])
 
     # answer_tokens = [rel_ins.entities[1] for rel_ins in test_set]
     # predicted_tokens = util.tokenizer.convert_ids_to_tokens(preds.T[0])
@@ -209,6 +209,7 @@ if __name__ == '__main__':
         corr_sp1, model_dist1, subjects1 = run('lm', log_path='logs/vl')
         corr_sp2, model_dist2, subjects2 = run('lm2', log_path='logs/vl-oscar')
         corr_sp3, model_dist3, subjects3 = run('lm3', log_path='logs/vl-dstilbert')
+        # corr_sp4, model_dist4, subjects4 = run('lm4', log_path='logs/vl-roberta')
         if verbose:
             if not (len(subjects1) == len(subjects2) and len(subjects2) == len(subjects3)):
                 subjects, indices = common_subs(subjects1, subjects2, subjects3)
