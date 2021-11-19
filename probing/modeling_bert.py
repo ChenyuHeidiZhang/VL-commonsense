@@ -304,7 +304,6 @@ class BertImgModel(BertPreTrainedModel):
             encoder_history_states=encoder_history_states
         )
         sequence_output = encoder_outputs[0]
-        return sequence_output
         pooled_output = self.pooler(sequence_output)
 
         # add hidden_states and attentions if they are here

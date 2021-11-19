@@ -16,7 +16,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 #relations = ['size_smaller', 'size_larger']
-relations = ['coda_single']  # shape, color, material
+relations = ['color']  # shape, color, material
 verbose = False
 
 def get_correlation(vg_dist, model_dist):
@@ -28,23 +28,23 @@ def get_correlation(vg_dist, model_dist):
     indices = np.argsort(corrs)[::-1]  # indices sorted and reversed
     return np.array(corr_sp), indices
 
+def load_obj_file(rel_type, single_token=True):
+    objs_file = f'/home/heidi/VL-commonsense/mine-data/words/{rel_type}-words.txt'
+    objs_ls = []
+    with open(objs_file, 'r') as f:
+        for line in f.readlines():
+            if single_token and len(line.strip().split()) > 1:
+                continue
+            objs_ls.append(line.strip())
+    return objs_ls
 
 def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
     # get the list of object ids, and find model distribution across the objects
-    if 'coda' in rel_type:
-        rel_type = rel_type.split('_')[0]
-    objs_file = f'/home/heidi/VL-commonsense/mine-data/words/{rel_type}-words.txt'
-    objs_f = open(objs_file, 'r').readlines()
-    objs_ls = []
-    single_token = True
-    for line in objs_f:
-        if single_token and len(line.strip().split()) > 1:
-            continue
-        objs_ls.append(line.strip())
+    objs_ls = load_obj_file(rel_type)
     obj_ids = torch.tensor(util.tokenizer.convert_tokens_to_ids(objs_ls))
 
     model_dist = np.array(torch.index_select(target_dist, 1, obj_ids))  # keeps the order of obj_ids
-    # print(model_dist.shape)  # [69, num_objs]
+    # print(model_dist.shape)  # [num_test_ins, num_objs]
 
     # load Visual Genome distribution across objects for the test subjects
     subjects = [rel_ins.entities[0] for rel_ins in test_set]
@@ -80,6 +80,22 @@ def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
 
     #return error_tuples, vg_dist_wrong, model_dist_wrong
     return corr_sp, model_dist, subjects
+
+def calculate_acc(rel_type, test_set, target_dist):
+    # get the object list of the relation
+    # if max of output prob over the object list equals prob of the true target, 
+    # count as correct
+    objs_ls = load_obj_file(rel_type)
+    obj_ids = torch.tensor(util.tokenizer.convert_tokens_to_ids(objs_ls))
+    model_dist = torch.index_select(target_dist, 1, obj_ids)  # keeps the order of obj_ids
+
+    dist_of_target = []
+    for i, rel_ins in enumerate(test_set):
+        obj_id = objs_ls.index(rel_ins.entities[1])
+        dist_of_target.append(model_dist[i, obj_id].item())
+    correct = torch.tensor(dist_of_target) == torch.max(model_dist, dim=1)[0]
+    perc = correct.count_nonzero() / len(test_set)
+    print('Test precision among target objects:', perc.item())
 
 
 def size_correctness(rel_type, test_set, preds):
@@ -169,6 +185,7 @@ def run(lm_name, log_path=''):
         if rel_type in ['size_smaller', 'size_larger']:
             size_correctness(rel_type, test_set, preds)
         else:
+            calculate_acc(rel_type, test_set, target_dist)
             return analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds)
 
 def cross_model_corr(corr_sp1, corr_sp2, subjects):

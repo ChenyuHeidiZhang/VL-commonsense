@@ -1,3 +1,4 @@
+import json
 import clip
 from transformers import BertTokenizer
 from transformers import BertTokenizer, BertForMaskedLM, BertModel
@@ -53,3 +54,38 @@ def init_mlm_model(model_name='bert', model_size='base', device='cpu'):
         raise Exception('model name undefined')
     return model.to(device), tokenizer
 
+
+def load_prompts(type):
+    prompts_file = f'soft-prompts/prompts/vl/{type}.jsonl'
+    prompts = []
+    with open(prompts_file, 'r') as f:
+        for line in f.readlines():
+            template = json.loads(line)['template']
+            prompts.append(template)
+    return prompts
+
+def load_data(file):
+    data = []
+    objs = set()  # for converting object words to label ids
+    with open(file, 'r') as f:
+        for line in f.readlines():
+            js = json.loads(line)
+            objs.add(js['obj'])
+            data.append((js['sub'], js['obj']))
+    return data, list(objs)
+
+def load_word_file(type, single_slot=True):
+    words_file = f'mine-data/words/{type}-words.txt'
+    word_ls = []
+    with open(words_file, 'r') as f:
+        for line in f.readlines():
+            if single_slot and len(line.strip().split()) > 1:
+                continue
+            word_ls.append(line.strip())
+    return word_ls
+
+def load_dist_file(type):
+    dist_file = f'mine-data/distributions/{type}-dist.jsonl'
+    with open(dist_file, 'r') as f:
+        vg_dist = json.load(f)
+    return vg_dist

@@ -25,12 +25,12 @@ template:
 
 lm:
   model_type: 'bert'
-  param_name: 'bert-large-cased'
+  param_name: 'bert-base-cased'
   device: *device
 
 lm2:
   model_type: 'oscar'
-  param_name: 'bert-large-cased'
+  param_name: 'bert-base-cased'
   device: *device
 
 lm3:
