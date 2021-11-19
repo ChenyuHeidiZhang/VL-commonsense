@@ -3,7 +3,7 @@ import numpy as np
 from scipy.stats.stats import pearsonr, spearmanr, kendalltau
 from scipy.spatial import distance
 from datasets import load_dataset
-from utils import load_word_file
+from utils import load_word_file, load_dist_file
 
 import warnings
 warnings.filterwarnings("error")
@@ -17,19 +17,13 @@ COLORS = [
 ]
 
 color_ls = load_word_file('color')
-# with open('words/color-words.txt', 'r') as f:
-#     for line in f.readlines():
-#         if len(line.strip().split()) == 1:
-#             color_ls.append(line.strip())
+vg_dist_dict = load_dist_file('color')
+
 def get_color_ids(colors):
     color_ids = []
     for color in colors:
         color_ids.append(color_ls.index(color))
     return color_ids
-
-dist_file = 'distributions/color-dist.jsonl'
-with open(dist_file, 'r') as f:
-    vg_dist_dict = json.load(f)
 
 def js_div(dist1, dist2):
     return distance.jensenshannon(dist1, dist2) ** 2, 0
@@ -78,4 +72,4 @@ def run(topk=11, eval_method=spearmanr):
         #         print('VG dist:', (triplet[2]/np.sum(triplet[2])).tolist())
 
 if __name__ == '__main__':
-    run(topk=11, eval_method=pearsonr)
+    run(topk=11, eval_method=spearmanr)

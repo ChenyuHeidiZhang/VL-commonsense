@@ -43,7 +43,7 @@ for spl in ['train', 'validation', 'test']:
             json.dump(data, f)
             f.write('\n')
     for i in range(3):
-        with open(f'db/coda_{groups[i]}/{split}.jsonl', 'w') as f:
+        with open(f'db/coda/{groups[i]}/{split}.jsonl', 'w') as f:
             for data in datasets[spl][i]:
                 json.dump(data, f)
                 f.write('\n')
