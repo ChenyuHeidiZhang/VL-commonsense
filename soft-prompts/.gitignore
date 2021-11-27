@@ -1,6 +1,7 @@
 pretrained_base/
 pretrained_large/
 distil_bert/
+vlm_12L_768H_wiki/
 
 .idea
 logs

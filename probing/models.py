@@ -52,6 +52,10 @@ def init_mlm_model(model_name='bert', model_size='base', device='cpu'):
         config = BertConfig.from_pretrained("soft-prompts/distil_bert/config.json")
         model = BertForMaskedLM.from_pretrained("soft-prompts/distil_bert/")
         tokenizer = BertTokenizer.from_pretrained("soft-prompts/distil_bert/")
+    elif model_name == 'vokenization':
+        config = BertConfig.from_pretrained("soft-prompts/vlm_12L_768H_wiki/config.json")
+        model = BertForMaskedLM.from_pretrained("soft-prompts/vlm_12L_768H_wiki/")
+        tokenizer = BertTokenizer.from_pretrained("soft-prompts/vlm_12L_768H_wiki/")
     else:
         raise Exception('model name undefined')
     return model.to(device), tokenizer

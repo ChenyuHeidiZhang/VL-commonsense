@@ -5,6 +5,9 @@ mine-data/size_att_mined.jsonl
 mine-data/co-occurrence_mined.jsonl
 mine-data/cooccur-dist-copy.jsonl
 mine-data/distributions/cooccur-dist.jsonl
+mine-data/words/vg_attribute_count
 azcopy
 out_roberta.csv
 output.csv
+*/__pycache__
+probing/*.jsonl

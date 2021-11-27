@@ -24,8 +24,11 @@ def get_db_from_dist(type, single_slot=True):
             i += 1
 
 def mine_attributes(type, thres=10, single_slot=True, print_every=1000, max_imgs=1000000):
-    # read a list of attributes and find corresponding subjects in Visual Genome
-    # output obtained pairs to file
+    '''
+    read a list of attributes and find corresponding subjects in Visual Genome
+    output obtained pairs to file
+    * use `get_db_from_dist` if dist file exists
+    '''
 
     print(f'loading word file of type {type}...')
     word_ls = utils.load_word_file(type, single_slot)
@@ -161,6 +164,10 @@ def mine_cooccurrence(print_every=1000, max_imgs=10000):
 
 
 def mine_size(print_every=1000, max_imgs=1000000):
+    '''
+    Mine size as attributes directly from VG, but those are relative sizes.
+    Only used for reference.
+    '''
     print('loading attributes file...')
     attributes_f = json.load(open(attributes_file))
 

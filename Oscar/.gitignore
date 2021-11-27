@@ -1,5 +1,6 @@
 base-vg-labels/
 pretrained_base/
+pretrained_large/
 *.DS_Store
 student-bert/
 

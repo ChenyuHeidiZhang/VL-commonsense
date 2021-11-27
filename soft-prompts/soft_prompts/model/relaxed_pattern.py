@@ -290,7 +290,7 @@ class PatternModel:
         if self.conditional_prompt:
             weights = weights * self.conditional_prompt_prob(batch_size, rel_bank)
         all_dist = (all_dist.permute(0, 2, 1) + weights.cpu().log()).permute(0, 2, 1)
-        target_dist = all_dist.logsumexp(1)
+        target_dist = all_dist.logsumexp(1)  # sum logprobs for all templates?
         if freq is not None:
             freq_dist = torch.tensor(freq, dtype=torch.float32)
             target_dist = freq_dist.unsqueeze(0).log() + target_dist
