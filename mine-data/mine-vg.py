@@ -89,11 +89,11 @@ def output_atts(type, word_ls, words_dict, att_counts, threshold):
                     i += 1
 
 
-def mine_cooccurrence(print_every=1000, max_imgs=10000):
+def mine_cooccurrence(print_every=1000, max_imgs=100000):
     import itertools
     from collections import defaultdict
-    from nltk.corpus import words
-    ntlk_words = words.words()
+    from nltk.corpus import wordnet as wn
+    wn_nouns = {x.name().split('.', 1)[0] for x in wn.all_synsets('n')}
 
     print('loading attributes file...')
     attributes_f = json.load(open(attributes_file))
@@ -109,15 +109,15 @@ def mine_cooccurrence(print_every=1000, max_imgs=10000):
             print(f'processing {img_num}-th image')
         names = set()
         for obj in img['attributes']:
-            name = obj['names'][0]
-            #if not any(ele in name for ele in [' ', '.', '/', '\\', '"', '(', '\'', ':']):  # only take single word items
-            if name in ntlk_words:  # this is slow
-                names.add(name)
-        noun_set.update(names)
+            name = utils.lemmatize(obj['names'][0])
+            if name in wn_nouns: names.add(name)
 
         for subset in itertools.combinations(names, 2):  # could really use permutation here
-            cooccur_dict[subset[0]].add(subset[1])
-            cooccur_counts[subset] += 1
+            if np.random.uniform() > 0.9:  # record with prob 0.1
+                cooccur_dict[subset[0]].add(subset[1])
+                cooccur_counts[subset] += 1
+                noun_set.add(subset[0])
+                noun_set.add(subset[1])
 
         if img_num == max_imgs:
             break
@@ -126,16 +126,17 @@ def mine_cooccurrence(print_every=1000, max_imgs=10000):
     # record VG distribution
     print('recording noun co-occurrrence distribution...')
     noun_list = list(noun_set)
+    print(len(noun_list))
     noun_dist = {}
     for sub in cooccur_dict:
         dist = [cooccur_counts[(sub, obj)] for obj in noun_list]
         noun_dist[sub] = dist
-    dist_file = 'cooccur-dist.jsonl'
+    dist_file = 'distributions/cooccur-dist.jsonl'
     with open(dist_file, 'w') as f:
         json.dump(noun_dist, f)
 
     # record list of nouns
-    with open('item-words.txt', 'w') as f:
+    with open('words/cooccur-words.txt', 'w') as f:
         for name in noun_list:
             f.write(name)
             f.write('\n')
@@ -149,7 +150,7 @@ def mine_cooccurrence(print_every=1000, max_imgs=10000):
         for sub in cooccur_dict.keys():
             alt_list = list(noun_set - cooccur_dict[sub])
             for obj in cooccur_dict[sub]:
-                if cooccur_counts[(sub, obj)] <= 5:  # only output when count > threshold
+                if cooccur_counts[(sub, obj)] <= utils.THRES_COOCCUR:  # only output when count > threshold
                     continue
                 alt = random.choice(alt_list)
                 if i % 10 < 8:
@@ -237,8 +238,6 @@ def extract_size(smaller=True, num_samples=2000):
 
 
 if __name__ == "__main__":
-    get_db_from_dist('color')
-    #  mine_attributes('color', thres=utils.THRES_COLOR)
-    # mine_size()
-    # mine_cooccurrence()
+    # get_db_from_dist('color')
+    mine_cooccurrence()
     # extract_size(smaller=False)

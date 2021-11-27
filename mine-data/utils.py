@@ -5,6 +5,7 @@ Lem = WordNetLemmatizer()
 THRES_COLOR = 5
 THRES_MATERIAL = 2
 THRES_SHAPE = 1
+THRES_COOCCUR = 8
 
 def load_word_file(type, single_slot=True):
     words_file = f'words/{type}-words.txt'
