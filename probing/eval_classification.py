@@ -34,7 +34,7 @@ def get_features(data, objs, template, model, tokenizer, model_name):
             elif model_name=='oscar':
                 input_ids = torch.tensor([tokenizer.encode(text)]).to(device)
                 output = model(input_ids=input_ids)
-                features = torch.mean(output, dim=1)
+                features = torch.mean(output[0], dim=1)
             elif model_name=='clip':
                 text_input = clip.tokenize(text).to(device)
                 features = model.encode_text(text_input)
@@ -58,7 +58,7 @@ def run():
     parser.add_argument('--model_size', type=str, default='base',
                         help='size of the model (base, large)')
     parser.add_argument('--relation', type=str, default='shape',
-                        help='relation to evaluate (shape, material, color, coda, coda_any...)')
+                        help='relation to evaluate (shape, material, color, coda)')
     parser.add_argument('--group', type=str, default='',
                         help='group to evaluate (single, multi, any, or '' for all))')
     parser.add_argument('--seed', type=int, default=1,

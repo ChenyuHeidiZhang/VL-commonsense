@@ -1,4 +1,6 @@
 import json
+import numpy as np
+import matplotlib.pyplot as plt
 import clip
 from transformers import BertTokenizer
 from transformers import BertTokenizer, BertForMaskedLM, BertModel
@@ -89,3 +91,40 @@ def load_dist_file(type):
     with open(dist_file, 'r') as f:
         vg_dist = json.load(f)
     return vg_dist
+
+
+def plot_half(dist_pairs, ax, x_axis, model):
+    for i, pair in enumerate(dist_pairs):
+        # sort two distributions together, order by the first
+        sorted_dists = sorted(zip(pair[0], pair[1]), reverse=True)
+        tuples = zip(*sorted_dists)
+        vg_dist, model_dist = [np.array(tuple) for tuple in tuples]
+        model_dist = np.exp(model_dist)
+        # plot the distributions
+        ax.plot(x_axis, vg_dist / np.sum(vg_dist), color=f'C{i}', label=f'VG \'{pair[2]}\'')
+        ax.plot(x_axis, model_dist / np.sum(model_dist), color=f'C{i}', linestyle='--', label=f'{model} \'{pair[2]}\'')
+    ax.legend()
+    ax.set_xticks(x_axis)
+    ax.set_xlabel('object ids')
+
+def plot_dists(sp_corrs, dist_pairs, group, model, num_to_plot=3):
+    '''
+    plot the k examples that have highest & lowest (each) corr between coda and vg distributions.
+    sp_corrs: list of sp corrs
+    dist_pairs: np array of triplets of (CoDa dist, VG dist, noun)
+    '''
+    max_idxs = np.argsort(sp_corrs)[-num_to_plot:][::-1]
+    min_idxs = np.argsort(sp_corrs)[:num_to_plot]
+
+    #print(max_idxs, min_idxs)
+    print(np.array(sp_corrs)[max_idxs], np.array(sp_corrs)[min_idxs])
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, sharey=True, figsize=[10, 5])
+    x_axis = range(1, len(dist_pairs[0][0])+1)
+    plot_half(dist_pairs[max_idxs], ax1, x_axis, model)
+    ax1.set_title('high correlation')
+    ax1.set_ylabel('probability')
+    plot_half(dist_pairs[min_idxs], ax2, x_axis, model)
+    ax2.set_title('low correlation')
+    if group == '': group = 'all'
+    plt.savefig(f'zero_shot_plt_{group}.png')

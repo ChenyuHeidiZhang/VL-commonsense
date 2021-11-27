@@ -3,7 +3,7 @@ import numpy as np
 import argparse
 from tqdm import tqdm
 from scipy.stats.stats import kendalltau, pearsonr, spearmanr
-from models import init_mlm_model, load_dist_file, load_data, load_prompts, load_word_file
+from models import init_mlm_model, load_dist_file, load_data, load_prompts, load_word_file, plot_dists
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -20,10 +20,10 @@ def run():
     parser = argparse.ArgumentParser(description='zero-shot eval parser')
     parser.add_argument('--model', type=str, default='bert',
                         help='name of the model (bert, roberta, albert, oscar, or distil_bert)')
-    parser.add_argument('--model_size', type=str, default='large',
+    parser.add_argument('--model_size', type=str, default='base',
                         help='size of the model (base, large)')
     parser.add_argument('--relation', type=str, default='shape',
-                        help='relation to evaluate (shape, material, color, coda, coda_any...)')
+                        help='relation to evaluate (shape, material, color, coda)')
     parser.add_argument('--group', type=str, default='',
                         help='group to evaluate (single, multi, any, or '' for all))')
     parser.add_argument('--seed', type=int, default=1,
@@ -47,6 +47,7 @@ def run():
 
     correct = 0
     sp_corrs = []
+    dist_pairs = []
     record = []
     with torch.no_grad():
         for data in tqdm(test_data):
@@ -71,9 +72,11 @@ def run():
             sp_corrs.append(np.max(sp_corr))
             sp_max_idx = np.argmax(sp_corr)
 
+            dist_pairs.append((vg_dist, model_dist[sp_max_idx].tolist(), data[0]))
             record.append((correct_idx, sp_max_idx))
 
-    # print('Recorded correct pred & max sp corr templates:', record)
+    plot_dists(sp_corrs, np.array(dist_pairs, dtype=object), group, args.model)
+    #print('Recorded correct pred & max sp corr templates:', record)
     print('Prediction accuracy:', correct / len(test_data))
     print('Mean and Std of Sp Corr:', np.mean(sp_corrs), np.std(sp_corrs))
 
