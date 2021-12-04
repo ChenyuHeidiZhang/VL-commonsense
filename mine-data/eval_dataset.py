@@ -97,10 +97,10 @@ def run(topk=11, eval_method=spearmanr):
                     num_skipped['zero_dist'] += 1
                     continue
                 val, pval = eval_method(vg_dist, color_dist)
-                if pval > 0.05:
-                    #print(f'skipping subject {ngram} because of large pval {pval}')
-                    num_skipped['large_pval'] += 1
-                    continue
+                # if pval > 0.05:
+                #     #print(f'skipping subject {ngram} because of large pval {pval}')
+                #     num_skipped['large_pval'] += 1
+                #     continue
                 dist_pairs.append((color_dist, vg_dist, ngram))
                 dist_pairs_group[obj_group].append((color_dist, vg_dist, ngram))
                 sp_corrs.append(val)
