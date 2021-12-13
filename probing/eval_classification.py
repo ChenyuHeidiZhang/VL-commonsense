@@ -12,7 +12,7 @@ from datasets import load_dataset
 import torch
 import argparse
 
-from models import init_model, load_dist_file, load_data, load_prompts, load_word_file
+from models import *
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -51,25 +51,10 @@ def get_word_ids(relation, objs):
         word_ids.append(word_ls.index(object))
     return word_ids
 
-def run():
-    parser = argparse.ArgumentParser(description='eval parser')
-    parser.add_argument('--model', type=str, default='bert',
-                        help='name of the model (bert, oscar, or clip)')
-    parser.add_argument('--model_size', type=str, default='base',
-                        help='size of the model (base, large)')
-    parser.add_argument('--relation', type=str, default='shape',
-                        help='relation to evaluate (shape, material, color, coda)')
-    parser.add_argument('--group', type=str, default='',
-                        help='group to evaluate (single, multi, any, or '' for all))')
-    parser.add_argument('--seed', type=int, default=1,
-                        help='numpy random seed')
-    parser.add_argument('--step', type=int, default=-1,
-                        help='step size of increasing training size')
-    parser.add_argument('--single_prompt', type=bool, default=False,
-                        help='whether to use a single prompt')
-    args = parser.parse_args()
-    np.random.seed(args.seed)
-
+def run(args):
+    '''
+    Returns the best test set accuracy and sp correlation across all templates.
+    '''
     # Load the model
     model_name = args.model
     model, tokenizer = init_model(model_name, args.model_size, device)
@@ -106,6 +91,7 @@ def run():
         print()
         acc_all_temps = []
         corr_all_temps = []
+        corr_stds = []
         for i in range(len(templates)):  # still, same template per test set
             train_features = train_all_temps[i][0][:train_data_size]
             train_labels = train_all_temps[i][1][:train_data_size]
@@ -140,10 +126,45 @@ def run():
                 if np.sum(true_dist) != 0: sp_corrs.append(sp)
             sp_corr = np.mean(sp_corrs)
             corr_all_temps.append(sp_corr)
-            print('avg sp corr:', sp_corr)
+            corr_stds.append(np.std(sp_corrs))
+            print('avg sp corr:', sp_corr)  # avg across all test examples for one template
         print('best acc across all templates:', np.max(acc_all_temps))
-        print('best sp corr across all templates:', np.max(corr_all_temps))
+        max_id = np.argmax(corr_all_temps)
+        print('best sp corr across all templates:', corr_all_temps[max_id])
 
+    return round(corr_all_temps[max_id], 3), round(corr_stds[max_id], 3), round(np.max(acc_all_temps), 1) 
 
 if __name__ == '__main__':
-    run()
+    parser = argparse.ArgumentParser(description='eval parser')
+    parser.add_argument('--model', type=str, default='bert',
+                        help='name of the model (bert, oscar, or clip)')
+    parser.add_argument('--model_size', type=str, default='base',
+                        help='size of the model (base, large)')
+    parser.add_argument('--relation', type=str, default='shape',
+                        help='relation to evaluate (shape, material, color, coda, cooccur)')
+    parser.add_argument('--group', type=str, default='',
+                        help='group to evaluate (single, multi, any, or '' for all))')
+    parser.add_argument('--seed', type=int, default=1,
+                        help='numpy random seed')
+    parser.add_argument('--step', type=int, default=-1,
+                        help='step size of increasing training size')
+    parser.add_argument('--single_prompt', type=bool, default=False,
+                        help='whether to use a single prompt')
+    args = parser.parse_args()
+    sp_mean, sp_std, acc = run(args)
+    print(sp_std)
+
+    # rel_types = ['wiki-shape', 'wiki-material', 'wiki-color']
+    # d = {rel: [] for rel in rel_types}
+    # for relation in rel_types:
+    #     print(relation)
+    #     for group in ['']:  # , 'single', 'multi', 'any'
+    #         for model in ['bert', 'oscar', 'clip']:  # 
+    #             args = Args(model, relation, group)
+    #             np.random.seed(args.seed)
+    #             sp_mean, sp_std, acc = run(args)
+    #             d[relation].append((sp_mean, sp_std, acc))
+    # import pandas as pd
+    # df = pd.DataFrame(d)
+    # df.to_excel('file.xlsx')
+    # print(df)

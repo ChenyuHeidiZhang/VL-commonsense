@@ -10,6 +10,17 @@ from pytorch_transformers import BertConfig
 from modeling_bert import BertImgModel, BertImgForPreTraining
 
 
+class Args():
+    def __init__(self, model, relation, group, model_size='base', seed=1, step=-1):
+        self.model = model
+        self.model_size = model_size
+        self.relation = relation
+        self.group = group
+        self.seed = seed
+        self.step = step
+        self.single_prompt = False
+
+
 def init_model(model_name='bert', model_size='base', device='cpu'):
     if model_name == 'bert':
         model = BertModel.from_pretrained(f"bert-{model_size}-cased").to(device)
@@ -62,6 +73,7 @@ def init_mlm_model(model_name='bert', model_size='base', device='cpu'):
 
 
 def load_prompts(type):
+    if 'wiki-' in type: type = type.split('-')[1]
     prompts_file = f'soft-prompts/prompts/vl/{type}.jsonl'
     prompts = []
     with open(prompts_file, 'r') as f:
@@ -81,6 +93,7 @@ def load_data(file):
     return data, list(objs)
 
 def load_word_file(type, single_slot=True):
+    if 'wiki-' in type: type = type.split('-')[1]
     words_file = f'mine-data/words/{type}-words.txt'
     word_ls = []
     with open(words_file, 'r') as f:
@@ -111,7 +124,7 @@ def plot_half(dist_pairs, ax, x_axis, model):
     ax.set_xticks(x_axis)
     ax.set_xlabel('object ids')
 
-def plot_dists(sp_corrs, dist_pairs, group, model, num_to_plot=3):
+def plot_dists(sp_corrs, dist_pairs, rel, group, model, num_to_plot=3):
     '''
     plot the k examples that have highest & lowest (each) corr between coda and vg distributions.
     sp_corrs: list of sp corrs
@@ -131,4 +144,4 @@ def plot_dists(sp_corrs, dist_pairs, group, model, num_to_plot=3):
     plot_half(dist_pairs[min_idxs], ax2, x_axis, model)
     ax2.set_title('low correlation')
     if group == '': group = 'all'
-    plt.savefig(f'zero_shot_plt_{group}.png')
+    plt.savefig(f'probing/plots/zero_shot_plt_{rel}_{group}_{model}.png')

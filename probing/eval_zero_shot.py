@@ -2,8 +2,9 @@ import torch
 import numpy as np
 import argparse
 from tqdm import tqdm
-from scipy.stats.stats import kendalltau, pearsonr, spearmanr
-from models import init_mlm_model, load_dist_file, load_data, load_prompts, load_word_file, plot_dists
+from scipy.stats.stats import ModeResult, kendalltau, pearsonr, spearmanr
+from scipy import stats
+from models import *
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -16,20 +17,11 @@ def get_log_probs(token_ids, model, mask_id):
     log_probs = torch.nn.LogSoftmax(dim=0)(hs)
     return log_probs.cpu().numpy()
 
-def run():
-    parser = argparse.ArgumentParser(description='zero-shot eval parser')
-    parser.add_argument('--model', type=str, default='bert',
-                        help='name of the model (bert, roberta, albert, oscar, or distil_bert)')
-    parser.add_argument('--model_size', type=str, default='base',
-                        help='size of the model (base, large)')
-    parser.add_argument('--relation', type=str, default='shape',
-                        help='relation to evaluate (shape, material, color, coda)')
-    parser.add_argument('--group', type=str, default='',
-                        help='group to evaluate (single, multi, any, or '' for all))')
-    parser.add_argument('--seed', type=int, default=1,
-                        help='numpy random seed')
-    args = parser.parse_args()
-
+def run(args):
+    '''
+    Obtains the best accuracy and sp correlation across all templates for each 
+    test example, and returns the averages.
+    '''
     model, tokenizer = init_mlm_model(args.model, args.model_size, device)
     mask_token = tokenizer.mask_token
     mask_id = tokenizer.convert_tokens_to_ids(mask_token)
@@ -75,11 +67,42 @@ def run():
             dist_pairs.append((vg_dist, model_dist[sp_max_idx].tolist(), data[0]))
             record.append((correct_idx, sp_max_idx))
 
-    plot_dists(sp_corrs, np.array(dist_pairs, dtype=object), group, args.model)
+    # plot_dists(sp_corrs, np.array(dist_pairs, dtype=object), relation, group, args.model)
     #print('Recorded correct pred & max sp corr templates:', record)
     print('Prediction accuracy:', correct / len(test_data))
     print('Mean and Std of Sp Corr:', np.mean(sp_corrs), np.std(sp_corrs))
 
+    #return round(np.mean(sp_corrs),3), round(np.std(sp_corrs),3), round(correct/len(test_data)*100,1)
+    return sp_corrs
 
 if __name__ == '__main__':
-    run()
+    # parser = argparse.ArgumentParser(description='zero-shot eval parser')
+    # parser.add_argument('--model', type=str, default='bert',
+    #                     help='name of the model (bert, roberta, albert, vokenization, oscar, or distil_bert)')
+    # parser.add_argument('--model_size', type=str, default='base',
+    #                     help='size of the model (base, large)')
+    # parser.add_argument('--relation', type=str, default='shape',
+    #                     help='relation to evaluate (shape, material, color, coda, cooccur)')
+    # parser.add_argument('--group', type=str, default='',
+    #                     help='group to evaluate (single, multi, any, or '' for all))')
+    # args = parser.parse_args()
+    # sp_mean, sp_std, acc = run(args)
+
+    rel_types = ['coda']  # 'shape', 'material', 'color', 'coda', 'cooccur'
+    d = {rel: [] for rel in rel_types}
+    for relation in rel_types:
+        sp_corrs = []
+        print(relation)
+        groups = ['']  # , 'single', 'multi', 'any'
+        for group in groups:
+            for model in ['bert', 'oscar']:  # 'bert', 'oscar', 'distil_bert', 'roberta', 
+                args = Args(model, relation, group)
+                #sp_mean, sp_std, acc = run(args)
+                #d[relation].append((sp_mean, sp_std, acc))
+                sp_corrs.append(run(args))
+        print(stats.ttest_ind(sp_corrs[0], sp_corrs[1], equal_var=False))
+
+    # import pandas as pd
+    # df = pd.DataFrame(d)
+    # df.to_excel('file.xlsx')
+    # print(df)
