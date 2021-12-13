@@ -14,7 +14,6 @@ crimson
 cyan
 dark colored
 emerald
-forest green
 gold
 gray
 green

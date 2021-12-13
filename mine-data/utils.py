@@ -24,13 +24,15 @@ def load_dist_file(type):
     return vg_dist
 
 def filter_att(att, type):
-    # treat attribute "x colored" the same as "x"
-    if type == 'color' and att.split()[-1] == 'colored' \
-        and att != 'light colored' and att != 'dark colored':
-        att = ' '.join(att.split()[:-1])
+    att_split = att.split()
+    # treat attribute like "x colored" the same as "x"
+    if att_split[-1] == 'colored' or att_split[-1] == 'made' or att_split[-1] == 'shaped':
+        att_split = att_split[:-1]
+    # treat attributes like 'forest green' as green
+    if len(att_split) >= 1: att = att_split[-1]
+
     if type == 'material':
         if att == 'wooden': att = 'wood'
-        if att.split()[-1] == 'made': att = ' '.join(att.split()[:-1])
     return att
 
 def lemmatize(sub):

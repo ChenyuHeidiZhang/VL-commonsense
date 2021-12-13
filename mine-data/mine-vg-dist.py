@@ -84,5 +84,5 @@ def check_vg_atts(print_every=1000):
 
 
 if __name__ == "__main__":
-    mine_attribute_dist('shape', thres=utils.THRES_SHAPE)
+    mine_attribute_dist('material', thres=utils.THRES_MATERIAL)
     # check_vg_atts()

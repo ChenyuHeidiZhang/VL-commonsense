@@ -20,6 +20,7 @@ COLORS = [
 
 color_ls = load_word_file('color')
 vg_dist_dict = load_dist_file('color')
+#wiki_dist_dict = load_dist_file('wiki-color')
 
 def get_color_ids(colors):
     color_ids = []
@@ -69,7 +70,7 @@ def plot_dists(sp_corrs, dist_pairs, group='all', num_to_plot=3):
     ax1.set_ylabel('probability')
     plot_half(dist_pairs[min_idxs], ax2, x_axis)
     ax2.set_title('low correlation')
-    plt.savefig(f'eval_dataset_plt_{group}.png')
+    plt.savefig(f'plots/eval_dataset_plt_{group}.png', bbox_inches='tight')
 
 def run(topk=11, eval_method=spearmanr):
     common_subs = []
@@ -85,6 +86,7 @@ def run(topk=11, eval_method=spearmanr):
         print('split:', split)
         for instance in ds[split]:
             ngram = instance['ngram']
+            #if ngram in wiki_dist_dict and 
             if ngram in vg_dist_dict and ngram not in common_subs:  # do not count same subject twice (different templates but same labels)
                 common_subs.append(ngram)
                 obj_group = instance['object_group']
@@ -93,10 +95,12 @@ def run(topk=11, eval_method=spearmanr):
                 color_dist = np.take(color_dist, topk_color_ids)
                 color_ids = get_color_ids([COLORS[id] for id in topk_color_ids])
                 vg_dist = np.take(vg_dist_dict[ngram], color_ids)
-                if np.sum(vg_dist) == 0:  # sp corr would be undefined if all elements of an array are 0
+                #wiki_dist = np.take(wiki_dist_dict[ngram], color_ids)
+                if np.sum(vg_dist) == 0: #or np.sum(wiki_dist) == 0:  # sp corr would be undefined if all elements of an array are 0
                     num_skipped['zero_dist'] += 1
                     continue
                 val, pval = eval_method(vg_dist, color_dist)
+                #val, pval = eval_method(vg_dist, wiki_dist)
                 # if pval > 0.05:
                 #     #print(f'skipping subject {ngram} because of large pval {pval}')
                 #     num_skipped['large_pval'] += 1
@@ -119,7 +123,9 @@ def run(topk=11, eval_method=spearmanr):
     plot_dists(sp_corrs_per_group[1], np.array(dist_pairs_group[1], dtype=object), 'multi')
     print('for Any group:', np.mean(sp_corrs_per_group[2]), np.std(sp_corrs_per_group[2]))
     plot_dists(sp_corrs_per_group[2], np.array(dist_pairs_group[2], dtype=object), 'any')
+
     print('num common subjects:', len(common_subs))
+    print('average num of occurrences in all:', sum_vg_dist(dist_pairs))
 
     vg_single_dist = [dists[1] for dists in dist_pairs_group[0]]
     single_acc = np.sum(np.argmax(vg_single_dist, axis=1) == 0) / len(vg_single_dist)
