@@ -77,8 +77,8 @@ def run(args):
     print('Prediction accuracy:', correct / len(test_data))
     print('Mean and Std of Sp Corr:', np.mean(sp_corrs), np.std(sp_corrs))
 
-    #return round(np.mean(sp_corrs),3), round(np.std(sp_corrs),3), round(correct/len(test_data)*100,1)
-    return sp_corrs, sp_per_obj #, avg_per_obj
+    return round(np.mean(sp_corrs),3), round(np.std(sp_corrs),3), round(correct/len(test_data)*100,1)
+    #return sp_corrs, sp_per_obj #, avg_per_obj
 
 if __name__ == '__main__':
     # parser = argparse.ArgumentParser(description='zero-shot eval parser')
@@ -93,8 +93,8 @@ if __name__ == '__main__':
     # args = parser.parse_args()
     # sp_mean, sp_std, acc = run(args)
 
-    rel_types = ['color', 'shape', 'material']  # 'shape', 'material', 'color', 'coda', 'cooccur'
-    models = ['bert', 'oscar']  # , 'distil_bert', 'roberta', 'albert', 'vokenization'
+    rel_types = ['color']  # 'shape', 'material', 'color', 'coda', 'cooccur'
+    models = ['bert', 'oscar', 'distil_bert', 'roberta', 'albert', 'vokenization']  # 
     d = {rel: [] for rel in rel_types}
     sps_per_obj = {rel: [] for rel in rel_types}
     for relation in rel_types:
@@ -104,15 +104,16 @@ if __name__ == '__main__':
         for group in groups:
             for model in models:
                 args = Args(model, relation, group)
-                #sp_mean, sp_std, acc = run(args)
-                #d[relation].append((sp_mean, sp_std, acc))
-                sp, sp_per_obj = run(args)
-                sps_per_obj[relation].append(sp_per_obj)
+                sp_mean, sp_std, acc = run(args)
+                d[relation].append((sp_mean, sp_std, acc))
+                # sp, sp_per_obj = run(args)
+                # sp_corrs.append(sp)
+                # sps_per_obj[relation].append(sp_per_obj)
         #print(stats.ttest_ind(sp_corrs[0], sp_corrs[1], equal_var=False))
         #print(spearmanr(sps_per_obj[relation][0], sps_per_obj[relation][1]))
-    plot_corr_all_rels(sps_per_obj, models, rel_types, method='zero-shot')
+    #plot_corr_all_rels(sps_per_obj, models, rel_types, method='zero-shot')
 
-    # import pandas as pd
-    # df = pd.DataFrame(d)
-    # df.to_excel('file.xlsx')
-    # print(df)
+    import pandas as pd
+    df = pd.DataFrame(d)
+    df.to_excel('file.xlsx')
+    print(df)

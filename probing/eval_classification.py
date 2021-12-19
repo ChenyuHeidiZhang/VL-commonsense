@@ -137,9 +137,9 @@ def run(args):
         max_id = np.argmax(corr_all_temps)
         print('best sp corr across all templates:', corr_all_temps[max_id])
         sp_per_obj = sp_per_obj_all[max_id]
-        avg_per_obj = plot_corr(sp_per_obj, objs, model_name, rel_name)
+        #avg_per_obj = plot_corr(sp_per_obj, objs, model_name, rel_name)
 
-    return round(corr_all_temps[max_id], 3), round(corr_stds[max_id], 3), round(np.max(acc_all_temps), 1), avg_per_obj
+    return round(corr_all_temps[max_id], 3), round(corr_stds[max_id], 3), round(np.max(acc_all_temps), 1)#, avg_per_obj
 
 if __name__ == '__main__':
     # parser = argparse.ArgumentParser(description='eval parser')
@@ -166,18 +166,18 @@ if __name__ == '__main__':
     for relation in rel_types:
         print(relation)
         sps_per_obj = []
-        for group in ['']:  # , 'single', 'multi', 'any'
+        for group in ['single', 'multi', 'any']:  # , 'single', 'multi', 'any'
             for model in ['bert', 'oscar', 'clip']:  # 
                 args = Args(model, relation, group)
                 np.random.seed(args.seed)
-                sp_mean, sp_std, acc, sp_per_obj = run(args)
-                print(sp_mean, sp_std, acc, sp_per_obj)
+                sp_mean, sp_std, acc = run(args) # , sp_per_obj
+                # print(sp_mean, sp_std, acc)
                 d[relation].append((sp_mean, sp_std, acc))
-                sps_per_obj.append(sp_per_obj)
-            print('bert vs. oscar', spearmanr(sps_per_obj[0], sps_per_obj[1]))
-            print('bert vs. clip', spearmanr(sps_per_obj[0], sps_per_obj[2]))
-            print('oscar vs. clip', spearmanr(sps_per_obj[1], sps_per_obj[2]))
-    # import pandas as pd
-    # df = pd.DataFrame(d)
-    # df.to_excel('file.xlsx')
-    # print(df)
+                # sps_per_obj.append(sp_per_obj)
+            # print('bert vs. oscar', spearmanr(sps_per_obj[0], sps_per_obj[1]))
+            # print('bert vs. clip', spearmanr(sps_per_obj[0], sps_per_obj[2]))
+            # print('oscar vs. clip', spearmanr(sps_per_obj[1], sps_per_obj[2]))
+    import pandas as pd
+    df = pd.DataFrame(d)
+    df.to_excel('file.xlsx')
+    print(df)
