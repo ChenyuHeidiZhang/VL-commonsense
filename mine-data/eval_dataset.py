@@ -9,6 +9,9 @@ from utils import load_word_file, load_dist_file
 import warnings
 warnings.filterwarnings("error")
 
+plt.rcParams.update({'font.size': 12})
+plt.rc('legend', fontsize=10)
+
 # https://huggingface.co/datasets/corypaik/coda
 ds = load_dataset("corypaik/coda", ignore_verifications=True)
 
@@ -44,11 +47,10 @@ def plot_half(dist_pairs, ax, x_axis):
         tuples = zip(*sorted_dists)
         coda_dist, vg_dist = [np.array(tuple) for tuple in tuples]
         # plot the distributions
-        ax.plot(x_axis, coda_dist, color=f'C{i}', label=f'CoDa \'{pair[2]}\'')
-        ax.plot(x_axis, vg_dist / np.sum(vg_dist), color=f'C{i}', linestyle='--', label=f'VG \'{pair[2]}\'')
+        ax.plot(x_axis, coda_dist, color=f'C{i}', linewidth=2, label=f'CoDa \'{pair[2]}\'')
+        ax.plot(x_axis, vg_dist / np.sum(vg_dist), color=f'C{i}', linewidth=2, linestyle='--', label=f'VG \'{pair[2]}\'')
     ax.legend()
-    ax.set_xticks(x_axis)
-    ax.set_xlabel('colors')
+
 
 def plot_dists(sp_corrs, dist_pairs, group='all', num_to_plot=3):
     '''
@@ -63,14 +65,19 @@ def plot_dists(sp_corrs, dist_pairs, group='all', num_to_plot=3):
     #print(np.array(sp_corrs)[max_idxs], np.array(sp_corrs)[min_idxs])
     print(sum_vg_dist(dist_pairs[max_idxs]), sum_vg_dist(dist_pairs[min_idxs]))
 
-    fig, (ax1, ax2) = plt.subplots(1, 2, sharey=True, figsize=[8, 5])
+    fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True, figsize=[8, 5])
+    for ax in [ax1, ax2]:
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.set_ylabel('probability', fontweight='bold')
     x_axis = range(1, 12)
     plot_half(dist_pairs[max_idxs], ax1, x_axis)
     ax1.set_title('high correlation')
-    ax1.set_ylabel('probability')
     plot_half(dist_pairs[min_idxs], ax2, x_axis)
     ax2.set_title('low correlation')
-    plt.savefig(f'plots/eval_dataset_plt_{group}.png', bbox_inches='tight')
+    ax2.set_xticks(x_axis)
+    ax2.set_xlabel('colors', fontweight='bold')
+    plt.savefig(f'plots/eval_dataset_plt_{group}.pdf', bbox_inches='tight')
 
 def run(topk=11, eval_method=spearmanr):
     common_subs = []

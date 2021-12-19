@@ -36,7 +36,7 @@ def split_groups(dir, spl, dist_json):
         else:  # dev and test splits are combined
             write_data(os.path.join(path, 'test.jsonl'), data_pts[i], mode='w')
 
-relation = 'shape'
+relation = 'color'
 dist_json = utils.load_dist_file(f'{relation}')
 for spl in ['train', 'test']:  # 'dev'
     split_groups(f'db/{relation}', spl, dist_json)

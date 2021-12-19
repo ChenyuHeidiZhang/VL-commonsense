@@ -31,7 +31,7 @@ def mine_attribute_dist(type, thres=2, single_slot=True, print_every=1000, max_i
                 # check if the attribute is in our word list
                 if att in objs_ls:
                     sub = utils.lemmatize(obj['names'][0])
-                    if att in sub: 
+                    if att in sub or (att == 'gray' and 'grey' in sub): 
                         continue  # skip cases when the subject is something like "red box"
                     if sub not in sub_dist:
                         # sub_dist[sub] = np.zeros(len(objs_ls))
@@ -84,5 +84,5 @@ def check_vg_atts(print_every=1000):
 
 
 if __name__ == "__main__":
-    mine_attribute_dist('material', thres=utils.THRES_MATERIAL)
+    mine_attribute_dist('color', thres=utils.THRES_COLOR)
     # check_vg_atts()

@@ -57,6 +57,7 @@ def fit_template(template, idx, tokens, noun_set):
 
 def save_dist(dists, data_name):
     for rel in relations:
+        if dists[rel] == {}: continue
         with open(f'distributions/{data_name}-{rel}-dist.jsonl', 'w') as out:
             print(rel, len(dists[rel].keys()))
             # Wikipedia: color: 1765, shape: 1329, material: 1693
@@ -167,12 +168,12 @@ def google_ngram(data_name='ngram'):
     from google_ngram_downloader import readline_google_store
     target_words = {rel: utils.load_word_file(rel) for rel in relations}
     noun_set = get_nouns_set()
-    dists = {rel: {} for rel in relations}
 
     i = 0
     try:
         while True:
             i += 1
+            dists = {rel: {} for rel in relations}
             _, _, records = next(readline_google_store(ngram_len=2))
             j = 0
             try:
@@ -186,18 +187,35 @@ def google_ngram(data_name='ngram'):
                                 if bigram[0] not in dists[rel]:
                                     dists[rel][bigram[0]] = [0] * len(words)
                                 dists[rel][bigram[0]][words.index(bigram[0])] += 1
-            except StopIteration:
+            except Exception:
+                save_dist(dists, f"{data_name}-{i}")
                 print(f'end records {i} with {j} ngrams')
                 continue
     except StopIteration:
         print(f'end iteration with {i} records')
 
-    save_dist(dists, data_name)
     return dists
+
+
+def merge_gray(data_name='wiki'):
+    color_words = utils.load_word_file('color')
+    gray_idx = color_words.index('gray')
+    grey_idx = color_words.index('grey')
+    with open(f'distributions/{data_name}-color-dist.jsonl', 'r') as f:
+        dist = json.load(f)
+    new_dist = {}
+    for word, d in dist.items():
+        di = d.copy()
+        di[gray_idx] += di[grey_idx]
+        di.pop(grey_idx)
+        new_dist[word] = di
+    with open(f'distributions/{data_name}-color-dist.jsonl', 'w') as f:
+        json.dump(new_dist, f)
 
 
 if __name__ == '__main__':
     # run()
-    google_ngram()
+    merge_gray()
+    # google_ngram()
     # get_db_from_dist('material')
     # plot_count_comparison('material')

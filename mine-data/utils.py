@@ -33,6 +33,8 @@ def filter_att(att, type):
 
     if type == 'material':
         if att == 'wooden': att = 'wood'
+    if type == 'color':
+        if att == 'grey': att = 'gray'
     return att
 
 def lemmatize(sub):

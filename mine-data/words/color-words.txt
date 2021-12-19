@@ -17,7 +17,6 @@ emerald
 gold
 gray
 green
-grey
 indigo
 ivory
 jade

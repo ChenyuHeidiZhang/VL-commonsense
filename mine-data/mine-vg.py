@@ -238,6 +238,6 @@ def extract_size(smaller=True, num_samples=2000):
 
 
 if __name__ == "__main__":
-    get_db_from_dist('material')
+    get_db_from_dist('color')
     # mine_cooccurrence()
     # extract_size(smaller=False)
