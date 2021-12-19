@@ -16,8 +16,8 @@ import logging
 logger = logging.getLogger(__name__)
 
 #relations = ['size_smaller', 'size_larger']
-relations = ['shape']  # shape, color, material
-verbose = False
+relations = ['color']  # 'shape', 'material', 'color'
+verbose = False  # verbose=True only available for non-size relations, one at a time
 
 def get_correlation(vg_dist, model_dist):
     # Compute correlation between the VG distribution and model distribution
@@ -164,6 +164,7 @@ def run(lm_name, log_path=''):
         splits = list()
         if rel_type not in relation_db['train'].banks:
             continue
+        print(f'Relation Type {rel_type}')
         for split in ['train', 'dev', 'test']:
             splits.append(relation_db[split].banks[rel_type])
         train_set, dev_set, test_set = splits
@@ -186,7 +187,9 @@ def run(lm_name, log_path=''):
             size_correctness(rel_type, test_set, preds)
         else:
             calculate_acc(rel_type, test_set, target_dist)
-            return analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds)
+            x,y,z = analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds)
+            if verbose:
+                return x,y,z
 
 def cross_model_corr(corr_sp1, corr_sp2, subjects):
     corr1 = [corr[0] for corr in corr_sp1]
@@ -222,45 +225,45 @@ def common_subs(subs1, subs2, subs3):
     return subs, indices
 
 if __name__ == '__main__':
-    if len(relations) == 1:
+    if verbose:
         corr_sp1, model_dist1, subjects1 = run('lm', log_path='logs/vl')
         corr_sp2, model_dist2, subjects2 = run('lm2', log_path='logs/vl-oscar')
         corr_sp3, model_dist3, subjects3 = run('lm3', log_path='logs/vl-dstilbert')
         # corr_sp4, model_dist4, subjects4 = run('lm4', log_path='logs/vl-roberta')
-        if verbose:
-            if not (len(subjects1) == len(subjects2) and len(subjects2) == len(subjects3)):
-                subjects, indices = common_subs(subjects1, subjects2, subjects3)
-                corr_sp1 = corr_sp1[indices[0]]
-                corr_sp2 = corr_sp2[indices[1]]
-                corr_sp3 = corr_sp3[indices[2]]
-                model_dist1 = model_dist1[indices[0]]
-                model_dist2 = model_dist2[indices[1]]
-                model_dist3 = model_dist3[indices[2]]
-                print('obtained common subjects:', len(subjects))
-            else:
-                subjects = subjects1
-                print('num subjects:', len(subjects))
+        if not (len(subjects1) == len(subjects2) and len(subjects2) == len(subjects3)):
+            subjects, indices = common_subs(subjects1, subjects2, subjects3)
+            corr_sp1 = corr_sp1[indices[0]]
+            corr_sp2 = corr_sp2[indices[1]]
+            corr_sp3 = corr_sp3[indices[2]]
+            model_dist1 = model_dist1[indices[0]]
+            model_dist2 = model_dist2[indices[1]]
+            model_dist3 = model_dist3[indices[2]]
+            print('obtained common subjects:', len(subjects))
+        else:
+            subjects = subjects1
+            print('num subjects:', len(subjects))
 
-            cor_corr12, bo_bert, bo_oscar = cross_model_corr(corr_sp1, corr_sp2, subjects)
-            print()
-            print('Corr of bert & oscar correlations:', cor_corr12)
-            print('Mean and var of corr of bert & oscar dists:')
-            _, _ = get_correlation(model_dist1, model_dist2)
-            print(bo_bert)
-            print(bo_oscar)
-            cor_corr23, od_oscar, od_distil = cross_model_corr(corr_sp2, corr_sp3, subjects)
-            print('Corr of oscar & distil_bert correlations:', cor_corr23)
-            print('Mean and var of corr of oscar & distil_bert dists:')
-            _, _ = get_correlation(model_dist2, model_dist3)
-            print(od_oscar)
-            print(od_distil)
-            cor_corr13, bd_bert, bd_distil = cross_model_corr(corr_sp1, corr_sp3, subjects)
-            print('Corr of bert & distil_bert correlations:', cor_corr13)
-            print('Mean and var of corr of bert & distil_bert dists:')
-            _, _ = get_correlation(model_dist1, model_dist3)
-            print(bd_bert)
-            print(bd_distil)
+        cor_corr12, bo_bert, bo_oscar = cross_model_corr(corr_sp1, corr_sp2, subjects)
+        print()
+        print('Corr of bert & oscar correlations:', cor_corr12)
+        print('Mean and var of corr of bert & oscar dists:')
+        _, _ = get_correlation(model_dist1, model_dist2)
+        print(bo_bert)
+        print(bo_oscar)
+        cor_corr23, od_oscar, od_distil = cross_model_corr(corr_sp2, corr_sp3, subjects)
+        print('Corr of oscar & distil_bert correlations:', cor_corr23)
+        print('Mean and var of corr of oscar & distil_bert dists:')
+        _, _ = get_correlation(model_dist2, model_dist3)
+        print(od_oscar)
+        print(od_distil)
+        cor_corr13, bd_bert, bd_distil = cross_model_corr(corr_sp1, corr_sp3, subjects)
+        print('Corr of bert & distil_bert correlations:', cor_corr13)
+        print('Mean and var of corr of bert & distil_bert dists:')
+        _, _ = get_correlation(model_dist1, model_dist3)
+        print(bd_bert)
+        print(bd_distil)
     else:
-        run('lm', log_path='logs/vl')
-        run('lm2', log_path='logs/vl-oscar')
-        run('lm3', log_path='logs/vl-dstilbert')
+        run('lm', log_path='logs/vl-bert-large')
+        #run('lm2', log_path='logs/vl-oscar-large')
+        #run('lm3', log_path='logs/vl-distilbert')
+        #run('lm4')

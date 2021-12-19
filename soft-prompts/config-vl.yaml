@@ -22,7 +22,7 @@ trainer:
 
   max_layer: 24
   penalty: [0.0, 0.0, 0.0, 0.0, 0.0]
-  log_path: 'logs/vl-dstilbert'
+  log_path: 'logs/vl-bert-large'
 
   vocab_file: &vocab_file ~
   conditional_prompt: false
@@ -41,6 +41,6 @@ template:
   max_num: -1
 
 lm:
-  model_type: 'distil_bert'
-  param_name: 'bert-base-cased'
+  model_type: 'bert'
+  param_name: 'bert-large-cased'
   device: *device

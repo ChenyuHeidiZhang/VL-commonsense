@@ -50,6 +50,10 @@ class PreTrainedBert(LanguageModel):
             self.config = BertConfig.from_pretrained("distil_bert/config.json")
             util.tokenizer = BertTokenizer.from_pretrained("distil_bert/")
             model = BertForMaskedLM.from_pretrained("distil_bert/")
+        elif model_type == 'vokenization':
+            self.config = BertConfig.from_pretrained("vlm_12L_768H_wiki/config.json")
+            util.tokenizer = BertTokenizer.from_pretrained("vlm_12L_768H_wiki/")
+            model = BertForMaskedLM.from_pretrained("vlm_12L_768H_wiki/")
         else:
             self.config, model_class, tokenizer_class = model_classes[model_type]
             util.tokenizer = tokenizer_class.from_pretrained(param_name)
