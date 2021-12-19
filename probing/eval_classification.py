@@ -68,7 +68,7 @@ def run(args):
     rel_name = 'color' if relation == 'coda' else relation
     templates = [f'the {rel_name} of [X]'] if args.single_prompt else load_prompts(relation)
 
-    test_ids = []  # ids of test objs that are in train objs
+    test_ids = []  # ids of test objs that are in train objs; those that are not are excluded when getting test features
     for i in range(len(test_data)):
         if test_data[i][1] in objs:
             test_ids.append(i)
@@ -92,6 +92,7 @@ def run(args):
         acc_all_temps = []
         corr_all_temps = []
         corr_stds = []
+        sp_per_obj_all = []
         for i in range(len(templates)):  # still, same template per test set
             train_features = train_all_temps[i][0][:train_data_size]
             train_labels = train_all_temps[i][1][:train_data_size]
@@ -117,53 +118,65 @@ def run(args):
 
             word_ids = get_word_ids(relation, [objs[id] for id in train_ids])
             sp_corrs = []
+            sp_per_obj = [[] for _ in range(len(objs))]
             idx = 0
             for i in test_ids:
                 true_dist = np.take(dist_dict[test_data[i][0]], word_ids)
-                sp = spearmanr(true_dist, logprob[idx])[0]
-                # sp = (kendalltau(true_dist, logprob[idx])[0] + sp) / 2
+                if np.sum(true_dist) != 0:
+                    sp = spearmanr(true_dist, logprob[idx])[0]
+                    # sp = (kendalltau(true_dist, logprob[idx])[0] + sp) / 2
+                    sp_corrs.append(sp)
+                    sp_per_obj[test_labels[idx]].append(sp)
                 idx += 1
-                if np.sum(true_dist) != 0: sp_corrs.append(sp)
             sp_corr = np.mean(sp_corrs)
             corr_all_temps.append(sp_corr)
             corr_stds.append(np.std(sp_corrs))
+            sp_per_obj_all.append(sp_per_obj)
             print('avg sp corr:', sp_corr)  # avg across all test examples for one template
         print('best acc across all templates:', np.max(acc_all_temps))
         max_id = np.argmax(corr_all_temps)
         print('best sp corr across all templates:', corr_all_temps[max_id])
+        sp_per_obj = sp_per_obj_all[max_id]
+        avg_per_obj = plot_corr(sp_per_obj, objs, model_name, rel_name)
 
-    return round(corr_all_temps[max_id], 3), round(corr_stds[max_id], 3), round(np.max(acc_all_temps), 1) 
+    return round(corr_all_temps[max_id], 3), round(corr_stds[max_id], 3), round(np.max(acc_all_temps), 1), avg_per_obj
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='eval parser')
-    parser.add_argument('--model', type=str, default='bert',
-                        help='name of the model (bert, oscar, or clip)')
-    parser.add_argument('--model_size', type=str, default='base',
-                        help='size of the model (base, large)')
-    parser.add_argument('--relation', type=str, default='shape',
-                        help='relation to evaluate (shape, material, color, coda, cooccur)')
-    parser.add_argument('--group', type=str, default='',
-                        help='group to evaluate (single, multi, any, or '' for all))')
-    parser.add_argument('--seed', type=int, default=1,
-                        help='numpy random seed')
-    parser.add_argument('--step', type=int, default=-1,
-                        help='step size of increasing training size')
-    parser.add_argument('--single_prompt', type=bool, default=False,
-                        help='whether to use a single prompt')
-    args = parser.parse_args()
-    sp_mean, sp_std, acc = run(args)
-    print(sp_std)
+    # parser = argparse.ArgumentParser(description='eval parser')
+    # parser.add_argument('--model', type=str, default='bert',
+    #                     help='name of the model (bert, oscar, or clip)')
+    # parser.add_argument('--model_size', type=str, default='base',
+    #                     help='size of the model (base, large)')
+    # parser.add_argument('--relation', type=str, default='shape',
+    #                     help='relation to evaluate (shape, material, color, coda, cooccur)')
+    # parser.add_argument('--group', type=str, default='',
+    #                     help='group to evaluate (single, multi, any, or '' for all))')
+    # parser.add_argument('--seed', type=int, default=1,
+    #                     help='numpy random seed')
+    # parser.add_argument('--step', type=int, default=-1,
+    #                     help='step size of increasing training size')
+    # parser.add_argument('--single_prompt', type=bool, default=False,
+    #                     help='whether to use a single prompt')
+    # args = parser.parse_args()
+    # sp_mean, sp_std, acc = run(args)
+    # print(sp_std)
 
-    # rel_types = ['wiki-shape', 'wiki-material', 'wiki-color']
-    # d = {rel: [] for rel in rel_types}
-    # for relation in rel_types:
-    #     print(relation)
-    #     for group in ['']:  # , 'single', 'multi', 'any'
-    #         for model in ['bert', 'oscar', 'clip']:  # 
-    #             args = Args(model, relation, group)
-    #             np.random.seed(args.seed)
-    #             sp_mean, sp_std, acc = run(args)
-    #             d[relation].append((sp_mean, sp_std, acc))
+    rel_types = ['color']  # 'color', 'shape', 
+    d = {rel: [] for rel in rel_types}
+    for relation in rel_types:
+        print(relation)
+        sps_per_obj = []
+        for group in ['']:  # , 'single', 'multi', 'any'
+            for model in ['bert', 'oscar', 'clip']:  # 
+                args = Args(model, relation, group)
+                np.random.seed(args.seed)
+                sp_mean, sp_std, acc, sp_per_obj = run(args)
+                print(sp_mean, sp_std, acc, sp_per_obj)
+                d[relation].append((sp_mean, sp_std, acc))
+                sps_per_obj.append(sp_per_obj)
+            print('bert vs. oscar', spearmanr(sps_per_obj[0], sps_per_obj[1]))
+            print('bert vs. clip', spearmanr(sps_per_obj[0], sps_per_obj[2]))
+            print('oscar vs. clip', spearmanr(sps_per_obj[1], sps_per_obj[2]))
     # import pandas as pd
     # df = pd.DataFrame(d)
     # df.to_excel('file.xlsx')

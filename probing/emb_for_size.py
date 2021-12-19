@@ -5,6 +5,7 @@ import torch
 import clip
 from scipy.spatial import distance
 import matplotlib.pyplot as plt
+plt.rcParams.update({'font.size': 12})
 
 from models import init_model
 
@@ -36,8 +37,11 @@ def cross_model_comparison(model_names, model_size, plot='boxplot'):
     words = []
     groups = ['tiny', 'small', 'medium', 'large', 'huge']
     cdict = {'tiny': 'skyblue', 'small': 'cornflowerblue', 'medium': 'royalblue', 'large': 'blue', 'huge': 'navy'}
+    marker_dict = {'tiny': 'o', 'small': 's', 'medium': 'P', 'large': 'D', 'huge': '^'}
     if len(model_names) == 2 or plot=='boxplot':
         fig, ax = plt.subplots()
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
     else:
         fig = plt.figure()
         ax = fig.add_subplot(projection='3d')
@@ -58,7 +62,7 @@ def cross_model_comparison(model_names, model_size, plot='boxplot'):
             data[i].append(sims)
     if plot=='scatter':
         for i, group in enumerate(groups):
-            ax.scatter(data[0][i], data[1][i], data[2][i], c=cdict[group], label=group)
+            ax.scatter(data[0][i], data[1][i], c=cdict[group], marker=marker_dict[group], label=group)  # , data[2][i]
             # for j, word in enumerate(load_size_db(group)):
             #     ax.annotate(word, (sims[0][i][j], sims[1][i][j]))
             ax.set_xlabel(f'{model_names[0]} cos_sim')
@@ -80,7 +84,7 @@ def cross_model_comparison(model_names, model_size, plot='boxplot'):
         plt.legend()
         plt.xticks([1,2,3,4,5], labels=groups)
         plt.ylabel('cos_sim')
-    plt.savefig(f'probing/plots/size_comparison_{plot}.png', bbox_inches='tight')
+    plt.savefig(f'probing/plots/size_comparison_{plot}.pdf', bbox_inches='tight')
 
 
 def run():
@@ -111,11 +115,11 @@ def run():
         data.append(sims)
     plt.boxplot(data, showfliers=False)  # , showfliers=False
     plt.xticks([1,2,3,4,5], groups)
-    plt.savefig(f'probing/plots/size_boxplot_{model_name}.png')
+    plt.savefig(f'probing/plots/size_boxplot_{model_name}.pdf')
 
 
 if __name__ == '__main__':
     if True:
-        cross_model_comparison(['bert', 'oscar', 'clip'], 'base', plot='scatter')
+        cross_model_comparison(['bert', 'oscar'], 'base', plot='scatter')
     else:
         run()

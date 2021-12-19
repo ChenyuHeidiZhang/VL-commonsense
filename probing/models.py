@@ -145,3 +145,62 @@ def plot_dists(sp_corrs, dist_pairs, rel, group, model, num_to_plot=3):
     ax2.set_title('low correlation')
     if group == '': group = 'all'
     plt.savefig(f'probing/plots/zero_shot_plt_{rel}_{group}_{model}.png')
+
+
+def plot_corr(sp_per_obj, objs_ls, model, rel, method):
+    y = []
+    error = []
+    skip = 0
+    existing_objs = []
+    for i, corrs in enumerate(sp_per_obj):
+        if len(corrs) == 0:
+            print(f'no example for object {objs_ls[i]}')
+            skip += 1
+            continue
+        y.append(np.mean(corrs))
+        error.append(np.std(corrs))
+        existing_objs.append(objs_ls[i])
+    x = np.arange(len(objs_ls) - skip)
+    y = np.array(y)
+    error = np.array(error)
+    plt.plot(x, y, label=model)
+    plt.fill_between(x, y-error, y+error, alpha=0.5)
+    plt.xticks(x, existing_objs, rotation='vertical')
+    plt.ylabel('Spearmanr')
+    plt.legend()
+    plt.savefig(f'probing/plots/corr_per_group_{method}_{model}_{rel}.png', bbox_inches='tight')
+    return y
+
+def plot_corr_all_rels(sp_per_obj, models, rels, method):
+    fig, axs = plt.subplots(3, 1, sharex=False, figsize=[7, 8])
+    plt.rc('legend', fontsize=12)
+
+    for idx, relation in enumerate(rels):
+        objs_ls = load_word_file(relation)
+        for model_idx, model_corr in enumerate(sp_per_obj[relation]):
+            y = []
+            error = []
+            skip = 0
+            existing_objs = []
+            for i, corrs in enumerate(model_corr):
+                if len(corrs) == 0:
+                    print(f'no example for object {objs_ls[i]}')
+                    skip += 1
+                    continue
+                y.append(np.mean(corrs))
+                error.append(np.std(corrs))
+                existing_objs.append(objs_ls[i])
+            x = np.arange(len(objs_ls) - skip)
+            y = np.array(y)
+            error = np.array(error)
+            axs[idx].plot(x, y, label=models[model_idx])
+            axs[idx].fill_between(x, y-error, y+error, alpha=0.5)
+            axs[idx].set_xticks(x)
+            axs[idx].set_xticklabels(existing_objs)
+            plt.setp(axs[idx].get_xticklabels(), rotation=45, fontweight='bold', fontsize=12)
+            axs[idx].set_ylabel('Spearmanr', fontweight='bold', fontsize=12)
+            axs[idx].set_title(relation)
+    fig.tight_layout()
+    plt.legend()
+    plt.savefig(f'probing/plots/corr_per_group_{method}.pdf', bbox_inches='tight')
+    return y
