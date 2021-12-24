@@ -1,28 +1,23 @@
 bronze
 ceramic
-chemical
 cloth
-composite materials
 concrete
-copper
+copper: bronze
+cobblestone: stone
+cotton
 denim
-fiber
-foam
 glass
 gold
 iron
+jade
 leather
 metal
-mineral
-natural textiles
 paper
-pewter
-plaster
+pewter: tin
 plastic
 rubber
-silver
-slate
+slate: stone
 stone
-synthetic textiles
 tin
 wood
+wooden: wood

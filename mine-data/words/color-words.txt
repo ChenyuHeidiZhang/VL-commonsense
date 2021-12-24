@@ -1,43 +1,33 @@
-amber
-apricot
-aqua
-azure
-beige
+amber: orange
+aqua: blue
+azure: blue
+beige: white
 black
 blue
-blond
+blond: yellow
 brown
-burgundy
-charcoal
-coral
-crimson
-cyan
-dark colored
-emerald
-gold
+burgundy: red
+crimson: red
+cyan: blue
+gold: yellow
+golden: yellow
 gray
+grey: gray
 green
-indigo
-ivory
-jade
-khaki
-lavender
-light colored
-magenta
-maroon
-navy
+indigo: blue
+khaki: brown
+lavender: purple
+magenta: pink
+maroon: red
+navy: blue
 orange
-pale
 pink
 purple
-rainbow
 red
-ruby
-scarlet
+scarlet: red
 silver
-tan
-turquoise
-violet
+tan: brown
+turquoise: green
+violet: purple
 white
-wine
 yellow

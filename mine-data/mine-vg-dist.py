@@ -4,15 +4,13 @@ import utils
 
 attributes_file = 'attributes.json'
 
-def mine_attribute_dist(type, thres=2, single_slot=True, print_every=1000, max_imgs=1000000):
+def mine_attribute_dist(type, thres, single_slot=True, print_every=1000, max_imgs=1000000):
     # read a list of attributes and find corresponding subjects in Visual Genome
     # output obtained pairs to file
 
     print(f'loading objects file of type {type}...')
-    objs_ls = utils.load_word_file(type, single_slot)
+    objs_ls, obj_map = utils.load_word_file(type, single_slot)
     sub_dist = {}
-    # obj_dist = {}
-    # for obj in objs_ls: obj_dist[obj] = 0
 
     print('loading attributes file...')
     attributes_f = json.load(open(attributes_file))
@@ -26,24 +24,23 @@ def mine_attribute_dist(type, thres=2, single_slot=True, print_every=1000, max_i
         for obj in img['attributes']:
             if 'attributes' not in obj:
                 continue
+            subj_atts = []
             for attribute in obj['attributes']:
-                att = utils.filter_att(attribute, type)
-                # check if the attribute is in our word list
+                att = utils.filter_att(attribute, obj_map)
                 if att in objs_ls:
                     sub = utils.lemmatize(obj['names'][0])
                     if att in sub or (att == 'gray' and 'grey' in sub): 
                         continue  # skip cases when the subject is something like "red box"
+                    if att in subj_atts: continue # skip if the attribute is duplicate for the current noun
+                    subj_atts.append(att)
                     if sub not in sub_dist:
-                        # sub_dist[sub] = np.zeros(len(objs_ls))
                         sub_dist[sub] = [0] * len(objs_ls)
                     sub_dist[sub][objs_ls.index(att)] += 1
-                    # obj_dist[att] += 1
         if img_num == max_imgs:
             break
     print(f'finished processing {img_num} images')
-    # print(obj_dist)
 
-    # clean up the tail distribution
+    # remove the distribution if the sum of occurrences is <= the threshold.
     to_remove = []
     for sub in sub_dist:
         sub_dist[sub] = np.multiply(sub_dist[sub], np.array(sub_dist[sub])>thres).tolist()
@@ -55,6 +52,49 @@ def mine_attribute_dist(type, thres=2, single_slot=True, print_every=1000, max_i
     out_file = f'distributions/{type}-dist.jsonl'
     with open(out_file, 'w') as out:
         json.dump(sub_dist, out)
+
+
+def mine_cooccurrence_dist(thres, print_every=1000, max_imgs=100000):
+    import itertools
+    from collections import defaultdict
+
+    print('loading attributes file...')
+    attributes_f = json.load(open(attributes_file))
+
+    print('mining attributes...')
+    noun_list = utils.load_word_file('cooccur')[0]  # all item names in VG
+    cooccur_dict = defaultdict(set)  # {sub: [objs]}
+    cooccur_counts = defaultdict(int)
+    img_num = 0
+    for img in attributes_f:
+        img_num += 1
+        if img_num % print_every == 0:
+            print(f'processing {img_num}-th image')
+        names = set()
+        for obj in img['attributes']:
+            name = utils.lemmatize(obj['names'][0])
+            if name in noun_list: names.add(name)
+        
+        for subset in itertools.combinations(names, 2):
+            cooccur_dict[subset[0]].add(subset[1])
+            cooccur_counts[subset] += 1
+
+        if img_num == max_imgs:
+            break
+    print(f'finished processing {img_num} images')
+
+    # record VG distribution
+    print('recording noun co-occurrrence distribution...')
+    print(len(noun_list))
+    noun_dist = {}
+    for sub in cooccur_dict:
+        dist = [cooccur_counts[(sub, obj)] for obj in noun_list]
+        dist = np.multiply(dist, np.array(dist)>thres).tolist()
+        if np.sum(dist) > 0:
+            noun_dist[sub] = dist
+    dist_file = 'distributions/cooccur-dist.jsonl'
+    with open(dist_file, 'w') as f:
+        json.dump(noun_dist, f)
 
 
 def check_vg_atts(print_every=1000):
@@ -84,5 +124,6 @@ def check_vg_atts(print_every=1000):
 
 
 if __name__ == "__main__":
-    mine_attribute_dist('color', thres=utils.THRES_COLOR)
+    mine_attribute_dist('material', thres=utils.THRES_MATERIAL)
+    mine_cooccurrence_dist(thres=utils.THRES_COOCCUR)
     # check_vg_atts()

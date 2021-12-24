@@ -1,138 +1,140 @@
-{"sub": "table top", "obj": "round", "alt": "pentagon"}
-{"sub": "top", "obj": "round", "alt": "polygon"}
-{"sub": "pot", "obj": "round", "alt": "triangle"}
+{"sub": "table top", "obj": "round", "alt": "rectangle"}
+{"sub": "top", "obj": "round", "alt": "octagon"}
+{"sub": "pot", "obj": "round", "alt": "heart"}
 {"sub": "nose", "obj": "round", "alt": "cross"}
-{"sub": "mirror", "obj": "round", "alt": "heart"}
-{"sub": "door", "obj": "square", "alt": "heart"}
-{"sub": "recepticle", "obj": "round", "alt": "heart"}
+{"sub": "mirror", "obj": "round", "alt": "semicircle"}
+{"sub": "door", "obj": "square", "alt": "star"}
+{"sub": "recepticle", "obj": "round", "alt": "star"}
 {"sub": "clock", "obj": "round", "alt": "semicircle"}
-{"sub": "coffee table", "obj": "round", "alt": "heptagon"}
-{"sub": "sewer", "obj": "round", "alt": "polygon"}
-{"sub": "planter", "obj": "round", "alt": "triangle"}
-{"sub": "tile", "obj": "square", "alt": "oval"}
-{"sub": "glass", "obj": "round", "alt": "triangle"}
-{"sub": "chair", "obj": "round", "alt": "pentagon"}
-{"sub": "lemon", "obj": "round", "alt": "pentagon"}
-{"sub": "ceiling light", "obj": "round", "alt": "rhombus"}
-{"sub": "fence", "obj": "square", "alt": "heptagon"}
-{"sub": "emblem", "obj": "round", "alt": "cross"}
-{"sub": "grate", "obj": "round", "alt": "rhombus"}
-{"sub": "drain", "obj": "round", "alt": "triangle"}
-{"sub": "lamp shade", "obj": "round", "alt": "star"}
-{"sub": "wooden table", "obj": "round", "alt": "heart"}
-{"sub": "tree", "obj": "round", "alt": "octagon"}
-{"sub": "tower", "obj": "round", "alt": "pentagon"}
-{"sub": "front tire", "obj": "round", "alt": "rhombus"}
-{"sub": "street sign", "obj": "round", "alt": "star"}
-{"sub": "phone", "obj": "square", "alt": "triangle"}
-{"sub": "face", "obj": "round", "alt": "hexagon"}
-{"sub": "petal", "obj": "oval", "alt": "pentagon"}
-{"sub": "life saver", "obj": "round", "alt": "square"}
-{"sub": "log", "obj": "round", "alt": "oval"}
-{"sub": "logo", "obj": "round", "alt": "rhombus"}
-{"sub": "hubcap", "obj": "round", "alt": "pentagon"}
-{"sub": "decal", "obj": "oval", "alt": "rectangle"}
-{"sub": "faucet", "obj": "round", "alt": "ring"}
-{"sub": "cushion", "obj": "square", "alt": "hexagon"}
-{"sub": "front headlight", "obj": "round", "alt": "hexagon"}
-{"sub": "barrel", "obj": "round", "alt": "rhombus"}
-{"sub": "card", "obj": "square", "alt": "star"}
-{"sub": "spoon", "obj": "round", "alt": "circle"}
-{"sub": "stem", "obj": "round", "alt": "hexagon"}
-{"sub": "mousepad", "obj": "round", "alt": "pentagon"}
-{"sub": "bus", "obj": "square", "alt": "oval"}
-{"sub": "banana", "obj": "round", "alt": "triangle"}
-{"sub": "rock", "obj": "round", "alt": "pentagon"}
-{"sub": "container", "obj": "round", "alt": "cross"}
-{"sub": "walk", "obj": "cross", "alt": "square"}
-{"sub": "pizza", "obj": "round", "alt": "diamond"}
-{"sub": "bin", "obj": "square", "alt": "rhombus"}
-{"sub": "line", "obj": "circle", "alt": "rhombus"}
-{"sub": "leaf", "obj": "oval", "alt": "cross"}
-{"sub": "sunglass", "obj": "oval", "alt": "square"}
-{"sub": "light fixture", "obj": "round", "alt": "hexagon"}
-{"sub": "exercise ball", "obj": "round", "alt": "triangle"}
-{"sub": "gauge", "obj": "round", "alt": "polygon"}
-{"sub": "side mirror", "obj": "round", "alt": "ring"}
-{"sub": "item", "obj": "round", "alt": "rhombus"}
-{"sub": "coaster", "obj": "round", "alt": "pentagon"}
-{"sub": "vase", "obj": "round", "alt": "diamond"}
-{"sub": "pupil", "obj": "oval", "alt": "triangle"}
-{"sub": "apple", "obj": "round", "alt": "rhombus"}
-{"sub": "keyhole", "obj": "round", "alt": "octagon"}
-{"sub": "floor", "obj": "square", "alt": "rhombus"}
-{"sub": "sprinkle", "obj": "star", "alt": "diamond"}
-{"sub": "indentation", "obj": "oval", "alt": "hexagon"}
-{"sub": "something", "obj": "square", "alt": "circle"}
-{"sub": "knot", "obj": "round", "alt": "ring"}
-{"sub": "earing", "obj": "round", "alt": "star"}
-{"sub": "piece", "obj": "square", "alt": "rhombus"}
-{"sub": "boulder", "obj": "round", "alt": "cross"}
-{"sub": "block", "obj": "square", "alt": "cross"}
-{"sub": "tin", "obj": "round", "alt": "heart"}
-{"sub": "bracelet", "obj": "diamond", "alt": "heart"}
-{"sub": "toilet bowl", "obj": "round", "alt": "octagon"}
-{"sub": "sculpture", "obj": "round", "alt": "octagon"}
-{"sub": "carrot", "obj": "round", "alt": "rhombus"}
-{"sub": "cheese pizza", "obj": "round", "alt": "square"}
-{"sub": "tassel", "obj": "heart", "alt": "rhombus"}
-{"sub": "disk", "obj": "round", "alt": "star"}
-{"sub": "plastic container", "obj": "square", "alt": "diamond"}
-{"sub": "ramp", "obj": "round", "alt": "octagon"}
-{"sub": "potatoe", "obj": "square", "alt": "pentagon"}
-{"sub": "left mirror", "obj": "round", "alt": "polygon"}
-{"sub": "fridge", "obj": "square", "alt": "heart"}
-{"sub": "birthday cake", "obj": "round", "alt": "pentagon"}
-{"sub": "pin", "obj": "round", "alt": "ring"}
-{"sub": "nightstand", "obj": "round", "alt": "cross"}
-{"sub": "reflection", "obj": "round", "alt": "rhombus"}
-{"sub": "cracker", "obj": "round", "alt": "oval"}
-{"sub": "dirt patch", "obj": "round", "alt": "square"}
-{"sub": "hand sink", "obj": "round", "alt": "square"}
-{"sub": "bead", "obj": "round", "alt": "hexagon"}
-{"sub": "bar", "obj": "round", "alt": "rectangle"}
-{"sub": "thing", "obj": "round", "alt": "ring"}
-{"sub": "tortilla", "obj": "round", "alt": "rhombus"}
-{"sub": "camera", "obj": "round", "alt": "ring"}
-{"sub": "fan unit", "obj": "round", "alt": "triangle"}
-{"sub": "bench", "obj": "round", "alt": "pentagon"}
-{"sub": "banana slice", "obj": "round", "alt": "octagon"}
-{"sub": "newspaper box", "obj": "square", "alt": "oval"}
-{"sub": "end", "obj": "round", "alt": "semicircle"}
-{"sub": "belly button", "obj": "round", "alt": "diamond"}
-{"sub": "attachment", "obj": "round", "alt": "triangle"}
-{"sub": "squash", "obj": "round", "alt": "cross"}
-{"sub": "pizza pan", "obj": "round", "alt": "semicircle"}
-{"sub": "tent", "obj": "square", "alt": "circle"}
-{"sub": "stripe", "obj": "ring", "alt": "heart"}
-{"sub": "satellite dish", "obj": "round", "alt": "diamond"}
-{"sub": "tofu", "obj": "square", "alt": "rectangle"}
-{"sub": "walkway", "obj": "square", "alt": "diamond"}
-{"sub": "radish", "obj": "round", "alt": "polygon"}
-{"sub": "mesh", "obj": "square", "alt": "semicircle"}
-{"sub": "volleyball", "obj": "round", "alt": "circle"}
-{"sub": "security camera", "obj": "round", "alt": "polygon"}
-{"sub": "server", "obj": "triangle", "alt": "rectangle"}
-{"sub": "biscuit", "obj": "round", "alt": "hexagon"}
-{"sub": "sliced orange", "obj": "round", "alt": "pentagon"}
-{"sub": "vegetable", "obj": "round", "alt": "diamond"}
-{"sub": "end table", "obj": "square", "alt": "oval"}
-{"sub": "salt shaker", "obj": "round", "alt": "circle"}
-{"sub": "pitchers mound", "obj": "round", "alt": "heart"}
-{"sub": "rail", "obj": "round", "alt": "pentagon"}
-{"sub": "white sign", "obj": "square", "alt": "triangle"}
-{"sub": "yellow light", "obj": "round", "alt": "circle"}
-{"sub": "dinner plate", "obj": "round", "alt": "square"}
-{"sub": "border", "obj": "ring", "alt": "star"}
-{"sub": "white light", "obj": "round", "alt": "rectangle"}
-{"sub": "building window", "obj": "square", "alt": "polygon"}
-{"sub": "wooden post", "obj": "square", "alt": "round"}
-{"sub": "copyright symbol", "obj": "round", "alt": "polygon"}
-{"sub": "hay", "obj": "square", "alt": "circle"}
-{"sub": "cherry tomato", "obj": "round", "alt": "rectangle"}
-{"sub": "cord", "obj": "circle", "alt": "heart"}
-{"sub": "cloth", "obj": "triangle", "alt": "polygon"}
-{"sub": "towel ring", "obj": "round", "alt": "triangle"}
-{"sub": "bowling ball", "obj": "round", "alt": "circle"}
-{"sub": "necktie", "obj": "heart", "alt": "pentagon"}
-{"sub": "luggage wheel", "obj": "round", "alt": "oval"}
+{"sub": "coffee table", "obj": "round", "alt": "octagon"}
+{"sub": "sewer", "obj": "round", "alt": "square"}
+{"sub": "planter", "obj": "round", "alt": "rhombus"}
+{"sub": "tile", "obj": "square", "alt": "polygon"}
+{"sub": "glass", "obj": "round", "alt": "semicircle"}
+{"sub": "chair", "obj": "round", "alt": "rhombus"}
+{"sub": "lemon", "obj": "round", "alt": "triangle"}
+{"sub": "ceiling light", "obj": "round", "alt": "heart"}
+{"sub": "fence", "obj": "square", "alt": "polygon"}
+{"sub": "emblem", "obj": "round", "alt": "rectangle"}
+{"sub": "grate", "obj": "round", "alt": "triangle"}
+{"sub": "drain", "obj": "round", "alt": "oval"}
+{"sub": "lamp shade", "obj": "round", "alt": "rectangle"}
+{"sub": "wooden table", "obj": "round", "alt": "polygon"}
+{"sub": "tree", "obj": "round", "alt": "semicircle"}
+{"sub": "tower", "obj": "round", "alt": "star"}
+{"sub": "manhole cover", "obj": "round", "alt": "rectangle"}
+{"sub": "front tire", "obj": "round", "alt": "heart"}
+{"sub": "bucket", "obj": "round", "alt": "octagon"}
+{"sub": "phone", "obj": "square", "alt": "octagon"}
+{"sub": "petal", "obj": "oval", "alt": "rhombus"}
+{"sub": "life saver", "obj": "round", "alt": "oval"}
+{"sub": "log", "obj": "round", "alt": "rhombus"}
+{"sub": "logo", "obj": "round", "alt": "rectangle"}
+{"sub": "comforter", "obj": "round", "alt": "star"}
+{"sub": "hubcap", "obj": "round", "alt": "heart"}
+{"sub": "sticker", "obj": "round", "alt": "octagon"}
+{"sub": "faucet", "obj": "round", "alt": "heart"}
+{"sub": "knee", "obj": "round", "alt": "heart"}
+{"sub": "front headlight", "obj": "round", "alt": "star"}
+{"sub": "card", "obj": "square", "alt": "round"}
+{"sub": "spoon", "obj": "round", "alt": "rhombus"}
+{"sub": "stem", "obj": "round", "alt": "semicircle"}
+{"sub": "mousepad", "obj": "round", "alt": "oval"}
+{"sub": "bus", "obj": "square", "alt": "polygon"}
+{"sub": "banana", "obj": "round", "alt": "heart"}
+{"sub": "container", "obj": "round", "alt": "polygon"}
+{"sub": "cd", "obj": "round", "alt": "oval"}
+{"sub": "pizza", "obj": "round", "alt": "octagon"}
+{"sub": "green ball", "obj": "round", "alt": "oval"}
+{"sub": "line", "obj": "round", "alt": "cross"}
+{"sub": "drawer", "obj": "rectangle", "alt": "semicircle"}
+{"sub": "sunglass", "obj": "oval", "alt": "triangle"}
+{"sub": "stove", "obj": "round", "alt": "semicircle"}
+{"sub": "exercise ball", "obj": "round", "alt": "octagon"}
+{"sub": "white plate", "obj": "round", "alt": "rectangle"}
+{"sub": "hexagon shape", "obj": "polygon", "alt": "heart"}
+{"sub": "gauge", "obj": "round", "alt": "oval"}
+{"sub": "train", "obj": "round", "alt": "heart"}
+{"sub": "item", "obj": "round", "alt": "polygon"}
+{"sub": "vase", "obj": "round", "alt": "rhombus"}
+{"sub": "pupil", "obj": "oval", "alt": "octagon"}
+{"sub": "apple", "obj": "round", "alt": "oval"}
+{"sub": "keyhole", "obj": "round", "alt": "rectangle"}
+{"sub": "floor", "obj": "square", "alt": "triangle"}
+{"sub": "sprinkle", "obj": "star", "alt": "octagon"}
+{"sub": "tail", "obj": "round", "alt": "rhombus"}
+{"sub": "indentation", "obj": "oval", "alt": "rhombus"}
+{"sub": "corner", "obj": "square", "alt": "polygon"}
+{"sub": "knot", "obj": "round", "alt": "octagon"}
+{"sub": "luggage", "obj": "round", "alt": "polygon"}
+{"sub": "piece", "obj": "square", "alt": "cross"}
+{"sub": "tablecloth", "obj": "square", "alt": "semicircle"}
+{"sub": "block", "obj": "square", "alt": "octagon"}
+{"sub": "meat", "obj": "round", "alt": "heart"}
+{"sub": "bracelet", "obj": "rhombus", "alt": "oval"}
+{"sub": "soap", "obj": "round", "alt": "square"}
+{"sub": "sculpture", "obj": "round", "alt": "polygon"}
+{"sub": "metal", "obj": "round", "alt": "rectangle"}
+{"sub": "cheese pizza", "obj": "round", "alt": "rectangle"}
+{"sub": "step", "obj": "round", "alt": "cross"}
+{"sub": "magnet", "obj": "square", "alt": "octagon"}
+{"sub": "blanket", "obj": "square", "alt": "rhombus"}
+{"sub": "hamburger", "obj": "round", "alt": "cross"}
+{"sub": "drawer pull", "obj": "round", "alt": "octagon"}
+{"sub": "grill", "obj": "round", "alt": "rectangle"}
+{"sub": "reflector", "obj": "square", "alt": "octagon"}
+{"sub": "topping", "obj": "round", "alt": "octagon"}
+{"sub": "front light", "obj": "round", "alt": "rectangle"}
+{"sub": "connector", "obj": "round", "alt": "oval"}
+{"sub": "garbage can", "obj": "round", "alt": "heart"}
+{"sub": "placard", "obj": "square", "alt": "round"}
+{"sub": "switch", "obj": "square", "alt": "octagon"}
+{"sub": "hanger", "obj": "round", "alt": "square"}
+{"sub": "foot", "obj": "round", "alt": "heart"}
+{"sub": "toe", "obj": "round", "alt": "octagon"}
+{"sub": "cap", "obj": "round", "alt": "star"}
+{"sub": "utensil", "obj": "round", "alt": "triangle"}
+{"sub": "onion", "obj": "round", "alt": "cross"}
+{"sub": "shelf", "obj": "rectangle", "alt": "octagon"}
+{"sub": "table.", "obj": "round", "alt": "triangle"}
+{"sub": "egg", "obj": "oval", "alt": "polygon"}
+{"sub": "chocolate piece", "obj": "round", "alt": "polygon"}
+{"sub": "flower bed", "obj": "round", "alt": "rectangle"}
+{"sub": "melon", "obj": "round", "alt": "heart"}
+{"sub": "necklace", "obj": "rhombus", "alt": "square"}
+{"sub": "pitcher's mound", "obj": "round", "alt": "polygon"}
+{"sub": "gas cap", "obj": "round", "alt": "octagon"}
+{"sub": "plum", "obj": "round", "alt": "semicircle"}
+{"sub": "bear", "obj": "round", "alt": "star"}
+{"sub": "sail", "obj": "triangle", "alt": "square"}
+{"sub": "meter", "obj": "round", "alt": "cross"}
+{"sub": "meatball", "obj": "round", "alt": "semicircle"}
+{"sub": "candy", "obj": "round", "alt": "star"}
+{"sub": "port", "obj": "round", "alt": "star"}
+{"sub": "kitchen table", "obj": "round", "alt": "star"}
+{"sub": "tomatoe", "obj": "round", "alt": "cross"}
+{"sub": "left wheel", "obj": "round", "alt": "cross"}
+{"sub": "parking meter", "obj": "round", "alt": "rhombus"}
+{"sub": "detail", "obj": "square", "alt": "semicircle"}
+{"sub": "ceramic tile", "obj": "square", "alt": "star"}
+{"sub": "toast", "obj": "triangle", "alt": "square"}
+{"sub": "pepper", "obj": "round", "alt": "rectangle"}
+{"sub": "canvas", "obj": "square", "alt": "rectangle"}
+{"sub": "cardboard sign", "obj": "square", "alt": "heart"}
+{"sub": "white frisbee", "obj": "round", "alt": "polygon"}
+{"sub": "cooler", "obj": "round", "alt": "semicircle"}
+{"sub": "lighting", "obj": "round", "alt": "semicircle"}
+{"sub": "right ear", "obj": "round", "alt": "octagon"}
+{"sub": "graphic", "obj": "round", "alt": "square"}
+{"sub": "diamond shape", "obj": "rhombus", "alt": "square"}
+{"sub": "cracker w/cheese", "obj": "round", "alt": "octagon"}
+{"sub": "copyright symbol", "obj": "round", "alt": "triangle"}
+{"sub": "touchpad", "obj": "square", "alt": "semicircle"}
+{"sub": "hay", "obj": "square", "alt": "star"}
+{"sub": "cherry tomato", "obj": "round", "alt": "cross"}
+{"sub": "light globe", "obj": "round", "alt": "semicircle"}
+{"sub": "cord", "obj": "round", "alt": "rhombus"}
+{"sub": "knife", "obj": "round", "alt": "triangle"}
+{"sub": "towel ring", "obj": "round", "alt": "octagon"}
+{"sub": "metal armrest", "obj": "round", "alt": "octagon"}
+{"sub": "necktie", "obj": "heart", "alt": "octagon"}

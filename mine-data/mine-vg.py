@@ -7,7 +7,7 @@ import utils
 attributes_file = 'attributes.json'
 
 def get_db_from_dist(type, single_slot=True):
-    word_ls = np.array(utils.load_word_file(type, single_slot))
+    word_ls = np.array(utils.load_word_file(type, single_slot)[0])
     vg_dist_dict = utils.load_dist_file(type)
 
     i = 0
@@ -90,6 +90,7 @@ def output_atts(type, word_ls, words_dict, att_counts, threshold):
 
 
 def mine_cooccurrence(print_every=1000, max_imgs=100000):
+    '''After getting the nouns list, use the version in mine-vg-dist.py instead'''
     import itertools
     from collections import defaultdict
     from nltk.corpus import wordnet as wn
@@ -238,6 +239,6 @@ def extract_size(smaller=True, num_samples=2000):
 
 
 if __name__ == "__main__":
-    get_db_from_dist('color')
+    get_db_from_dist('cooccur')
     # mine_cooccurrence()
     # extract_size(smaller=False)

@@ -1,7 +1,4 @@
-{"sub": "sign", "obj": "round", "alt": "hexagon"}
-{"sub": "frame", "obj": "square", "alt": "triangle"}
-{"sub": "design", "obj": "round", "alt": "rhombus"}
-{"sub": "shape", "obj": "diamond", "alt": "cross"}
-{"sub": "sticker", "obj": "round", "alt": "diamond"}
-{"sub": "symbol", "obj": "round", "alt": "pentagon"}
-{"sub": "kite", "obj": "round", "alt": "pentagon"}
+{"sub": "sign", "obj": "round", "alt": "polygon"}
+{"sub": "design", "obj": "round", "alt": "octagon"}
+{"sub": "shape", "obj": "rhombus", "alt": "polygon"}
+{"sub": "kite", "obj": "round", "alt": "cross"}

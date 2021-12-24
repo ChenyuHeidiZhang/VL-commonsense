@@ -1,16 +1,15 @@
-circle
+circle: round
 cross
-diamond
+diamond: rhombus
 heart
-heptagon
-hexagon
+heptagon: polygon
+hexagon: polygon
 octagon
 oval
-pentagon
+pentagon: polygon
 polygon
 rectangle
 rhombus
-ring
 round
 semicircle
 square

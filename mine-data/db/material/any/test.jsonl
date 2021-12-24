@@ -1,10 +1,4 @@
-{"sub": "cup", "obj": "plastic", "alt": "rubber"}
-{"sub": "statue", "obj": "stone", "alt": "chemical"}
-{"sub": "top", "obj": "silver", "alt": "plaster"}
-{"sub": "dome", "obj": "gold", "alt": "cloth"}
-{"sub": "balcony", "obj": "metal", "alt": "leather"}
-{"sub": "strip", "obj": "metal", "alt": "leather"}
-{"sub": "elephant", "obj": "gold", "alt": "paper"}
-{"sub": "wheel", "obj": "silver", "alt": "chemical"}
-{"sub": "awning", "obj": "metal", "alt": "ceramic"}
-{"sub": "bird", "obj": "wood", "alt": "tin"}
+{"sub": "holder", "obj": "metal", "alt": "tin"}
+{"sub": "base", "obj": "metal", "alt": "ceramic"}
+{"sub": "dish", "obj": "glass", "alt": "concrete"}
+{"sub": "figure", "obj": "ceramic", "alt": "bronze"}

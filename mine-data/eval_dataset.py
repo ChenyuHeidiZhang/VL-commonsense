@@ -21,7 +21,7 @@ COLORS = [
 ]
 # line_colors = ['blue', 'orange', 'green', 'red', 'purple', 'brwon', 'pink']
 
-color_ls = load_word_file('color')
+color_ls = load_word_file('color')[0]
 vg_dist_dict = load_dist_file('color')
 #wiki_dist_dict = load_dist_file('wiki-color')
 
