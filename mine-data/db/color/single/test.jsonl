@@ -2,12 +2,10 @@
 {"sub": "kitchen drawer", "obj": "white", "alt": "green"}
 {"sub": "taxi cab", "obj": "yellow", "alt": "orange"}
 {"sub": "cloud", "obj": "white", "alt": "brown"}
-{"sub": "dirt", "obj": "brown", "alt": "blue"}
 {"sub": "adapter", "obj": "black", "alt": "white"}
 {"sub": "foam", "obj": "white", "alt": "silver"}
 {"sub": "mulch", "obj": "brown", "alt": "pink"}
 {"sub": "lawn", "obj": "green", "alt": "black"}
-{"sub": "radiator", "obj": "white", "alt": "brown"}
 {"sub": "crib", "obj": "white", "alt": "yellow"}
 {"sub": "yard", "obj": "green", "alt": "orange"}
 {"sub": "body of water", "obj": "blue", "alt": "gray"}
@@ -38,7 +36,6 @@
 {"sub": "cellbar", "obj": "white", "alt": "brown"}
 {"sub": "washer", "obj": "white", "alt": "red"}
 {"sub": "styrofoam cup", "obj": "white", "alt": "purple"}
-{"sub": "basin", "obj": "white", "alt": "yellow"}
 {"sub": "hardwood floor", "obj": "brown", "alt": "blue"}
 {"sub": "electrical outlet", "obj": "white", "alt": "orange"}
 {"sub": "alarm", "obj": "red", "alt": "white"}
@@ -58,7 +55,6 @@
 {"sub": "directional sign", "obj": "white", "alt": "blue"}
 {"sub": "tan building", "obj": "brown", "alt": "white"}
 {"sub": "deer", "obj": "brown", "alt": "pink"}
-{"sub": "hillside", "obj": "green", "alt": "gray"}
 {"sub": "storefront", "obj": "blue", "alt": "white"}
 {"sub": "traffic pole", "obj": "black", "alt": "gray"}
 {"sub": "lane divider", "obj": "blue", "alt": "gray"}
@@ -72,7 +68,6 @@
 {"sub": "plane tail", "obj": "blue", "alt": "green"}
 {"sub": "trashcans", "obj": "black", "alt": "gray"}
 {"sub": "leave", "obj": "green", "alt": "pink"}
-{"sub": "bagel", "obj": "brown", "alt": "orange"}
 {"sub": "bathroom toilet", "obj": "white", "alt": "red"}
 {"sub": "step stool", "obj": "white", "alt": "orange"}
 {"sub": "wheelchair", "obj": "black", "alt": "white"}
@@ -86,7 +81,6 @@
 {"sub": "ghost", "obj": "red", "alt": "orange"}
 {"sub": "pepper shaker", "obj": "white", "alt": "purple"}
 {"sub": "freezer door", "obj": "white", "alt": "brown"}
-{"sub": "berry", "obj": "red", "alt": "yellow"}
 {"sub": "dalmation", "obj": "white", "alt": "yellow"}
 {"sub": "skull", "obj": "white", "alt": "black"}
 {"sub": "cat tail", "obj": "black", "alt": "green"}
@@ -156,7 +150,6 @@
 {"sub": "basil", "obj": "green", "alt": "yellow"}
 {"sub": "shinguard", "obj": "black", "alt": "green"}
 {"sub": "1", "obj": "black", "alt": "pink"}
-{"sub": "toilet brush", "obj": "white", "alt": "pink"}
 {"sub": "substance", "obj": "white", "alt": "purple"}
 {"sub": "frog", "obj": "green", "alt": "white"}
 {"sub": "smoke trail", "obj": "white", "alt": "brown"}

@@ -1,25 +1,17 @@
 {"sub": "window", "obj": "glass", "alt": "cotton"}
 {"sub": "floor", "obj": "wood", "alt": "paper"}
 {"sub": "desk", "obj": "wood", "alt": "jade"}
-{"sub": "couch", "obj": "leather", "alt": "iron"}
-{"sub": "table top", "obj": "wood", "alt": "leather"}
 {"sub": "table", "obj": "wood", "alt": "leather"}
 {"sub": "coffee mug", "obj": "ceramic", "alt": "rubber"}
 {"sub": "cabinet", "obj": "wood", "alt": "ceramic"}
 {"sub": "water bottle", "obj": "plastic", "alt": "bronze"}
 {"sub": "inbox tray", "obj": "plastic", "alt": "stone"}
-{"sub": "sidewalk", "obj": "concrete", "alt": "iron"}
 {"sub": "plank", "obj": "wood", "alt": "stone"}
-{"sub": "blanket", "obj": "gold", "alt": "concrete"}
-{"sub": "oven", "obj": "metal", "alt": "concrete"}
 {"sub": "drawer", "obj": "wood", "alt": "denim"}
 {"sub": "kitchen drawer", "obj": "wood", "alt": "paper"}
-{"sub": "refrigerator", "obj": "metal", "alt": "rubber"}
 {"sub": "wastebasket", "obj": "metal", "alt": "plastic"}
 {"sub": "remote control", "obj": "plastic", "alt": "cotton"}
 {"sub": "drain", "obj": "metal", "alt": "denim"}
-{"sub": "faucet", "obj": "metal", "alt": "jade"}
-{"sub": "rack", "obj": "metal", "alt": "iron"}
 {"sub": "dining table", "obj": "wood", "alt": "rubber"}
 {"sub": "window shade", "obj": "wood", "alt": "plastic"}
 {"sub": "flooring", "obj": "wood", "alt": "plastic"}
@@ -35,16 +27,12 @@
 {"sub": "bed", "obj": "wood", "alt": "ceramic"}
 {"sub": "headboard", "obj": "wood", "alt": "stone"}
 {"sub": "napkin dispenser", "obj": "metal", "alt": "leather"}
-{"sub": "brace", "obj": "metal", "alt": "tin"}
 {"sub": "bar", "obj": "metal", "alt": "tin"}
 {"sub": "deck", "obj": "wood", "alt": "cotton"}
-{"sub": "cutting board", "obj": "wood", "alt": "tin"}
-{"sub": "shed", "obj": "wood", "alt": "ceramic"}
 {"sub": "door frame", "obj": "wood", "alt": "bronze"}
 {"sub": "retaining wall", "obj": "stone", "alt": "leather"}
 {"sub": "tv stand", "obj": "wood", "alt": "tin"}
 {"sub": "skid", "obj": "rubber", "alt": "glass"}
-{"sub": "jacket", "obj": "leather", "alt": "tin"}
 {"sub": "sliding door", "obj": "glass", "alt": "concrete"}
 {"sub": "track", "obj": "metal", "alt": "ceramic"}
 {"sub": "file cabinet", "obj": "metal", "alt": "plastic"}
@@ -62,10 +50,8 @@
 {"sub": "mouse", "obj": "plastic", "alt": "cotton"}
 {"sub": "computer mouse", "obj": "plastic", "alt": "rubber"}
 {"sub": "jean", "obj": "denim", "alt": "cotton"}
-{"sub": "mast", "obj": "wood", "alt": "plastic"}
 {"sub": "loop", "obj": "metal", "alt": "iron"}
 {"sub": "dock", "obj": "wood", "alt": "jade"}
-{"sub": "zipper", "obj": "metal", "alt": "leather"}
 {"sub": "stage", "obj": "wood", "alt": "paper"}
 {"sub": "baseboard", "obj": "wood", "alt": "iron"}
 {"sub": "backrest", "obj": "wood", "alt": "metal"}
@@ -75,13 +61,11 @@
 {"sub": "slat", "obj": "wood", "alt": "cotton"}
 {"sub": "menu", "obj": "paper", "alt": "leather"}
 {"sub": "hardware", "obj": "metal", "alt": "stone"}
-{"sub": "porch", "obj": "wood", "alt": "leather"}
 {"sub": "night stand", "obj": "wood", "alt": "ceramic"}
 {"sub": "footboard", "obj": "wood", "alt": "leather"}
 {"sub": "bookcase", "obj": "wood", "alt": "jade"}
 {"sub": "side table", "obj": "wood", "alt": "denim"}
 {"sub": "chest", "obj": "wood", "alt": "jade"}
-{"sub": "cage", "obj": "metal", "alt": "glass"}
 {"sub": "mantle", "obj": "wood", "alt": "glass"}
 {"sub": "rung", "obj": "wood", "alt": "denim"}
 {"sub": "storefront", "obj": "glass", "alt": "cloth"}
@@ -90,12 +74,9 @@
 {"sub": "purse", "obj": "leather", "alt": "cloth"}
 {"sub": "cabin", "obj": "wood", "alt": "tin"}
 {"sub": "pallet", "obj": "wood", "alt": "stone"}
-{"sub": "boat", "obj": "wood", "alt": "cotton"}
 {"sub": "pane", "obj": "glass", "alt": "stone"}
-{"sub": "pier", "obj": "wood", "alt": "leather"}
 {"sub": "grate", "obj": "metal", "alt": "glass"}
 {"sub": "equipment", "obj": "metal", "alt": "glass"}
-{"sub": "chain", "obj": "metal", "alt": "paper"}
 {"sub": "lamppost", "obj": "metal", "alt": "rubber"}
 {"sub": "guard", "obj": "metal", "alt": "concrete"}
 {"sub": "hydrant", "obj": "metal", "alt": "ceramic"}
@@ -108,7 +89,6 @@
 {"sub": "furniture", "obj": "wood", "alt": "tin"}
 {"sub": "mail slot", "obj": "gold", "alt": "denim"}
 {"sub": "easel", "obj": "wood", "alt": "cloth"}
-{"sub": "wine", "obj": "glass", "alt": "rubber"}
 {"sub": "barn door", "obj": "wood", "alt": "bronze"}
 {"sub": "fender", "obj": "metal", "alt": "jade"}
 {"sub": "walk", "obj": "concrete", "alt": "paper"}
@@ -148,7 +128,6 @@
 {"sub": "sink faucet", "obj": "metal", "alt": "tin"}
 {"sub": "armoire", "obj": "wood", "alt": "plastic"}
 {"sub": "blade", "obj": "metal", "alt": "rubber"}
-{"sub": "hook", "obj": "metal", "alt": "cloth"}
 {"sub": "spindle", "obj": "wood", "alt": "iron"}
 {"sub": "lampshade", "obj": "gold", "alt": "ceramic"}
 {"sub": "air vent", "obj": "metal", "alt": "cloth"}
@@ -164,7 +143,6 @@
 {"sub": "park", "obj": "concrete", "alt": "rubber"}
 {"sub": "elevator", "obj": "glass", "alt": "ceramic"}
 {"sub": "stair case", "obj": "wood", "alt": "paper"}
-{"sub": "barn", "obj": "wood", "alt": "cotton"}
 {"sub": "fencepost", "obj": "wood", "alt": "cotton"}
 {"sub": "wire", "obj": "metal", "alt": "paper"}
 {"sub": "branch", "obj": "wood", "alt": "cloth"}
@@ -177,7 +155,6 @@
 {"sub": "number", "obj": "gold", "alt": "bronze"}
 {"sub": "head light", "obj": "glass", "alt": "gold"}
 {"sub": "guardrail", "obj": "metal", "alt": "leather"}
-{"sub": "shopping bag", "obj": "plastic", "alt": "concrete"}
 {"sub": "stump", "obj": "wood", "alt": "bronze"}
 {"sub": "stripe", "obj": "gold", "alt": "rubber"}
 {"sub": "electrical pole", "obj": "wood", "alt": "gold"}
@@ -188,18 +165,15 @@
 {"sub": "wardrobe", "obj": "wood", "alt": "ceramic"}
 {"sub": "window ledge", "obj": "wood", "alt": "leather"}
 {"sub": "drain cover", "obj": "metal", "alt": "cloth"}
-{"sub": "fire hydrant", "obj": "metal", "alt": "cloth"}
 {"sub": "driveway", "obj": "concrete", "alt": "cloth"}
 {"sub": "water drain", "obj": "metal", "alt": "bronze"}
 {"sub": "text", "obj": "gold", "alt": "ceramic"}
 {"sub": "contraption", "obj": "metal", "alt": "glass"}
 {"sub": "trellis", "obj": "wood", "alt": "leather"}
 {"sub": "ear", "obj": "gold", "alt": "ceramic"}
-{"sub": "clasp", "obj": "metal", "alt": "tin"}
 {"sub": "cooling rack", "obj": "metal", "alt": "glass"}
 {"sub": "foot rest", "obj": "leather", "alt": "denim"}
 {"sub": "hole", "obj": "metal", "alt": "tin"}
-{"sub": "shower head", "obj": "metal", "alt": "concrete"}
 {"sub": "carpet", "obj": "gold", "alt": "bronze"}
 {"sub": "wallpaper", "obj": "gold", "alt": "iron"}
 {"sub": "man hole cover", "obj": "metal", "alt": "concrete"}
@@ -226,15 +200,12 @@
 {"sub": "chopstick", "obj": "wood", "alt": "gold"}
 {"sub": "antenna", "obj": "metal", "alt": "plastic"}
 {"sub": "banner", "obj": "gold", "alt": "leather"}
-{"sub": "street sign", "obj": "metal", "alt": "cloth"}
 {"sub": "hangar", "obj": "metal", "alt": "cotton"}
 {"sub": "fry", "obj": "gold", "alt": "cotton"}
 {"sub": "waste bin", "obj": "metal", "alt": "rubber"}
 {"sub": "cardboard", "obj": "gold", "alt": "ceramic"}
-{"sub": "train", "obj": "metal", "alt": "paper"}
 {"sub": "duck", "obj": "rubber", "alt": "cloth"}
 {"sub": "earring", "obj": "gold", "alt": "cloth"}
-{"sub": "bat", "obj": "wood", "alt": "concrete"}
 {"sub": "oar", "obj": "wood", "alt": "stone"}
 {"sub": "dowel", "obj": "wood", "alt": "cloth"}
 {"sub": "splinter", "obj": "wood", "alt": "bronze"}
@@ -242,7 +213,6 @@
 {"sub": "shelter", "obj": "wood", "alt": "metal"}
 {"sub": "compartment", "obj": "metal", "alt": "cotton"}
 {"sub": "rocker", "obj": "wood", "alt": "gold"}
-{"sub": "baseball bat", "obj": "wood", "alt": "cotton"}
 {"sub": "knife block", "obj": "wood", "alt": "bronze"}
 {"sub": "luggage cart", "obj": "metal", "alt": "plastic"}
 {"sub": "rolling pin", "obj": "wood", "alt": "ceramic"}
@@ -264,7 +234,6 @@
 {"sub": "violin", "obj": "wood", "alt": "bronze"}
 {"sub": "support post", "obj": "wood", "alt": "ceramic"}
 {"sub": "cake stand", "obj": "glass", "alt": "bronze"}
-{"sub": "handlebar", "obj": "metal", "alt": "stone"}
 {"sub": "pipeline", "obj": "metal", "alt": "concrete"}
 {"sub": "grommet", "obj": "metal", "alt": "glass"}
 {"sub": "towel bar", "obj": "metal", "alt": "denim"}
@@ -340,7 +309,6 @@
 {"sub": "chest of drawer", "obj": "wood", "alt": "stone"}
 {"sub": "corner", "obj": "metal", "alt": "ceramic"}
 {"sub": "support column", "obj": "stone", "alt": "gold"}
-{"sub": "pepper shaker", "obj": "glass", "alt": "jade"}
 {"sub": "screw", "obj": "metal", "alt": "rubber"}
 {"sub": "train rail", "obj": "metal", "alt": "ceramic"}
 {"sub": "food", "obj": "metal", "alt": "leather"}
@@ -441,7 +409,6 @@
 {"sub": "tap", "obj": "metal", "alt": "cotton"}
 {"sub": "storm drain", "obj": "metal", "alt": "bronze"}
 {"sub": "flush", "obj": "metal", "alt": "denim"}
-{"sub": "stop sign", "obj": "metal", "alt": "plastic"}
 {"sub": "birdhouse", "obj": "wood", "alt": "glass"}
 {"sub": "beach chair", "obj": "wood", "alt": "bronze"}
 {"sub": "kitchen", "obj": "wood", "alt": "plastic"}
@@ -599,7 +566,6 @@
 {"sub": "grab bar", "obj": "metal", "alt": "cotton"}
 {"sub": "soap container", "obj": "plastic", "alt": "tin"}
 {"sub": "machinery", "obj": "metal", "alt": "cotton"}
-{"sub": "t-shirt", "obj": "cotton", "alt": "iron"}
 {"sub": "jet", "obj": "metal", "alt": "iron"}
 {"sub": "baggie", "obj": "plastic", "alt": "ceramic"}
 {"sub": "silver", "obj": "metal", "alt": "leather"}
@@ -619,7 +585,6 @@
 {"sub": "wire fence", "obj": "metal", "alt": "iron"}
 {"sub": "wedding ring", "obj": "gold", "alt": "stone"}
 {"sub": "gauge", "obj": "metal", "alt": "paper"}
-{"sub": "urinal", "obj": "ceramic", "alt": "iron"}
 {"sub": "fence board", "obj": "wood", "alt": "glass"}
 {"sub": "buggy", "obj": "wood", "alt": "concrete"}
 {"sub": "tong", "obj": "metal", "alt": "glass"}

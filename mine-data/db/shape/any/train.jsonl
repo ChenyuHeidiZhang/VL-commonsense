@@ -1,4 +1,10 @@
 {"sub": "sign", "obj": "round", "alt": "polygon"}
+{"sub": "frame", "obj": "square", "alt": "rhombus"}
+{"sub": "rug", "obj": "round", "alt": "heart"}
 {"sub": "design", "obj": "round", "alt": "octagon"}
 {"sub": "shape", "obj": "rhombus", "alt": "polygon"}
+{"sub": "traffic sign", "obj": "square", "alt": "cross"}
+{"sub": "street sign", "obj": "round", "alt": "polygon"}
+{"sub": "symbol", "obj": "round", "alt": "semicircle"}
 {"sub": "kite", "obj": "round", "alt": "cross"}
+{"sub": "slice", "obj": "square", "alt": "heart"}

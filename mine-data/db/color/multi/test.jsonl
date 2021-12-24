@@ -4,29 +4,20 @@
 {"sub": "stapler", "obj": "black", "alt": "yellow"}
 {"sub": "charger", "obj": "white", "alt": "orange"}
 {"sub": "computer keyboard", "obj": "white", "alt": "blue"}
-{"sub": "water bottle", "obj": "blue", "alt": "brown"}
-{"sub": "speaker", "obj": "black", "alt": "purple"}
 {"sub": "fire alarm", "obj": "red", "alt": "black"}
 {"sub": "lighting", "obj": "white", "alt": "silver"}
-{"sub": "water", "obj": "blue", "alt": "purple"}
 {"sub": "oven", "obj": "white", "alt": "red"}
 {"sub": "dishwasher", "obj": "white", "alt": "pink"}
 {"sub": "fridge", "obj": "white", "alt": "orange"}
-{"sub": "mixer", "obj": "white", "alt": "gray"}
-{"sub": "traffic light", "obj": "red", "alt": "silver"}
-{"sub": "hinge", "obj": "silver", "alt": "red"}
-{"sub": "desktop", "obj": "white", "alt": "pink"}
 {"sub": "dial", "obj": "black", "alt": "purple"}
 {"sub": "lamp base", "obj": "yellow", "alt": "pink"}
 {"sub": "bookcase", "obj": "brown", "alt": "red"}
 {"sub": "mattress", "obj": "white", "alt": "silver"}
 {"sub": "piano", "obj": "black", "alt": "blue"}
-{"sub": "flame", "obj": "blue", "alt": "gray"}
+{"sub": "dirt", "obj": "brown", "alt": "blue"}
 {"sub": "trophy", "obj": "yellow", "alt": "green"}
 {"sub": "sand", "obj": "brown", "alt": "silver"}
-{"sub": "overall", "obj": "blue", "alt": "gray"}
 {"sub": "electrical cord", "obj": "black", "alt": "pink"}
-{"sub": "fan", "obj": "white", "alt": "red"}
 {"sub": "closet", "obj": "brown", "alt": "blue"}
 {"sub": "bikini top", "obj": "black", "alt": "silver"}
 {"sub": "lounge chair", "obj": "blue", "alt": "yellow"}
@@ -34,26 +25,22 @@
 {"sub": "roadway", "obj": "gray", "alt": "white"}
 {"sub": "garage", "obj": "white", "alt": "orange"}
 {"sub": "camera", "obj": "black", "alt": "purple"}
+{"sub": "radiator", "obj": "white", "alt": "brown"}
 {"sub": "cone", "obj": "orange", "alt": "gray"}
 {"sub": "cane", "obj": "brown", "alt": "silver"}
 {"sub": "steering wheel", "obj": "black", "alt": "orange"}
 {"sub": "weed", "obj": "green", "alt": "gray"}
 {"sub": "stovetop", "obj": "black", "alt": "silver"}
 {"sub": "drawer pull", "obj": "silver", "alt": "orange"}
-{"sub": "home", "obj": "white", "alt": "green"}
 {"sub": "concrete", "obj": "gray", "alt": "purple"}
 {"sub": "seaweed", "obj": "green", "alt": "blue"}
 {"sub": "lamppost", "obj": "black", "alt": "purple"}
-{"sub": "face", "obj": "white", "alt": "green"}
 {"sub": "hamper", "obj": "white", "alt": "black"}
 {"sub": "blow dryer", "obj": "silver", "alt": "orange"}
-{"sub": "tulip", "obj": "red", "alt": "green"}
 {"sub": "loveseat", "obj": "white", "alt": "pink"}
 {"sub": "sausage", "obj": "brown", "alt": "silver"}
-{"sub": "dispenser", "obj": "white", "alt": "brown"}
 {"sub": "tarmac", "obj": "gray", "alt": "pink"}
 {"sub": "giraffe", "obj": "brown", "alt": "pink"}
-{"sub": "hoof", "obj": "black", "alt": "silver"}
 {"sub": "monkey", "obj": "brown", "alt": "purple"}
 {"sub": "goat", "obj": "white", "alt": "red"}
 {"sub": "r", "obj": "white", "alt": "silver"}
@@ -61,12 +48,9 @@
 {"sub": "basketball", "obj": "orange", "alt": "blue"}
 {"sub": "cylinder", "obj": "gray", "alt": "yellow"}
 {"sub": "soda can", "obj": "red", "alt": "orange"}
-{"sub": "pickup", "obj": "white", "alt": "pink"}
 {"sub": "suit jacket", "obj": "black", "alt": "red"}
-{"sub": "corner", "obj": "black", "alt": "green"}
-{"sub": "bar stool", "obj": "black", "alt": "pink"}
-{"sub": "date", "obj": "red", "alt": "gray"}
 {"sub": "suit coat", "obj": "gray", "alt": "white"}
+{"sub": "basin", "obj": "white", "alt": "yellow"}
 {"sub": "dress shirt", "obj": "white", "alt": "silver"}
 {"sub": "boarder", "obj": "white", "alt": "purple"}
 {"sub": "french fry", "obj": "yellow", "alt": "orange"}
@@ -75,19 +59,16 @@
 {"sub": "dash", "obj": "white", "alt": "silver"}
 {"sub": "open sign", "obj": "blue", "alt": "silver"}
 {"sub": "bracket", "obj": "silver", "alt": "green"}
-{"sub": "box car", "obj": "blue", "alt": "brown"}
-{"sub": "bouquet", "obj": "white", "alt": "yellow"}
 {"sub": "brick wall", "obj": "red", "alt": "pink"}
 {"sub": "pamphlet", "obj": "blue", "alt": "red"}
-{"sub": "lock", "obj": "silver", "alt": "red"}
 {"sub": "wallet", "obj": "black", "alt": "orange"}
 {"sub": "cupboard", "obj": "white", "alt": "silver"}
 {"sub": "rocking chair", "obj": "brown", "alt": "gray"}
-{"sub": "grout", "obj": "white", "alt": "green"}
 {"sub": "e", "obj": "white", "alt": "yellow"}
 {"sub": "exhaust", "obj": "silver", "alt": "red"}
 {"sub": "horizon", "obj": "blue", "alt": "yellow"}
 {"sub": "paw", "obj": "white", "alt": "green"}
+{"sub": "hillside", "obj": "green", "alt": "gray"}
 {"sub": "cow", "obj": "brown", "alt": "silver"}
 {"sub": "cowboy hat", "obj": "white", "alt": "green"}
 {"sub": "flyer", "obj": "white", "alt": "black"}
@@ -96,18 +77,17 @@
 {"sub": "slack", "obj": "gray", "alt": "orange"}
 {"sub": "sandles", "obj": "brown", "alt": "white"}
 {"sub": "limb", "obj": "green", "alt": "orange"}
-{"sub": "speck", "obj": "black", "alt": "yellow"}
-{"sub": "vegetable", "obj": "green", "alt": "brown"}
+{"sub": "bagel", "obj": "brown", "alt": "orange"}
 {"sub": "truck cab", "obj": "white", "alt": "black"}
 {"sub": "winter coat", "obj": "black", "alt": "purple"}
 {"sub": "crest", "obj": "white", "alt": "purple"}
 {"sub": "podium", "obj": "black", "alt": "green"}
-{"sub": "artwork", "obj": "black", "alt": "gray"}
 {"sub": "banana leaf", "obj": "green", "alt": "yellow"}
 {"sub": "cattle", "obj": "brown", "alt": "pink"}
 {"sub": "car seat", "obj": "gray", "alt": "yellow"}
 {"sub": "snowflake", "obj": "white", "alt": "blue"}
 {"sub": "checker", "obj": "black", "alt": "green"}
+{"sub": "berry", "obj": "red", "alt": "yellow"}
 {"sub": "crossing sign", "obj": "black", "alt": "blue"}
 {"sub": "wetsuit", "obj": "black", "alt": "pink"}
 {"sub": "filling", "obj": "white", "alt": "blue"}
@@ -118,18 +98,13 @@
 {"sub": "loafer", "obj": "brown", "alt": "pink"}
 {"sub": "muzzle", "obj": "black", "alt": "pink"}
 {"sub": "name tag", "obj": "white", "alt": "green"}
-{"sub": "passenger car", "obj": "red", "alt": "gray"}
-{"sub": "passenger train", "obj": "yellow", "alt": "silver"}
 {"sub": "b", "obj": "white", "alt": "gray"}
-{"sub": "skiis", "obj": "white", "alt": "silver"}
 {"sub": "dvd player", "obj": "silver", "alt": "green"}
-{"sub": "laptop computer", "obj": "black", "alt": "red"}
 {"sub": "soda", "obj": "orange", "alt": "purple"}
 {"sub": "hair tie", "obj": "blue", "alt": "brown"}
 {"sub": "bell pepper", "obj": "red", "alt": "brown"}
 {"sub": "advertising", "obj": "white", "alt": "purple"}
 {"sub": "photograph", "obj": "white", "alt": "yellow"}
-{"sub": "raincoat", "obj": "black", "alt": "gray"}
 {"sub": "binding", "obj": "white", "alt": "blue"}
 {"sub": "lifejacket", "obj": "orange", "alt": "white"}
 {"sub": "gourd", "obj": "green", "alt": "blue"}
@@ -143,14 +118,11 @@
 {"sub": "toaster oven", "obj": "black", "alt": "pink"}
 {"sub": "pizza box", "obj": "white", "alt": "silver"}
 {"sub": "number 8", "obj": "white", "alt": "orange"}
-{"sub": "tin", "obj": "silver", "alt": "purple"}
 {"sub": "overpass", "obj": "blue", "alt": "black"}
 {"sub": "glaze", "obj": "white", "alt": "pink"}
 {"sub": "mesh", "obj": "black", "alt": "brown"}
 {"sub": "plantain", "obj": "green", "alt": "gray"}
-{"sub": "baseball uniform", "obj": "white", "alt": "yellow"}
 {"sub": "space", "obj": "green", "alt": "yellow"}
-{"sub": "swirl", "obj": "white", "alt": "silver"}
 {"sub": "brake", "obj": "silver", "alt": "blue"}
 {"sub": "handicapped sign", "obj": "blue", "alt": "orange"}
 {"sub": "h", "obj": "white", "alt": "gray"}
@@ -161,12 +133,12 @@
 {"sub": "cat eye", "obj": "green", "alt": "white"}
 {"sub": "ruler", "obj": "white", "alt": "green"}
 {"sub": "hot dog", "obj": "brown", "alt": "yellow"}
-{"sub": "screw", "obj": "silver", "alt": "brown"}
 {"sub": "traffic line", "obj": "white", "alt": "black"}
 {"sub": "landing gear", "obj": "black", "alt": "purple"}
 {"sub": "head gear", "obj": "black", "alt": "orange"}
 {"sub": "shin guard", "obj": "black", "alt": "silver"}
 {"sub": "caution cone", "obj": "orange", "alt": "purple"}
+{"sub": "toilet brush", "obj": "white", "alt": "pink"}
 {"sub": "guard", "obj": "black", "alt": "orange"}
 {"sub": "coconut", "obj": "white", "alt": "pink"}
 {"sub": "football", "obj": "brown", "alt": "orange"}
@@ -185,7 +157,6 @@
 {"sub": "chunk", "obj": "white", "alt": "red"}
 {"sub": "coin slot", "obj": "gray", "alt": "red"}
 {"sub": "check", "obj": "white", "alt": "brown"}
-{"sub": "grafitti", "obj": "blue", "alt": "silver"}
 {"sub": "baseball mitt", "obj": "brown", "alt": "purple"}
 {"sub": "woman's shirt", "obj": "black", "alt": "blue"}
 {"sub": "santa hat", "obj": "red", "alt": "blue"}

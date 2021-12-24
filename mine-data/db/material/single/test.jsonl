@@ -9,7 +9,6 @@
 {"sub": "goblet", "obj": "glass", "alt": "ceramic"}
 {"sub": "computer desk", "obj": "wood", "alt": "bronze"}
 {"sub": "roll", "obj": "paper", "alt": "gold"}
-{"sub": "leaf", "obj": "gold", "alt": "denim"}
 {"sub": "grid", "obj": "metal", "alt": "leather"}
 {"sub": "dresser", "obj": "wood", "alt": "tin"}
 {"sub": "lamp base", "obj": "gold", "alt": "paper"}
@@ -19,7 +18,6 @@
 {"sub": "paddle", "obj": "wood", "alt": "denim"}
 {"sub": "barricade", "obj": "metal", "alt": "iron"}
 {"sub": "downspout", "obj": "metal", "alt": "gold"}
-{"sub": "utility pole", "obj": "wood", "alt": "denim"}
 {"sub": "board", "obj": "wood", "alt": "leather"}
 {"sub": "monitor", "obj": "plastic", "alt": "iron"}
 {"sub": "sectional", "obj": "leather", "alt": "jade"}
@@ -30,7 +28,6 @@
 {"sub": "window frame", "obj": "wood", "alt": "cotton"}
 {"sub": "paneled wall", "obj": "wood", "alt": "tin"}
 {"sub": "cabinet door", "obj": "wood", "alt": "tin"}
-{"sub": "pipe", "obj": "metal", "alt": "jade"}
 {"sub": "hand railing", "obj": "metal", "alt": "leather"}
 {"sub": "moulding", "obj": "wood", "alt": "glass"}
 {"sub": "filing cabinet", "obj": "metal", "alt": "glass"}
@@ -54,7 +51,6 @@
 {"sub": "kitchen sink", "obj": "metal", "alt": "tin"}
 {"sub": "appliance", "obj": "metal", "alt": "wood"}
 {"sub": "table leg", "obj": "wood", "alt": "stone"}
-{"sub": "curtain rod", "obj": "metal", "alt": "wood"}
 {"sub": "storage box", "obj": "wood", "alt": "leather"}
 {"sub": "flagpole", "obj": "metal", "alt": "paper"}
 {"sub": "white rail", "obj": "metal", "alt": "iron"}
@@ -73,7 +69,6 @@
 {"sub": "walker", "obj": "metal", "alt": "leather"}
 {"sub": "picnic table", "obj": "wood", "alt": "glass"}
 {"sub": "hubcap", "obj": "metal", "alt": "ceramic"}
-{"sub": "emblem", "obj": "gold", "alt": "cloth"}
 {"sub": "bunkbed", "obj": "wood", "alt": "denim"}
 {"sub": "saddle", "obj": "leather", "alt": "ceramic"}
 {"sub": "overhang", "obj": "metal", "alt": "tin"}
@@ -98,7 +93,6 @@
 {"sub": "owl", "obj": "ceramic", "alt": "glass"}
 {"sub": "coil", "obj": "metal", "alt": "tin"}
 {"sub": "dinosaur", "obj": "plastic", "alt": "cloth"}
-{"sub": "window sill", "obj": "wood", "alt": "paper"}
 {"sub": "sheep", "obj": "plastic", "alt": "stone"}
 {"sub": "shower", "obj": "glass", "alt": "gold"}
 {"sub": "cord", "obj": "plastic", "alt": "glass"}

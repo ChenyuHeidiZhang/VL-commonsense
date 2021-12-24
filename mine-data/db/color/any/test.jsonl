@@ -9,35 +9,45 @@
 {"sub": "writing", "obj": "white", "alt": "orange"}
 {"sub": "cup", "obj": "white", "alt": "silver"}
 {"sub": "coat", "obj": "black", "alt": "purple"}
+{"sub": "water bottle", "obj": "blue", "alt": "brown"}
 {"sub": "sticker", "obj": "white", "alt": "purple"}
 {"sub": "thing", "obj": "white", "alt": "gray"}
+{"sub": "speaker", "obj": "black", "alt": "purple"}
 {"sub": "scarf", "obj": "red", "alt": "yellow"}
 {"sub": "trouser", "obj": "black", "alt": "red"}
 {"sub": "banner", "obj": "white", "alt": "gray"}
 {"sub": "vehicle", "obj": "white", "alt": "orange"}
 {"sub": "blouse", "obj": "white", "alt": "gray"}
+{"sub": "water", "obj": "blue", "alt": "purple"}
 {"sub": "liquid", "obj": "brown", "alt": "pink"}
 {"sub": "painting", "obj": "white", "alt": "gray"}
 {"sub": "kettle", "obj": "silver", "alt": "gray"}
+{"sub": "mixer", "obj": "white", "alt": "gray"}
 {"sub": "leg", "obj": "white", "alt": "red"}
 {"sub": "stand", "obj": "black", "alt": "blue"}
+{"sub": "traffic light", "obj": "red", "alt": "silver"}
 {"sub": "purse", "obj": "black", "alt": "orange"}
 {"sub": "sunglass", "obj": "black", "alt": "green"}
 {"sub": "phone", "obj": "black", "alt": "yellow"}
 {"sub": "circle", "obj": "red", "alt": "gray"}
 {"sub": "word", "obj": "white", "alt": "orange"}
+{"sub": "hinge", "obj": "silver", "alt": "red"}
 {"sub": "counter top", "obj": "white", "alt": "purple"}
 {"sub": "tray", "obj": "silver", "alt": "yellow"}
+{"sub": "desktop", "obj": "white", "alt": "pink"}
 {"sub": "panel", "obj": "white", "alt": "purple"}
 {"sub": "rack", "obj": "silver", "alt": "pink"}
 {"sub": "candle", "obj": "white", "alt": "silver"}
 {"sub": "ottoman", "obj": "brown", "alt": "purple"}
+{"sub": "flame", "obj": "blue", "alt": "gray"}
 {"sub": "house", "obj": "white", "alt": "black"}
 {"sub": "basket", "obj": "brown", "alt": "pink"}
 {"sub": "countertop", "obj": "white", "alt": "pink"}
 {"sub": "marking", "obj": "white", "alt": "gray"}
 {"sub": "robe", "obj": "white", "alt": "brown"}
 {"sub": "rim", "obj": "silver", "alt": "pink"}
+{"sub": "overall", "obj": "blue", "alt": "gray"}
+{"sub": "fan", "obj": "white", "alt": "red"}
 {"sub": "coaster", "obj": "white", "alt": "yellow"}
 {"sub": "ladder", "obj": "silver", "alt": "green"}
 {"sub": "motorcycle", "obj": "black", "alt": "brown"}
@@ -50,6 +60,7 @@
 {"sub": "binder", "obj": "black", "alt": "orange"}
 {"sub": "petal", "obj": "pink", "alt": "brown"}
 {"sub": "design", "obj": "white", "alt": "gray"}
+{"sub": "home", "obj": "white", "alt": "green"}
 {"sub": "hoodie", "obj": "black", "alt": "pink"}
 {"sub": "meter", "obj": "black", "alt": "brown"}
 {"sub": "sandal", "obj": "black", "alt": "gray"}
@@ -60,6 +71,7 @@
 {"sub": "tarp", "obj": "blue", "alt": "brown"}
 {"sub": "teddy bear", "obj": "brown", "alt": "green"}
 {"sub": "drink", "obj": "orange", "alt": "blue"}
+{"sub": "face", "obj": "white", "alt": "green"}
 {"sub": "stair", "obj": "gray", "alt": "green"}
 {"sub": "body", "obj": "white", "alt": "orange"}
 {"sub": "ribbon", "obj": "red", "alt": "purple"}
@@ -67,19 +79,26 @@
 {"sub": "quilt", "obj": "white", "alt": "purple"}
 {"sub": "toy", "obj": "yellow", "alt": "black"}
 {"sub": "candle holder", "obj": "black", "alt": "purple"}
+{"sub": "tulip", "obj": "red", "alt": "green"}
+{"sub": "dispenser", "obj": "white", "alt": "brown"}
 {"sub": "airplane", "obj": "white", "alt": "orange"}
 {"sub": "name", "obj": "white", "alt": "gray"}
 {"sub": "food", "obj": "brown", "alt": "blue"}
 {"sub": "balloon", "obj": "blue", "alt": "black"}
+{"sub": "hoof", "obj": "black", "alt": "silver"}
 {"sub": "lace", "obj": "white", "alt": "brown"}
 {"sub": "tennis shoe", "obj": "white", "alt": "orange"}
 {"sub": "buoy", "obj": "red", "alt": "black"}
 {"sub": "racket", "obj": "black", "alt": "pink"}
 {"sub": "steeple", "obj": "white", "alt": "yellow"}
 {"sub": "glove", "obj": "black", "alt": "green"}
+{"sub": "pickup", "obj": "white", "alt": "pink"}
 {"sub": "suitcase", "obj": "black", "alt": "yellow"}
 {"sub": "girl", "obj": "white", "alt": "gray"}
 {"sub": "cake", "obj": "white", "alt": "orange"}
+{"sub": "corner", "obj": "black", "alt": "green"}
+{"sub": "bar stool", "obj": "black", "alt": "pink"}
+{"sub": "date", "obj": "red", "alt": "gray"}
 {"sub": "platform", "obj": "gray", "alt": "silver"}
 {"sub": "star", "obj": "white", "alt": "silver"}
 {"sub": "neck", "obj": "white", "alt": "silver"}
@@ -90,16 +109,23 @@
 {"sub": "clip", "obj": "black", "alt": "purple"}
 {"sub": "platter", "obj": "white", "alt": "orange"}
 {"sub": "divider", "obj": "white", "alt": "red"}
+{"sub": "box car", "obj": "blue", "alt": "brown"}
 {"sub": "triangle", "obj": "red", "alt": "brown"}
 {"sub": "graffiti", "obj": "black", "alt": "orange"}
+{"sub": "bouquet", "obj": "white", "alt": "yellow"}
 {"sub": "text", "obj": "white", "alt": "pink"}
+{"sub": "lock", "obj": "silver", "alt": "red"}
+{"sub": "grout", "obj": "white", "alt": "green"}
 {"sub": "diamond", "obj": "white", "alt": "brown"}
 {"sub": "section", "obj": "red", "alt": "orange"}
 {"sub": "tanktop", "obj": "black", "alt": "yellow"}
 {"sub": "jersey", "obj": "white", "alt": "pink"}
 {"sub": "arch", "obj": "white", "alt": "purple"}
 {"sub": "package", "obj": "white", "alt": "brown"}
+{"sub": "speck", "obj": "black", "alt": "yellow"}
+{"sub": "vegetable", "obj": "green", "alt": "brown"}
 {"sub": "tennis court", "obj": "green", "alt": "yellow"}
+{"sub": "artwork", "obj": "black", "alt": "gray"}
 {"sub": "bleacher", "obj": "blue", "alt": "black"}
 {"sub": "plank", "obj": "brown", "alt": "orange"}
 {"sub": "wristband", "obj": "white", "alt": "pink"}
@@ -109,10 +135,20 @@
 {"sub": "frisbee", "obj": "white", "alt": "purple"}
 {"sub": "snow board", "obj": "white", "alt": "orange"}
 {"sub": "ski pole", "obj": "black", "alt": "pink"}
+{"sub": "passenger car", "obj": "red", "alt": "gray"}
+{"sub": "passenger train", "obj": "yellow", "alt": "silver"}
+{"sub": "skiis", "obj": "white", "alt": "silver"}
 {"sub": "shoelace", "obj": "white", "alt": "brown"}
+{"sub": "laptop computer", "obj": "black", "alt": "red"}
 {"sub": "sprinkle", "obj": "white", "alt": "brown"}
 {"sub": "flip flop", "obj": "black", "alt": "silver"}
+{"sub": "raincoat", "obj": "black", "alt": "gray"}
 {"sub": "racquet", "obj": "black", "alt": "brown"}
 {"sub": "locomotive", "obj": "black", "alt": "silver"}
+{"sub": "tin", "obj": "silver", "alt": "purple"}
 {"sub": "tail fin", "obj": "blue", "alt": "green"}
 {"sub": "vas", "obj": "white", "alt": "orange"}
+{"sub": "baseball uniform", "obj": "white", "alt": "yellow"}
+{"sub": "swirl", "obj": "white", "alt": "silver"}
+{"sub": "screw", "obj": "silver", "alt": "brown"}
+{"sub": "grafitti", "obj": "blue", "alt": "silver"}

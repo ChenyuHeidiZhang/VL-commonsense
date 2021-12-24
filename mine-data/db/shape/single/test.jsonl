@@ -8,10 +8,8 @@
 {"sub": "ceiling light", "obj": "round", "alt": "heart"}
 {"sub": "wooden table", "obj": "round", "alt": "polygon"}
 {"sub": "tree", "obj": "round", "alt": "semicircle"}
-{"sub": "tower", "obj": "round", "alt": "star"}
 {"sub": "manhole cover", "obj": "round", "alt": "rectangle"}
 {"sub": "front tire", "obj": "round", "alt": "heart"}
-{"sub": "petal", "obj": "oval", "alt": "rhombus"}
 {"sub": "life saver", "obj": "round", "alt": "oval"}
 {"sub": "log", "obj": "round", "alt": "rhombus"}
 {"sub": "comforter", "obj": "round", "alt": "star"}
@@ -31,7 +29,6 @@
 {"sub": "hexagon shape", "obj": "polygon", "alt": "heart"}
 {"sub": "gauge", "obj": "round", "alt": "oval"}
 {"sub": "item", "obj": "round", "alt": "polygon"}
-{"sub": "vase", "obj": "round", "alt": "rhombus"}
 {"sub": "pupil", "obj": "oval", "alt": "octagon"}
 {"sub": "apple", "obj": "round", "alt": "oval"}
 {"sub": "keyhole", "obj": "round", "alt": "rectangle"}

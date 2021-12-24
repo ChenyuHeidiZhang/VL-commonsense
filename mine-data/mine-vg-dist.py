@@ -125,5 +125,5 @@ def check_vg_atts(print_every=1000):
 
 if __name__ == "__main__":
     mine_attribute_dist('material', thres=utils.THRES_MATERIAL)
-    mine_cooccurrence_dist(thres=utils.THRES_COOCCUR)
+    # mine_cooccurrence_dist(thres=utils.THRES_COOCCUR)
     # check_vg_atts()

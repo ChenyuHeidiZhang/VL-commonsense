@@ -11,9 +11,10 @@
 {"sub": "grate", "obj": "round", "alt": "triangle"}
 {"sub": "drain", "obj": "round", "alt": "oval"}
 {"sub": "lamp shade", "obj": "round", "alt": "rectangle"}
+{"sub": "tower", "obj": "round", "alt": "star"}
 {"sub": "bucket", "obj": "round", "alt": "octagon"}
 {"sub": "phone", "obj": "square", "alt": "octagon"}
-{"sub": "sticker", "obj": "round", "alt": "octagon"}
+{"sub": "petal", "obj": "oval", "alt": "rhombus"}
 {"sub": "mousepad", "obj": "round", "alt": "oval"}
 {"sub": "bus", "obj": "square", "alt": "polygon"}
 {"sub": "container", "obj": "round", "alt": "polygon"}
@@ -22,6 +23,7 @@
 {"sub": "sunglass", "obj": "oval", "alt": "triangle"}
 {"sub": "stove", "obj": "round", "alt": "semicircle"}
 {"sub": "train", "obj": "round", "alt": "heart"}
+{"sub": "vase", "obj": "round", "alt": "rhombus"}
 {"sub": "indentation", "obj": "oval", "alt": "rhombus"}
 {"sub": "corner", "obj": "square", "alt": "polygon"}
 {"sub": "piece", "obj": "square", "alt": "cross"}
