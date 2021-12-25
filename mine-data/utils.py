@@ -14,7 +14,7 @@ WORD_LISTS = {
 
 def load_word_file(type, single_slot=True):
     '''Loads the word file for color, shape, or material.'''
-    if type == 'cooccur': return load_cooccur_words()
+    if type not in WORD_LISTS.keys(): return load_words(type)
 
     words_file = f'words/{type}-words.txt'
     word_map = {}
@@ -28,8 +28,8 @@ def load_word_file(type, single_slot=True):
             word_map[specific] = category
     return WORD_LISTS[type], word_map
 
-def load_cooccur_words():
-    words_file = f'words/cooccur-words.txt'
+def load_words(type):
+    words_file = f'words/{type}-words.txt'
     word_ls = []
     with open(words_file, 'r') as f:
         for line in f.readlines():

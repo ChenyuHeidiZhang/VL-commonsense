@@ -7,7 +7,7 @@ import utils
 attributes_file = 'attributes.json'
 
 def get_db_from_dist(type, single_slot=True):
-    word_ls = np.array(utils.load_word_file(type, single_slot)[0])
+    word_ls = np.array(utils.WORD_LISTS[type.split('-')[-1]])  # take 'color' for 'wiki-color'
     vg_dist_dict = utils.load_dist_file(type)
 
     i = 0
@@ -239,6 +239,6 @@ def extract_size(smaller=True, num_samples=2000):
 
 
 if __name__ == "__main__":
-    get_db_from_dist('cooccur')
+    get_db_from_dist('wiki-shape')
     # mine_cooccurrence()
     # extract_size(smaller=False)

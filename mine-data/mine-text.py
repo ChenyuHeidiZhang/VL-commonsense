@@ -198,6 +198,7 @@ def google_ngram(data_name='ngram'):
 
 
 def merge_gray(data_name='wiki'):
+    '''Data updated. Don't run again.'''
     color_words = utils.load_word_file('color')
     gray_idx = color_words.index('gray')
     grey_idx = color_words.index('grey')
@@ -213,9 +214,41 @@ def merge_gray(data_name='wiki'):
         json.dump(new_dist, f)
 
 
+def merge_dists(type, data_name='wiki'):
+    '''Data updated. Don't run again.'''
+    old_words = utils.load_words(f'{type}_old')[0]
+    new_words, word_map = utils.load_word_file(type)
+    with open(f'distributions/{data_name}-{type}-dist.jsonl', 'r') as f:
+        dist = json.load(f)
+    new_dist = {}
+    for word, d in dist.items():
+        assert len(d) == len(old_words)
+        di = [0] * len(new_words)
+        for i, obj in enumerate(old_words):
+            if obj in word_map:
+                idx = new_words.index(word_map[obj])
+                di[idx] += d[i]
+        if np.sum(di) > 0:
+            new_dist[word] = di
+    with open(f'distributions/{data_name}-{type}-dist.jsonl', 'w') as f:
+        json.dump(new_dist, f)
+
+
+def del_zero_dists(data_name='wiki'):
+    '''Data updated. Don't run again.'''
+    for type in ['color', 'shape', 'material']:
+        with open(f'distributions/{data_name}-{type}-dist.jsonl', 'r') as f:
+            dist = json.load(f)
+        new_dist = {}
+        for word, d in dist.items():
+            if np.sum(d) > 0: new_dist[word] = d
+        with open(f'distributions/{data_name}-{type}-dist.jsonl', 'w') as f:
+            json.dump(new_dist, f)
+
+
 if __name__ == '__main__':
     # run()
-    merge_gray()
+    del_zero_dists()
     # google_ngram()
     # get_db_from_dist('material')
     # plot_count_comparison('material')

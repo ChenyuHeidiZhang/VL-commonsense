@@ -22,7 +22,7 @@ COLORS = [
 # line_colors = ['blue', 'orange', 'green', 'red', 'purple', 'brwon', 'pink']
 
 color_ls = load_word_file('color')[0]
-vg_dist_dict = load_dist_file('color')
+vg_dist_dict = load_dist_file('wiki-color')
 #wiki_dist_dict = load_dist_file('wiki-color')
 
 def get_color_ids(colors):
@@ -77,7 +77,7 @@ def plot_dists(sp_corrs, dist_pairs, group='all', num_to_plot=3):
     ax2.set_title('low correlation')
     ax2.set_xticks(x_axis)
     ax2.set_xlabel('colors', fontweight='bold')
-    plt.savefig(f'plots/eval_dataset_plt_{group}.pdf', bbox_inches='tight')
+    plt.savefig(f'plots/eval_dataset_plt_wiki_{group}.pdf', bbox_inches='tight')
 
 def run(topk=11, eval_method=spearmanr):
     common_subs = []
