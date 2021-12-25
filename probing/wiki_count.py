@@ -65,17 +65,23 @@ def analyze_wiki():
 
 
 def load(rel):
-    with open(f'probing/wiki_count_{rel}.jsonl', 'r') as f:
+    with open(f'probing/wiki_count_{rel}-0.jsonl', 'r') as f:
         obj_subj_counts = json.load(f)
     totals = []
-    for obj, sub_counts in obj_subj_counts.items():
+    #for obj, sub_counts in obj_subj_counts.items():
+    for obj in load_word_file(rel):
+        if obj not in obj_subj_counts:
+            print(obj)
+            continue
+        sub_counts = obj_subj_counts[obj]
         obj_total = sum(sub_counts.values())
         totals.append(obj_total)
-    top18 = np.sort(totals)[-18:]
+    print(np.sum(totals))
+    top18 = np.sort(totals)[-12:]
     print(len(top18))
     print(np.mean(top18))
 
 
 if __name__ == '__main__':
     #analyze_wiki()
-    load('color')
+    load('material')

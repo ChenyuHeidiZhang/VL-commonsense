@@ -119,15 +119,15 @@ def run(args):
             word_ids = get_word_ids(relation, [objs[id] for id in train_ids])
             sp_corrs = []
             sp_per_obj = [[] for _ in range(len(objs))]
-            idx = 0
-            for i in test_ids:
+            #idx = 0
+            for idx, i in enumerate(test_ids):
                 true_dist = np.take(dist_dict[test_data[i][0]], word_ids)
                 if np.sum(true_dist) != 0:
                     sp = spearmanr(true_dist, logprob[idx])[0]
                     # sp = (kendalltau(true_dist, logprob[idx])[0] + sp) / 2
                     sp_corrs.append(sp)
                     sp_per_obj[test_labels[idx]].append(sp)
-                idx += 1
+                #idx += 1
             sp_corr = np.mean(sp_corrs)
             corr_all_temps.append(sp_corr)
             corr_stds.append(np.std(sp_corrs))
@@ -136,10 +136,10 @@ def run(args):
         print('best acc across all templates:', np.max(acc_all_temps))
         max_id = np.argmax(corr_all_temps)
         print('best sp corr across all templates:', corr_all_temps[max_id])
-        sp_per_obj = sp_per_obj_all[max_id]
-        #avg_per_obj = plot_corr(sp_per_obj, objs, model_name, rel_name)
-
-    return round(corr_all_temps[max_id], 3), round(corr_stds[max_id], 3), round(np.max(acc_all_temps), 1)#, avg_per_obj
+        sp_per_obj_max = sp_per_obj_all[max_id]
+        #avg_per_obj = plot_corr(sp_per_obj_max, objs, model_name, rel_name)
+    return sp_per_obj_max, objs, \
+        round(corr_all_temps[max_id], 3), round(corr_stds[max_id], 3), round(np.max(acc_all_temps), 1)#, avg_per_obj
 
 if __name__ == '__main__':
     # parser = argparse.ArgumentParser(description='eval parser')
@@ -161,23 +161,35 @@ if __name__ == '__main__':
     # sp_mean, sp_std, acc = run(args)
     # print(sp_std)
 
-    rel_types = ['color']  # 'color', 'shape', 
+    rel_types = ['color', 'shape', 'material']  # 
+    models = ['bert', 'oscar', 'clip']  # 
     d = {rel: [] for rel in rel_types}
+    sps_per_obj = {rel: [] for rel in rel_types}
+    rel_objs = {}
     for relation in rel_types:
+        #sps_per_obj_rel = []
         print(relation)
-        sps_per_obj = []
         for group in ['single', 'multi', 'any']:  # , 'single', 'multi', 'any'
-            for model in ['bert', 'oscar', 'clip']:  # 
+            for model in models:
                 args = Args(model, relation, group)
                 np.random.seed(args.seed)
-                sp_mean, sp_std, acc = run(args) # , sp_per_obj
-                # print(sp_mean, sp_std, acc)
+                sp_per_obj, objs, sp_mean, sp_std, acc = run(args)
                 d[relation].append((sp_mean, sp_std, acc))
-                # sps_per_obj.append(sp_per_obj)
-            # print('bert vs. oscar', spearmanr(sps_per_obj[0], sps_per_obj[1]))
-            # print('bert vs. clip', spearmanr(sps_per_obj[0], sps_per_obj[2]))
-            # print('oscar vs. clip', spearmanr(sps_per_obj[1], sps_per_obj[2]))
+                #print(sp_per_obj)
+                #sps_per_obj[relation].append(sp_per_obj)
+                # rel_objs[relation] = objs
+                # sps_per_obj_rel.append(sp_per_obj)
+            # print('bert vs. oscar', spearmanr(sps_per_obj_rel[0], sps_per_obj_rel[1]))
+            # print('bert vs. clip', spearmanr(sps_per_obj_rel[0], sps_per_obj_rel[2]))
+            # print('oscar vs. clip', spearmanr(sps_per_obj_rel[1], sps_per_obj_rel[2]))
+
     import pandas as pd
     df = pd.DataFrame(d)
-    df.to_excel('file.xlsx')
+    df.to_csv('file-cls-groups.csv')
     print(df)
+
+    #plot_corr_all_rels(sps_per_obj, models, rel_types, method='cls', rel_objs=rel_objs)
+
+# ,color,shape,material
+# 0,"(0.48, 0.216, 51.4)","(0.532, 0.134, 78.4)","(0.413, 0.156, 51.1)"
+# 1,"(0.519, 0.208, 63.8)","(0.544, 0.139, 79.9)","(0.429, 0.15, 63.0)"

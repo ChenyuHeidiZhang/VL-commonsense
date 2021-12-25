@@ -64,21 +64,21 @@ def run(args):
             sp_corr = [spearmanr(vg_dist, model_dist[i])[0] for i in range(len(templates))]
             max_corr = np.max(sp_corr)
             max_idx = np.argmax(sp_corr)
-            sp_corrs.append(sp_corr)
-            sp_per_obj[true_obj_idx].append(sp_corr)
+            sp_corrs.append(max_corr)
+            sp_per_obj[true_obj_idx].append(max_corr)
 
             dist_pairs.append((vg_dist, model_dist[max_idx].tolist(), data[0]))
             record.append((correct_idx, max_idx))
 
-    # plot_dists(sp_corrs, np.array(dist_pairs, dtype=object), relation, group, args.model)
+    #plot_dists(sp_corrs, np.array(dist_pairs, dtype=object), relation, group, args.model)
     #print('Recorded correct pred & max sp corr templates:', record)
 
     #avg_per_obj = plot_corr(sp_per_obj, objs_ls, args.model, relation, method='zero-shot')
     print('Prediction accuracy:', correct / len(test_data))
     print('Mean and Std of Sp Corr:', np.mean(sp_corrs), np.std(sp_corrs))
 
-    return round(np.mean(sp_corrs),3), round(np.std(sp_corrs),3), round(correct/len(test_data)*100,1)
-    #return sp_corrs, sp_per_obj #, avg_per_obj
+    #return round(np.mean(sp_corrs),3), round(np.std(sp_corrs),3), round(correct/len(test_data)*100,1)
+    return sp_corrs, sp_per_obj #, avg_per_obj
 
 if __name__ == '__main__':
     # parser = argparse.ArgumentParser(description='zero-shot eval parser')
@@ -93,8 +93,8 @@ if __name__ == '__main__':
     # args = parser.parse_args()
     # sp_mean, sp_std, acc = run(args)
 
-    rel_types = ['color']  # 'shape', 'material', 'color', 'coda', 'cooccur'
-    models = ['bert', 'oscar', 'distil_bert', 'roberta', 'albert', 'vokenization']  # 
+    rel_types = ['color', 'shape', 'material']  # 'shape', 'material', 'cooccur', 'coda'
+    models = ['bert', 'oscar']  # , 'distil_bert', 'roberta', 'albert', 'vokenization'
     d = {rel: [] for rel in rel_types}
     sps_per_obj = {rel: [] for rel in rel_types}
     for relation in rel_types:
@@ -104,16 +104,19 @@ if __name__ == '__main__':
         for group in groups:
             for model in models:
                 args = Args(model, relation, group)
-                sp_mean, sp_std, acc = run(args)
-                d[relation].append((sp_mean, sp_std, acc))
-                # sp, sp_per_obj = run(args)
+                #sp_mean, sp_std, acc = run(args)
+                #d[relation].append(sp_mean)
+                #d[relation].append((sp_mean, sp_std, acc))
+                sp, sp_per_obj = run(args)
                 # sp_corrs.append(sp)
-                # sps_per_obj[relation].append(sp_per_obj)
+                sps_per_obj[relation].append(sp_per_obj)
         #print(stats.ttest_ind(sp_corrs[0], sp_corrs[1], equal_var=False))
         #print(spearmanr(sps_per_obj[relation][0], sps_per_obj[relation][1]))
-    #plot_corr_all_rels(sps_per_obj, models, rel_types, method='zero-shot')
+    print(sp_per_obj)
+    plot_corr_all_rels(sps_per_obj, models, rel_types, method='zero-shot')
 
-    import pandas as pd
-    df = pd.DataFrame(d)
-    df.to_excel('file.xlsx')
-    print(df)
+    # import pandas as pd
+    # df = pd.DataFrame(d)
+    # df.to_excel('file.xlsx')
+    # #df.to_csv('heatmap_data.csv')
+    # print(df)

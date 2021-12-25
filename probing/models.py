@@ -1,4 +1,6 @@
+import operator
 import json
+from nltk.corpus.reader.bracket_parse import WORD
 import numpy as np
 import matplotlib.pyplot as plt
 import clip
@@ -92,14 +94,19 @@ def load_data(file):
             data.append((js['sub'], js['obj']))
     return data, list(objs)
 
+WORD_LISTS = {
+    'color': ['black', 'blue', 'brown', 'gray', 'green', 'orange', 'pink', 'purple', 'red', 'silver', 'white', 'yellow'],  # 12
+    'shape': ['cross', 'heart', 'octagon', 'oval', 'polygon', 'rectangle', 'rhombus', 'round', 'semicircle', 'square', 'star', 'triangle'],  # 12
+    'material': ['bronze', 'ceramic', 'cloth', 'concrete', 'cotton', 'denim', 'glass', 'gold', 'iron', 'jade', 'leather', 'metal', 'paper', 'plastic', 'rubber', 'stone', 'tin', 'wood']  # 18
+}
 def load_word_file(type, single_slot=True):
     if 'wiki-' in type: type = type.split('-')[1]
+    if type in WORD_LISTS.keys():
+        return WORD_LISTS[type]
     words_file = f'mine-data/words/{type}-words.txt'
     word_ls = []
     with open(words_file, 'r') as f:
         for line in f.readlines():
-            if single_slot and len(line.strip().split()) > 1:
-                continue
             word_ls.append(line.strip())
     return word_ls
 
@@ -111,6 +118,7 @@ def load_dist_file(type):
 
 
 def plot_half(dist_pairs, ax, x_axis, model):
+    #print(dist_pairs)
     for i, pair in enumerate(dist_pairs):
         # sort two distributions together, order by the first
         sorted_dists = sorted(zip(pair[0], pair[1]), reverse=True)
@@ -136,7 +144,7 @@ def plot_dists(sp_corrs, dist_pairs, rel, group, model, num_to_plot=3):
     #print(max_idxs, min_idxs)
     print(np.array(sp_corrs)[max_idxs], np.array(sp_corrs)[min_idxs])
 
-    fig, (ax1, ax2) = plt.subplots(1, 2, sharey=True, figsize=[10, 5])
+    fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True, figsize=[8, 5])
     x_axis = range(1, len(dist_pairs[0][0])+1)
     plot_half(dist_pairs[max_idxs], ax1, x_axis, model)
     ax1.set_title('high correlation')
@@ -171,27 +179,37 @@ def plot_corr(sp_per_obj, objs_ls, model, rel, method):
     plt.savefig(f'probing/plots/corr_per_group_{method}_{model}_{rel}.png', bbox_inches='tight')
     return y
 
-def plot_corr_all_rels(sp_per_obj, models, rels, method):
+
+def order_by_sp(sp_per_obj_rel):
+    # sort the avg sp correlation per obj class and return the sorted indices
+    enumerated = enumerate(sp_per_obj_rel)
+    sorted_pairs = sorted(enumerated, key=operator.itemgetter(1))
+    sorted_indices = [index for index,element in sorted_pairs]
+    return sorted_indices
+
+def plot_corr_all_rels(sp_per_obj, models, rels, method, rel_objs=None):
     fig, axs = plt.subplots(3, 1, sharex=False, figsize=[7, 8])
     plt.rc('legend', fontsize=12)
 
     for idx, relation in enumerate(rels):
-        objs_ls = load_word_file(relation)
+        objs_ls = load_word_file(relation) if not rel_objs else rel_objs[relation]
         for model_idx, model_corr in enumerate(sp_per_obj[relation]):
             y = []
             error = []
-            skip = 0
             existing_objs = []
             for i, corrs in enumerate(model_corr):
                 if len(corrs) == 0:
                     print(f'no example for object {objs_ls[i]}')
-                    skip += 1
                     continue
                 y.append(np.mean(corrs))
                 error.append(np.std(corrs))
                 existing_objs.append(objs_ls[i])
-            x = np.arange(len(objs_ls) - skip)
-            y = np.array(y)
+            if model_idx == 0:
+                sorted_indices = order_by_sp(y)
+            existing_objs = np.take(existing_objs, sorted_indices)
+            y = np.take(y, sorted_indices)
+
+            x = np.arange(len(existing_objs))
             error = np.array(error)
             axs[idx].plot(x, y, label=models[model_idx])
             axs[idx].fill_between(x, y-error, y+error, alpha=0.5)
@@ -200,6 +218,8 @@ def plot_corr_all_rels(sp_per_obj, models, rels, method):
             plt.setp(axs[idx].get_xticklabels(), rotation=45, fontweight='bold', fontsize=12)
             axs[idx].set_ylabel('Spearmanr', fontweight='bold', fontsize=12)
             axs[idx].set_title(relation)
+            axs[idx].spines['top'].set_visible(False)
+            axs[idx].spines['right'].set_visible(False)
     fig.tight_layout()
     plt.legend()
     plt.savefig(f'probing/plots/corr_per_group_{method}.pdf', bbox_inches='tight')
