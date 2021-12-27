@@ -5,6 +5,7 @@ from ..lm import construct_lm
 from .experiment import read_kwargs
 from .. import util
 
+import csv
 import math
 import numpy as np
 from scipy.stats.stats import pearsonr, spearmanr
@@ -16,8 +17,18 @@ import logging
 logger = logging.getLogger(__name__)
 
 #relations = ['size_smaller', 'size_larger']
-relations = ['color']  # 'shape', 'material', 'color'
+relations = ['color', 'shape', 'material'] #, 'shape', 'material', 'cooccur'
 verbose = False  # verbose=True only available for non-size relations, one at a time
+
+def load_obj_file(rel_type):
+    objs_file = f'/home/heidi/VL-commonsense/mine-data/words/{rel_type}-words.txt'
+    objs_ls = []
+    with open(objs_file, 'r') as f:
+        for line in f.readlines():
+            if len(line.strip().split()) > 1:
+                continue
+            objs_ls.append(line.strip())
+    return objs_ls
 
 def get_correlation(vg_dist, model_dist):
     # Compute correlation between the VG distribution and model distribution
@@ -28,17 +39,7 @@ def get_correlation(vg_dist, model_dist):
     indices = np.argsort(corrs)[::-1]  # indices sorted and reversed
     return np.array(corr_sp), indices
 
-def load_obj_file(rel_type, single_token=True):
-    objs_file = f'/home/heidi/VL-commonsense/mine-data/words/{rel_type}-words.txt'
-    objs_ls = []
-    with open(objs_file, 'r') as f:
-        for line in f.readlines():
-            if single_token and len(line.strip().split()) > 1:
-                continue
-            objs_ls.append(line.strip())
-    return objs_ls
-
-def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
+def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds, model_name, ptune):
     # get the list of object ids, and find model distribution across the objects
     objs_ls = load_obj_file(rel_type)
     obj_ids = torch.tensor(util.tokenizer.convert_tokens_to_ids(objs_ls))
@@ -55,10 +56,16 @@ def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
 
     print('Correlation of VG and model distributions:')
     corr_sp, indices = get_correlation(vg_dist, model_dist)
-    # print('High correlation subjects:', [subjects[i] for i in indices[:10]])
+    print('High correlation subjects:', [subjects[i] for i in indices[:10]])
     # print('Corr and p-val:', [corr_sp[i] for i in indices[:10]])
-    # print('Low correlation subjects:', [subjects[i] for i in indices[-10:]])
+    print('Low correlation subjects:', [subjects[i] for i in indices[-10:]])
     # print('Corr and p-val:', [corr_sp[i] for i in indices[-10:]])
+
+    # record correlation per object
+    with open('pt_corrs.csv', 'a', encoding='UTF8', newline='') as outfile:
+        writer = csv.writer(outfile)
+        for i, sub in enumerate(subjects):
+            writer.writerow([model_name, rel_type, sub, ptune, corr_sp[i][0]])
 
     # answer_tokens = [rel_ins.entities[1] for rel_ins in test_set]
     # predicted_tokens = util.tokenizer.convert_ids_to_tokens(preds.T[0])
@@ -78,7 +85,7 @@ def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds):
     #     error_tuples.append((subjects[idx], answer_tokens[idx], predicted_tokens[idx]))
     # #print('\n'.join([', '.join(tup) for tup in error_tuples]))
 
-    #return error_tuples, vg_dist_wrong, model_dist_wrong
+    # #return error_tuples, vg_dist_wrong, model_dist_wrong
     return corr_sp, model_dist, subjects
 
 def calculate_acc(rel_type, test_set, target_dist):
@@ -187,7 +194,7 @@ def run(lm_name, log_path=''):
             size_correctness(rel_type, test_set, preds)
         else:
             calculate_acc(rel_type, test_set, target_dist)
-            x,y,z = analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds)
+            x,y,z = analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds, f"{lm.model_type}-{lm.model_size}", cfg.get('load_model'))
             if verbose:
                 return x,y,z
 
@@ -250,20 +257,20 @@ if __name__ == '__main__':
         _, _ = get_correlation(model_dist1, model_dist2)
         print(bo_bert)
         print(bo_oscar)
-        cor_corr23, od_oscar, od_distil = cross_model_corr(corr_sp2, corr_sp3, subjects)
-        print('Corr of oscar & distil_bert correlations:', cor_corr23)
-        print('Mean and var of corr of oscar & distil_bert dists:')
-        _, _ = get_correlation(model_dist2, model_dist3)
-        print(od_oscar)
-        print(od_distil)
-        cor_corr13, bd_bert, bd_distil = cross_model_corr(corr_sp1, corr_sp3, subjects)
-        print('Corr of bert & distil_bert correlations:', cor_corr13)
-        print('Mean and var of corr of bert & distil_bert dists:')
-        _, _ = get_correlation(model_dist1, model_dist3)
-        print(bd_bert)
-        print(bd_distil)
+        # cor_corr23, od_oscar, od_distil = cross_model_corr(corr_sp2, corr_sp3, subjects)
+        # print('Corr of oscar & distil_bert correlations:', cor_corr23)
+        # print('Mean and var of corr of oscar & distil_bert dists:')
+        # _, _ = get_correlation(model_dist2, model_dist3)
+        # print(od_oscar)
+        # print(od_distil)
+        # cor_corr13, bd_bert, bd_distil = cross_model_corr(corr_sp1, corr_sp3, subjects)
+        # print('Corr of bert & distil_bert correlations:', cor_corr13)
+        # print('Mean and var of corr of bert & distil_bert dists:')
+        # _, _ = get_correlation(model_dist1, model_dist3)
+        # print(bd_bert)
+        # print(bd_distil)
     else:
-        run('lm', log_path='logs/vl-bert-large')
-        #run('lm2', log_path='logs/vl-oscar-large')
+        run('lm', log_path='logs/vl-bert')
+        run('lm2', log_path='logs/vl-oscar')
         #run('lm3', log_path='logs/vl-distilbert')
         #run('lm4')

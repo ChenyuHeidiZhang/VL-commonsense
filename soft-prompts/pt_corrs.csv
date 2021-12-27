@@ -1,0 +1,1983 @@
+bert-base,shape,table top,False,0.31698338899620837
+bert-base,shape,top,False,0.6376904837011363
+bert-base,shape,pot,False,0.5295294295551978
+bert-base,shape,nose,False,0.1946138152572708
+bert-base,shape,mirror,False,0.7678979342337313
+bert-base,shape,door,False,0.42829957860524087
+bert-base,shape,recepticle,False,0.31698338899620837
+bert-base,shape,clock,False,0.5882553814910313
+bert-base,shape,coffee table,False,0.751903704662534
+bert-base,shape,sewer,False,0.31698338899620837
+bert-base,shape,planter,False,0.5406774175458334
+bert-base,shape,tile,False,0.3623788004249069
+bert-base,shape,glass,False,0.6549532148420266
+bert-base,shape,chair,False,0.751903704662534
+bert-base,shape,lemon,False,0.4075500715665536
+bert-base,shape,ceiling light,False,0.31698338899620837
+bert-base,shape,fence,False,0.3902285049514416
+bert-base,shape,emblem,False,0.21957103106995213
+bert-base,shape,grate,False,0.5295294295551978
+bert-base,shape,drain,False,0.5295294295551978
+bert-base,shape,lamp shade,False,0.5295294295551978
+bert-base,shape,wooden table,False,0.49811675413689877
+bert-base,shape,tree,False,0.6633052854428266
+bert-base,shape,tower,False,0.6633052854428266
+bert-base,shape,manhole cover,False,0.5295294295551978
+bert-base,shape,front tire,False,0.31698338899620837
+bert-base,shape,bucket,False,0.5908433635036943
+bert-base,shape,phone,False,0.35673561570034373
+bert-base,shape,petal,False,0.6744532734334623
+bert-base,shape,life saver,False,0.31698338899620837
+bert-base,shape,log,False,-0.13585002385551787
+bert-base,shape,logo,False,0.13182697576454305
+bert-base,shape,comforter,False,0.31698338899620837
+bert-base,shape,hubcap,False,0.31698338899620837
+bert-base,shape,sticker,False,0.47602244686445294
+bert-base,shape,faucet,False,0.4075500715665536
+bert-base,shape,knee,False,0.4075500715665536
+bert-base,shape,front headlight,False,0.31698338899620837
+bert-base,shape,card,False,0.4075500715665536
+bert-base,shape,spoon,False,0.31698338899620837
+bert-base,shape,stem,False,0.4075500715665536
+bert-base,shape,mousepad,False,0.5295294295551978
+bert-base,shape,bus,False,0.5406774175458334
+bert-base,shape,banana,False,0.4075500715665536
+bert-base,shape,container,False,0.7592698675569476
+bert-base,shape,cd,False,0.31698338899620837
+bert-base,shape,pizza,False,0.24768647641727634
+bert-base,shape,green ball,False,0.31698338899620837
+bert-base,shape,line,False,-0.22641670642586312
+bert-base,shape,sunglass,False,0.3521574312976425
+bert-base,shape,stove,False,0.5373283954075739
+bert-base,shape,exercise ball,False,0.31698338899620837
+bert-base,shape,white plate,False,0.7614214730759837
+bert-base,shape,gauge,False,-0.22641670642586312
+bert-base,shape,train,False,0.5295294295551978
+bert-base,shape,item,False,0.31698338899620837
+bert-base,shape,vase,False,0.7614214730759837
+bert-base,shape,pupil,False,0.49811675413689877
+bert-base,shape,apple,False,0.4075500715665536
+bert-base,shape,keyhole,False,0.31698338899620837
+bert-base,shape,floor,False,0.23410774780335059
+bert-base,shape,sprinkle,False,-0.31698338899620837
+bert-base,shape,tail,False,0.4075500715665536
+bert-base,shape,indentation,False,0.6131393394849657
+bert-base,shape,corner,False,0.5406774175458334
+bert-base,shape,knot,False,-0.13585002385551787
+bert-base,shape,luggage,False,0.31698338899620837
+bert-base,shape,piece,False,0.3331218944707429
+bert-base,shape,tablecloth,False,0.4075500715665536
+bert-base,shape,block,False,0.4949239574993894
+bert-base,shape,meat,False,0.5406774175458334
+bert-base,shape,soap,False,0.31698338899620837
+bert-base,shape,sculpture,False,0.31698338899620837
+bert-base,shape,metal,False,0.31698338899620837
+bert-base,shape,cheese pizza,False,0.31698338899620837
+bert-base,shape,step,False,0.31698338899620837
+bert-base,shape,magnet,False,0.019035536826899596
+bert-base,shape,blanket,False,0.4075500715665536
+bert-base,shape,hamburger,False,0.4075500715665536
+bert-base,shape,drawer pull,False,0.31698338899620837
+bert-base,shape,grill,False,0.4075500715665536
+bert-base,shape,reflector,False,0.4793634835973368
+bert-base,shape,topping,False,0.31698338899620837
+bert-base,shape,front light,False,0.31698338899620837
+bert-base,shape,connector,False,-0.13585002385551787
+bert-base,shape,garbage can,False,0.31698338899620837
+bert-base,shape,placard,False,0.4075500715665536
+bert-base,shape,switch,False,0.49811675413689877
+bert-base,shape,hanger,False,0.31698338899620837
+bert-base,shape,foot,False,-0.13585002385551787
+bert-base,shape,toe,False,-0.13585002385551787
+bert-base,shape,cap,False,0.4075500715665536
+bert-base,shape,utensil,False,0.4075500715665536
+bert-base,shape,onion,False,0.4075500715665536
+bert-base,shape,table.,False,0.31698338899620837
+bert-base,shape,egg,False,0.6716604942594675
+bert-base,shape,chocolate piece,False,0.31698338899620837
+bert-base,shape,flower bed,False,0.4075500715665536
+bert-base,shape,melon,False,0.4075500715665536
+bert-base,shape,pitcher's mound,False,0.31698338899620837
+bert-base,shape,gas cap,False,0.4075500715665536
+bert-base,shape,plum,False,0.4075500715665536
+bert-base,shape,bear,False,0.31698338899620837
+bert-base,shape,sail,False,-0.22641670642586312
+bert-base,shape,meter,False,-0.13585002385551787
+bert-base,shape,meatball,False,0.4075500715665536
+bert-base,shape,candy,False,0.31698338899620837
+bert-base,shape,port,False,0.31698338899620837
+bert-base,shape,kitchen table,False,0.31698338899620837
+bert-base,shape,tomatoe,False,0.4075500715665536
+bert-base,shape,left wheel,False,0.31698338899620837
+bert-base,shape,parking meter,False,0.31698338899620837
+bert-base,shape,detail,False,0.4075500715665536
+bert-base,shape,ceramic tile,False,0.4075500715665536
+bert-base,shape,toast,False,-0.4075500715665536
+bert-base,shape,pepper,False,0.4075500715665536
+bert-base,shape,canvas,False,0.4075500715665536
+bert-base,shape,cardboard sign,False,0.49811675413689877
+bert-base,shape,white frisbee,False,0.4075500715665536
+bert-base,shape,cooler,False,0.31698338899620837
+bert-base,shape,lighting,False,0.31698338899620837
+bert-base,shape,right ear,False,0.4075500715665536
+bert-base,shape,graphic,False,-0.13585002385551787
+bert-base,shape,cracker w/cheese,False,0.31698338899620837
+bert-base,shape,copyright symbol,False,-0.22641670642586312
+bert-base,shape,touchpad,False,0.4075500715665536
+bert-base,shape,hay,False,0.31698338899620837
+bert-base,shape,cherry tomato,False,0.4075500715665536
+bert-base,shape,light globe,False,0.31698338899620837
+bert-base,shape,cord,False,0.4075500715665536
+bert-base,shape,knife,False,0.31698338899620837
+bert-base,shape,towel ring,False,0.31698338899620837
+bert-base,shape,metal armrest,False,0.31698338899620837
+bert-base,shape,necktie,False,-0.4075500715665536
+bert-base,color,jacket,False,0.9300699300699302
+bert-base,color,van,False,0.3187395430939476
+bert-base,color,street light,False,0.5255936285474347
+bert-base,color,pole,False,-0.034965034965034975
+bert-base,color,cabinet,False,0.46585010144500033
+bert-base,color,curtain,False,0.7552447552447553
+bert-base,color,drape,False,0.7880302884643394
+bert-base,color,picture,False,0.7705791151721809
+bert-base,color,apple,False,0.5148307865065466
+bert-base,color,counter,False,0.14711055835105272
+bert-base,color,writing,False,0.8616475560561659
+bert-base,color,headphone,False,0.12476795122946507
+bert-base,color,cup,False,0.6363636363636365
+bert-base,color,stapler,False,0.35797899306280623
+bert-base,color,charger,False,0.05375567236264388
+bert-base,color,coat,False,0.7272727272727274
+bert-base,color,computer keyboard,False,-0.06425263978050368
+bert-base,color,water bottle,False,0.5536577835807514
+bert-base,color,sticker,False,0.7132867132867133
+bert-base,color,thing,False,0.6057513390397499
+bert-base,color,speaker,False,-0.08577796647025725
+bert-base,color,fire alarm,False,0.35478743759344955
+bert-base,color,scarf,False,0.7040291006800381
+bert-base,color,trouser,False,0.38443006707558064
+bert-base,color,banner,False,0.8671328671328673
+bert-base,color,lighting,False,0.12955005512625914
+bert-base,color,pine tree,False,0.39304183206703214
+bert-base,color,vehicle,False,0.5989501304292861
+bert-base,color,blouse,False,0.7355527917552636
+bert-base,color,water,False,0.17894846998473848
+bert-base,color,oven,False,-0.39769784454391993
+bert-base,color,dishwasher,False,-0.2953926244904183
+bert-base,color,liquid,False,0.6701795640604912
+bert-base,color,painting,False,0.9084732316131584
+bert-base,color,kettle,False,0.18661653741533044
+bert-base,color,fridge,False,-0.32751587197734583
+bert-base,color,mixer,False,0.10844069758957314
+bert-base,color,kitchen drawer,False,-0.04367131467411468
+bert-base,color,leg,False,0.3356643356643357
+bert-base,color,stand,False,0.06678475954023655
+bert-base,color,traffic light,False,0.5728398892115094
+bert-base,color,taxi cab,False,0.28490506352201256
+bert-base,color,purse,False,0.3706293706293707
+bert-base,color,sunglass,False,0.6877235317060538
+bert-base,color,cloud,False,0.08421104469870046
+bert-base,color,phone,False,-0.021015794050150388
+bert-base,color,circle,False,0.8601398601398602
+bert-base,color,word,False,0.8511396590310907
+bert-base,color,hinge,False,-0.17935392989235607
+bert-base,color,counter top,False,0.1957807216292501
+bert-base,color,tray,False,0.1188811188811189
+bert-base,color,desktop,False,-0.05824643299811065
+bert-base,color,panel,False,0.7964961311085419
+bert-base,color,rack,False,-0.1398289635141202
+bert-base,color,dial,False,0.14597786213981
+bert-base,color,candle,False,0.7670764828304892
+bert-base,color,lamp base,False,0.5063696835418333
+bert-base,color,bookcase,False,0.4589474270035978
+bert-base,color,mattress,False,0.19602741487345912
+bert-base,color,ottoman,False,0.6843811966861907
+bert-base,color,piano,False,0.23865266204187083
+bert-base,color,flame,False,0.7564057043286321
+bert-base,color,house,False,0.6830133066298876
+bert-base,color,dirt,False,0.5946262856453788
+bert-base,color,adapter,False,0.04367131467411468
+bert-base,color,trophy,False,-0.2203982566868399
+bert-base,color,basket,False,0.49650349650349657
+bert-base,color,countertop,False,0.0797625162193241
+bert-base,color,foam,False,0.30569920271880274
+bert-base,color,sand,False,0.6090955784021113
+bert-base,color,marking,False,0.8380489500927584
+bert-base,color,mulch,False,0.5321811563901744
+bert-base,color,robe,False,0.7882314887134654
+bert-base,color,rim,False,0.34035297232391437
+bert-base,color,overall,False,0.4295919942971551
+bert-base,color,electrical cord,False,0.1343891809066097
+bert-base,color,fan,False,-0.2506358189918392
+bert-base,color,closet,False,0.07525794130770141
+bert-base,color,bikini top,False,0.5913123959890827
+bert-base,color,lounge chair,False,0.3360453354413985
+bert-base,color,coaster,False,0.17935392989235607
+bert-base,color,stage,False,0.23114939115936867
+bert-base,color,ladder,False,-0.03157914176201268
+bert-base,color,roadway,False,-0.08600907578023019
+bert-base,color,motorcycle,False,0.7902097902097903
+bert-base,color,lawn,False,0.4730499167912661
+bert-base,color,cover,False,0.8951048951048951
+bert-base,color,garage,False,0.018413443037884846
+bert-base,color,detail,False,0.707257916208145
+bert-base,color,shopping bag,False,0.6186769578832912
+bert-base,color,camera,False,0.2276721756467031
+bert-base,color,collar,False,0.4413316750531582
+bert-base,color,wagon,False,0.6344962272121234
+bert-base,color,radiator,False,-0.4373192721497651
+bert-base,color,shutter,False,0.44231940812534276
+bert-base,color,cone,False,0.795097541564023
+bert-base,color,binder,False,0.2655249451624019
+bert-base,color,crib,False,0.2183565733705734
+bert-base,color,yard,False,0.4803844614152615
+bert-base,color,petal,False,0.40846083281831924
+bert-base,color,body of water,False,0.4803844614152615
+bert-base,color,cane,False,0.09178948540071956
+bert-base,color,steering wheel,False,0.15809746099487176
+bert-base,color,weed,False,0.6490316819789472
+bert-base,color,china,False,0.30569920271880274
+bert-base,color,design,False,0.9160839160839163
+bert-base,color,stovetop,False,0.2150226894505755
+bert-base,color,drawer pull,False,-0.17739371879672478
+bert-base,color,snow,False,0.3477677046548338
+bert-base,color,home,False,0.4202064094863697
+bert-base,color,hoodie,False,0.7215422623884966
+bert-base,color,meter,False,0.07830421195446947
+bert-base,color,sandal,False,0.416813248661316
+bert-base,color,carpeting,False,0.39769784454391993
+bert-base,color,concrete,False,0.10137396037394038
+bert-base,color,streetlight,False,0.38140233324845096
+bert-base,color,mat,False,0.535902748278835
+bert-base,color,piece,False,0.6620265192514238
+bert-base,color,seaweed,False,0.430045378901151
+bert-base,color,tarp,False,0.6690306744437988
+bert-base,color,teddy bear,False,0.18213688176797005
+bert-base,color,nametag,False,0.04367131467411468
+bert-base,color,lamppost,False,-0.12850527956100735
+bert-base,color,drink,False,0.5961431088893723
+bert-base,color,rubber tire,False,0.30569920271880274
+bert-base,color,face,False,0.7972027972027973
+bert-base,color,vegetation,False,0.6976000890454686
+bert-base,color,stair,False,0.36620626390607935
+bert-base,color,body,False,0.7372420695732474
+bert-base,color,ribbon,False,0.8251748251748254
+bert-base,color,arm chair,False,-0.13101394402234404
+bert-base,color,bed skirt,False,0.2183565733705734
+bert-base,color,pattern,False,0.810531305224992
+bert-base,color,hardware,False,-0.4803844614152615
+bert-base,color,quilt,False,0.8808300566003597
+bert-base,color,hamper,False,0.24190052563189746
+bert-base,color,toy,False,0.7202797202797203
+bert-base,color,blow dryer,False,-0.4730499167912661
+bert-base,color,candle holder,False,0.3665058567365536
+bert-base,color,tulip,False,0.1871519268441976
+bert-base,color,loveseat,False,-0.2150226894505755
+bert-base,color,sausage,False,0.17440002226136714
+bert-base,color,i,False,0.13101394402234404
+bert-base,color,tall building,False,0.13101394402234404
+bert-base,color,dispenser,False,-0.09378005518782033
+bert-base,color,taillight,False,0.10213577748902336
+bert-base,color,tarmac,False,0.3488000445227343
+bert-base,color,airplane,False,0.5183895865703763
+bert-base,color,name,False,0.7323649216501578
+bert-base,color,food,False,0.8506269373019603
+bert-base,color,ballon,False,0.4803844614152615
+bert-base,color,balloon,False,0.7760442837613132
+bert-base,color,giraffe,False,0.7642037012804738
+bert-base,color,hoof,False,0.2329857319924426
+bert-base,color,monkey,False,0.5507369124043173
+bert-base,color,windmill,False,0.04367131467411468
+bert-base,color,lace,False,0.9473742528603804
+bert-base,color,goat,False,0.26626940799136295
+bert-base,color,tennis shoe,False,0.6291827346159128
+bert-base,color,r,False,0.2937263532823025
+bert-base,color,athletic shoe,False,0.24190052563189746
+bert-base,color,basketball,False,0.17032434810043484
+bert-base,color,smoke stack,False,0.04367131467411468
+bert-base,color,buoy,False,0.5148307865065466
+bert-base,color,pedestrian sign,False,0.39304183206703214
+bert-base,color,backhoe,False,0.39304183206703214
+bert-base,color,cylinder,False,-0.30662207033593325
+bert-base,color,milk carton,False,0.2183565733705734
+bert-base,color,racket,False,0.7902097902097903
+bert-base,color,soda can,False,0.46229878231873733
+bert-base,color,switch plate,False,0.04367131467411468
+bert-base,color,ceiling tile,False,0.13101394402234404
+bert-base,color,steeple,False,0.5027704555360718
+bert-base,color,glove,False,0.6853146853146854
+bert-base,color,pickup,False,0.5004955273364914
+bert-base,color,suitcase,False,0.7552447552447553
+bert-base,color,girl,False,0.6197336773795189
+bert-base,color,suit jacket,False,0.23652495839563306
+bert-base,color,cake,False,0.7390554240969553
+bert-base,color,corner,False,0.06256194091706142
+bert-base,color,bar stool,False,-0.029123216499055325
+bert-base,color,twig,False,0.17739371879672478
+bert-base,color,date,False,0.4188590920951164
+bert-base,color,lane,False,-0.13101394402234404
+bert-base,color,drive,False,-0.04367131467411468
+bert-base,color,platform,False,-0.007251137838120373
+bert-base,color,blue sign,False,0.04367131467411468
+bert-base,color,star,False,0.6631619770022662
+bert-base,color,cell,False,0.13101394402234404
+bert-base,color,cellbar,False,0.2183565733705734
+bert-base,color,neck,False,0.5623666131275534
+bert-base,color,washer,False,0.13101394402234404
+bert-base,color,suit coat,False,0.15051588261540283
+bert-base,color,decoration,False,0.8111888111888113
+bert-base,color,styrofoam cup,False,-0.13101394402234404
+bert-base,color,bikini,False,0.7652457077368608
+bert-base,color,basin,False,0.0046033607594712115
+bert-base,color,dress shirt,False,0.4314105813833818
+bert-base,color,hardwood floor,False,0.4803844614152615
+bert-base,color,boarder,False,0.360163004829714
+bert-base,color,french fry,False,0.28490506352201256
+bert-base,color,packet,False,0.40906856111301193
+bert-base,color,magnet,False,0.7523728093483061
+bert-base,color,molding,False,0.715599033976788
+bert-base,color,clip,False,0.15465944314581095
+bert-base,color,electrical outlet,False,0.04367131467411468
+bert-base,color,alarm,False,0.39304183206703214
+bert-base,color,food truck,False,0.2902806307582769
+bert-base,color,paper cup,False,0.13101394402234404
+bert-base,color,platter,False,0.6953208427626525
+bert-base,color,dash,False,0.596631655104677
+bert-base,color,open sign,False,0.6504436355879909
+bert-base,color,telephone pole,False,-0.2183565733705734
+bert-base,color,rear light,False,0.39304183206703214
+bert-base,color,divider,False,0.6537215349329232
+bert-base,color,bracket,False,-0.14686317664115126
+bert-base,color,box car,False,0.7382309028213248
+bert-base,color,triangle,False,0.8613463314991642
+bert-base,color,graffiti,False,0.8231186002975569
+bert-base,color,bouquet,False,0.38240695345830195
+bert-base,color,text,False,0.7972792489909618
+bert-base,color,brick wall,False,0.5075760589835357
+bert-base,color,pamphlet,False,0.46229878231873733
+bert-base,color,business card,False,-0.04367131467411468
+bert-base,color,lock,False,-0.0935759634220988
+bert-base,color,wallet,False,0.3304421474425904
+bert-base,color,base board,False,0.04367131467411468
+bert-base,color,framed window,False,0.13101394402234404
+bert-base,color,sill,False,0.30569920271880274
+bert-base,color,houseplant,False,0.30569920271880274
+bert-base,color,cupboard,False,0.41305268430323794
+bert-base,color,rocking chair,False,0.12363804643408093
+bert-base,color,electrical box,False,-0.2183565733705734
+bert-base,color,grout,False,-0.07924512516161114
+bert-base,color,diamond,False,0.8315840663996672
+bert-base,color,cork,False,0.13101394402234404
+bert-base,color,muffler,False,-0.4803844614152615
+bert-base,color,section,False,0.8310065219407187
+bert-base,color,pine needle,False,0.13101394402234404
+bert-base,color,bonnet,False,0.04367131467411468
+bert-base,color,directional sign,False,-0.04367131467411468
+bert-base,color,e,False,0.26340279457695503
+bert-base,color,exhaust,False,-0.41391867719235786
+bert-base,color,horizon,False,0.5140211182440294
+bert-base,color,tanktop,False,0.3104024006828078
+bert-base,color,tan building,False,0.2183565733705734
+bert-base,color,paw,False,0.47510909369441956
+bert-base,color,deer,False,0.39304183206703214
+bert-base,color,hillside,False,0.3488000445227343
+bert-base,color,cow,False,0.39881258109662054
+bert-base,color,storefront,False,0.2183565733705734
+bert-base,color,traffic pole,False,0.04367131467411468
+bert-base,color,cowboy hat,False,0.21175459493567578
+bert-base,color,jersey,False,0.8239640937886785
+bert-base,color,arch,False,0.39856523454823645
+bert-base,color,lane divider,False,0.39304183206703214
+bert-base,color,package,False,0.7555398601493124
+bert-base,color,front tire,False,0.30569920271880274
+bert-base,color,hoody,False,-0.2183565733705734
+bert-base,color,stall,False,0.04367131467411468
+bert-base,color,mudflap,False,0.13101394402234404
+bert-base,color,flyer,False,0.23114939115936867
+bert-base,color,bang,False,-0.10213577748902336
+bert-base,color,newspaper stand,False,0.30569920271880274
+bert-base,color,construction vehicle,False,0.39304183206703214
+bert-base,color,painted,False,0.4803844614152615
+bert-base,color,beer bottle,False,-0.07525794130770141
+bert-base,color,plane tail,False,0.2183565733705734
+bert-base,color,trashcans,False,-0.04367131467411468
+bert-base,color,slack,False,0.1164928659962213
+bert-base,color,sandles,False,0.34403630312092076
+bert-base,color,leave,False,0.5106788874451168
+bert-base,color,limb,False,0.360163004829714
+bert-base,color,speck,False,0.5068698018697019
+bert-base,color,vegetable,False,0.7474492959290268
+bert-base,color,bagel,False,0.05375567236264388
+bert-base,color,truck cab,False,0.23114939115936867
+bert-base,color,winter coat,False,0.2623915632898591
+bert-base,color,crest,False,0.07525794130770141
+bert-base,color,podium,False,-0.12955005512625914
+bert-base,color,tennis court,False,0.5552480484044199
+bert-base,color,bathroom toilet,False,0.04367131467411468
+bert-base,color,artwork,False,0.3072549338995135
+bert-base,color,step stool,False,-0.13101394402234404
+bert-base,color,wheelchair,False,0.04367131467411468
+bert-base,color,siren,False,0.4803844614152615
+bert-base,color,bleacher,False,-0.5118828012335194
+bert-base,color,banana leaf,False,0.46229878231873733
+bert-base,color,flower vase,False,0.13101394402234404
+bert-base,color,cattle,False,0.49566322116388556
+bert-base,color,cloudy,False,0.30569920271880274
+bert-base,color,under shirt,False,0.13101394402234404
+bert-base,color,car seat,False,-0.08600907578023019
+bert-base,color,plank,False,0.3594902115533113
+bert-base,color,streetsign,False,0.4803844614152615
+bert-base,color,snowflake,False,0.10751134472528776
+bert-base,color,wristband,False,0.7543906087591917
+bert-base,color,denim jean,False,-0.04367131467411468
+bert-base,color,slipper,False,0.0036392762228428894
+bert-base,color,seashell,False,0.13101394402234404
+bert-base,color,ghost,False,0.4803844614152615
+bert-base,color,pepper shaker,False,-0.13101394402234404
+bert-base,color,freezer door,False,-0.04367131467411468
+bert-base,color,checker,False,0.3238751378156479
+bert-base,color,berry,False,0.3702808954879892
+bert-base,color,dalmation,False,0.39304183206703214
+bert-base,color,crossing sign,False,0.21635795569514693
+bert-base,color,kite,False,0.7972027972027973
+bert-base,color,visor,False,0.612691249227479
+bert-base,color,wetsuit,False,0.7746670967243986
+bert-base,color,filling,False,0.3924164082473003
+bert-base,color,bun,False,0.0826105368606476
+bert-base,color,frisbee,False,0.33975533714409795
+bert-base,color,skull,False,0.04367131467411468
+bert-base,color,wet suit,False,0.810025907756234
+bert-base,color,trash bag,False,0.08600907578023019
+bert-base,color,cat tail,False,0.4803844614152615
+bert-base,color,window sill,False,0.2294737135017989
+bert-base,color,loafer,False,0.5698101270440251
+bert-base,color,stadium seat,False,-0.04367131467411468
+bert-base,color,dandelion,False,0.41391867719235786
+bert-base,color,muzzle,False,0.5450201944823211
+bert-base,color,tote bag,False,0.4803844614152615
+bert-base,color,name tag,False,0.5880822446203774
+bert-base,color,snow board,False,0.5614557805325929
+bert-base,color,ski pole,False,0.3802911202101593
+bert-base,color,passenger car,False,0.3378344809521317
+bert-base,color,passenger train,False,0.7530431694755734
+bert-base,color,b,False,0.5385932088581319
+bert-base,color,skiis,False,0.4867737614842105
+bert-base,color,cockpit,False,0.13101394402234404
+bert-base,color,shoelace,False,0.729829054055404
+bert-base,color,plane wing,False,0.2183565733705734
+bert-base,color,saddle bag,False,0.39304183206703214
+bert-base,color,wii remote,False,0.04367131467411468
+bert-base,color,water faucet,False,-0.4803844614152615
+bert-base,color,camera strap,False,0.30569920271880274
+bert-base,color,dvd player,False,-0.42223163284330995
+bert-base,color,shirt collar,False,0.39304183206703214
+bert-base,color,laptop computer,False,-0.2829112459908232
+bert-base,color,road cone,False,0.4803844614152615
+bert-base,color,number 3,False,0.13101394402234404
+bert-base,color,soda,False,0.5293864873391894
+bert-base,color,sprinkle,False,0.2816940850166643
+bert-base,color,flip flop,False,0.02175341351436112
+bert-base,color,home plate,False,-0.04367131467411468
+bert-base,color,hair tie,False,0.3212631989025184
+bert-base,color,bell pepper,False,0.5242178969829959
+bert-base,color,advertising,False,0.49566322116388556
+bert-base,color,knife blade,False,-0.30569920271880274
+bert-base,color,clockface,False,0.04367131467411468
+bert-base,color,chive,False,0.30569920271880274
+bert-base,color,neon sign,False,0.4803844614152615
+bert-base,color,mint,False,0.39304183206703214
+bert-base,color,gas pump,False,-0.04367131467411468
+bert-base,color,photograph,False,0.38166527377477155
+bert-base,color,toilet tank,False,0.04367131467411468
+bert-base,color,raincoat,False,0.7405617909759784
+bert-base,color,binding,False,0.38166527377477155
+bert-base,color,handwash,False,0.30569920271880274
+bert-base,color,bath mat,False,-0.04367131467411468
+bert-base,color,apple logo,False,0.04367131467411468
+bert-base,color,lifejacket,False,0.3886501653787775
+bert-base,color,gourd,False,0.20427155497804672
+bert-base,color,food tray,False,0.39304183206703214
+bert-base,color,fence pole,False,-0.4803844614152615
+bert-base,color,spatula,False,0.1164928659962213
+bert-base,color,gold line,False,0.39304183206703214
+bert-base,color,letter a,False,0.11288691196155214
+bert-base,color,racquet,False,0.5800910270496299
+bert-base,color,bicycle seat,False,0.13101394402234404
+bert-base,color,turkey,False,0.2150226894505755
+bert-base,color,dirt bike,False,0.35478743759344955
+bert-base,color,rubber,False,0.11288691196155214
+bert-base,color,carving,False,-0.04367131467411468
+bert-base,color,knee pad,False,0.10137396037394038
+bert-base,color,pond,False,0.430045378901151
+bert-base,color,toaster oven,False,-0.24783161058194278
+bert-base,color,pizza box,False,0.2902806307582769
+bert-base,color,passenger bus,False,0.13101394402234404
+bert-base,color,locomotive,False,0.8173804338791473
+bert-base,color,hotdog bun,False,-0.13101394402234404
+bert-base,color,number 8,False,0.05375567236264388
+bert-base,color,tin,False,0.12606822641482482
+bert-base,color,overpass,False,0.15589144985166722
+bert-base,color,drawstring,False,-0.04367131467411468
+bert-base,color,attire,False,0.4803844614152615
+bert-base,color,walkie talkie,False,0.04367131467411468
+bert-base,color,calendar,False,0.13101394402234404
+bert-base,color,register,False,0.13101394402234404
+bert-base,color,shopping cart,False,0.4803844614152615
+bert-base,color,knit hat,False,0.39304183206703214
+bert-base,color,tail fin,False,0.3353138689291874
+bert-base,color,coverlet,False,0.13101394402234404
+bert-base,color,safety marker,False,0.13101394402234404
+bert-base,color,armoire,False,-0.04367131467411468
+bert-base,color,vas,False,0.40638023914722143
+bert-base,color,glaze,False,0.4143024683524091
+bert-base,color,guitar case,False,0.4803844614152615
+bert-base,color,tank lid,False,-0.13101394402234404
+bert-base,color,mesh,False,0.35797899306280623
+bert-base,color,medallion,False,0.30569920271880274
+bert-base,color,plantain,False,0.639692501115462
+bert-base,color,plantation,False,0.39304183206703214
+bert-base,color,men,False,0.39304183206703214
+bert-base,color,snap,False,-0.4803844614152615
+bert-base,color,catchers mitt,False,-0.13101394402234404
+bert-base,color,baseball uniform,False,0.631637753099167
+bert-base,color,space,False,0.3763368901429502
+bert-base,color,swirl,False,0.6923521461488131
+bert-base,color,brake,False,-0.29565619799454135
+bert-base,color,handicapped sign,False,0.4031675427198291
+bert-base,color,h,False,0.1343891809066097
+bert-base,color,high heel,False,0.39304183206703214
+bert-base,color,thigh,False,0.04367131467411468
+bert-base,color,spinach,False,0.30569920271880274
+bert-base,color,cleaner,False,-0.04367131467411468
+bert-base,color,beer,False,0.201936867881583
+bert-base,color,toast,False,0.043004537890115095
+bert-base,color,earbud,False,0.04367131467411468
+bert-base,color,turf,False,0.4405895299234538
+bert-base,color,broccoli floret,False,0.39304183206703214
+bert-base,color,scrunchie,False,-0.04367131467411468
+bert-base,color,duvet,False,0.5106788874451168
+bert-base,color,winter hat,False,0.13101394402234404
+bert-base,color,electric pole,False,-0.30569920271880274
+bert-base,color,green grass,False,0.5106788874451168
+bert-base,color,cat eye,False,0.2203982566868399
+bert-base,color,ruler,False,0.4407965133736798
+bert-base,color,giraffe's eye,False,0.2183565733705734
+bert-base,color,crumb,False,0.639692501115462
+bert-base,color,wrapping,False,0.13101394402234404
+bert-base,color,hot dog,False,0.09569056849689607
+bert-base,color,screw,False,-0.10137396037394038
+bert-base,color,traffic line,False,0.11288691196155214
+bert-base,color,landing gear,False,0.07525794130770141
+bert-base,color,sign board,False,0.13101394402234404
+bert-base,color,baseline,False,0.30569920271880274
+bert-base,color,head gear,False,0.6504436355879909
+bert-base,color,shin guard,False,0.7322408719762482
+bert-base,color,mist,False,0.4803844614152615
+bert-base,color,basil,False,0.04367131467411468
+bert-base,color,shinguard,False,0.04367131467411468
+bert-base,color,1,False,0.04367131467411468
+bert-base,color,caution cone,False,0.29565619799454135
+bert-base,color,toilet brush,False,-0.360163004829714
+bert-base,color,substance,False,0.30569920271880274
+bert-base,color,frog,False,0.30569920271880274
+bert-base,color,guard,False,0.605810603644749
+bert-base,color,coconut,False,0.27415392904948377
+bert-base,color,football,False,0.18357897080143912
+bert-base,color,smoke trail,False,-0.13101394402234404
+bert-base,color,baseball cleat,False,0.29565619799454135
+bert-base,color,shin pad,False,0.30569920271880274
+bert-base,color,chalk,False,0.39304183206703214
+bert-base,color,lobster,False,0.3924164082473003
+bert-base,color,flush,False,-0.4803844614152615
+bert-base,color,second hand,False,0.5913123959890827
+bert-base,color,surf,False,0.30569920271880274
+bert-base,color,daffodil,False,0.5690948094844612
+bert-base,color,opening,False,-0.04367131467411468
+bert-base,color,letter b,False,0.23114939115936867
+bert-base,color,bridal,False,0.2183565733705734
+bert-base,color,dashboard,False,-0.043004537890115095
+bert-base,color,wakeboard,False,0.39304183206703214
+bert-base,color,connector,False,-0.043004537890115095
+bert-base,color,wall plate,False,0.13101394402234404
+bert-base,color,tomato sauce,False,0.4803844614152615
+bert-base,color,arugula,False,-0.04367131467411468
+bert-base,color,cilantro,False,-0.04367131467411468
+bert-base,color,pony,False,0.49566322116388556
+bert-base,color,front paw,False,-0.04367131467411468
+bert-base,color,string bean,False,0.30569920271880274
+bert-base,color,dugout,False,0.4803844614152615
+bert-base,color,boundary line,False,0.13101394402234404
+bert-base,color,wooden door,False,-0.04367131467411468
+bert-base,color,computer key,False,-0.04367131467411468
+bert-base,color,icon,False,0.3709141393022427
+bert-base,color,smartphone,False,0.2183565733705734
+bert-base,color,house plant,False,0.39304183206703214
+bert-base,color,sport shoe,False,0.2183565733705734
+bert-base,color,rear wheel,False,0.2183565733705734
+bert-base,color,bison,False,0.4803844614152615
+bert-base,color,windowsill,False,-0.1343891809066097
+bert-base,color,tofu,False,0.04367131467411468
+bert-base,color,font,False,0.13101394402234404
+bert-base,color,slit,False,0.39304183206703214
+bert-base,color,melon,False,0.614989552184821
+bert-base,color,lillie,False,0.13101394402234404
+bert-base,color,bedsheets,False,0.13101394402234404
+bert-base,color,grandfather clock,False,-0.4803844614152615
+bert-base,color,cargo pant,False,-0.13101394402234404
+bert-base,color,cloak,False,0.39304183206703214
+bert-base,color,ankle,False,-0.13101394402234404
+bert-base,color,tomatoe,False,0.4803844614152615
+bert-base,color,ski glove,False,0.07525794130770141
+bert-base,color,letter l,False,-0.04367131467411468
+bert-base,color,letter n,False,-0.04367131467411468
+bert-base,color,carrying case,False,0.4803844614152615
+bert-base,color,crossing,False,0.04367131467411468
+bert-base,color,front of train,False,0.30569920271880274
+bert-base,color,post it note,False,0.30569920271880274
+bert-base,color,ski stick,False,0.34403630312092076
+bert-base,color,pizza pan,False,-0.4803844614152615
+bert-base,color,duckling,False,0.30569920271880274
+bert-base,color,chunk,False,-0.12363804643408093
+bert-base,color,fog,False,-0.2183565733705734
+bert-base,color,coin slot,False,-0.3238751378156479
+bert-base,color,check,False,0.4405895299234538
+bert-base,color,tent top,False,-0.13101394402234404
+bert-base,color,steak,False,0.30569920271880274
+bert-base,color,toilet cover,False,0.04367131467411468
+bert-base,color,piercing,False,-0.4803844614152615
+bert-base,color,grafitti,False,0.6005946328037898
+bert-base,color,cowboy boot,False,-0.13101394402234404
+bert-base,color,link,False,-0.4803844614152615
+bert-base,color,hot dog bun,False,-0.04367131467411468
+bert-base,color,baseball mitt,False,0.09138464301649458
+bert-base,color,woman's shirt,False,0.4407965133736798
+bert-base,color,message,False,0.04367131467411468
+bert-base,color,fang,False,-0.04367131467411468
+bert-base,color,bedsheet,False,0.13101394402234404
+bert-base,color,dog's nose,False,0.2183565733705734
+bert-base,color,ceramic bowl,False,0.2183565733705734
+bert-base,color,video camera,False,0.30569920271880274
+bert-base,color,silhouette,False,0.39304183206703214
+bert-base,color,wildebeest,False,0.39304183206703214
+bert-base,color,sea gull,False,0.13101394402234404
+bert-base,color,fir tree,False,0.39304183206703214
+bert-base,color,headscarf,False,-0.13101394402234404
+bert-base,color,shuttle,False,-0.04367131467411468
+bert-base,color,numbering,False,0.13101394402234404
+bert-base,color,dirt road,False,0.2183565733705734
+bert-base,color,serving plate,False,0.2183565733705734
+bert-base,color,copyright,False,0.04367131467411468
+bert-base,color,broccoli spear,False,0.30569920271880274
+bert-base,color,croissant,False,0.04367131467411468
+bert-base,color,santa hat,False,0.5321811563901744
+bert-base,color,restaurant logo,False,0.39304183206703214
+bert-base,color,banana bunch,False,0.5321811563901744
+bert-base,color,golf ball,False,0.2183565733705734
+bert-base,color,eggplant,False,-0.13101394402234404
+bert-base,color,foal,False,0.4803844614152615
+bert-base,color,ski track,False,0.13101394402234404
+bert-base,color,cake server,False,-0.4803844614152615
+bert-base,color,gull,False,0.13101394402234404
+bert-base,color,jet engine,False,0.39304183206703214
+bert-base,color,go signal,False,0.30569920271880274
+bert-base,color,clock arm,False,0.13101394402234404
+bert-base,color,rashguard,False,0.2183565733705734
+bert-base,color,caution line,False,0.4803844614152615
+bert-base,color,carrot top,False,0.2183565733705734
+bert-base,color,tan short,False,0.4803844614152615
+bert-base,color,tick,False,0.430045378901151
+bert-base,color,zebra stripe,False,0.4803844614152615
+bert-base,color,flower pedal,False,-0.2183565733705734
+bert-base,color,tan hat,False,0.39304183206703214
+bert-base,color,snow glove,False,0.04367131467411468
+bert-base,color,tan brick,False,0.39304183206703214
+bert-base,color,wave crest,False,0.04367131467411468
+bert-base,color,polygon,False,-0.04367131467411468
+bert-base,color,tiled floor,False,0.2183565733705734
+bert-base,color,traffic barrel,False,0.005375567236264387
+bert-base,color,baby zebra,False,-0.13101394402234404
+bert-base,color,sink bowl,False,-0.04367131467411468
+bert-base,color,bathroom wall,False,0.13101394402234404
+bert-base,color,bird wing,False,0.39304183206703214
+bert-base,color,sprinkler,False,0.5829752480681663
+bert-base,color,wild animal,False,0.3406486962008697
+bert-base,color,shoe tip,False,0.30569920271880274
+bert-base,color,metal tip,False,-0.4803844614152615
+bert-base,color,river wave,False,-0.2591001102525183
+bert-base,color,flood light,False,-0.4803844614152615
+bert-base,color,banana cluster,False,0.2183565733705734
+bert-base,material,chair,False,0.5636757824486915
+bert-base,material,lid,False,0.4673428106468126
+bert-base,material,shelf,False,0.7612768415536237
+bert-base,material,bookshelf,False,0.39756490192127053
+bert-base,material,wall,False,0.8637398723396382
+bert-base,material,mug,False,0.3410555658280773
+bert-base,material,candle holder,False,0.6776550177767341
+bert-base,material,leg,False,0.47830611324539274
+bert-base,material,knob,False,0.5645009212812815
+bert-base,material,tray,False,0.7591787448563235
+bert-base,material,vent,False,0.3040202191162657
+bert-base,material,sink,False,0.5553586799882484
+bert-base,material,placemat,False,0.15169265042282543
+bert-base,material,tire,False,0.446195722887768
+bert-base,material,countertop,False,0.45612362174078147
+bert-base,material,fence,False,0.832659895532092
+bert-base,material,cable,False,0.3507925605187681
+bert-base,material,spoon,False,0.43775331246132526
+bert-base,material,lamp post,False,0.43485176383129925
+bert-base,material,holder,False,0.6472475351334754
+bert-base,material,rod,False,0.6563896929511043
+bert-base,material,light pole,False,0.3507925605187681
+bert-base,material,futon,False,0.39756490192127053
+bert-base,material,door hinge,False,0.3507925605187681
+bert-base,material,base,False,0.8648208984627166
+bert-base,material,goblet,False,0.39756490192127053
+bert-base,material,computer desk,False,0.39756490192127053
+bert-base,material,post,False,0.5755695667966007
+bert-base,material,walkway,False,0.7775021519835479
+bert-base,material,light,False,0.7322967382703637
+bert-base,material,roll,False,0.3507925605187681
+bert-base,material,leaf,False,0.1859458667026879
+bert-base,material,grid,False,0.2104755363112609
+bert-base,material,elephant,False,0.5117854841368221
+bert-base,material,chandelier,False,0.44713489046803495
+bert-base,material,pillar,False,0.7876805251983745
+bert-base,material,bucket,False,0.5597416466216605
+bert-base,material,pillow,False,0.17323161940677764
+bert-base,material,dresser,False,0.39756490192127053
+bert-base,material,lamp base,False,0.023386170701251208
+bert-base,material,bedside table,False,0.39756490192127053
+bert-base,material,candlestick,False,0.3040202191162657
+bert-base,material,floor lamp,False,0.3040202191162657
+bert-base,material,paddle,False,0.39756490192127053
+bert-base,material,park bench,False,0.5610161619320414
+bert-base,material,block,False,0.6912582157971374
+bert-base,material,barricade,False,0.4745556205289396
+bert-base,material,carrier,False,0.40909090909090906
+bert-base,material,downspout,False,0.11693085350625604
+bert-base,material,garbage can,False,0.33086547248033643
+bert-base,material,utility pole,False,0.5464006945532413
+bert-base,material,board,False,0.7045910958891984
+bert-base,material,monitor,False,0.3040202191162657
+bert-base,material,cushion,False,0.2212072016011392
+bert-base,material,sectional,False,-0.16370319490875845
+bert-base,material,podium,False,0.39756490192127053
+bert-base,material,cart,False,0.3607667670214544
+bert-base,material,scarf,False,0.07015851210375361
+bert-base,material,case,False,0.6616590319157504
+bert-base,material,decanter,False,0.39756490192127053
+bert-base,material,blender,False,0.5133377345723777
+bert-base,material,kitchen table,False,0.39756490192127053
+bert-base,material,window frame,False,0.4821182598999188
+bert-base,material,paneled wall,False,0.39756490192127053
+bert-base,material,cabinet door,False,0.5464006945532413
+bert-base,material,part,False,0.4635840811987281
+bert-base,material,pipe,False,0.5123868928132462
+bert-base,material,hand railing,False,0.3507925605187681
+bert-base,material,guard rail,False,0.5387662291641984
+bert-base,material,moulding,False,0.39756490192127053
+bert-base,material,filing cabinet,False,0.2572478777137633
+bert-base,material,foundation,False,0.47833694021442924
+bert-base,material,lettering,False,0.2104755363112609
+bert-base,material,bannister,False,0.41783582524659624
+bert-base,material,handrail,False,0.570551847403974
+bert-base,material,drawer handle,False,0.3507925605187681
+bert-base,material,entertainment center,False,0.39756490192127053
+bert-base,material,bracket,False,0.5749877581781827
+bert-base,material,tool,False,0.5426193748677517
+bert-base,material,island,False,0.51425947722658
+bert-base,material,dish,False,0.6299068223575688
+bert-base,material,side walk,False,0.3040202191162657
+bert-base,material,bus,False,0.04348517638312993
+bert-base,material,stick,False,0.5959803419957946
+bert-base,material,stake,False,0.5464006945532413
+bert-base,material,letter,False,0.4102731858756171
+bert-base,material,bike,False,0.47833694021442924
+bert-base,material,median,False,0.3040202191162657
+bert-base,material,bell,False,0.42433800350100576
+bert-base,material,crate,False,0.6468373311794358
+bert-base,material,ash tray,False,0.3507925605187681
+bert-base,material,jar,False,0.4041125439394698
+bert-base,material,vehicle,False,0.04348517638312993
+bert-base,material,mulch,False,0.39756490192127053
+bert-base,material,entryway,False,0.3040202191162657
+bert-base,material,covering,False,0.5196948582203329
+bert-base,material,accent,False,0.39756490192127053
+bert-base,material,figure,False,0.4238846266235024
+bert-base,material,cone,False,0.519379404604394
+bert-base,material,bedpost,False,0.39756490192127053
+bert-base,material,rug,False,0.11693085350625604
+bert-base,material,church pew,False,0.39756490192127053
+bert-base,material,stud,False,0.5066968378556008
+bert-base,material,kitchen sink,False,0.11693085350625604
+bert-base,material,appliance,False,0.2572478777137633
+bert-base,material,table leg,False,0.39756490192127053
+bert-base,material,chair leg,False,0.5426193748677517
+bert-base,material,curtain rod,False,0.05671979528234338
+bert-base,material,storage box,False,0.39756490192127053
+bert-base,material,flagpole,False,0.2572478777137633
+bert-base,material,white rail,False,0.3507925605187681
+bert-base,material,saucer,False,-0.07015851210375361
+bert-base,material,tip,False,0.4497664980928264
+bert-base,material,window pane,False,0.5464006945532413
+bert-base,material,tea kettle,False,0.07015851210375361
+bert-base,material,skateboard,False,0.4656593072127142
+bert-base,material,skateboard ramp,False,0.5454545454545454
+bert-base,material,bolt,False,0.3040202191162657
+bert-base,material,debris,False,0.39756490192127053
+bert-base,material,salt shaker,False,0.6221699009715362
+bert-base,material,train track,False,0.40526663255714035
+bert-base,material,tarmac,False,0.39756490192127053
+bert-base,material,entertainment stand,False,0.39756490192127053
+bert-base,material,stall,False,0.4821182598999188
+bert-base,material,spring,False,0.023386170701251208
+bert-base,material,toilet seat,False,0.3416953960775889
+bert-base,material,trash bag,False,0.39756490192127053
+bert-base,material,walker,False,0.16370319490875845
+bert-base,material,picnic table,False,0.41783582524659624
+bert-base,material,garbage,False,0.34090909090909094
+bert-base,material,hubcap,False,0.3507925605187681
+bert-base,material,emblem,False,0.47833694021442924
+bert-base,material,bunkbed,False,0.39756490192127053
+bert-base,material,saddle,False,0.3507925605187681
+bert-base,material,harness,False,0.47833694021442924
+bert-base,material,overhang,False,0.2104755363112609
+bert-base,material,bead,False,0.5619514869490164
+bert-base,material,package,False,0.47833694021442924
+bert-base,material,book case,False,0.39756490192127053
+bert-base,material,carving,False,0.5324091055162432
+bert-base,material,paver,False,0.3819132882344454
+bert-base,material,wine rack,False,0.3507925605187681
+bert-base,material,bedspread,False,-0.16370319490875845
+bert-base,material,dumpster,False,0.2572478777137633
+bert-base,material,bangle,False,0.39756490192127053
+bert-base,material,spatula,False,0.5940114067959238
+bert-base,material,sunglass,False,0.03781319685489559
+bert-base,material,pizza cutter,False,0.2572478777137633
+bert-base,material,clocktower,False,0.3507925605187681
+bert-base,material,table lamp,False,0.2104755363112609
+bert-base,material,background,False,0.6500158930034133
+bert-base,material,napkin holder,False,0.4431818181818182
+bert-base,material,place mat,False,0.39892922681914844
+bert-base,material,head board,False,0.5464006945532413
+bert-base,material,dining chair,False,0.3130883396617907
+bert-base,material,patch,False,-0.12289288977841066
+bert-base,material,pizza pan,False,0.2104755363112609
+bert-base,material,detail,False,0.39892922681914844
+bert-base,material,uniform,False,0.2104755363112609
+bert-base,material,end,False,0.5426193748677517
+bert-base,material,toilet tank,False,-0.16370319490875845
+bert-base,material,mitt,False,0.2104755363112609
+bert-base,material,pack,False,0.2104755363112609
+bert-base,material,towel rack,False,0.43485176383129925
+bert-base,material,chair back,False,0.51425947722658
+bert-base,material,bird cage,False,0.2572478777137633
+bert-base,material,guitar,False,0.39756490192127053
+bert-base,material,owl,False,-0.39756490192127053
+bert-base,material,coil,False,0.3507925605187681
+bert-base,material,cloth,False,0.005671979528234337
+bert-base,material,dinosaur,False,0.2104755363112609
+bert-base,material,thing,False,0.2193165417583944
+bert-base,material,window sill,False,0.4821182598999188
+bert-base,material,petal,False,0.34599075122229467
+bert-base,material,sheep,False,-0.11693085350625604
+bert-base,material,shower,False,0.3507925605187681
+bert-base,material,cord,False,0.023386170701251208
+bert-base,material,bed spread,False,-0.16370319490875845
+bert-base,material,bed post,False,0.39756490192127053
+bert-base,material,shield,False,0.16370319490875845
+bert-base,material,swing,False,0.39756490192127053
+bert-base,material,animal,False,-0.023386170701251208
+bert-base,material,soap,False,0.3040202191162657
+bert-base,material,ice bucket,False,0.2104755363112609
+bert-base,material,clock face,False,0.2104755363112609
+bert-base,material,giraffe,False,0.3007419725923794
+bert-base,material,sippy cup,False,0.3040202191162657
+bert-base,material,baking pan,False,0.16370319490875845
+bert-base,material,room,False,0.39756490192127053
+bert-base,material,name,False,0.3040202191162657
+bert-base,material,lining,False,0.14558080789134803
+bert-base,material,wiper,False,0.2572478777137633
+bert-base,material,truss,False,0.3705693291779768
+bert-base,material,bunk bed,False,0.39756490192127053
+bert-base,material,crib,False,0.39756490192127053
+bert-base,material,grandfather clock,False,0.39756490192127053
+bert-base,material,floor board,False,0.39756490192127053
+bert-base,material,fabric,False,-0.11693085350625604
+bert-base,material,feeder,False,0.47077430084345007
+bert-base,material,penny,False,0.07015851210375361
+bert-base,material,gas cap,False,0.2104755363112609
+bert-base,material,broom,False,0.39756490192127053
+bert-base,material,toothpick,False,0.5464006945532413
+bert-base,material,roller,False,0.20454545454545453
+bert-base,material,water tower,False,0.2104755363112609
+bert-base,material,paper dispenser,False,0.16370319490875845
+bert-base,material,egg,False,0.3068181818181819
+bert-base,material,wedding band,False,0.39756490192127053
+bert-base,material,axle,False,0.3040202191162657
+bert-base,material,lounge chair,False,0.39756490192127053
+bert-base,material,windscreen,False,0.39756490192127053
+bert-base,material,exhaust pipe,False,0.3040202191162657
+bert-base,material,mit,False,-0.07015851210375361
+bert-base,material,drive,False,-0.07015851210375361
+bert-base,material,tail pipe,False,0.3507925605187681
+bert-base,material,sheeting,False,0.4102731858756171
+bert-base,material,panel wall,False,0.39756490192127053
+bert-base,material,court,False,0.1474714677340928
+bert-base,material,sky,False,0.3040202191162657
+bert-base,material,medical stick,False,0.39756490192127053
+bert-base,material,note,False,0.39756490192127053
+bert-base,material,shape,False,0.16370319490875845
+bert-base,material,section,False,0.16370319490875845
+bert-base,material,toilet bowl,False,-0.16370319490875845
+bert-base,material,baseball helmet,False,0.3507925605187681
+bert-base,material,metal,False,0.2703643575125035
+bert-base,material,sun,False,0.2572478777137633
+bert-base,material,muffler,False,0.3040202191162657
+bert-base,material,hoop,False,0.2572478777137633
+bert-base,material,tennis court,False,0.3507925605187681
+bert-base,material,street pole,False,0.3040202191162657
+bert-base,material,wall paper,False,-0.023386170701251208
+bert-base,material,cement,False,0.3507925605187681
+bert-base,material,yoke,False,0.39756490192127053
+bert-base,material,toilet lid,False,0.5454545454545454
+bert-base,material,concrete,False,0.2104755363112609
+bert-base,material,white door,False,0.39756490192127053
+bert-base,material,luggage container,False,0.3040202191162657
+bert-base,material,safety railing,False,0.3040202191162657
+bert-base,material,shadow,False,0.3040202191162657
+bert-base,material,satchel,False,0.3507925605187681
+bert-base,material,grip,False,0.40909090909090906
+bert-base,material,cave,False,0.3507925605187681
+bert-base,material,cake,False,0.11693085350625604
+bert-base,material,chain link,False,0.3507925605187681
+bert-base,material,pepper grinder,False,0.39756490192127053
+bert-base,material,footer,False,0.023386170701251208
+bert-base,material,boarder,False,-0.11693085350625604
+bert-base,material,baseball mitt,False,0.3040202191162657
+bert-base,material,tee shirt,False,0.39756490192127053
+bert-base,material,toilet handle,False,0.3507925605187681
+bert-base,material,doily,False,0.3040202191162657
+bert-base,material,framed picture,False,-0.023386170701251208
+bert-base,material,shaving,False,0.39756490192127053
+bert-base,material,scrollwork,False,0.2572478777137633
+bert-base,material,skewer,False,0.39756490192127053
+bert-base,material,pendant,False,0.3507925605187681
+bert-base,material,aquarium,False,0.3507925605187681
+bert-base,material,badge,False,0.5454545454545454
+bert-base,material,flatbed,False,0.2104755363112609
+bert-base,material,controller,False,0.3040202191162657
+bert-base,material,desk top,False,0.39756490192127053
+bert-base,material,rubber ducky,False,0.3507925605187681
+bert-base,material,brown bag,False,0.2572478777137633
+bert-base,material,table surface,False,0.39756490192127053
+bert-base,material,playground,False,0.39756490192127053
+bert-base,material,pocket book,False,0.39756490192127053
+bert-base,material,mold,False,-0.023386170701251208
+bert-base,material,framed window,False,0.39756490192127053
+bert-base,material,black pole,False,0.3040202191162657
+bert-base,material,pump,False,0.16370319490875845
+bert-base,material,oven knob,False,0.3040202191162657
+bert-base,material,brake,False,0.3040202191162657
+bert-base,material,chock,False,0.39756490192127053
+bert-base,material,s,False,0.2104755363112609
+bert-base,material,mark,False,0.39756490192127053
+bert-base,material,sleeper,False,0.39756490192127053
+bert-base,material,chair slat,False,0.39756490192127053
+bert-base,material,sundae dish,False,0.3040202191162657
+bert-base,material,hendge,False,0.3507925605187681
+bert-base,material,hand ring,False,-0.023386170701251208
+bert-base,material,banister slat,False,0.39756490192127053
+bert-base,material,art piece,False,0.3507925605187681
+oscar-base,shape,table top,False,0.4075500715665536
+oscar-base,shape,top,False,0.6376904837011363
+oscar-base,shape,pot,False,0.6744532734334623
+oscar-base,shape,nose,False,0.7265582436271444
+oscar-base,shape,mirror,False,0.6298488674051953
+oscar-base,shape,door,False,0.4568528838455902
+oscar-base,shape,recepticle,False,0.4075500715665536
+oscar-base,shape,clock,False,0.44119153611827344
+oscar-base,shape,coffee table,False,0.7899747783163331
+oscar-base,shape,sewer,False,0.4075500715665536
+oscar-base,shape,planter,False,0.6744532734334623
+oscar-base,shape,tile,False,-0.1423631001669277
+oscar-base,shape,glass,False,0.646867372683483
+oscar-base,shape,chair,False,0.7899747783163331
+oscar-base,shape,lemon,False,0.49811675413689877
+oscar-base,shape,ceiling light,False,0.4075500715665536
+oscar-base,shape,fence,False,0.38071073653799187
+oscar-base,shape,emblem,False,0.47255504512881
+oscar-base,shape,grate,False,0.6633052854428266
+oscar-base,shape,drain,False,0.6744532734334623
+oscar-base,shape,lamp shade,False,0.6744532734334623
+oscar-base,shape,wooden table,False,0.49811675413689877
+oscar-base,shape,tree,False,0.2842736937612114
+oscar-base,shape,tower,False,0.6744532734334623
+oscar-base,shape,manhole cover,False,0.6633052854428266
+oscar-base,shape,front tire,False,0.49811675413689877
+oscar-base,shape,bucket,False,0.6744532734334623
+oscar-base,shape,phone,False,0.11147987990635741
+oscar-base,shape,petal,False,0.45706750761606535
+oscar-base,shape,life saver,False,0.49811675413689877
+oscar-base,shape,log,False,0.49811675413689877
+oscar-base,shape,logo,False,0.7645964594343497
+oscar-base,shape,comforter,False,0.4075500715665536
+oscar-base,shape,hubcap,False,0.49811675413689877
+oscar-base,shape,sticker,False,0.6617873041774103
+oscar-base,shape,faucet,False,0.4075500715665536
+oscar-base,shape,knee,False,0.22641670642586312
+oscar-base,shape,front headlight,False,0.49811675413689877
+oscar-base,shape,card,False,0.4075500715665536
+oscar-base,shape,spoon,False,0.49811675413689877
+oscar-base,shape,stem,False,0.49811675413689877
+oscar-base,shape,mousepad,False,0.6633052854428266
+oscar-base,shape,bus,False,0.6744532734334623
+oscar-base,shape,banana,False,0.31698338899620837
+oscar-base,shape,container,False,0.6298488674051953
+oscar-base,shape,cd,False,0.31698338899620837
+oscar-base,shape,pizza,False,0.7895006435800683
+oscar-base,shape,green ball,False,0.49811675413689877
+oscar-base,shape,line,False,0.31698338899620837
+oscar-base,shape,sunglass,False,0.5139594943262891
+oscar-base,shape,stove,False,0.6716604942594675
+oscar-base,shape,exercise ball,False,0.49811675413689877
+oscar-base,shape,white plate,False,0.7899747783163331
+oscar-base,shape,gauge,False,0.49811675413689877
+oscar-base,shape,train,False,0.6633052854428266
+oscar-base,shape,item,False,0.4075500715665536
+oscar-base,shape,vase,False,0.7804570099028832
+oscar-base,shape,pupil,False,0.31698338899620837
+oscar-base,shape,apple,False,0.49811675413689877
+oscar-base,shape,keyhole,False,0.49811675413689877
+oscar-base,shape,floor,False,0.18394180184548972
+oscar-base,shape,sprinkle,False,0.13585002385551787
+oscar-base,shape,tail,False,0.49811675413689877
+oscar-base,shape,indentation,False,0.5183814415645619
+oscar-base,shape,corner,False,0.6744532734334623
+oscar-base,shape,knot,False,0.49811675413689877
+oscar-base,shape,luggage,False,0.4075500715665536
+oscar-base,shape,piece,False,0.6757615573549356
+oscar-base,shape,tablecloth,False,0.49811675413689877
+oscar-base,shape,block,False,0.3331218944707429
+oscar-base,shape,meat,False,0.5908433635036943
+oscar-base,shape,soap,False,0.4075500715665536
+oscar-base,shape,sculpture,False,0.4075500715665536
+oscar-base,shape,metal,False,0.4075500715665536
+oscar-base,shape,cheese pizza,False,0.49811675413689877
+oscar-base,shape,step,False,0.31698338899620837
+oscar-base,shape,magnet,False,0.7423859362490841
+oscar-base,shape,blanket,False,0.49811675413689877
+oscar-base,shape,hamburger,False,0.49811675413689877
+oscar-base,shape,drawer pull,False,0.4075500715665536
+oscar-base,shape,grill,False,0.4075500715665536
+oscar-base,shape,reflector,False,0.6633052854428266
+oscar-base,shape,topping,False,0.31698338899620837
+oscar-base,shape,front light,False,0.4075500715665536
+oscar-base,shape,connector,False,0.4075500715665536
+oscar-base,shape,garbage can,False,0.4075500715665536
+oscar-base,shape,placard,False,0.4075500715665536
+oscar-base,shape,switch,False,0.49811675413689877
+oscar-base,shape,hanger,False,0.49811675413689877
+oscar-base,shape,foot,False,0.4075500715665536
+oscar-base,shape,toe,False,0.49811675413689877
+oscar-base,shape,cap,False,0.49811675413689877
+oscar-base,shape,utensil,False,0.49811675413689877
+oscar-base,shape,onion,False,0.49811675413689877
+oscar-base,shape,table.,False,0.4075500715665536
+oscar-base,shape,egg,False,0.47016234598162726
+oscar-base,shape,chocolate piece,False,0.49811675413689877
+oscar-base,shape,flower bed,False,0.4075500715665536
+oscar-base,shape,melon,False,0.49811675413689877
+oscar-base,shape,pitcher's mound,False,0.4075500715665536
+oscar-base,shape,gas cap,False,0.49811675413689877
+oscar-base,shape,plum,False,0.49811675413689877
+oscar-base,shape,bear,False,0.4075500715665536
+oscar-base,shape,sail,False,0.31698338899620837
+oscar-base,shape,meter,False,0.4075500715665536
+oscar-base,shape,meatball,False,0.4075500715665536
+oscar-base,shape,candy,False,0.49811675413689877
+oscar-base,shape,port,False,0.22641670642586312
+oscar-base,shape,kitchen table,False,0.4075500715665536
+oscar-base,shape,tomatoe,False,0.49811675413689877
+oscar-base,shape,left wheel,False,0.4075500715665536
+oscar-base,shape,parking meter,False,0.4075500715665536
+oscar-base,shape,detail,False,0.49811675413689877
+oscar-base,shape,ceramic tile,False,0.49811675413689877
+oscar-base,shape,toast,False,0.22641670642586312
+oscar-base,shape,pepper,False,0.49811675413689877
+oscar-base,shape,canvas,False,0.49811675413689877
+oscar-base,shape,cardboard sign,False,0.49811675413689877
+oscar-base,shape,white frisbee,False,0.49811675413689877
+oscar-base,shape,cooler,False,0.4075500715665536
+oscar-base,shape,lighting,False,0.4075500715665536
+oscar-base,shape,right ear,False,0.4075500715665536
+oscar-base,shape,graphic,False,0.31698338899620837
+oscar-base,shape,cracker w/cheese,False,0.49811675413689877
+oscar-base,shape,copyright symbol,False,0.31698338899620837
+oscar-base,shape,touchpad,False,0.49811675413689877
+oscar-base,shape,hay,False,0.4075500715665536
+oscar-base,shape,cherry tomato,False,0.49811675413689877
+oscar-base,shape,light globe,False,0.49811675413689877
+oscar-base,shape,cord,False,0.4075500715665536
+oscar-base,shape,knife,False,0.4075500715665536
+oscar-base,shape,towel ring,False,0.49811675413689877
+oscar-base,shape,metal armrest,False,0.4075500715665536
+oscar-base,shape,necktie,False,0.13585002385551787
+oscar-base,color,jacket,False,0.8531468531468532
+oscar-base,color,van,False,0.3747816605610153
+oscar-base,color,street light,False,0.3986045639319472
+oscar-base,color,pole,False,-0.39860139860139865
+oscar-base,color,cabinet,False,0.6549922478963537
+oscar-base,color,curtain,False,0.5104895104895105
+oscar-base,color,drape,False,0.21394487469620077
+oscar-base,color,picture,False,0.0875658085422933
+oscar-base,color,apple,False,0.8266297135457225
+oscar-base,color,counter,False,-0.30472901372718064
+oscar-base,color,writing,False,0.8126107032724816
+oscar-base,color,headphone,False,0.24953590245893015
+oscar-base,color,cup,False,0.5104895104895105
+oscar-base,color,stapler,False,-0.018357897080143907
+oscar-base,color,charger,False,-0.01612670170879316
+oscar-base,color,coat,False,0.6363636363636365
+oscar-base,color,computer keyboard,False,0.6241685007248929
+oscar-base,color,water bottle,False,0.42888983235128625
+oscar-base,color,sticker,False,0.5594405594405596
+oscar-base,color,thing,False,0.09029833625437264
+oscar-base,color,speaker,False,-0.12476795122946507
+oscar-base,color,fire alarm,False,0.35478743759344955
+oscar-base,color,scarf,False,0.5604211746706771
+oscar-base,color,trouser,False,0.48520299727985905
+oscar-base,color,banner,False,0.8531468531468532
+oscar-base,color,lighting,False,0.06477502756312957
+oscar-base,color,pine tree,False,0.39304183206703214
+oscar-base,color,vehicle,False,0.4868658954951507
+oscar-base,color,blouse,False,0.886165982448008
+oscar-base,color,water,False,0.20701881821763868
+oscar-base,color,oven,False,-0.35090986283287057
+oscar-base,color,dishwasher,False,0.4909342209840756
+oscar-base,color,liquid,False,0.5684245517162282
+oscar-base,color,painting,False,0.42958811727443924
+oscar-base,color,kettle,False,0.41055638231372693
+oscar-base,color,fridge,False,0.10917195732578194
+oscar-base,color,mixer,False,-0.04170796061137429
+oscar-base,color,kitchen drawer,False,0.39304183206703214
+oscar-base,color,leg,False,-0.5314685314685316
+oscar-base,color,stand,False,-0.47100830412587885
+oscar-base,color,traffic light,False,0.7033603702976762
+oscar-base,color,taxi cab,False,0.4730499167912661
+oscar-base,color,purse,False,0.5804195804195805
+oscar-base,color,sunglass,False,0.4245640170226148
+oscar-base,color,cloud,False,0.2947386564454516
+oscar-base,color,phone,False,0.10858160259244368
+oscar-base,color,circle,False,0.6433566433566434
+oscar-base,color,word,False,0.4483369397365416
+oscar-base,color,hinge,False,-0.4054958414957615
+oscar-base,color,counter top,False,0.6961092324595558
+oscar-base,color,tray,False,0.1188811188811189
+oscar-base,color,desktop,False,0.07488827099757085
+oscar-base,color,panel,False,0.270177101741664
+oscar-base,color,rack,False,-0.415901532503537
+oscar-base,color,dial,False,0.18351502669004685
+oscar-base,color,candle,False,0.7355527917552636
+oscar-base,color,lamp base,False,0.17492770885990608
+oscar-base,color,bookcase,False,0.49566322116388556
+oscar-base,color,mattress,False,0.41290881005260544
+oscar-base,color,ottoman,False,0.23934642944216503
+oscar-base,color,piano,False,0.3304421474425904
+oscar-base,color,flame,False,0.7875976921359984
+oscar-base,color,house,False,0.23117373455165427
+oscar-base,color,dirt,False,0.21316791372192823
+oscar-base,color,adapter,False,-0.13101394402234404
+oscar-base,color,trophy,False,0.499927752972588
+oscar-base,color,basket,False,-0.055944055944055944
+oscar-base,color,countertop,False,0.6961092324595558
+oscar-base,color,foam,False,0.30569920271880274
+oscar-base,color,sand,False,0.12326934324804635
+oscar-base,color,marking,False,0.18310313195303968
+oscar-base,color,mulch,False,0.5698101270440251
+oscar-base,color,robe,False,0.6393029585878798
+oscar-base,color,rim,False,0.41403763643527736
+oscar-base,color,overall,False,0.1334654739563977
+oscar-base,color,electrical cord,False,0.1343891809066097
+oscar-base,color,fan,False,-0.058118450780716334
+oscar-base,color,closet,False,0.499927752972588
+oscar-base,color,bikini top,False,0.4730499167912661
+oscar-base,color,lounge chair,False,0.4833528797444772
+oscar-base,color,coaster,False,-0.06238397561473254
+oscar-base,color,stage,False,-0.08600907578023019
+oscar-base,color,ladder,False,-0.11929897998982567
+oscar-base,color,roadway,False,-0.5321811563901744
+oscar-base,color,motorcycle,False,0.6783216783216784
+oscar-base,color,lawn,False,0.23652495839563306
+oscar-base,color,cover,False,0.034965034965034975
+oscar-base,color,garage,False,0.09667057594889544
+oscar-base,color,detail,False,0.39465773224874395
+oscar-base,color,shopping bag,False,0.3857632796213463
+oscar-base,color,camera,False,0.07464661496613217
+oscar-base,color,collar,False,0.7005264683383464
+oscar-base,color,wagon,False,0.6942135191850292
+oscar-base,color,radiator,False,-0.20715123417620454
+oscar-base,color,shutter,False,0.3915614432585002
+oscar-base,color,cone,False,0.54641064530391
+oscar-base,color,binder,False,0.3328411284430108
+oscar-base,color,crib,False,0.39304183206703214
+oscar-base,color,yard,False,0.4803844614152615
+oscar-base,color,petal,False,0.8803035190049984
+oscar-base,color,body of water,False,0.39304183206703214
+oscar-base,color,cane,False,-0.35797899306280623
+oscar-base,color,steering wheel,False,0.10401148749662618
+oscar-base,color,weed,False,0.36195997648825906
+oscar-base,color,china,False,0.39304183206703214
+oscar-base,color,design,False,0.5944055944055945
+oscar-base,color,stovetop,False,0.6504436355879909
+oscar-base,color,drawer pull,False,-0.04838010512637949
+oscar-base,color,snow,False,-0.054705032192895194
+oscar-base,color,home,False,0.04160459499865047
+oscar-base,color,hoodie,False,0.6619975125797373
+oscar-base,color,meter,False,0.0
+oscar-base,color,sandal,False,0.6409817185295869
+oscar-base,color,carpeting,False,0.5926477683399591
+oscar-base,color,concrete,False,0.05458597866289097
+oscar-base,color,streetlight,False,0.47221241259332025
+oscar-base,color,mat,False,0.234676366893346
+oscar-base,color,piece,False,-0.08186349431603628
+oscar-base,color,seaweed,False,0.41391867719235786
+oscar-base,color,tarp,False,0.549309395859119
+oscar-base,color,teddy bear,False,0.7425580564386471
+oscar-base,color,nametag,False,-0.13101394402234404
+oscar-base,color,lamppost,False,-0.3763368901429502
+oscar-base,color,drink,False,0.0
+oscar-base,color,rubber tire,False,0.4803844614152615
+oscar-base,color,face,False,0.5384615384615385
+oscar-base,color,vegetation,False,0.4864842726238136
+oscar-base,color,stair,False,0.10563642228059981
+oscar-base,color,body,False,-0.11287916854710008
+oscar-base,color,ribbon,False,0.7692307692307694
+oscar-base,color,arm chair,False,-0.04367131467411468
+oscar-base,color,bed skirt,False,0.39304183206703214
+oscar-base,color,pattern,False,0.4105288429061648
+oscar-base,color,hardware,False,0.30569920271880274
+oscar-base,color,quilt,False,0.4740060050349393
+oscar-base,color,hamper,False,0.01612670170879316
+oscar-base,color,toy,False,0.7342657342657343
+oscar-base,color,blow dryer,False,-0.09676021025275898
+oscar-base,color,candle holder,False,0.35870785978471215
+oscar-base,color,tulip,False,0.7720016982323152
+oscar-base,color,loveseat,False,0.3709141393022427
+oscar-base,color,sausage,False,0.36715794160287823
+oscar-base,color,i,False,-0.2183565733705734
+oscar-base,color,tall building,False,0.13101394402234404
+oscar-base,color,dispenser,False,-0.10159505978680536
+oscar-base,color,taillight,False,0.5321811563901744
+oscar-base,color,tarmac,False,-0.15604212518122323
+oscar-base,color,airplane,False,0.5639238070123688
+oscar-base,color,name,False,-0.1087670675718056
+oscar-base,color,food,False,0.26362405081672324
+oscar-base,color,ballon,False,0.39304183206703214
+oscar-base,color,balloon,False,0.8995058743597039
+oscar-base,color,giraffe,False,0.8421836707988893
+oscar-base,color,hoof,False,0.32867630048933866
+oscar-base,color,monkey,False,0.04589474270035978
+oscar-base,color,windmill,False,-0.04367131467411468
+oscar-base,color,lace,False,0.6386004222984786
+oscar-base,color,goat,False,0.6074270869802968
+oscar-base,color,tennis shoe,False,0.22495919003027048
+oscar-base,color,r,False,0.018357897080143907
+oscar-base,color,athletic shoe,False,0.639692501115462
+oscar-base,color,basketball,False,0.16111762658149242
+oscar-base,color,smoke stack,False,-0.2183565733705734
+oscar-base,color,buoy,False,0.9063922297650466
+oscar-base,color,pedestrian sign,False,0.4803844614152615
+oscar-base,color,backhoe,False,0.4803844614152615
+oscar-base,color,cylinder,False,-0.5296199396711575
+oscar-base,color,milk carton,False,0.4803844614152615
+oscar-base,color,racket,False,0.44055944055944063
+oscar-base,color,soda can,False,0.6504436355879909
+oscar-base,color,switch plate,False,0.30569920271880274
+oscar-base,color,ceiling tile,False,0.30569920271880274
+oscar-base,color,steeple,False,0.16045865602215056
+oscar-base,color,glove,False,0.35664335664335667
+oscar-base,color,pickup,False,0.2502477636682457
+oscar-base,color,suitcase,False,0.5244755244755246
+oscar-base,color,girl,False,0.2253577008652796
+oscar-base,color,suit jacket,False,0.35478743759344955
+oscar-base,color,cake,False,0.26970269031026334
+oscar-base,color,corner,False,-0.2961265203407574
+oscar-base,color,bar stool,False,0.2579484889916329
+oscar-base,color,twig,False,-0.5106788874451168
+oscar-base,color,date,False,0.33283675998920376
+oscar-base,color,lane,False,-0.04367131467411468
+oscar-base,color,drive,False,-0.04367131467411468
+oscar-base,color,platform,False,-0.2465386864960927
+oscar-base,color,blue sign,False,0.13101394402234404
+oscar-base,color,star,False,0.3894760817314897
+oscar-base,color,cell,False,-0.13101394402234404
+oscar-base,color,cellbar,False,-0.13101394402234404
+oscar-base,color,neck,False,0.3167761301794447
+oscar-base,color,washer,False,0.4803844614152615
+oscar-base,color,suit coat,False,0.430045378901151
+oscar-base,color,decoration,False,0.7132867132867133
+oscar-base,color,styrofoam cup,False,0.39304183206703214
+oscar-base,color,bikini,False,0.9040577198379658
+oscar-base,color,basin,False,0.3774755822766394
+oscar-base,color,dress shirt,False,0.5232000667841014
+oscar-base,color,hardwood floor,False,0.4803844614152615
+oscar-base,color,boarder,False,0.12363804643408093
+oscar-base,color,french fry,False,0.41391867719235786
+oscar-base,color,packet,False,0.566402623079555
+oscar-base,color,magnet,False,0.44215274103881497
+oscar-base,color,molding,False,0.4742923829846153
+oscar-base,color,clip,False,-0.03866486078645274
+oscar-base,color,electrical outlet,False,0.2183565733705734
+oscar-base,color,alarm,False,0.4803844614152615
+oscar-base,color,food truck,False,0.23114939115936867
+oscar-base,color,paper cup,False,0.4803844614152615
+oscar-base,color,platter,False,0.5241649430056918
+oscar-base,color,dash,False,0.15604212518122323
+oscar-base,color,open sign,False,0.2902806307582769
+oscar-base,color,telephone pole,False,0.04367131467411468
+oscar-base,color,rear light,False,0.4803844614152615
+oscar-base,color,divider,False,0.5108315819421202
+oscar-base,color,bracket,False,-0.3488000445227343
+oscar-base,color,box car,False,0.6881813500876758
+oscar-base,color,triangle,False,0.6655858016129904
+oscar-base,color,graffiti,False,0.7390554240969553
+oscar-base,color,bouquet,False,0.4454410666657143
+oscar-base,color,text,False,0.6549079545282902
+oscar-base,color,brick wall,False,0.5117365184834007
+oscar-base,color,pamphlet,False,0.41391867719235786
+oscar-base,color,business card,False,0.2183565733705734
+oscar-base,color,lock,False,-0.1871519268441976
+oscar-base,color,wallet,False,0.7526737802859004
+oscar-base,color,base board,False,0.39304183206703214
+oscar-base,color,framed window,False,0.4803844614152615
+oscar-base,color,sill,False,0.4803844614152615
+oscar-base,color,houseplant,False,0.4803844614152615
+oscar-base,color,cupboard,False,0.5415579638642454
+oscar-base,color,rocking chair,False,0.17201815156046038
+oscar-base,color,electrical box,False,-0.13101394402234404
+oscar-base,color,grout,False,0.6881813500876758
+oscar-base,color,diamond,False,0.8666720016907924
+oscar-base,color,cork,False,-0.04367131467411468
+oscar-base,color,muffler,False,-0.2183565733705734
+oscar-base,color,section,False,0.521139683250959
+oscar-base,color,pine needle,False,0.39304183206703214
+oscar-base,color,bonnet,False,0.04367131467411468
+oscar-base,color,directional sign,False,0.13101394402234404
+oscar-base,color,e,False,-0.20427155497804672
+oscar-base,color,exhaust,False,-0.11288691196155214
+oscar-base,color,horizon,False,0.3855158386830221
+oscar-base,color,tanktop,False,0.7629167438469011
+oscar-base,color,tan building,False,0.13101394402234404
+oscar-base,color,paw,False,0.2929244036311459
+oscar-base,color,deer,False,0.30569920271880274
+oscar-base,color,hillside,False,0.14686317664115126
+oscar-base,color,cow,False,0.7178626459739169
+oscar-base,color,storefront,False,0.30569920271880274
+oscar-base,color,traffic pole,False,0.04367131467411468
+oscar-base,color,cowboy hat,False,0.6951074746801531
+oscar-base,color,jersey,False,0.7042428152039988
+oscar-base,color,arch,False,0.20319011957361072
+oscar-base,color,lane divider,False,0.04367131467411468
+oscar-base,color,package,False,0.25790062533942876
+oscar-base,color,front tire,False,0.39304183206703214
+oscar-base,color,hoody,False,-0.30569920271880274
+oscar-base,color,stall,False,-0.04367131467411468
+oscar-base,color,mudflap,False,-0.13101394402234404
+oscar-base,color,flyer,False,-0.02687783618132194
+oscar-base,color,bang,False,-0.2526516601044262
+oscar-base,color,newspaper stand,False,0.39304183206703214
+oscar-base,color,construction vehicle,False,0.4803844614152615
+oscar-base,color,painted,False,0.30569920271880274
+oscar-base,color,beer bottle,False,0.639692501115462
+oscar-base,color,plane tail,False,0.4803844614152615
+oscar-base,color,trashcans,False,-0.2183565733705734
+oscar-base,color,slack,False,-0.6407107629792173
+oscar-base,color,sandles,False,-0.12363804643408093
+oscar-base,color,leave,False,0.17739371879672478
+oscar-base,color,limb,False,0.10751134472528776
+oscar-base,color,speck,False,0.08577796647025725
+oscar-base,color,vegetable,False,0.7759235548215613
+oscar-base,color,bagel,False,0.05375567236264388
+oscar-base,color,truck cab,False,0.3709141393022427
+oscar-base,color,winter coat,False,0.1841344303788485
+oscar-base,color,crest,False,-0.08600907578023019
+oscar-base,color,podium,False,-0.2591001102525183
+oscar-base,color,tennis court,False,0.4235546010264485
+oscar-base,color,bathroom toilet,False,0.4803844614152615
+oscar-base,color,artwork,False,-0.10241831129983783
+oscar-base,color,step stool,False,0.4803844614152615
+oscar-base,color,wheelchair,False,0.04367131467411468
+oscar-base,color,siren,False,0.4803844614152615
+oscar-base,color,bleacher,False,0.023445013796955082
+oscar-base,color,banana leaf,False,0.23652495839563306
+oscar-base,color,flower vase,False,0.4803844614152615
+oscar-base,color,cattle,False,0.7251369346656844
+oscar-base,color,cloudy,False,-0.13101394402234404
+oscar-base,color,under shirt,False,0.30569920271880274
+oscar-base,color,car seat,False,-0.4031675427198291
+oscar-base,color,plank,False,0.675997897812205
+oscar-base,color,streetsign,False,0.4803844614152615
+oscar-base,color,snowflake,False,-0.021502268945057548
+oscar-base,color,wristband,False,0.6631619770022662
+oscar-base,color,denim jean,False,0.4803844614152615
+oscar-base,color,slipper,False,0.1783245349193016
+oscar-base,color,seashell,False,0.30569920271880274
+oscar-base,color,ghost,False,0.39304183206703214
+oscar-base,color,pepper shaker,False,0.2183565733705734
+oscar-base,color,freezer door,False,0.4803844614152615
+oscar-base,color,checker,False,0.19432508268938875
+oscar-base,color,berry,False,0.4950946804839405
+oscar-base,color,dalmation,False,0.39304183206703214
+oscar-base,color,crossing sign,False,0.32223525316298485
+oscar-base,color,kite,False,0.7342657342657343
+oscar-base,color,visor,False,0.1619758474969197
+oscar-base,color,wetsuit,False,0.6760731025958387
+oscar-base,color,filling,False,-0.2526516601044262
+oscar-base,color,bun,False,0.04589474270035978
+oscar-base,color,frisbee,False,0.7740817475138726
+oscar-base,color,skull,False,0.04367131467411468
+oscar-base,color,wet suit,False,0.6211409427189059
+oscar-base,color,trash bag,False,0.5698101270440251
+oscar-base,color,cat tail,False,0.4803844614152615
+oscar-base,color,window sill,False,0.596631655104677
+oscar-base,color,loafer,False,-0.08600907578023019
+oscar-base,color,stadium seat,False,0.13101394402234404
+oscar-base,color,dandelion,False,0.6504436355879909
+oscar-base,color,muzzle,False,0.4992551399838056
+oscar-base,color,tote bag,False,-0.04367131467411468
+oscar-base,color,name tag,False,0.3378344809521317
+oscar-base,color,snow board,False,0.7018197256657411
+oscar-base,color,ski pole,False,0.5281821114029991
+oscar-base,color,passenger car,False,0.39205482974691824
+oscar-base,color,passenger train,False,0.5283783564828609
+oscar-base,color,b,False,0.10587729746783789
+oscar-base,color,skiis,False,0.3952436524871794
+oscar-base,color,cockpit,False,-0.04367131467411468
+oscar-base,color,shoelace,False,0.6947411187642789
+oscar-base,color,plane wing,False,0.30569920271880274
+oscar-base,color,saddle bag,False,0.39304183206703214
+oscar-base,color,wii remote,False,0.4803844614152615
+oscar-base,color,water faucet,False,-0.30569920271880274
+oscar-base,color,camera strap,False,0.4803844614152615
+oscar-base,color,dvd player,False,0.11014738248086345
+oscar-base,color,shirt collar,False,0.4803844614152615
+oscar-base,color,laptop computer,False,0.5783038704812414
+oscar-base,color,road cone,False,0.39304183206703214
+oscar-base,color,number 3,False,0.13101394402234404
+oscar-base,color,soda,False,0.5385932088581319
+oscar-base,color,sprinkle,False,0.5954799012377587
+oscar-base,color,flip flop,False,0.4930773729921854
+oscar-base,color,home plate,False,0.4803844614152615
+oscar-base,color,hair tie,False,0.7343158832057565
+oscar-base,color,bell pepper,False,0.7655245479751686
+oscar-base,color,advertising,False,0.2570105591220147
+oscar-base,color,knife blade,False,0.30569920271880274
+oscar-base,color,clockface,False,0.39304183206703214
+oscar-base,color,chive,False,0.4803844614152615
+oscar-base,color,neon sign,False,0.4803844614152615
+oscar-base,color,mint,False,0.4803844614152615
+oscar-base,color,gas pump,False,-0.13101394402234404
+oscar-base,color,photograph,False,0.10213577748902336
+oscar-base,color,toilet tank,False,0.4803844614152615
+oscar-base,color,raincoat,False,0.6573526009786773
+oscar-base,color,binding,False,0.17201815156046038
+oscar-base,color,handwash,False,-0.2183565733705734
+oscar-base,color,bath mat,False,0.30569920271880274
+oscar-base,color,apple logo,False,0.13101394402234404
+oscar-base,color,lifejacket,False,0.5182002205050366
+oscar-base,color,gourd,False,0.4407965133736798
+oscar-base,color,food tray,False,0.4803844614152615
+oscar-base,color,fence pole,False,-0.4803844614152615
+oscar-base,color,spatula,False,0.1622579204947368
+oscar-base,color,gold line,False,0.30569920271880274
+oscar-base,color,letter a,False,-0.08600907578023019
+oscar-base,color,racquet,False,0.3190500648772964
+oscar-base,color,bicycle seat,False,-0.13101394402234404
+oscar-base,color,turkey,False,0.5698101270440251
+oscar-base,color,dirt bike,False,0.35478743759344955
+oscar-base,color,rubber,False,-0.03225340341758632
+oscar-base,color,carving,False,-0.04367131467411468
+oscar-base,color,knee pad,False,0.05458597866289097
+oscar-base,color,pond,False,0.639692501115462
+oscar-base,color,toaster oven,False,0.3488000445227343
+oscar-base,color,pizza box,False,0.360163004829714
+oscar-base,color,passenger bus,False,-0.04367131467411468
+oscar-base,color,locomotive,False,0.7987187801376143
+oscar-base,color,hotdog bun,False,0.39304183206703214
+oscar-base,color,number 8,False,-0.005375567236264387
+oscar-base,color,tin,False,-0.05042729056592992
+oscar-base,color,overpass,False,-0.360163004829714
+oscar-base,color,drawstring,False,0.04367131467411468
+oscar-base,color,attire,False,-0.2183565733705734
+oscar-base,color,walkie talkie,False,-0.04367131467411468
+oscar-base,color,calendar,False,-0.2183565733705734
+oscar-base,color,register,False,-0.2183565733705734
+oscar-base,color,shopping cart,False,0.4803844614152615
+oscar-base,color,knit hat,False,0.04367131467411468
+oscar-base,color,tail fin,False,0.7018197256657411
+oscar-base,color,coverlet,False,0.2183565733705734
+oscar-base,color,safety marker,False,0.39304183206703214
+oscar-base,color,armoire,False,0.39304183206703214
+oscar-base,color,vas,False,0.21491262647208828
+oscar-base,color,glaze,False,0.39128566455505304
+oscar-base,color,guitar case,False,0.4803844614152615
+oscar-base,color,tank lid,False,0.13101394402234404
+oscar-base,color,mesh,False,0.5507369124043173
+oscar-base,color,medallion,False,0.13101394402234404
+oscar-base,color,plantain,False,0.5913123959890827
+oscar-base,color,plantation,False,0.4803844614152615
+oscar-base,color,men,False,0.13101394402234404
+oscar-base,color,snap,False,-0.4803844614152615
+oscar-base,color,catchers mitt,False,-0.04367131467411468
+oscar-base,color,baseball uniform,False,0.6706277378583748
+oscar-base,color,space,False,0.2294737135017989
+oscar-base,color,swirl,False,0.5130079155199037
+oscar-base,color,brake,False,-0.3924164082473003
+oscar-base,color,handicapped sign,False,0.26340279457695503
+oscar-base,color,h,False,-0.12363804643408093
+oscar-base,color,high heel,False,0.4803844614152615
+oscar-base,color,thigh,False,0.13101394402234404
+oscar-base,color,spinach,False,0.4803844614152615
+oscar-base,color,cleaner,False,-0.13101394402234404
+oscar-base,color,beer,False,0.42223163284330995
+oscar-base,color,toast,False,-0.333285168648392
+oscar-base,color,earbud,False,-0.13101394402234404
+oscar-base,color,turf,False,0.2845474047422306
+oscar-base,color,broccoli floret,False,0.4803844614152615
+oscar-base,color,scrunchie,False,0.04367131467411468
+oscar-base,color,duvet,False,0.639692501115462
+oscar-base,color,winter hat,False,0.39304183206703214
+oscar-base,color,electric pole,False,-0.39304183206703214
+oscar-base,color,green grass,False,0.3709141393022427
+oscar-base,color,cat eye,False,0.4031675427198291
+oscar-base,color,ruler,False,0.4407965133736798
+oscar-base,color,giraffe's eye,False,0.30569920271880274
+oscar-base,color,crumb,False,-0.08600907578023019
+oscar-base,color,wrapping,False,-0.2183565733705734
+oscar-base,color,hot dog,False,0.2995530839902834
+oscar-base,color,screw,False,-0.3665058567365536
+oscar-base,color,traffic line,False,0.24190052563189746
+oscar-base,color,landing gear,False,-0.18276928603298917
+oscar-base,color,sign board,False,-0.04367131467411468
+oscar-base,color,baseline,False,0.30569920271880274
+oscar-base,color,head gear,False,0.430045378901151
+oscar-base,color,shin guard,False,0.33283675998920376
+oscar-base,color,mist,False,0.30569920271880274
+oscar-base,color,basil,False,0.39304183206703214
+oscar-base,color,shinguard,False,-0.04367131467411468
+oscar-base,color,1,False,0.04367131467411468
+oscar-base,color,caution cone,False,0.34403630312092076
+oscar-base,color,toilet brush,False,-0.021502268945057548
+oscar-base,color,substance,False,0.13101394402234404
+oscar-base,color,frog,False,0.4803844614152615
+oscar-base,color,guard,False,0.47730532408374166
+oscar-base,color,coconut,False,0.09676021025275898
+oscar-base,color,football,False,-0.1009684339407915
+oscar-base,color,smoke trail,False,0.30569920271880274
+oscar-base,color,baseball cleat,False,0.2526516601044262
+oscar-base,color,shin pad,False,0.39304183206703214
+oscar-base,color,chalk,False,0.4803844614152615
+oscar-base,color,lobster,False,0.29565619799454135
+oscar-base,color,flush,False,-0.30569920271880274
+oscar-base,color,second hand,False,0.4031675427198291
+oscar-base,color,surf,False,0.13101394402234404
+oscar-base,color,daffodil,False,0.47730532408374166
+oscar-base,color,opening,False,-0.2183565733705734
+oscar-base,color,letter b,False,0.30103176523080566
+oscar-base,color,bridal,False,-0.13101394402234404
+oscar-base,color,dashboard,False,-0.2203982566868399
+oscar-base,color,wakeboard,False,0.30569920271880274
+oscar-base,color,connector,False,-0.31178289970333445
+oscar-base,color,wall plate,False,0.13101394402234404
+oscar-base,color,tomato sauce,False,0.4803844614152615
+oscar-base,color,arugula,False,0.4803844614152615
+oscar-base,color,cilantro,False,0.4803844614152615
+oscar-base,color,pony,False,0.7343158832057565
+oscar-base,color,front paw,False,0.4803844614152615
+oscar-base,color,string bean,False,0.39304183206703214
+oscar-base,color,dugout,False,0.4803844614152615
+oscar-base,color,boundary line,False,0.13101394402234404
+oscar-base,color,wooden door,False,0.4803844614152615
+oscar-base,color,computer key,False,0.13101394402234404
+oscar-base,color,icon,False,0.17201815156046038
+oscar-base,color,smartphone,False,0.39304183206703214
+oscar-base,color,house plant,False,0.30569920271880274
+oscar-base,color,sport shoe,False,0.30569920271880274
+oscar-base,color,rear wheel,False,0.39304183206703214
+oscar-base,color,bison,False,0.2183565733705734
+oscar-base,color,windowsill,False,-0.021502268945057548
+oscar-base,color,tofu,False,0.4803844614152615
+oscar-base,color,font,False,-0.13101394402234404
+oscar-base,color,slit,False,-0.04367131467411468
+oscar-base,color,melon,False,0.5690948094844612
+oscar-base,color,lillie,False,-0.2183565733705734
+oscar-base,color,bedsheets,False,0.39304183206703214
+oscar-base,color,grandfather clock,False,-0.13101394402234404
+oscar-base,color,cargo pant,False,-0.13101394402234404
+oscar-base,color,cloak,False,0.39304183206703214
+oscar-base,color,ankle,False,-0.13101394402234404
+oscar-base,color,tomatoe,False,0.4803844614152615
+oscar-base,color,ski glove,False,0.15589144985166722
+oscar-base,color,letter l,False,-0.04367131467411468
+oscar-base,color,letter n,False,0.04367131467411468
+oscar-base,color,carrying case,False,0.39304183206703214
+oscar-base,color,crossing,False,-0.2183565733705734
+oscar-base,color,front of train,False,0.4803844614152615
+oscar-base,color,post it note,False,0.39304183206703214
+oscar-base,color,ski stick,False,0.09676021025275898
+oscar-base,color,pizza pan,False,0.04367131467411468
+oscar-base,color,duckling,False,-0.04367131467411468
+oscar-base,color,chunk,False,-0.20427155497804672
+oscar-base,color,fog,False,-0.2183565733705734
+oscar-base,color,coin slot,False,-0.06477502756312957
+oscar-base,color,check,False,0.18357897080143912
+oscar-base,color,tent top,False,0.30569920271880274
+oscar-base,color,steak,False,0.30569920271880274
+oscar-base,color,toilet cover,False,0.4803844614152615
+oscar-base,color,piercing,False,-0.13101394402234404
+oscar-base,color,grafitti,False,0.2377353754848334
+oscar-base,color,cowboy boot,False,0.30569920271880274
+oscar-base,color,link,False,-0.39304183206703214
+oscar-base,color,hot dog bun,False,0.39304183206703214
+oscar-base,color,baseball mitt,False,0.043004537890115095
+oscar-base,color,woman's shirt,False,0.2902806307582769
+oscar-base,color,message,False,-0.13101394402234404
+oscar-base,color,fang,False,-0.13101394402234404
+oscar-base,color,bedsheet,False,0.39304183206703214
+oscar-base,color,dog's nose,False,0.4803844614152615
+oscar-base,color,ceramic bowl,False,0.39304183206703214
+oscar-base,color,video camera,False,0.30569920271880274
+oscar-base,color,silhouette,False,0.4803844614152615
+oscar-base,color,wildebeest,False,0.2183565733705734
+oscar-base,color,sea gull,False,0.4803844614152615
+oscar-base,color,fir tree,False,0.4803844614152615
+oscar-base,color,headscarf,False,0.4803844614152615
+oscar-base,color,shuttle,False,-0.13101394402234404
+oscar-base,color,numbering,False,-0.2183565733705734
+oscar-base,color,dirt road,False,0.39304183206703214
+oscar-base,color,serving plate,False,0.4803844614152615
+oscar-base,color,copyright,False,-0.2183565733705734
+oscar-base,color,broccoli spear,False,0.4803844614152615
+oscar-base,color,croissant,False,-0.13101394402234404
+oscar-base,color,santa hat,False,0.4730499167912661
+oscar-base,color,restaurant logo,False,0.30569920271880274
+oscar-base,color,banana bunch,False,0.6504436355879909
+oscar-base,color,golf ball,False,0.30569920271880274
+oscar-base,color,eggplant,False,0.4803844614152615
+oscar-base,color,foal,False,0.39304183206703214
+oscar-base,color,ski track,False,0.13101394402234404
+oscar-base,color,cake server,False,0.2183565733705734
+oscar-base,color,gull,False,0.4803844614152615
+oscar-base,color,jet engine,False,0.39304183206703214
+oscar-base,color,go signal,False,0.4803844614152615
+oscar-base,color,clock arm,False,0.13101394402234404
+oscar-base,color,rashguard,False,0.2183565733705734
+oscar-base,color,caution line,False,0.4803844614152615
+oscar-base,color,carrot top,False,0.4803844614152615
+oscar-base,color,tan short,False,0.04367131467411468
+oscar-base,color,tick,False,0.18276928603298917
+oscar-base,color,zebra stripe,False,0.39304183206703214
+oscar-base,color,flower pedal,False,0.2183565733705734
+oscar-base,color,tan hat,False,0.39304183206703214
+oscar-base,color,snow glove,False,0.2183565733705734
+oscar-base,color,tan brick,False,0.4803844614152615
+oscar-base,color,wave crest,False,0.13101394402234404
+oscar-base,color,polygon,False,-0.39304183206703214
+oscar-base,color,tiled floor,False,0.39304183206703214
+oscar-base,color,traffic barrel,False,0.1343891809066097
+oscar-base,color,baby zebra,False,0.30569920271880274
+oscar-base,color,sink bowl,False,0.30569920271880274
+oscar-base,color,bathroom wall,False,0.4803844614152615
+oscar-base,color,bird wing,False,0.30569920271880274
+oscar-base,color,sprinkler,False,0.3238751378156479
+oscar-base,color,wild animal,False,0.4143024683524091
+oscar-base,color,shoe tip,False,-0.2183565733705734
+oscar-base,color,metal tip,False,0.13101394402234404
+oscar-base,color,river wave,False,-0.12955005512625914
+oscar-base,color,flood light,False,-0.39304183206703214
+oscar-base,color,banana cluster,False,0.2183565733705734
+oscar-base,material,chair,False,0.8081430474442702
+oscar-base,material,lid,False,0.6318163766821326
+oscar-base,material,shelf,False,0.8235738762199006
+oscar-base,material,bookshelf,False,0.3973597071195132
+oscar-base,material,wall,False,0.8600526665632845
+oscar-base,material,mug,False,0.5890293917581745
+oscar-base,material,candle holder,False,0.6716374338786717
+oscar-base,material,leg,False,0.7094540155203626
+oscar-base,material,knob,False,0.6490253830509067
+oscar-base,material,tray,False,0.6941843098883017
+oscar-base,material,vent,False,0.2571151046067438
+oscar-base,material,sink,False,0.5864172880253224
+oscar-base,material,placemat,False,0.5582809049540014
+oscar-base,material,tire,False,0.5139940529625884
+oscar-base,material,countertop,False,0.544841998804863
+oscar-base,material,fence,False,0.8627491532223924
+oscar-base,material,cable,False,0.3038633054443336
+oscar-base,material,spoon,False,0.6961256448051155
+oscar-base,material,lamp post,False,0.438406692232796
+oscar-base,material,pant,False,0.6621682962780366
+oscar-base,material,holder,False,0.7024279379294481
+oscar-base,material,rod,False,0.7254817851178901
+oscar-base,material,light pole,False,0.2571151046067438
+oscar-base,material,futon,False,0.3973597071195132
+oscar-base,material,door hinge,False,0.3506115062819234
+oscar-base,material,base,False,0.829799557689199
+oscar-base,material,goblet,False,0.3973597071195132
+oscar-base,material,computer desk,False,0.3973597071195132
+oscar-base,material,post,False,0.6674636041603076
+oscar-base,material,walkway,False,0.7483677194621597
+oscar-base,material,light,False,0.7171573915061351
+oscar-base,material,roll,False,0.3973597071195132
+oscar-base,material,leaf,False,0.40823438394416844
+oscar-base,material,grid,False,0.3973597071195132
+oscar-base,material,elephant,False,0.03825782851207623
+oscar-base,material,chandelier,False,0.48666426339228763
+oscar-base,material,pillar,False,0.7983450207332448
+oscar-base,material,bucket,False,0.3293974121901487
+oscar-base,material,pillow,False,0.46541896690911033
+oscar-base,material,dresser,False,0.3973597071195132
+oscar-base,material,lamp base,False,0.07012230125638468
+oscar-base,material,bedside table,False,0.3973597071195132
+oscar-base,material,candlestick,False,0.2571151046067438
+oscar-base,material,floor lamp,False,0.2571151046067438
+oscar-base,material,paddle,False,0.3973597071195132
+oscar-base,material,park bench,False,0.5702573690115038
+oscar-base,material,block,False,0.750979823195012
+oscar-base,material,barricade,False,0.5461186812727502
+oscar-base,material,carrier,False,0.4088797653818292
+oscar-base,material,downspout,False,0.3038633054443336
+oscar-base,material,garbage can,False,0.5139940529625884
+oscar-base,material,utility pole,False,0.48186942465242666
+oscar-base,material,board,False,0.5171891632188084
+oscar-base,material,monitor,False,0.3506115062819234
+oscar-base,material,cushion,False,0.25321765844480454
+oscar-base,material,sectional,False,0.3506115062819234
+oscar-base,material,podium,False,0.3973597071195132
+oscar-base,material,cart,False,0.4876574158399211
+oscar-base,material,scarf,False,0.11687050209397445
+oscar-base,material,case,False,0.8149693730355136
+oscar-base,material,decanter,False,0.3973597071195132
+oscar-base,material,blender,False,0.5416650775290329
+oscar-base,material,kitchen table,False,0.3973597071195132
+oscar-base,material,window frame,False,0.5139940529625884
+oscar-base,material,paneled wall,False,0.3973597071195132
+oscar-base,material,cabinet door,False,0.5461186812727502
+oscar-base,material,part,False,0.2720556694192087
+oscar-base,material,pipe,False,0.7587869106393281
+oscar-base,material,hand railing,False,0.3038633054443336
+oscar-base,material,guard rail,False,0.45906512435745017
+oscar-base,material,moulding,False,0.3506115062819234
+oscar-base,material,filing cabinet,False,0.3506115062819234
+oscar-base,material,foundation,False,0.5461186812727502
+oscar-base,material,lettering,False,0.3038633054443336
+oscar-base,material,bannister,False,0.4497447963422649
+oscar-base,material,handrail,False,0.6401496370797661
+oscar-base,material,drawer handle,False,0.3506115062819234
+oscar-base,material,entertainment center,False,0.3973597071195132
+oscar-base,material,bracket,False,0.6529286250990105
+oscar-base,material,tool,False,0.5461186812727502
+oscar-base,material,island,False,0.478090056615937
+oscar-base,material,dish,False,0.2478390683357558
+oscar-base,material,side walk,False,0.3973597071195132
+oscar-base,material,bus,False,0.29857007488268006
+oscar-base,material,stick,False,0.5702573690115038
+oscar-base,material,stake,False,0.4176201680321031
+oscar-base,material,letter,False,0.34203280730231067
+oscar-base,material,bike,False,0.2815629187184767
+oscar-base,material,median,False,0.3973597071195132
+oscar-base,material,bell,False,0.4876574158399211
+oscar-base,material,crate,False,0.6242650307006156
+oscar-base,material,ash tray,False,0.2571151046067438
+oscar-base,material,jar,False,0.49801751604939143
+oscar-base,material,vehicle,False,0.2267620821893772
+oscar-base,material,mulch,False,0.3973597071195132
+oscar-base,material,entryway,False,0.3973597071195132
+oscar-base,material,covering,False,0.5893188966664845
+oscar-base,material,accent,False,0.3973597071195132
+oscar-base,material,figure,False,0.3835415053487746
+oscar-base,material,cone,False,0.34465588820952575
+oscar-base,material,bedpost,False,0.3973597071195132
+oscar-base,material,rug,False,0.023374100418794893
+oscar-base,material,church pew,False,0.3973597071195132
+oscar-base,material,stud,False,0.40250269588614457
+oscar-base,material,kitchen sink,False,0.2571151046067438
+oscar-base,material,appliance,False,0.3506115062819234
+oscar-base,material,table leg,False,0.3973597071195132
+oscar-base,material,chair leg,False,0.5423393132362605
+oscar-base,material,curtain rod,False,0.2815629187184767
+oscar-base,material,storage box,False,0.3973597071195132
+oscar-base,material,flagpole,False,0.3038633054443336
+oscar-base,material,white rail,False,0.2571151046067438
+oscar-base,material,saucer,False,0.3506115062819234
+oscar-base,material,tip,False,0.2493883201526632
+oscar-base,material,window pane,False,0.5139940529625884
+oscar-base,material,tea kettle,False,0.3038633054443336
+oscar-base,material,skateboard,False,0.6179111881489554
+oscar-base,material,skateboard ramp,False,0.5451730205091057
+oscar-base,material,bolt,False,0.3506115062819234
+oscar-base,material,debris,False,0.2571151046067438
+oscar-base,material,salt shaker,False,0.5407380704358752
+oscar-base,material,train track,False,0.40505746266833836
+oscar-base,material,tarmac,False,0.3973597071195132
+oscar-base,material,entertainment stand,False,0.3973597071195132
+oscar-base,material,stall,False,0.5139940529625884
+oscar-base,material,spring,False,-0.2571151046067438
+oscar-base,material,toilet seat,False,0.4431805179782996
+oscar-base,material,trash bag,False,0.3973597071195132
+oscar-base,material,walker,False,0.16361870293156427
+oscar-base,material,picnic table,False,0.5139940529625884
+oscar-base,material,garbage,False,0.5451730205091057
+oscar-base,material,hubcap,False,0.2571151046067438
+oscar-base,material,emblem,False,0.478090056615937
+oscar-base,material,bunkbed,False,0.3973597071195132
+oscar-base,material,saddle,False,0.3973597071195132
+oscar-base,material,harness,False,0.4497447963422649
+oscar-base,material,overhang,False,0.16361870293156427
+oscar-base,material,bead,False,0.6808017544879522
+oscar-base,material,package,False,0.5423393132362605
+oscar-base,material,book case,False,0.3973597071195132
+oscar-base,material,carving,False,0.6179111881489554
+oscar-base,material,paver,False,0.5423393132362605
+oscar-base,material,wine rack,False,0.3973597071195132
+oscar-base,material,bedspread,False,0.2571151046067438
+oscar-base,material,dumpster,False,0.3038633054443336
+oscar-base,material,bangle,False,0.3973597071195132
+oscar-base,material,spatula,False,0.7070613491676311
+oscar-base,material,sunglass,False,0.4497447963422649
+oscar-base,material,pizza cutter,False,0.3973597071195132
+oscar-base,material,clocktower,False,0.3973597071195132
+oscar-base,material,table lamp,False,0.2571151046067438
+oscar-base,material,background,False,0.5130727860465619
+oscar-base,material,napkin holder,False,0.4088797653818292
+oscar-base,material,place mat,False,0.5139940529625884
+oscar-base,material,head board,False,0.5139940529625884
+oscar-base,material,dining chair,False,0.30974982439343524
+oscar-base,material,patch,False,-0.16251282556905366
+oscar-base,material,pizza pan,False,0.3973597071195132
+oscar-base,material,detail,False,0.47431068857944736
+oscar-base,material,uniform,False,0.07012230125638468
+oscar-base,material,end,False,0.5064353168896091
+oscar-base,material,toilet tank,False,0.07012230125638468
+oscar-base,material,mitt,False,0.2571151046067438
+oscar-base,material,pack,False,0.2571151046067438
+oscar-base,material,towel rack,False,0.5423393132362605
+oscar-base,material,chair back,False,0.48186942465242666
+oscar-base,material,bird cage,False,0.3506115062819234
+oscar-base,material,guitar,False,0.3973597071195132
+oscar-base,material,owl,False,0.16361870293156427
+oscar-base,material,coil,False,0.3038633054443336
+oscar-base,material,cloth,False,0.3099081789921489
+oscar-base,material,dinosaur,False,0.3038633054443336
+oscar-base,material,thing,False,0.258886710499539
+oscar-base,material,window sill,False,0.5139940529625884
+oscar-base,material,petal,False,0.4497447963422649
+oscar-base,material,sheep,False,0.16361870293156427
+oscar-base,material,shower,False,0.3973597071195132
+oscar-base,material,cord,False,0.2571151046067438
+oscar-base,material,bed spread,False,0.2571151046067438
+oscar-base,material,bed post,False,0.3973597071195132
+oscar-base,material,shield,False,0.3038633054443336
+oscar-base,material,swing,False,0.3973597071195132
+oscar-base,material,animal,False,0.023374100418794893
+oscar-base,material,soap,False,0.3038633054443336
+oscar-base,material,ice bucket,False,0.2571151046067438
+oscar-base,material,clock face,False,0.3038633054443336
+oscar-base,material,giraffe,False,0.11928045671379599
+oscar-base,material,sippy cup,False,0.3506115062819234
+oscar-base,material,baking pan,False,0.3973597071195132
+oscar-base,material,room,False,0.3973597071195132
+oscar-base,material,name,False,0.3973597071195132
+oscar-base,material,lining,False,0.34203280730231067
+oscar-base,material,wiper,False,0.2571151046067438
+oscar-base,material,truss,False,0.030234944291916966
+oscar-base,material,bunk bed,False,0.3973597071195132
+oscar-base,material,crib,False,0.3973597071195132
+oscar-base,material,grandfather clock,False,0.3973597071195132
+oscar-base,material,floor board,False,0.3973597071195132
+oscar-base,material,fabric,False,0.21036690376915404
+oscar-base,material,feeder,False,0.5423393132362605
+oscar-base,material,penny,False,0.11687050209397445
+oscar-base,material,gas cap,False,0.3973597071195132
+oscar-base,material,broom,False,0.3973597071195132
+oscar-base,material,toothpick,False,0.5461186812727502
+oscar-base,material,roller,False,0.2725865102545528
+oscar-base,material,water tower,False,0.21036690376915404
+oscar-base,material,paper dispenser,False,0.21036690376915404
+oscar-base,material,egg,False,0.30665982403637193
+oscar-base,material,wedding band,False,0.3973597071195132
+oscar-base,material,axle,False,0.07012230125638468
+oscar-base,material,lounge chair,False,0.3506115062819234
+oscar-base,material,windscreen,False,0.3506115062819234
+oscar-base,material,exhaust pipe,False,0.3973597071195132
+oscar-base,material,mit,False,-0.07012230125638468
+oscar-base,material,drive,False,0.2571151046067438
+oscar-base,material,tail pipe,False,0.3506115062819234
+oscar-base,material,sheeting,False,0.5461186812727502
+oscar-base,material,panel wall,False,0.3973597071195132
+oscar-base,material,court,False,0.5423393132362605
+oscar-base,material,sky,False,0.2571151046067438
+oscar-base,material,medical stick,False,0.2571151046067438
+oscar-base,material,note,False,0.3973597071195132
+oscar-base,material,shape,False,0.07012230125638468
+oscar-base,material,section,False,0.2571151046067438
+oscar-base,material,toilet bowl,False,0.2571151046067438
+oscar-base,material,baseball helmet,False,0.3973597071195132
+oscar-base,material,metal,False,0.33069470319284183
+oscar-base,material,sun,False,0.3506115062819234
+oscar-base,material,muffler,False,0.3038633054443336
+oscar-base,material,hoop,False,0.2571151046067438
+oscar-base,material,tennis court,False,0.3973597071195132
+oscar-base,material,street pole,False,0.3038633054443336
+oscar-base,material,wall paper,False,0.2571151046067438
+oscar-base,material,cement,False,0.3973597071195132
+oscar-base,material,yoke,False,0.3038633054443336
+oscar-base,material,toilet lid,False,0.5451730205091057
+oscar-base,material,concrete,False,0.3506115062819234
+oscar-base,material,white door,False,0.3973597071195132
+oscar-base,material,luggage container,False,0.3506115062819234
+oscar-base,material,safety railing,False,0.3973597071195132
+oscar-base,material,shadow,False,0.3973597071195132
+oscar-base,material,satchel,False,0.3973597071195132
+oscar-base,material,grip,False,0.4088797653818292
+oscar-base,material,cave,False,0.3973597071195132
+oscar-base,material,cake,False,0.3506115062819234
+oscar-base,material,chain link,False,0.3973597071195132
+oscar-base,material,pepper grinder,False,0.3506115062819234
+oscar-base,material,footer,False,0.2571151046067438
+oscar-base,material,boarder,False,-0.11687050209397445
+oscar-base,material,baseball mitt,False,0.3973597071195132
+oscar-base,material,tee shirt,False,0.3973597071195132
+oscar-base,material,toilet handle,False,0.3038633054443336
+oscar-base,material,doily,False,0.3038633054443336
+oscar-base,material,framed picture,False,0.2571151046067438
+oscar-base,material,shaving,False,0.3973597071195132
+oscar-base,material,scrollwork,False,0.16361870293156427
+oscar-base,material,skewer,False,0.3973597071195132
+oscar-base,material,pendant,False,0.3506115062819234
+oscar-base,material,aquarium,False,0.3973597071195132
+oscar-base,material,badge,False,0.5110997067272864
+oscar-base,material,flatbed,False,0.3506115062819234
+oscar-base,material,controller,False,0.3506115062819234
+oscar-base,material,desk top,False,0.3973597071195132
+oscar-base,material,rubber ducky,False,0.3506115062819234
+oscar-base,material,brown bag,False,0.3973597071195132
+oscar-base,material,table surface,False,0.3973597071195132
+oscar-base,material,playground,False,0.3973597071195132
+oscar-base,material,pocket book,False,0.3038633054443336
+oscar-base,material,mold,False,0.07012230125638468
+oscar-base,material,framed window,False,0.3506115062819234
+oscar-base,material,black pole,False,0.3038633054443336
+oscar-base,material,pump,False,0.3038633054443336
+oscar-base,material,oven knob,False,0.2571151046067438
+oscar-base,material,brake,False,0.16361870293156427
+oscar-base,material,chock,False,0.3973597071195132
+oscar-base,material,s,False,0.3506115062819234
+oscar-base,material,mark,False,0.3973597071195132
+oscar-base,material,sleeper,False,0.3506115062819234
+oscar-base,material,chair slat,False,0.3973597071195132
+oscar-base,material,sundae dish,False,0.3973597071195132
+oscar-base,material,hendge,False,-0.11687050209397445
+oscar-base,material,hand ring,False,0.023374100418794893
+oscar-base,material,banister slat,False,0.3973597071195132
+oscar-base,material,art piece,False,0.3506115062819234

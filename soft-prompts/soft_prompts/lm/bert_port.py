@@ -40,6 +40,7 @@ class PreTrainedBert(LanguageModel):
             'roberta': (RobertaConfig, BertForMaskedLM, RobertaTokenizer),
         }
         self.model_type = model_type
+        self.model_size = param_name.split('-')[1]
         if model_type == 'oscar':
             model_size = param_name.split('-')[1]
             num = '2000000' if model_size == 'base' else '1410000'
