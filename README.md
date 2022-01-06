@@ -6,3 +6,7 @@ Code for soft prompt tuning are in the `soft-prompts` directory. (source referen
 
 The `probing` directory contains code for zero shot evaluation ("best template" mode) and the logistic regression classification case. Also contains the plotting scripts for the heatmap and the dot-to-dot plot. Run files in `probing` from the parent directory.
 
+Figures: 
+* Figure 2, 6, 7 (heatmap and linked plots): probing/plot_snippet.py
+* Figure 3, 5 (size plots): probing/emb_for_size.py
+

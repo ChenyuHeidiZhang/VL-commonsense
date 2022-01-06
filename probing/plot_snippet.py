@@ -38,27 +38,44 @@ def linked_point_plot(ax, df, key = "model", left_name="bert-base", right_name="
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
 
-# 4 plots across horizontally, one per (color, shape, material, co-occurrence)
-fig, axs = plt.subplots(1,4, figsize=(10,4))
-df = pd.read_csv("pt_corrs_sm.csv", index_col=False)
-#key, left, right = ["model", "bert-base", "oscar-base"] # "has_prompt_tuning", False, True
-key, left, right = ["has_prompt_tuning", False, True]
-for idx, rel in enumerate(['color', 'shape', 'material', 'cooccur']):
-    # assumed CSV format: 
-    #   - column names: model, relation, object, has_prompt_tuning, spearman
-    #   - example column: "bert-base", "color", "apple", "True", 0.36
-    rel_df = df.loc[df['relation'] == rel]
-    if key == 'model':
-        rel_df = rel_df.loc[rel_df['has_prompt_tuning'] == True]
-    if key == 'has_prompt_tuning':
-        rel_df = rel_df.loc[rel_df['model'] == "oscar-base"]
+def draw_linked_plot():
+    # 4 plots across horizontally, one per (color, shape, material, co-occurrence)
+    fig, axs = plt.subplots(1,4, figsize=(10,4))
+    df = pd.read_csv("pt_corrs_sm.csv", index_col=False)
+    #key, left, right = ["model", "bert-base", "oscar-base"] # "has_prompt_tuning", False, True
+    key, left, right = ["has_prompt_tuning", False, True]
+    for idx, rel in enumerate(['color', 'shape', 'material', 'cooccur']):
+        # assumed CSV format: 
+        #   - column names: model, relation, object, has_prompt_tuning, spearman
+        #   - example column: "bert-base", "color", "apple", "True", 0.36
+        rel_df = df.loc[df['relation'] == rel]
+        if key == 'model':
+            rel_df = rel_df.loc[rel_df['has_prompt_tuning'] == True]
+        if key == 'has_prompt_tuning':
+            rel_df = rel_df.loc[rel_df['model'] == "oscar-base"]
 
-    # Example: left-most plot is comparing before and after prompt tuning for color 
-    linked_point_plot(axs[idx], rel_df, key=key, left_name=left, right_name=right, title=rel)
+        # Example: left-most plot is comparing before and after prompt tuning for color 
+        linked_point_plot(axs[idx], rel_df, key=key, left_name=left, right_name=right, title=rel)
 
-axs[0].set_ylabel("Spearman correlation")
-fig.tight_layout()
-plt.savefig(f'probing/plots/linked_plot_{key}.pdf')
+    axs[0].set_ylabel("Spearman correlation")
+    fig.tight_layout()
+    plt.savefig(f'probing/plots/linked_plot_{key}.pdf')
 
 
 
+# reference: https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html
+def plot_heatmap(**kwargs):
+    models = ['BERT', 'Oscar', 'Distilled', 'RoBERTa', 'Vokenization']  #  'ALBERT',
+    data = ['CoDa', 'VG', 'Wiki']
+    df = pd.read_csv('heatmap_data.csv', sep=',', index_col=0)
+    df_values = df.values*100
+    sns.set(font_scale = 1)
+    ax = sns.heatmap(df_values, annot=True, fmt = '.1f', xticklabels=data, yticklabels=models)
+    ax.collections[0].colorbar.set_label("Spearman correlation")
+
+    plt.tight_layout()
+    plt.savefig('probing/plots/heatmap.pdf')
+
+
+if __name__ == '__main__':
+    plot_heatmap(cmap="YlGn")

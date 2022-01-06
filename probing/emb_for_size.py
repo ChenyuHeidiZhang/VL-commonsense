@@ -5,9 +5,12 @@ import torch
 import clip
 from scipy.spatial import distance
 import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+import pandas as pd
 plt.rcParams.update({'font.size': 12})
 
-from models import init_model
+from models import init_model, plot_dists
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -60,6 +63,14 @@ def cross_model_comparison(model_names, model_size, plot='boxplot'):
                 sim = 1 - distance.cosine(features1-features2, feature_sub)
                 sims.append(sim)
             data[i].append(sims)
+    df_data = []
+    for i, model_data in enumerate(data):
+        for j, group_data in enumerate(model_data):
+            for d in group_data:
+                df_data.append([model_names[i], groups[j], d])
+    df = pd.DataFrame(np.array(df_data), columns=['model', 'group', 'cos_sim'])
+    df.to_csv('probing/size_sims.csv')
+
     if plot=='scatter':
         for i, group in enumerate(groups):
             ax.scatter(data[0][i], data[1][i], c=cdict[group], marker=marker_dict[group], label=group)  # , data[2][i]
@@ -85,6 +96,12 @@ def cross_model_comparison(model_names, model_size, plot='boxplot'):
         plt.xticks([1,2,3,4,5], labels=groups)
         plt.ylabel('cos_sim')
     plt.savefig(f'probing/plots/size_comparison_{plot}.pdf', bbox_inches='tight')
+
+
+def plot_data():
+    df = pd.read_csv('probing/size_sims.csv')
+    sns.boxplot(x='group', y='cos_sim', hue='model', data=df, showfliers = False)
+    plt.savefig(f'probing/plots/size_comparison_boxplot.pdf', bbox_inches='tight')
 
 
 def run():
@@ -120,6 +137,7 @@ def run():
 
 if __name__ == '__main__':
     if True:
-        cross_model_comparison(['bert', 'oscar'], 'base', plot='scatter')
+        plot_data()
+        # cross_model_comparison(['bert', 'oscar', 'clip'], 'base', plot='boxplot')
     else:
         run()
