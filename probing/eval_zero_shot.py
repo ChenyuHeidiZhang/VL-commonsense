@@ -8,6 +8,17 @@ from models import *
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
+def get_token_ids(words, tokenizer, relation, model_name):
+    # if model_name == 'albert':  # albert tokenizer is different when encoding single words
+    #     obj_ids = tokenizer.convert_tokens_to_ids(words)
+    # else:
+    obj_ids = []
+    for obj in words:
+        token = tokenizer.encode(obj)[1]  # use the first subword token id
+        if relation != 'cooccur' and token in obj_ids: continue
+        obj_ids.append(token)
+    return torch.tensor(obj_ids)
+
 def get_log_probs(token_ids, model, mask_id):
     output = model(token_ids)
     hidden_states = output[0].squeeze(0)
@@ -16,6 +27,18 @@ def get_log_probs(token_ids, model, mask_id):
     hs = hidden_states[mask_idx]
     log_probs = torch.nn.LogSoftmax(dim=0)(hs)
     return log_probs.cpu().numpy()
+
+def get_model_dist(scores, obj_ls, obj_ids, obj_id_map):
+    if obj_id_map == {}:
+        return torch.index_select(torch.tensor(scores), 1, obj_ids)
+    model_dist = []
+    for temp_score in scores:
+        dist = []
+        for obj in obj_ls:
+            dist.append(np.log(np.exp(temp_score[obj_id_map[obj]]).sum()))
+        model_dist.append(dist)
+    return torch.tensor(model_dist)
+
 
 def run(args):
     '''
@@ -32,8 +55,17 @@ def run(args):
     test_data, _ = load_data(f'mine-data/db/{relation}/{group}/test.jsonl')
     templates = load_prompts(relation)
     print('num templates:', len(templates))
-    objs_ls = load_word_file(relation)
-    obj_ids = torch.tensor(tokenizer.convert_tokens_to_ids(objs_ls))
+    objs_ls, objs_map = load_word_file(relation)
+    obj_ids = get_token_ids(objs_ls, tokenizer, relation, args.model)
+    assert len(objs_ls) == obj_ids.size(0)
+    #obj_ids = torch.tensor(tokenizer.convert_tokens_to_ids(objs_ls))
+
+    obj_id_map = {}
+    if objs_map:
+        for obj in objs_map:
+            obj_id_map[obj] = get_token_ids(objs_map[obj], tokenizer, relation, args.model)
+    #print(obj_id_map)
+
     print('num objs:', len(objs_ls))
     vg_dist_dict = load_dist_file(relation)
 
@@ -50,7 +82,8 @@ def run(args):
                 token_ids = tokenizer.encode(input, return_tensors='pt').to(device)
                 score = get_log_probs(token_ids, model, mask_id)
                 scores.append(score)
-            model_dist = torch.index_select(torch.tensor(scores), 1, obj_ids)
+            model_dist = get_model_dist(scores, objs_ls, obj_ids, obj_id_map)
+            #model_dist = torch.index_select(torch.tensor(scores), 1, obj_ids)
             # print(model_dist.size)  # num_templates, num_objs
             #pred = (-model_dist).argsort(1)
             true_obj_idx = objs_ls.index(data[1])
@@ -77,8 +110,8 @@ def run(args):
     print('Prediction accuracy:', correct / len(test_data))
     print('Mean and Std of Sp Corr:', np.mean(sp_corrs), np.std(sp_corrs))
 
-    #return round(np.mean(sp_corrs),3), round(np.std(sp_corrs),3), round(correct/len(test_data)*100,1)
-    return sp_corrs, sp_per_obj #, avg_per_obj
+    return round(np.mean(sp_corrs),3), round(np.std(sp_corrs),3), round(correct/len(test_data)*100,1)
+    #return sp_corrs, sp_per_obj #, avg_per_obj
 
 if __name__ == '__main__':
     # parser = argparse.ArgumentParser(description='zero-shot eval parser')
@@ -93,8 +126,8 @@ if __name__ == '__main__':
     # args = parser.parse_args()
     # sp_mean, sp_std, acc = run(args)
 
-    rel_types = ['color', 'shape', 'material']  # 'shape', 'material', 'cooccur', 'coda'
-    models = ['bert', 'oscar']  # , 'distil_bert', 'roberta', 'albert', 'vokenization'
+    rel_types = ['coda', 'color', 'wiki-color']  # 'color', 'shape', 'material', 'cooccur', 'coda'
+    models = ['bert', 'oscar', 'distil_bert', 'roberta', 'vokenization']  # 'albert'
     d = {rel: [] for rel in rel_types}
     sps_per_obj = {rel: [] for rel in rel_types}
     for relation in rel_types:
@@ -104,19 +137,19 @@ if __name__ == '__main__':
         for group in groups:
             for model in models:
                 args = Args(model, relation, group)
-                #sp_mean, sp_std, acc = run(args)
-                #d[relation].append(sp_mean)
+                sp_mean, sp_std, acc = run(args)
+                d[relation].append(sp_mean)
                 #d[relation].append((sp_mean, sp_std, acc))
-                sp, sp_per_obj = run(args)
+                #sp, sp_per_obj = run(args)
                 # sp_corrs.append(sp)
-                sps_per_obj[relation].append(sp_per_obj)
+                #sps_per_obj[relation].append(sp_per_obj)
         #print(stats.ttest_ind(sp_corrs[0], sp_corrs[1], equal_var=False))
         #print(spearmanr(sps_per_obj[relation][0], sps_per_obj[relation][1]))
-    print(sp_per_obj)
-    plot_corr_all_rels(sps_per_obj, models, rel_types, method='zero-shot')
+    #print(sp_per_obj)
+    #plot_corr_all_rels(sps_per_obj, models, rel_types, method='zero-shot')
 
-    # import pandas as pd
-    # df = pd.DataFrame(d)
-    # df.to_excel('file.xlsx')
-    # #df.to_csv('heatmap_data.csv')
-    # print(df)
+    import pandas as pd
+    df = pd.DataFrame(d)
+    #df.to_excel('file.xlsx')
+    df.to_csv('heatmap_data.csv')
+    print(df)

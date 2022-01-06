@@ -41,7 +41,8 @@ def linked_point_plot(ax, df, key = "model", left_name="bert-base", right_name="
 # 4 plots across horizontally, one per (color, shape, material, co-occurrence)
 fig, axs = plt.subplots(1,4, figsize=(10,4))
 df = pd.read_csv("pt_corrs_sm.csv", index_col=False)
-key, left, right = ["model", "bert-base", "oscar-base"] # "has_prompt_tuning", False, True
+#key, left, right = ["model", "bert-base", "oscar-base"] # "has_prompt_tuning", False, True
+key, left, right = ["has_prompt_tuning", False, True]
 for idx, rel in enumerate(['color', 'shape', 'material', 'cooccur']):
     # assumed CSV format: 
     #   - column names: model, relation, object, has_prompt_tuning, spearman
@@ -49,13 +50,15 @@ for idx, rel in enumerate(['color', 'shape', 'material', 'cooccur']):
     rel_df = df.loc[df['relation'] == rel]
     if key == 'model':
         rel_df = rel_df.loc[rel_df['has_prompt_tuning'] == True]
+    if key == 'has_prompt_tuning':
+        rel_df = rel_df.loc[rel_df['model'] == "oscar-base"]
 
     # Example: left-most plot is comparing before and after prompt tuning for color 
     linked_point_plot(axs[idx], rel_df, key=key, left_name=left, right_name=right, title=rel)
 
-axs[0].set_ylabel("Spearman")
+axs[0].set_ylabel("Spearman correlation")
 fig.tight_layout()
-plt.savefig(f'linked_plot_{key}')
+plt.savefig(f'probing/plots/linked_plot_{key}.pdf')
 
 
 

@@ -99,16 +99,37 @@ WORD_LISTS = {
     'shape': ['cross', 'heart', 'octagon', 'oval', 'polygon', 'rectangle', 'rhombus', 'round', 'semicircle', 'square', 'star', 'triangle'],  # 12
     'material': ['bronze', 'ceramic', 'cloth', 'concrete', 'cotton', 'denim', 'glass', 'gold', 'iron', 'jade', 'leather', 'metal', 'paper', 'plastic', 'rubber', 'stone', 'tin', 'wood']  # 18
 }
+# def load_word_file(type, single_slot=True):
+#     if 'wiki-' in type: type = type.split('-')[1]
+#     if type in WORD_LISTS.keys():
+#         return WORD_LISTS[type]
+#     words_file = f'mine-data/words/{type}-words.txt'
+#     word_ls = []
+#     with open(words_file, 'r') as f:
+#         for line in f.readlines():
+#             word_ls.append(line.strip())
+#     return word_ls
 def load_word_file(type, single_slot=True):
+    '''Loads the word file for color, shape, or material.'''
     if 'wiki-' in type: type = type.split('-')[1]
-    if type in WORD_LISTS.keys():
-        return WORD_LISTS[type]
     words_file = f'mine-data/words/{type}-words.txt'
-    word_ls = []
-    with open(words_file, 'r') as f:
-        for line in f.readlines():
-            word_ls.append(line.strip())
-    return word_ls
+    if type not in WORD_LISTS.keys():
+        word_map = None
+        word_ls = []
+        with open(words_file, 'r') as f:
+            for line in f.readlines():
+                word_ls.append(line.strip())
+    else:
+        word_ls = WORD_LISTS[type]
+        word_map = {word: [] for word in word_ls}
+        with open(words_file, 'r') as f:
+            for line in f.readlines():
+                splitted = line.split(':')
+                specific = splitted[0].strip()
+                category = splitted[1].strip() if len(splitted) == 2 else specific
+                word_map[category].append(specific)
+    return word_ls, word_map
+
 
 def load_dist_file(type):
     dist_file = f'mine-data/distributions/{type}-dist.jsonl'

@@ -9,6 +9,7 @@ import csv
 import math
 import numpy as np
 from scipy.stats.stats import pearsonr, spearmanr
+from scipy import stats
 import torch
 import json
 import os, glob
@@ -17,18 +18,61 @@ import logging
 logger = logging.getLogger(__name__)
 
 #relations = ['size_smaller', 'size_larger']
-relations = ['color', 'shape', 'material'] #, 'shape', 'material', 'cooccur'
+relations = ['cooccur'] #, 'shape', 'material', 'cooccur'
 verbose = False  # verbose=True only available for non-size relations, one at a time
 
-def load_obj_file(rel_type):
-    objs_file = f'/home/heidi/VL-commonsense/mine-data/words/{rel_type}-words.txt'
-    objs_ls = []
-    with open(objs_file, 'r') as f:
-        for line in f.readlines():
-            if len(line.strip().split()) > 1:
-                continue
-            objs_ls.append(line.strip())
-    return objs_ls
+WORD_LISTS = {
+    'color': ['black', 'blue', 'brown', 'gray', 'green', 'orange', 'pink', 'purple', 'red', 'silver', 'white', 'yellow'],  # 12
+    'shape': ['cross', 'heart', 'octagon', 'oval', 'polygon', 'rectangle', 'rhombus', 'round', 'semicircle', 'square', 'star', 'triangle'],  # 12
+    'material': ['bronze', 'ceramic', 'cloth', 'concrete', 'cotton', 'denim', 'glass', 'gold', 'iron', 'jade', 'leather', 'metal', 'paper', 'plastic', 'rubber', 'stone', 'tin', 'wood']  # 18
+}
+def load_obj_file(type):
+    '''Loads the word file for color, shape, or material.'''
+    if 'wiki-' in type: type = type.split('-')[1]
+    words_file = f'/home/heidi/VL-commonsense/mine-data/words/{type}-words.txt'
+    if type not in WORD_LISTS.keys():
+        word_map = None
+        word_ls = []
+        with open(words_file, 'r') as f:
+            for line in f.readlines():
+                word_ls.append(line.strip())
+    else:
+        word_ls = WORD_LISTS[type]
+        word_map = {word: [] for word in word_ls}
+        with open(words_file, 'r') as f:
+            for line in f.readlines():
+                splitted = line.split(':')
+                specific = splitted[0].strip()
+                category = splitted[1].strip() if len(splitted) == 2 else specific
+                word_map[category].append(specific)
+    return word_ls, word_map
+
+
+def get_token_ids(words, tokenizer, relation):
+    obj_ids = []
+    for obj in words:
+        token = tokenizer.encode(obj)[1]  # use the first subword token id
+        if relation != 'cooccur' and token in obj_ids: continue
+        obj_ids.append(token)
+    return torch.tensor(obj_ids)
+
+def get_model_dist(scores, obj_ls, objs_map, tokenizer, relation):
+    obj_ids = get_token_ids(obj_ls, tokenizer, relation)
+
+    if objs_map == None:
+        return torch.index_select(torch.tensor(scores), 1, obj_ids)
+
+    obj_id_map = {}
+    for obj in objs_map:
+        obj_id_map[obj] = get_token_ids(objs_map[obj], tokenizer, relation)
+    model_dist = []
+    for ex_score in scores:
+        dist = []
+        for obj in obj_ls:
+            dist.append(np.log(np.exp(ex_score[obj_id_map[obj]]).sum()))
+        model_dist.append(dist)
+    return torch.tensor(model_dist)
+
 
 def get_correlation(vg_dist, model_dist):
     # Compute correlation between the VG distribution and model distribution
@@ -41,11 +85,12 @@ def get_correlation(vg_dist, model_dist):
 
 def analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds, model_name, ptune):
     # get the list of object ids, and find model distribution across the objects
-    objs_ls = load_obj_file(rel_type)
-    obj_ids = torch.tensor(util.tokenizer.convert_tokens_to_ids(objs_ls))
-
-    model_dist = np.array(torch.index_select(target_dist, 1, obj_ids))  # keeps the order of obj_ids
-    # print(model_dist.shape)  # [num_test_ins, num_objs]
+    objs_ls, objs_map = load_obj_file(rel_type)
+    #obj_ids = torch.tensor(util.tokenizer.convert_tokens_to_ids(objs_ls))
+    
+    model_dist = get_model_dist(target_dist, objs_ls, objs_map, util.tokenizer, rel_type)
+    #model_dist = np.array(torch.index_select(target_dist, 1, obj_ids))  # keeps the order of obj_ids
+    #print(model_dist.shape)  # [num_test_ins, num_objs]
 
     # load Visual Genome distribution across objects for the test subjects
     subjects = [rel_ins.entities[0] for rel_ins in test_set]
@@ -92,9 +137,9 @@ def calculate_acc(rel_type, test_set, target_dist):
     # get the object list of the relation
     # if max of output prob over the object list equals prob of the true target, 
     # count as correct
-    objs_ls = load_obj_file(rel_type)
-    obj_ids = torch.tensor(util.tokenizer.convert_tokens_to_ids(objs_ls))
-    model_dist = torch.index_select(target_dist, 1, obj_ids)  # keeps the order of obj_ids
+    objs_ls, objs_map = load_obj_file(rel_type)
+    #obj_ids = torch.tensor(util.tokenizer.convert_tokens_to_ids(objs_ls))
+    model_dist = get_model_dist(target_dist, objs_ls, objs_map, util.tokenizer, rel_type)
 
     dist_of_target = []
     for i, rel_ins in enumerate(test_set):
@@ -197,6 +242,7 @@ def run(lm_name, log_path=''):
             x,y,z = analyze_distributions(rel_type, target_dist, test_set, answer_ranks, preds, f"{lm.model_type}-{lm.model_size}", cfg.get('load_model'))
             if verbose:
                 return x,y,z
+            #return [cor[0] for cor in x]
 
 def cross_model_corr(corr_sp1, corr_sp2, subjects):
     corr1 = [corr[0] for corr in corr_sp1]
@@ -270,7 +316,8 @@ if __name__ == '__main__':
         # print(bd_bert)
         # print(bd_distil)
     else:
-        run('lm', log_path='logs/vl-bert')
-        run('lm2', log_path='logs/vl-oscar')
-        #run('lm3', log_path='logs/vl-distilbert')
+        sp_bert = run('lm', log_path='logs/vl-bert-large')
+        sp_oscar = run('lm2', log_path='logs/vl-oscar-large')
+        #print(stats.ttest_ind(sp_bert, sp_oscar, equal_var=False))
+        run('lm3', log_path='logs/vl-distilbert')
         #run('lm4')

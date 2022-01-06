@@ -5,7 +5,7 @@ import seaborn as sns
 
 # reference: https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html
 def plot_heatmap(**kwargs):
-    models = ['BERT', 'Oscar', 'Distilled', 'RoBERTa', 'ALBERT', 'Vokenization']
+    models = ['BERT', 'Oscar', 'Distilled', 'RoBERTa', 'Vokenization']  #  'ALBERT',
     data = ['CoDa', 'VG', 'Wiki']
     df = pd.read_csv('heatmap_data.csv', sep=',', index_col=0)
     df_values = df.values*100
