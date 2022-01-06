@@ -1,0 +1,121 @@
+model,relation,object,has_prompt_tuning,spearman
+oscar-base,color,jacket,False,0.8321678321678322
+oscar-base,color,van,False,0.34325796948578974
+oscar-base,color,street light,False,0.3986045639319472
+oscar-base,color,pole,False,-0.3706293706293707
+oscar-base,color,cabinet,False,0.6409817185295869
+oscar-base,color,curtain,False,0.5664335664335665
+oscar-base,color,drape,False,0.21037912678459744
+oscar-base,color,picture,False,0.059544749808759435
+oscar-base,color,apple,False,0.8266297135457225
+oscar-base,color,counter,False,-0.25919479328518813
+oscar-base,color,jacket,True,0.8951048951048951
+oscar-base,color,van,True,0.8546422913727825
+oscar-base,color,street light,True,0.8360113420519601
+oscar-base,color,pole,True,0.8811188811188813
+oscar-base,color,cabinet,True,0.9071817764981585
+oscar-base,color,curtain,True,0.8601398601398602
+oscar-base,color,drape,True,0.8557794987848031
+oscar-base,color,picture,True,0.9772344233319931
+oscar-base,color,apple,True,0.8846388162506855
+oscar-base,color,counter,True,0.8896686147896998
+oscar-base,shape,table top,False,0.39304183206703214
+oscar-base,shape,top,False,0.42223163284330995
+oscar-base,shape,pot,False,0.6504436355879909
+oscar-base,shape,nose,False,0.5338618958255908
+oscar-base,shape,mirror,False,0.6448712224790822
+oscar-base,shape,door,False,0.4405895299234538
+oscar-base,shape,recepticle,False,0.39304183206703214
+oscar-base,shape,clock,False,0.6494255502053499
+oscar-base,shape,coffee table,False,0.7618527288259722
+oscar-base,shape,sewer,False,0.4803844614152615
+oscar-base,shape,table top,True,0.4803844614152615
+oscar-base,shape,top,True,0.614989552184821
+oscar-base,shape,pot,True,0.6504436355879909
+oscar-base,shape,nose,True,0.7424016988824623
+oscar-base,shape,mirror,True,0.6823153579778677
+oscar-base,shape,door,True,0.5323790153241733
+oscar-base,shape,recepticle,True,0.4803844614152615
+oscar-base,shape,clock,True,0.533723297007845
+oscar-base,shape,coffee table,True,0.7618527288259722
+oscar-base,shape,sewer,True,0.4803844614152615
+oscar-base,material,chair,False,0.8235782488961388
+oscar-base,material,lid,False,0.6318163766821326
+oscar-base,material,shelf,False,0.8235738762199006
+oscar-base,material,bookshelf,False,0.3973597071195132
+oscar-base,material,wall,False,0.8600526665632845
+oscar-base,material,mug,False,0.5890293917581745
+oscar-base,material,candle holder,False,0.6234609090856869
+oscar-base,material,leg,False,0.6953589026292294
+oscar-base,material,knob,False,0.6822141810478282
+oscar-base,material,tray,False,0.6542481566967582
+oscar-base,material,chair,True,0.8720888820305837
+oscar-base,material,lid,True,0.8051356551105
+oscar-base,material,shelf,True,0.7473625623010441
+oscar-base,material,bookshelf,True,0.3973597071195132
+oscar-base,material,wall,True,0.9389268432707214
+oscar-base,material,mug,True,0.7875492754549429
+oscar-base,material,candle holder,True,0.7198139586716565
+oscar-base,material,leg,True,0.7270729066342788
+oscar-base,material,knob,True,0.8161985877761403
+oscar-base,material,tray,True,0.82573869687221
+oscar-base,cooccur,man,False,0.35458976051542596
+oscar-base,cooccur,glass,False,0.24323017932155083
+oscar-base,cooccur,shade,False,0.17873641834522402
+oscar-base,cooccur,shirt,False,0.1943276976872722
+oscar-base,cooccur,plug,False,0.18584820617589573
+oscar-base,cooccur,hair,False,0.22973266358914135
+oscar-base,cooccur,desktop,False,0.08278066640035105
+oscar-base,cooccur,cabinet,False,0.2735245095912995
+oscar-base,cooccur,pillow,False,0.31880230433433165
+oscar-base,cooccur,curtain,False,0.2776253061669233
+oscar-base,cooccur,man,True,0.4125161641663972
+oscar-base,cooccur,glass,True,0.36538370054143693
+oscar-base,cooccur,shade,True,0.22571487412051777
+oscar-base,cooccur,shirt,True,0.2665329965459871
+oscar-base,cooccur,plug,True,0.2441861438944666
+oscar-base,cooccur,hair,True,0.33257776627543095
+oscar-base,cooccur,desktop,True,0.10044360805394174
+oscar-base,cooccur,cabinet,True,0.3320386552823393
+oscar-base,cooccur,pillow,True,0.33444638013972383
+oscar-base,cooccur,curtain,True,0.31900716671079826
+bert-base,color,jacket,True,0.8111888111888113
+bert-base,color,van,True,0.651489615554662
+bert-base,color,street light,True,0.7584069136758288
+bert-base,color,pole,True,0.7062937062937064
+bert-base,color,cabinet,True,0.8896686147896998
+bert-base,color,curtain,True,0.5244755244755246
+bert-base,color,drape,True,0.7274125739670826
+bert-base,color,picture,True,0.9772344233319931
+bert-base,color,apple,True,0.8773876784125652
+bert-base,color,counter,True,0.8126107032724816
+bert-base,shape,table top,True,0.4803844614152615
+bert-base,shape,top,True,0.6608842948851807
+bert-base,shape,pot,True,0.6504436355879909
+bert-base,shape,nose,True,0.7006937382710879
+bert-base,shape,mirror,True,0.5325388159827259
+bert-base,shape,door,True,0.3488000445227343
+bert-base,shape,recepticle,True,0.4803844614152615
+bert-base,shape,clock,True,0.5747789352392177
+bert-base,shape,coffee table,True,0.7526737802859004
+bert-base,shape,sewer,True,0.39304183206703214
+bert-base,material,chair,True,0.6802513782716436
+bert-base,material,lid,True,0.6969647579353487
+bert-base,material,shelf,True,0.6576298862352937
+bert-base,material,bookshelf,True,0.3973597071195132
+bert-base,material,wall,True,0.8849034345669975
+bert-base,material,mug,True,0.641271466415219
+bert-base,material,candle holder,True,0.6787222169364635
+bert-base,material,leg,True,0.47218628185295647
+bert-base,material,knob,True,0.7510502065229242
+bert-base,material,tray,True,0.8551035153954037
+bert-base,cooccur,man,True,0.32472528847612525
+bert-base,cooccur,glass,True,0.31797014377915966
+bert-base,cooccur,shade,True,0.19216567346540084
+bert-base,cooccur,shirt,True,0.22228458678740615
+bert-base,cooccur,plug,True,0.2193615528794111
+bert-base,cooccur,hair,True,0.302332227911571
+bert-base,cooccur,desktop,True,0.09559451635624945
+bert-base,cooccur,cabinet,True,0.28078302104333497
+bert-base,cooccur,pillow,True,0.3087893217844659
+bert-base,cooccur,curtain,True,0.28391501898613475

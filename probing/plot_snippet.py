@@ -41,9 +41,9 @@ def linked_point_plot(ax, df, key = "model", left_name="bert-base", right_name="
 def draw_linked_plot():
     # 4 plots across horizontally, one per (color, shape, material, co-occurrence)
     fig, axs = plt.subplots(1,4, figsize=(10,4))
-    df = pd.read_csv("pt_corrs_sm.csv", index_col=False)
-    #key, left, right = ["model", "bert-base", "oscar-base"] # "has_prompt_tuning", False, True
-    key, left, right = ["has_prompt_tuning", False, True]
+    df = pd.read_csv("probing/pt_corrs_sm.csv", index_col=False)
+    key, left, right = ["model", "bert-base", "oscar-base"]
+    #key, left, right = ["has_prompt_tuning", False, True]
     for idx, rel in enumerate(['color', 'shape', 'material', 'cooccur']):
         # assumed CSV format: 
         #   - column names: model, relation, object, has_prompt_tuning, spearman
@@ -78,4 +78,5 @@ def plot_heatmap(**kwargs):
 
 
 if __name__ == '__main__':
-    plot_heatmap(cmap="YlGn")
+    draw_linked_plot()
+    #plot_heatmap(cmap="YlGn")
