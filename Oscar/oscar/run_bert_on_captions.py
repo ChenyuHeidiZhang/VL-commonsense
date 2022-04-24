@@ -17,8 +17,6 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 
-from oscar.modeling.modeling_bert import BertImgForPreTraining
-# from oscar.modeling.modeling_distill_oscar import DistilBertForMaskedLM
 from pytorch_transformers.modeling_bert import BertForMaskedLM
 from pytorch_transformers import (WEIGHTS_NAME, BertConfig,
                                   BertTokenizer)
@@ -34,31 +32,28 @@ logger = logging.getLogger(__name__)
 ALL_MODELS = sum((tuple(conf.pretrained_config_archive_map.keys()) for conf in (BertConfig,)), ())
 
 MODEL_CLASSES = {
-    'oscar': (BertConfig, BertImgForPreTraining, BertTokenizer),
     'bert': (BertConfig, BertForMaskedLM, BertTokenizer),
 }
 
 
-""" ****** Distillation training ****** """
+""" ****** Training BERT on Oscar text data ****** """
 
 
 def main():
     parser = argparse.ArgumentParser()
 
     ## Required parameters
-    parser.add_argument("--pretrained_model_path", default='pretrained_base/checkpoint-2000000', type=str,
-                        required=False, help="Path to pre-trained Oscar model")
     parser.add_argument("--model_name_or_path", default='bert-base-uncased', type=str,
                         required=False, help="Shortcut name selected in the list: " + ", ".join(ALL_MODELS))
-    parser.add_argument("--data_dir", default='/home/heidi/VL-commonsense/Oscar/oscar/datasets', type=str, required=False,
+    parser.add_argument("--data_dir", default='oscar/datasets', type=str, required=False,
                         help="The input data dir. "
                              "Should contain the .yaml files for the task.")
     parser.add_argument("--dataset_file", default='coco_flickr30k_gqa.yaml', type=str, required=False,
                         help="The training dataset yaml file.")
     parser.add_argument("--extra_dataset_file", default=None, type=str, required=False,
                         help="The extra training dataset yaml file.")
-    parser.add_argument("--output_dir", default='student-bert/', type=str, required=False,
-                        help="The output directory where the student model checkpoints will be written.")
+    parser.add_argument("--output_dir", default='bert-on-captions/', type=str, required=False,
+                        help="The output directory where the caption BERT model checkpoints will be written.")
 
     # image chunks
     parser.add_argument("--chunk_start_id", default=-1, type=int,
@@ -232,40 +227,26 @@ def main():
         args.model_name_or_path = last_checkpoint_dir
         logger.info(" -> Recovering model from {}".format(last_checkpoint_dir))
 
+    if args.texta_false_prob < 0.5 and (args.texta_false_prob > 0 or not args.use_b):
+        args.num_contrast_classes = 3
+    else:
+        args.num_contrast_classes = 2
+
     # Prepare models
-    teacher_config = BertConfig.from_pretrained(
-        os.path.join(args.pretrained_model_path, "config.json")
-    )
-    load_num = 0
-    while load_num < 10:
-        try:
-            teacher_model = BertImgForPreTraining.from_pretrained(
-                args.pretrained_model_path,
-                from_tf=bool('.ckpt' in args.pretrained_model_path),
-                config=teacher_config)
-            break
-        except:
-            load_num += 1
-    student_config = BertConfig.from_pretrained(
-        args.config_name if args.config_name else args.model_name_or_path,
-    )
-    student_model = BertForMaskedLM.from_pretrained(args.model_name_or_path)
+    model_config = BertConfig()
+    bert_model = BertForMaskedLM(model_config)
 
-    total_params_t = sum(p.numel() for p in teacher_model.parameters())
-    total_params_s = sum(p.numel() for p in student_model.parameters())
+    total_params = sum(p.numel() for p in bert_model.parameters())
     logger.info(
-        'Total Teacher Parameters: {}'.format(total_params_t))
-    logger.info(
-        'Total Student Parameters: {}'.format(total_params_s))
+        'Total Model Parameters: {}'.format(total_params))
 
-    for key, val in vars(teacher_config).items():
+    for key, val in vars(model_config).items():
         setattr(args, key, val)
 
     if get_rank() == 0 and args.local_rank != -1:
         torch.distributed.barrier()
 
-    teacher_model.to(args.device)
-    student_model.to(args.device)
+    bert_model.to(args.device)
 
     logger.info("Training/evaluation parameters %s", args)
 
@@ -276,7 +257,7 @@ def main():
     )
 
     # Prepare optimizer
-    param_optimizer = list(student_model.named_parameters())
+    param_optimizer = list(bert_model.named_parameters())
     no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
     optimizer_grouped_parameters = [
         {'params': [p for n, p in param_optimizer if
@@ -302,11 +283,11 @@ def main():
         scheduler.load_state_dict(optimizer_to_load.pop("scheduler"))
 
     if args.distributed:
-        student_model = torch.nn.parallel.DistributedDataParallel(
-            student_model, device_ids=[args.local_rank], output_device=args.local_rank,
+        bert_model = torch.nn.parallel.DistributedDataParallel(
+            bert_model, device_ids=[args.local_rank], output_device=args.local_rank,
             find_unused_parameters=True)
     elif args.n_gpu > 1:
-        student_model = torch.nn.DataParallel(student_model)
+        bert_model = torch.nn.DataParallel(bert_model)
 
     # train_examples = None
     train_dataloaders = make_data_loader(
@@ -341,15 +322,13 @@ def main():
 
     log_json = {}
 
-    teacher_model.eval()
-    student_model.train()
-    student_model.zero_grad()
+    bert_model.train()
+    bert_model.zero_grad()
 
     clock_started = False
     # Every args.ckpt_period, report train_score and save model
     tr_loss = 0
     nb_tr_examples, nb_tr_steps = 0, 0
-    KD_loss = torch.nn.KLDivLoss(reduction='batchmean')
     for step, (batch, batch_extra) in enumerate(zip(train_dataloader, train_dataloader_extra), start_iter):
         if not clock_started:
             start_training_time = time.time()
@@ -365,7 +344,6 @@ def main():
             segment_ids = torch.stack(targets_transposed[2]).to(args.device, non_blocking=True)
             lm_label_ids = torch.stack(targets_transposed[3]).to(args.device, non_blocking=True)
             is_next = torch.stack(targets_transposed[4]).to(args.device, non_blocking=True)
-            is_img_match = torch.stack(targets_transposed[5]).to(args.device, non_blocking=True)
 
             return images, input_ids, input_mask, segment_ids, lm_label_ids, is_next
 
@@ -377,22 +355,12 @@ def main():
 
         data_time = time.time() - end
 
-        def kd_step(images, input_ids, input_mask, segment_ids,
-                    label_ids, is_next, loss_weight=1.0):
-            # feature as input
-            image_features = torch.stack(images).to(args.device, non_blocking=True)
-
-            with torch.no_grad():
-                outputs_t = teacher_model(input_ids, segment_ids, input_mask,
-                                label_ids, is_next, img_feats=image_features)
-                logits_t = outputs_t[1][:, :args.max_seq_length, :].contiguous()
+        def train_step(input_ids, input_mask, label_ids, loss_weight=1.0):
             lm_input_mask = input_mask[:, :args.max_seq_length].contiguous()
             lm_label_ids = label_ids[:, :args.max_seq_length].contiguous()
-            outputs_s = student_model(input_ids, attention_mask=lm_input_mask, masked_lm_labels=lm_label_ids)
-            logits_s = outputs_s[1]
+            outputs = bert_model(input_ids, attention_mask=lm_input_mask, masked_lm_labels=lm_label_ids)
 
-            loss = loss_weight * KD_loss(input=F.log_softmax(logits_s, dim=-1),
-                                         target=F.softmax(logits_t, dim=-1))
+            loss = loss_weight * outputs[0]
 
             if args.n_gpu > 1:
                 loss = loss.mean()  # mean() to average on multi-gpu.
@@ -404,9 +372,8 @@ def main():
             return loss.item(), input_ids.size(0)
 
         start1 = time.time()
-        loss1, nb_tr_example1 = kd_step(
-            images1, input_ids1, input_mask1,
-            segment_ids1, lm_label_ids1, is_next1,
+        loss1, nb_tr_example1 = train_step(
+            input_ids1, input_mask1, lm_label_ids1,
             loss_weight=1.0-args.extra_loss_weight
         )
         tr_loss += loss1
@@ -417,9 +384,8 @@ def main():
         compute_time2 = 0.0
         if batch_extra is not None:
             start2 = time.time()
-            loss2, nb_tr_example2 = kd_step(
-                images2, input_ids2, input_mask2,
-                segment_ids2, lm_label_ids2, is_next2,
+            loss2, nb_tr_example2 = train_step(
+                input_ids2, input_mask2, lm_label_ids2,
                 loss_weight=args.extra_loss_weight
             )
             tr_loss += loss2
@@ -432,7 +398,7 @@ def main():
         if (step + 1) % args.gradient_accumulation_steps == 0:
             # do gradient clipping
             if args.max_grad_norm > 0:
-                torch.nn.utils.clip_grad_norm_(student_model.parameters(), args.max_grad_norm)
+                torch.nn.utils.clip_grad_norm_(bert_model.parameters(), args.max_grad_norm)
             # do the optimization steps
             optimizer.step()
             scheduler.step()  # Update learning rate schedule
@@ -503,9 +469,9 @@ def main():
                                               step + 1))
                 if not os.path.exists(output_dir):
                     os.makedirs(output_dir)
-                model_to_save = student_model.module if hasattr(
-                    student_model,
-                    'module') else student_model  # Take care of distributed/parallel training
+                model_to_save = bert_model.module if hasattr(
+                    bert_model,
+                    'module') else bert_model  # Take care of distributed/parallel training
                 optimizer_to_save = {
                     "optimizer": optimizer.state_dict(),
                     "scheduler": scheduler.state_dict()}
