@@ -22,7 +22,7 @@ COLORS = [
 # line_colors = ['blue', 'orange', 'green', 'red', 'purple', 'brwon', 'pink']
 
 color_ls = load_word_file('color')[0]
-vg_dist_dict = load_dist_file('wiki-color')
+vg_dist_dict = load_dist_file('color')
 #wiki_dist_dict = load_dist_file('wiki-color')
 
 def get_color_ids(colors):
@@ -95,7 +95,6 @@ def run(topk=11, eval_method=spearmanr):
             ngram = instance['ngram']
             #if ngram in wiki_dist_dict and 
             if ngram in vg_dist_dict and ngram not in common_subs:  # do not count same subject twice (different templates but same labels)
-                common_subs.append(ngram)
                 obj_group = instance['object_group']
                 color_dist = instance['label']
                 topk_color_ids = np.argsort(color_dist)[-topk:][::-1]
@@ -117,6 +116,7 @@ def run(topk=11, eval_method=spearmanr):
                 sp_corrs.append(val)
                 #p_vals.append(pval)
                 sp_corrs_per_group[obj_group].append(val)
+                common_subs.append(ngram)
                 objs[obj_group].append(ngram)
                 if val < 0.5:
                     objs_weak_corr[obj_group].append((ngram, color_dist, vg_dist))

@@ -22861,3 +22861,1151 @@ distil_bert-base,cooccur,captivity,True,0.021792092676393086
 distil_bert-base,cooccur,tabby,True,0.021792092676705177
 distil_bert-base,cooccur,casserole,True,0.022412777497325433
 distil_bert-base,cooccur,guacamole,True,0.03168572774344973
+bert-large,color,jacket,False,0.8461538461538463
+bert-large,color,van,False,0.6479869832129704
+bert-large,color,street light,False,0.546758472650016
+bert-large,color,pole,False,0.35664335664335667
+bert-large,color,cabinet,False,0.7390554240969553
+bert-large,color,curtain,False,0.7062937062937064
+bert-large,color,drape,False,0.8415165071383898
+bert-large,color,picture,False,0.8406317620060155
+bert-large,color,apple,False,0.7613694730026391
+bert-large,color,counter,False,0.287215852018722
+bert-large,color,writing,False,0.7110343653634216
+bert-large,color,headphone,False,0.39769784454391993
+bert-large,color,cup,False,0.8111888111888113
+bert-large,color,stapler,False,0.5782737580245332
+bert-large,color,charger,False,0.2526516601044262
+bert-large,color,coat,False,0.7692307692307694
+bert-large,color,computer keyboard,False,0.3304421474425904
+bert-large,color,water bottle,False,0.6784257348102164
+bert-large,color,sticker,False,0.8741258741258742
+bert-large,color,thing,False,0.6659502298759983
+bert-large,color,speaker,False,0.22614191160340547
+bert-large,color,fire alarm,False,0.35478743759344955
+bert-large,color,scarf,False,0.8371291296643237
+bert-large,color,trouser,False,0.6606225424502696
+bert-large,color,banner,False,0.8881118881118882
+bert-large,color,lighting,False,0.19432508268938875
+bert-large,color,pine tree,False,0.4803844614152615
+bert-large,color,vehicle,False,0.7880922768806397
+bert-large,color,blouse,False,0.847637026689399
+bert-large,color,water,False,0.36842332055681454
+bert-large,color,oven,False,-0.0467879817110494
+bert-large,color,dishwasher,False,-0.0624068924979757
+bert-large,color,liquid,False,0.5614069646580031
+bert-large,color,painting,False,0.8803035190049984
+bert-large,color,kettle,False,0.3172481136060617
+bert-large,color,fridge,False,-0.5848497713881176
+bert-large,color,mixer,False,0.19185661881232172
+bert-large,color,kitchen drawer,False,-0.13101394402234404
+bert-large,color,leg,False,0.5874125874125874
+bert-large,color,stand,False,0.26010906347250023
+bert-large,color,traffic light,False,0.7831228865170003
+bert-large,color,taxi cab,False,0.3924164082473003
+bert-large,color,purse,False,0.8531468531468532
+bert-large,color,sunglass,False,0.6842147381769412
+bert-large,color,cloud,False,0.7157938799389539
+bert-large,color,phone,False,0.39930008695285735
+bert-large,color,circle,False,0.7622377622377624
+bert-large,color,word,False,0.7075317330217298
+bert-large,color,hinge,False,0.07797996951841568
+bert-large,color,counter top,False,0.543835337859028
+bert-large,color,tray,False,0.6293706293706295
+bert-large,color,desktop,False,0.4202064094863697
+bert-large,color,panel,False,0.8561456211034547
+bert-large,color,rack,False,0.2760725689894168
+bert-large,color,dial,False,0.4963247312753539
+bert-large,color,candle,False,0.8581449237144743
+bert-large,color,lamp base,False,0.6674873101233257
+bert-large,color,bookcase,False,0.403873735763166
+bert-large,color,mattress,False,0.2752725400350703
+bert-large,color,ottoman,False,0.7442178040467319
+bert-large,color,piano,False,0.4864842726238136
+bert-large,color,flame,False,0.6940217287138996
+bert-large,color,house,False,0.7425580564386471
+bert-large,color,dirt,False,0.7329984401666305
+bert-large,color,adapter,False,0.39304183206703214
+bert-large,color,trophy,False,0.29565619799454135
+bert-large,color,basket,False,0.6643356643356644
+bert-large,color,countertop,False,0.5583376135352688
+bert-large,color,foam,False,0.4803844614152615
+bert-large,color,sand,False,0.6235978540783521
+bert-large,color,marking,False,0.8591762345488785
+bert-large,color,mulch,False,0.28490506352201256
+bert-large,color,robe,False,0.6284057490664955
+bert-large,color,rim,False,0.3789497011441521
+bert-large,color,overall,False,0.262760151851658
+bert-large,color,electrical cord,False,0.41391867719235786
+bert-large,color,fan,False,0.3559755110318876
+bert-large,color,closet,False,-0.043004537890115095
+bert-large,color,bikini top,False,0.46229878231873733
+bert-large,color,lounge chair,False,0.24858148101144548
+bert-large,color,coaster,False,0.38989984759207846
+bert-large,color,stage,False,0.41391867719235786
+bert-large,color,ladder,False,0.09473742528603803
+bert-large,color,roadway,False,0.3924164082473003
+bert-large,color,motorcycle,False,0.8251748251748254
+bert-large,color,lawn,False,0.35478743759344955
+bert-large,color,cover,False,0.8041958041958043
+bert-large,color,garage,False,0.09206721518942425
+bert-large,color,detail,False,0.5079752989340268
+bert-large,color,shopping bag,False,0.7897229403569072
+bert-large,color,camera,False,0.32471277510267493
+bert-large,color,collar,False,0.5569185423289853
+bert-large,color,wagon,False,0.705410511429949
+bert-large,color,radiator,False,-0.1427041835436076
+bert-large,color,shutter,False,0.8193785757076022
+bert-large,color,cone,False,0.6690027772631206
+bert-large,color,binder,False,0.35901964416324755
+bert-large,color,crib,False,0.30569920271880274
+bert-large,color,yard,False,0.4803844614152615
+bert-large,color,petal,False,0.7676246685723587
+bert-large,color,body of water,False,0.30569920271880274
+bert-large,color,cane,False,0.3763368901429502
+bert-large,color,steering wheel,False,0.3369972194890688
+bert-large,color,weed,False,0.7197594934766531
+bert-large,color,china,False,0.4803844614152615
+bert-large,color,design,False,0.7902097902097903
+bert-large,color,stovetop,False,0.26340279457695503
+bert-large,color,drawer pull,False,-0.41391867719235786
+bert-large,color,snow,False,0.6369228748172797
+bert-large,color,home,False,0.5866247894809716
+bert-large,color,hoodie,False,0.8161133356141735
+bert-large,color,meter,False,0.3132168478178779
+bert-large,color,sandal,False,0.7215422623884966
+bert-large,color,carpeting,False,0.7018197256657411
+bert-large,color,concrete,False,0.5848497713881176
+bert-large,color,streetlight,False,0.46131520307193596
+bert-large,color,mat,False,0.7320501594135719
+bert-large,color,piece,False,0.7296528841211928
+bert-large,color,seaweed,False,0.5214300219176456
+bert-large,color,tarp,False,0.7253700996601187
+bert-large,color,teddy bear,False,0.2837132196770302
+bert-large,color,nametag,False,0.2183565733705734
+bert-large,color,lamppost,False,0.201936867881583
+bert-large,color,drink,False,0.7901541798297005
+bert-large,color,rubber tire,False,0.4803844614152615
+bert-large,color,face,False,0.9370629370629372
+bert-large,color,vegetation,False,0.6700632434252527
+bert-large,color,stair,False,0.556351824011159
+bert-large,color,body,False,0.8077915499151851
+bert-large,color,ribbon,False,0.7832167832167832
+bert-large,color,arm chair,False,0.13101394402234404
+bert-large,color,bed skirt,False,0.2183565733705734
+bert-large,color,pattern,False,0.7438642281718542
+bert-large,color,hardware,False,-0.4803844614152615
+bert-large,color,quilt,False,0.7613954726545481
+bert-large,color,hamper,False,0.01612670170879316
+bert-large,color,toy,False,0.5734265734265735
+bert-large,color,blow dryer,False,-0.29565619799454135
+bert-large,color,candle holder,False,0.7642037012804738
+bert-large,color,tulip,False,0.19494992379603923
+bert-large,color,loveseat,False,-0.34403630312092076
+bert-large,color,sausage,False,0.23865266204187083
+bert-large,color,i,False,0.39304183206703214
+bert-large,color,tall building,False,0.13101394402234404
+bert-large,color,dispenser,False,0.1602075942791931
+bert-large,color,taillight,False,0.5214300219176456
+bert-large,color,tarmac,False,0.3396210959826623
+bert-large,color,airplane,False,0.6970238359966545
+bert-large,color,name,False,0.6381001297545928
+bert-large,color,food,False,0.738147342286825
+bert-large,color,ballon,False,0.2183565733705734
+bert-large,color,balloon,False,0.8677586082058318
+bert-large,color,giraffe,False,0.0935759634220988
+bert-large,color,hoof,False,0.6115875464801618
+bert-large,color,monkey,False,0.42223163284330995
+bert-large,color,windmill,False,0.2183565733705734
+bert-large,color,lace,False,0.9157951110983675
+bert-large,color,goat,False,0.44932962598542503
+bert-large,color,tennis shoe,False,0.8611718993346292
+bert-large,color,r,False,0.7343158832057565
+bert-large,color,athletic shoe,False,0.6504436355879909
+bert-large,color,basketball,False,-0.08286049367048183
+bert-large,color,smoke stack,False,0.39304183206703214
+bert-large,color,buoy,False,0.5583376135352688
+bert-large,color,pedestrian sign,False,0.13101394402234404
+bert-large,color,backhoe,False,0.2183565733705734
+bert-large,color,cylinder,False,-0.08362420100070908
+bert-large,color,milk carton,False,0.30569920271880274
+bert-large,color,racket,False,0.9230769230769231
+bert-large,color,soda can,False,0.4730499167912661
+bert-large,color,switch plate,False,0.2183565733705734
+bert-large,color,ceiling tile,False,0.4803844614152615
+bert-large,color,steeple,False,0.7345440697902892
+bert-large,color,glove,False,0.7622377622377624
+bert-large,color,pickup,False,0.6881813500876758
+bert-large,color,suitcase,False,0.8251748251748254
+bert-large,color,girl,False,0.3450789794499594
+bert-large,color,suit jacket,False,0.5913123959890827
+bert-large,color,cake,False,0.8931712471313916
+bert-large,color,corner,False,0.5713990603758277
+bert-large,color,bar stool,False,0.178899758494197
+bert-large,color,twig,False,0.2150226894505755
+bert-large,color,date,False,0.2537880294917679
+bert-large,color,lane,False,0.04367131467411468
+bert-large,color,drive,False,-0.13101394402234404
+bert-large,color,platform,False,0.369808029744139
+bert-large,color,blue sign,False,0.39304183206703214
+bert-large,color,star,False,0.803513718166767
+bert-large,color,cell,False,0.13101394402234404
+bert-large,color,cellbar,False,0.4803844614152615
+bert-large,color,neck,False,0.7118564723133589
+bert-large,color,washer,False,0.39304183206703214
+bert-large,color,suit coat,False,0.639692501115462
+bert-large,color,decoration,False,0.7062937062937064
+bert-large,color,styrofoam cup,False,0.4803844614152615
+bert-large,color,bikini,False,0.9182948492842329
+bert-large,color,basin,False,0.5063696835418333
+bert-large,color,dress shirt,False,0.3855158386830221
+bert-large,color,hardwood floor,False,0.4803844614152615
+bert-large,color,boarder,False,0.3924164082473003
+bert-large,color,french fry,False,0.4730499167912661
+bert-large,color,packet,False,0.45626877970297486
+bert-large,color,magnet,False,0.7915960363759428
+bert-large,color,molding,False,0.7655245479751686
+bert-large,color,clip,False,0.27416901284939216
+bert-large,color,electrical outlet,False,0.13101394402234404
+bert-large,color,alarm,False,0.2183565733705734
+bert-large,color,food truck,False,0.11288691196155214
+bert-large,color,paper cup,False,0.4803844614152615
+bert-large,color,platter,False,0.866476742519613
+bert-large,color,dash,False,0.6792421919653246
+bert-large,color,open sign,False,0.38166527377477155
+bert-large,color,telephone pole,False,-0.2183565733705734
+bert-large,color,rear light,False,0.39304183206703214
+bert-large,color,divider,False,0.7751779949751055
+bert-large,color,bracket,False,-0.06425263978050368
+bert-large,color,box car,False,0.7382309028213248
+bert-large,color,triangle,False,0.7866014019062614
+bert-large,color,graffiti,False,0.46234746910330854
+bert-large,color,bouquet,False,0.7396002616336389
+bert-large,color,text,False,0.5410109189581528
+bert-large,color,brick wall,False,0.6947967364774628
+bert-large,color,pamphlet,False,0.20427155497804672
+bert-large,color,business card,False,0.30569920271880274
+bert-large,color,lock,False,-0.007797996951841567
+bert-large,color,wallet,False,0.5323790153241733
+bert-large,color,base board,False,0.39304183206703214
+bert-large,color,framed window,False,0.4803844614152615
+bert-large,color,sill,False,0.4803844614152615
+bert-large,color,houseplant,False,0.39304183206703214
+bert-large,color,cupboard,False,0.3304421474425904
+bert-large,color,rocking chair,False,-0.15589144985166722
+bert-large,color,electrical box,False,-0.04367131467411468
+bert-large,color,grout,False,0.554715876131278
+bert-large,color,diamond,False,0.8877247628654674
+bert-large,color,cork,False,0.2183565733705734
+bert-large,color,muffler,False,-0.4803844614152615
+bert-large,color,section,False,0.535224539555039
+bert-large,color,pine needle,False,0.4803844614152615
+bert-large,color,bonnet,False,0.4803844614152615
+bert-large,color,directional sign,False,0.39304183206703214
+bert-large,color,e,False,0.639692501115462
+bert-large,color,exhaust,False,-0.29565619799454135
+bert-large,color,horizon,False,0.21111581642165497
+bert-large,color,tanktop,False,0.5647079819651082
+bert-large,color,tan building,False,-0.04367131467411468
+bert-large,color,paw,False,0.5787043096127515
+bert-large,color,deer,False,-0.04367131467411468
+bert-large,color,hillside,False,0.3855158386830221
+bert-large,color,cow,False,0.6235978540783521
+bert-large,color,storefront,False,0.2183565733705734
+bert-large,color,traffic pole,False,0.04367131467411468
+bert-large,color,cowboy hat,False,0.39128566455505304
+bert-large,color,jersey,False,0.9859399412855983
+bert-large,color,arch,False,0.7932229667969805
+bert-large,color,lane divider,False,-0.04367131467411468
+bert-large,color,package,False,0.8427175363203869
+bert-large,color,front tire,False,0.4803844614152615
+bert-large,color,hoody,False,0.13101394402234404
+bert-large,color,stall,False,0.4803844614152615
+bert-large,color,mudflap,False,0.2183565733705734
+bert-large,color,flyer,False,0.4407965133736798
+bert-large,color,bang,False,0.23652495839563306
+bert-large,color,newspaper stand,False,0.4803844614152615
+bert-large,color,construction vehicle,False,0.13101394402234404
+bert-large,color,painted,False,0.30569920271880274
+bert-large,color,beer bottle,False,0.05375567236264388
+bert-large,color,plane tail,False,0.04367131467411468
+bert-large,color,trashcans,False,-0.04367131467411468
+bert-large,color,slack,False,0.6823153579778677
+bert-large,color,sandles,False,0.4407965133736798
+bert-large,color,leave,False,0.4730499167912661
+bert-large,color,limb,False,0.17201815156046038
+bert-large,color,speck,False,0.7018197256657411
+bert-large,color,vegetable,False,0.4982995306193512
+bert-large,color,bagel,False,0.499927752972588
+bert-large,color,truck cab,False,0.23114939115936867
+bert-large,color,winter coat,False,0.49255960126341974
+bert-large,color,crest,False,0.5214300219176456
+bert-large,color,podium,False,-0.2591001102525183
+bert-large,color,tennis court,False,0.6869414957823913
+bert-large,color,bathroom toilet,False,0.04367131467411468
+bert-large,color,artwork,False,0.614509867799027
+bert-large,color,step stool,False,0.39304183206703214
+bert-large,color,wheelchair,False,0.30569920271880274
+bert-large,color,siren,False,0.30569920271880274
+bert-large,color,bleacher,False,-0.12504007358376043
+bert-large,color,banana leaf,False,0.35478743759344955
+bert-large,color,flower vase,False,0.13101394402234404
+bert-large,color,cattle,False,0.596631655104677
+bert-large,color,cloudy,False,0.4803844614152615
+bert-large,color,under shirt,False,0.4803844614152615
+bert-large,color,car seat,False,0.23114939115936867
+bert-large,color,plank,False,0.3086926816599086
+bert-large,color,streetsign,False,0.4803844614152615
+bert-large,color,snowflake,False,0.23652495839563306
+bert-large,color,wristband,False,0.803513718166767
+bert-large,color,denim jean,False,0.39304183206703214
+bert-large,color,slipper,False,0.5604485383178051
+bert-large,color,seashell,False,0.4803844614152615
+bert-large,color,ghost,False,0.4803844614152615
+bert-large,color,pepper shaker,False,0.13101394402234404
+bert-large,color,freezer door,False,-0.04367131467411468
+bert-large,color,checker,False,0.6477502756312958
+bert-large,color,berry,False,0.3161949219897435
+bert-large,color,dalmation,False,0.4803844614152615
+bert-large,color,crossing sign,False,0.38668230379558177
+bert-large,color,kite,False,0.6993006993006995
+bert-large,color,visor,False,0.40846083281831924
+bert-large,color,wetsuit,False,0.8310065219407187
+bert-large,color,filling,False,0.5321811563901744
+bert-large,color,bun,False,0.6241685007248929
+bert-large,color,frisbee,False,0.5183895865703763
+bert-large,color,skull,False,0.13101394402234404
+bert-large,color,wet suit,False,0.9625868410556143
+bert-large,color,trash bag,False,0.28490506352201256
+bert-large,color,cat tail,False,0.4803844614152615
+bert-large,color,window sill,False,0.4589474270035978
+bert-large,color,loafer,False,0.499927752972588
+bert-large,color,stadium seat,False,0.4803844614152615
+bert-large,color,dandelion,False,0.6504436355879909
+bert-large,color,muzzle,False,0.7197594934766531
+bert-large,color,tote bag,False,0.30569920271880274
+bert-large,color,name tag,False,0.4254211982360177
+bert-large,color,snow board,False,0.8421836707988893
+bert-large,color,ski pole,False,0.6690306744437988
+bert-large,color,passenger car,False,0.15431945426208485
+bert-large,color,passenger train,False,0.5658224919816464
+bert-large,color,b,False,0.5938335379717864
+bert-large,color,skiis,False,0.7780059264747636
+bert-large,color,cockpit,False,0.30569920271880274
+bert-large,color,shoelace,False,0.9263214916857051
+bert-large,color,plane wing,False,0.39304183206703214
+bert-large,color,saddle bag,False,0.4803844614152615
+bert-large,color,wii remote,False,0.39304183206703214
+bert-large,color,water faucet,False,-0.4803844614152615
+bert-large,color,camera strap,False,0.4803844614152615
+bert-large,color,dvd player,False,-0.23865266204187083
+bert-large,color,shirt collar,False,0.4803844614152615
+bert-large,color,laptop computer,False,-0.3952436524871794
+bert-large,color,road cone,False,-0.13101394402234404
+bert-large,color,number 3,False,0.39304183206703214
+bert-large,color,soda,False,0.02762016455682727
+bert-large,color,sprinkle,False,0.16402440393375392
+bert-large,color,flip flop,False,0.5800910270496299
+bert-large,color,home plate,False,0.13101394402234404
+bert-large,color,hair tie,False,0.2937263532823025
+bert-large,color,bell pepper,False,0.5575015729819163
+bert-large,color,advertising,False,0.2570105591220147
+bert-large,color,knife blade,False,-0.2183565733705734
+bert-large,color,clockface,False,0.39304183206703214
+bert-large,color,chive,False,0.30569920271880274
+bert-large,color,neon sign,False,0.4803844614152615
+bert-large,color,mint,False,0.30569920271880274
+bert-large,color,gas pump,False,0.04367131467411468
+bert-large,color,photograph,False,0.5698101270440251
+bert-large,color,toilet tank,False,0.04367131467411468
+bert-large,color,raincoat,False,0.5575015729819163
+bert-large,color,binding,False,0.639692501115462
+bert-large,color,handwash,False,0.4803844614152615
+bert-large,color,bath mat,False,0.4803844614152615
+bert-large,color,apple logo,False,-0.04367131467411468
+bert-large,color,lifejacket,False,-0.06477502756312957
+bert-large,color,gourd,False,-0.043004537890115095
+bert-large,color,food tray,False,0.4803844614152615
+bert-large,color,fence pole,False,-0.4803844614152615
+bert-large,color,spatula,False,0.23714619149230765
+bert-large,color,gold line,False,0.39304183206703214
+bert-large,color,letter a,False,0.360163004829714
+bert-large,color,racquet,False,0.681606956783315
+bert-large,color,bicycle seat,False,0.13101394402234404
+bert-large,color,turkey,False,0.17201815156046038
+bert-large,color,dirt bike,False,0.166642584324196
+bert-large,color,rubber,False,0.4730499167912661
+bert-large,color,carving,False,0.13101394402234404
+bert-large,color,knee pad,False,0.865577661654414
+bert-large,color,pond,False,0.6504436355879909
+bert-large,color,toaster oven,False,-0.12850527956100735
+bert-large,color,pizza box,False,0.2902806307582769
+bert-large,color,passenger bus,False,0.30569920271880274
+bert-large,color,locomotive,False,0.7800571263960812
+bert-large,color,hotdog bun,False,-0.04367131467411468
+bert-large,color,number 8,False,0.360163004829714
+bert-large,color,tin,False,0.2773500981126146
+bert-large,color,overpass,False,0.07525794130770141
+bert-large,color,drawstring,False,0.13101394402234404
+bert-large,color,attire,False,0.4803844614152615
+bert-large,color,walkie talkie,False,0.30569920271880274
+bert-large,color,calendar,False,0.2183565733705734
+bert-large,color,register,False,0.2183565733705734
+bert-large,color,shopping cart,False,0.39304183206703214
+bert-large,color,knit hat,False,0.4803844614152615
+bert-large,color,tail fin,False,0.7018197256657411
+bert-large,color,coverlet,False,0.4803844614152615
+bert-large,color,safety marker,False,-0.13101394402234404
+bert-large,color,armoire,False,-0.04367131467411468
+bert-large,color,vas,False,0.7815004598985029
+bert-large,color,glaze,False,0.6076436202502
+bert-large,color,guitar case,False,0.4803844614152615
+bert-large,color,tank lid,False,0.04367131467411468
+bert-large,color,mesh,False,0.4314105813833818
+bert-large,color,medallion,False,0.4803844614152615
+bert-large,color,plantain,False,0.5698101270440251
+bert-large,color,plantation,False,0.39304183206703214
+bert-large,color,men,False,0.30569920271880274
+bert-large,color,snap,False,-0.4803844614152615
+bert-large,color,catchers mitt,False,-0.2183565733705734
+bert-large,color,baseball uniform,False,0.5614557805325929
+bert-large,color,space,False,0.596631655104677
+bert-large,color,swirl,False,0.4504459746028423
+bert-large,color,brake,False,-0.059131239598908265
+bert-large,color,handicapped sign,False,0.2526516601044262
+bert-large,color,h,False,0.639692501115462
+bert-large,color,high heel,False,0.4803844614152615
+bert-large,color,thigh,False,0.30569920271880274
+bert-large,color,spinach,False,0.2183565733705734
+bert-large,color,cleaner,False,0.39304183206703214
+bert-large,color,beer,False,0.27536845620215866
+bert-large,color,toast,False,0.5913123959890827
+bert-large,color,earbud,False,0.30569920271880274
+bert-large,color,turf,False,0.23865266204187083
+bert-large,color,broccoli floret,False,0.04367131467411468
+bert-large,color,scrunchie,False,0.39304183206703214
+bert-large,color,duvet,False,0.5321811563901744
+bert-large,color,winter hat,False,0.39304183206703214
+bert-large,color,electric pole,False,-0.39304183206703214
+bert-large,color,green grass,False,0.5106788874451168
+bert-large,color,cat eye,False,0.3709141393022427
+bert-large,color,ruler,False,0.38166527377477155
+bert-large,color,giraffe's eye,False,0.2183565733705734
+bert-large,color,crumb,False,0.5214300219176456
+bert-large,color,wrapping,False,0.4803844614152615
+bert-large,color,hot dog,False,0.3494785979886639
+bert-large,color,screw,False,0.05458597866289097
+bert-large,color,traffic line,False,0.31178289970333445
+bert-large,color,landing gear,False,0.5321811563901744
+bert-large,color,sign board,False,0.4803844614152615
+bert-large,color,baseline,False,0.4803844614152615
+bert-large,color,head gear,False,0.6504436355879909
+bert-large,color,shin guard,False,0.5866247894809716
+bert-large,color,mist,False,0.2183565733705734
+bert-large,color,basil,False,0.2183565733705734
+bert-large,color,shinguard,False,0.39304183206703214
+bert-large,color,1,False,0.4803844614152615
+bert-large,color,caution cone,False,0.11288691196155214
+bert-large,color,toilet brush,False,-0.360163004829714
+bert-large,color,substance,False,0.39304183206703214
+bert-large,color,frog,False,0.39304183206703214
+bert-large,color,guard,False,0.5507369124043173
+bert-large,color,coconut,False,0.2150226894505755
+bert-large,color,football,False,0.2202947649617269
+bert-large,color,smoke trail,False,0.2183565733705734
+bert-large,color,baseball cleat,False,0.4730499167912661
+bert-large,color,shin pad,False,0.04367131467411468
+bert-large,color,chalk,False,0.4803844614152615
+bert-large,color,lobster,False,-0.10213577748902336
+bert-large,color,flush,False,-0.4803844614152615
+bert-large,color,second hand,False,0.639692501115462
+bert-large,color,surf,False,0.39304183206703214
+bert-large,color,daffodil,False,0.7526737802859004
+bert-large,color,opening,False,0.30569920271880274
+bert-large,color,letter b,False,0.18276928603298917
+bert-large,color,bridal,False,0.39304183206703214
+bert-large,color,dashboard,False,0.6504436355879909
+bert-large,color,wakeboard,False,0.13101394402234404
+bert-large,color,connector,False,0.4730499167912661
+bert-large,color,wall plate,False,0.39304183206703214
+bert-large,color,tomato sauce,False,0.4803844614152615
+bert-large,color,arugula,False,0.04367131467411468
+bert-large,color,cilantro,False,0.2183565733705734
+bert-large,color,pony,False,0.41305268430323794
+bert-large,color,front paw,False,-0.04367131467411468
+bert-large,color,string bean,False,0.39304183206703214
+bert-large,color,dugout,False,0.4803844614152615
+bert-large,color,boundary line,False,0.13101394402234404
+bert-large,color,wooden door,False,-0.13101394402234404
+bert-large,color,computer key,False,0.04367131467411468
+bert-large,color,icon,False,0.5321811563901744
+bert-large,color,smartphone,False,0.39304183206703214
+bert-large,color,house plant,False,0.4803844614152615
+bert-large,color,sport shoe,False,0.39304183206703214
+bert-large,color,rear wheel,False,0.4803844614152615
+bert-large,color,bison,False,0.2183565733705734
+bert-large,color,windowsill,False,0.5913123959890827
+bert-large,color,tofu,False,0.30569920271880274
+bert-large,color,font,False,0.4803844614152615
+bert-large,color,slit,False,0.39304183206703214
+bert-large,color,melon,False,0.4589474270035978
+bert-large,color,lillie,False,0.13101394402234404
+bert-large,color,bedsheets,False,0.39304183206703214
+bert-large,color,grandfather clock,False,-0.39304183206703214
+bert-large,color,cargo pant,False,-0.04367131467411468
+bert-large,color,cloak,False,0.39304183206703214
+bert-large,color,ankle,False,0.30569920271880274
+bert-large,color,tomatoe,False,0.4803844614152615
+bert-large,color,ski glove,False,0.639692501115462
+bert-large,color,letter l,False,0.04367131467411468
+bert-large,color,letter n,False,0.04367131467411468
+bert-large,color,carrying case,False,0.4803844614152615
+bert-large,color,crossing,False,0.4803844614152615
+bert-large,color,front of train,False,0.13101394402234404
+bert-large,color,post it note,False,0.04367131467411468
+bert-large,color,ski stick,False,0.2526516601044262
+bert-large,color,pizza pan,False,-0.4803844614152615
+bert-large,color,duckling,False,0.13101394402234404
+bert-large,color,chunk,False,0.10751134472528776
+bert-large,color,fog,False,0.39304183206703214
+bert-large,color,coin slot,False,-0.3238751378156479
+bert-large,color,check,False,0.6241685007248929
+bert-large,color,tent top,False,0.39304183206703214
+bert-large,color,steak,False,0.13101394402234404
+bert-large,color,toilet cover,False,0.39304183206703214
+bert-large,color,piercing,False,-0.4803844614152615
+bert-large,color,grafitti,False,0.6005946328037898
+bert-large,color,cowboy boot,False,-0.13101394402234404
+bert-large,color,link,False,-0.4803844614152615
+bert-large,color,hot dog bun,False,0.04367131467411468
+bert-large,color,baseball mitt,False,-0.08600907578023019
+bert-large,color,woman's shirt,False,0.46229878231873733
+bert-large,color,message,False,0.13101394402234404
+bert-large,color,fang,False,0.04367131467411468
+bert-large,color,bedsheet,False,0.4803844614152615
+bert-large,color,dog's nose,False,0.39304183206703214
+bert-large,color,ceramic bowl,False,0.39304183206703214
+bert-large,color,video camera,False,0.4803844614152615
+bert-large,color,silhouette,False,0.4803844614152615
+bert-large,color,wildebeest,False,0.39304183206703214
+bert-large,color,sea gull,False,0.39304183206703214
+bert-large,color,fir tree,False,0.4803844614152615
+bert-large,color,headscarf,False,0.13101394402234404
+bert-large,color,shuttle,False,0.30569920271880274
+bert-large,color,numbering,False,0.4803844614152615
+bert-large,color,dirt road,False,-0.13101394402234404
+bert-large,color,serving plate,False,0.39304183206703214
+bert-large,color,copyright,False,0.2183565733705734
+bert-large,color,broccoli spear,False,0.30569920271880274
+bert-large,color,croissant,False,-0.13101394402234404
+bert-large,color,santa hat,False,0.5214300219176456
+bert-large,color,restaurant logo,False,0.39304183206703214
+bert-large,color,banana bunch,False,0.5698101270440251
+bert-large,color,golf ball,False,0.13101394402234404
+bert-large,color,eggplant,False,-0.2183565733705734
+bert-large,color,foal,False,0.4803844614152615
+bert-large,color,ski track,False,0.4803844614152615
+bert-large,color,cake server,False,-0.4803844614152615
+bert-large,color,gull,False,0.39304183206703214
+bert-large,color,jet engine,False,0.30569920271880274
+bert-large,color,go signal,False,0.39304183206703214
+bert-large,color,clock arm,False,0.30569920271880274
+bert-large,color,rashguard,False,0.4803844614152615
+bert-large,color,caution line,False,0.39304183206703214
+bert-large,color,carrot top,False,0.39304183206703214
+bert-large,color,tan short,False,0.39304183206703214
+bert-large,color,tick,False,0.5913123959890827
+bert-large,color,zebra stripe,False,0.39304183206703214
+bert-large,color,flower pedal,False,-0.04367131467411468
+bert-large,color,tan hat,False,0.13101394402234404
+bert-large,color,snow glove,False,0.30569920271880274
+bert-large,color,tan brick,False,0.39304183206703214
+bert-large,color,wave crest,False,0.4803844614152615
+bert-large,color,polygon,False,-0.13101394402234404
+bert-large,color,tiled floor,False,0.4803844614152615
+bert-large,color,traffic barrel,False,-0.12363804643408093
+bert-large,color,baby zebra,False,0.30569920271880274
+bert-large,color,sink bowl,False,-0.30569920271880274
+bert-large,color,bathroom wall,False,0.30569920271880274
+bert-large,color,bird wing,False,0.4803844614152615
+bert-large,color,sprinkler,False,0.2591001102525183
+bert-large,color,wild animal,False,0.3360453354413985
+bert-large,color,shoe tip,False,0.4803844614152615
+bert-large,color,metal tip,False,-0.4803844614152615
+bert-large,color,river wave,False,0.12955005512625914
+bert-large,color,flood light,False,-0.4803844614152615
+bert-large,color,banana cluster,False,0.30569920271880274
+bert-large,color,jacket,True,0.8461538461538463
+bert-large,color,van,True,0.6479869832129704
+bert-large,color,street light,True,0.546758472650016
+bert-large,color,pole,True,0.35664335664335667
+bert-large,color,cabinet,True,0.7390554240969553
+bert-large,color,curtain,True,0.7062937062937064
+bert-large,color,drape,True,0.8415165071383898
+bert-large,color,picture,True,0.8406317620060155
+bert-large,color,apple,True,0.7613694730026391
+bert-large,color,counter,True,0.287215852018722
+bert-large,color,writing,True,0.7110343653634216
+bert-large,color,headphone,True,0.39769784454391993
+bert-large,color,cup,True,0.8111888111888113
+bert-large,color,stapler,True,0.5782737580245332
+bert-large,color,charger,True,0.2526516601044262
+bert-large,color,coat,True,0.7692307692307694
+bert-large,color,computer keyboard,True,0.3304421474425904
+bert-large,color,water bottle,True,0.6784257348102164
+bert-large,color,sticker,True,0.8741258741258742
+bert-large,color,thing,True,0.6659502298759983
+bert-large,color,speaker,True,0.22614191160340547
+bert-large,color,fire alarm,True,0.35478743759344955
+bert-large,color,scarf,True,0.8371291296643237
+bert-large,color,trouser,True,0.6606225424502696
+bert-large,color,banner,True,0.8881118881118882
+bert-large,color,lighting,True,0.19432508268938875
+bert-large,color,pine tree,True,0.4803844614152615
+bert-large,color,vehicle,True,0.7880922768806397
+bert-large,color,blouse,True,0.847637026689399
+bert-large,color,water,True,0.36842332055681454
+bert-large,color,oven,True,-0.0467879817110494
+bert-large,color,dishwasher,True,-0.0624068924979757
+bert-large,color,liquid,True,0.5614069646580031
+bert-large,color,painting,True,0.8803035190049984
+bert-large,color,kettle,True,0.3172481136060617
+bert-large,color,fridge,True,-0.5848497713881176
+bert-large,color,mixer,True,0.19185661881232172
+bert-large,color,kitchen drawer,True,-0.13101394402234404
+bert-large,color,leg,True,0.5874125874125874
+bert-large,color,stand,True,0.26010906347250023
+bert-large,color,traffic light,True,0.7831228865170003
+bert-large,color,taxi cab,True,0.3924164082473003
+bert-large,color,purse,True,0.8531468531468532
+bert-large,color,sunglass,True,0.6842147381769412
+bert-large,color,cloud,True,0.7157938799389539
+bert-large,color,phone,True,0.39930008695285735
+bert-large,color,circle,True,0.7622377622377624
+bert-large,color,word,True,0.7075317330217298
+bert-large,color,hinge,True,0.07797996951841568
+bert-large,color,counter top,True,0.543835337859028
+bert-large,color,tray,True,0.6293706293706295
+bert-large,color,desktop,True,0.4202064094863697
+bert-large,color,panel,True,0.8561456211034547
+bert-large,color,rack,True,0.2760725689894168
+bert-large,color,dial,True,0.4963247312753539
+bert-large,color,candle,True,0.8581449237144743
+bert-large,color,lamp base,True,0.6674873101233257
+bert-large,color,bookcase,True,0.403873735763166
+bert-large,color,mattress,True,0.2752725400350703
+bert-large,color,ottoman,True,0.7442178040467319
+bert-large,color,piano,True,0.4864842726238136
+bert-large,color,flame,True,0.6940217287138996
+bert-large,color,house,True,0.7425580564386471
+bert-large,color,dirt,True,0.7329984401666305
+bert-large,color,adapter,True,0.39304183206703214
+bert-large,color,trophy,True,0.29565619799454135
+bert-large,color,basket,True,0.6643356643356644
+bert-large,color,countertop,True,0.5583376135352688
+bert-large,color,foam,True,0.4803844614152615
+bert-large,color,sand,True,0.6235978540783521
+bert-large,color,marking,True,0.8591762345488785
+bert-large,color,mulch,True,0.28490506352201256
+bert-large,color,robe,True,0.6284057490664955
+bert-large,color,rim,True,0.3789497011441521
+bert-large,color,overall,True,0.262760151851658
+bert-large,color,electrical cord,True,0.41391867719235786
+bert-large,color,fan,True,0.3559755110318876
+bert-large,color,closet,True,-0.043004537890115095
+bert-large,color,bikini top,True,0.46229878231873733
+bert-large,color,lounge chair,True,0.24858148101144548
+bert-large,color,coaster,True,0.38989984759207846
+bert-large,color,stage,True,0.41391867719235786
+bert-large,color,ladder,True,0.09473742528603803
+bert-large,color,roadway,True,0.3924164082473003
+bert-large,color,motorcycle,True,0.8251748251748254
+bert-large,color,lawn,True,0.35478743759344955
+bert-large,color,cover,True,0.8041958041958043
+bert-large,color,garage,True,0.09206721518942425
+bert-large,color,detail,True,0.5079752989340268
+bert-large,color,shopping bag,True,0.7897229403569072
+bert-large,color,camera,True,0.32471277510267493
+bert-large,color,collar,True,0.5569185423289853
+bert-large,color,wagon,True,0.705410511429949
+bert-large,color,radiator,True,-0.1427041835436076
+bert-large,color,shutter,True,0.8193785757076022
+bert-large,color,cone,True,0.6690027772631206
+bert-large,color,binder,True,0.35901964416324755
+bert-large,color,crib,True,0.30569920271880274
+bert-large,color,yard,True,0.4803844614152615
+bert-large,color,petal,True,0.7676246685723587
+bert-large,color,body of water,True,0.30569920271880274
+bert-large,color,cane,True,0.3763368901429502
+bert-large,color,steering wheel,True,0.3369972194890688
+bert-large,color,weed,True,0.7197594934766531
+bert-large,color,china,True,0.4803844614152615
+bert-large,color,design,True,0.7902097902097903
+bert-large,color,stovetop,True,0.26340279457695503
+bert-large,color,drawer pull,True,-0.41391867719235786
+bert-large,color,snow,True,0.6369228748172797
+bert-large,color,home,True,0.5866247894809716
+bert-large,color,hoodie,True,0.8161133356141735
+bert-large,color,meter,True,0.3132168478178779
+bert-large,color,sandal,True,0.7215422623884966
+bert-large,color,carpeting,True,0.7018197256657411
+bert-large,color,concrete,True,0.5848497713881176
+bert-large,color,streetlight,True,0.46131520307193596
+bert-large,color,mat,True,0.7320501594135719
+bert-large,color,piece,True,0.7296528841211928
+bert-large,color,seaweed,True,0.5214300219176456
+bert-large,color,tarp,True,0.7253700996601187
+bert-large,color,teddy bear,True,0.2837132196770302
+bert-large,color,nametag,True,0.2183565733705734
+bert-large,color,lamppost,True,0.201936867881583
+bert-large,color,drink,True,0.7901541798297005
+bert-large,color,rubber tire,True,0.4803844614152615
+bert-large,color,face,True,0.9370629370629372
+bert-large,color,vegetation,True,0.6700632434252527
+bert-large,color,stair,True,0.556351824011159
+bert-large,color,body,True,0.8077915499151851
+bert-large,color,ribbon,True,0.7832167832167832
+bert-large,color,arm chair,True,0.13101394402234404
+bert-large,color,bed skirt,True,0.2183565733705734
+bert-large,color,pattern,True,0.7438642281718542
+bert-large,color,hardware,True,-0.4803844614152615
+bert-large,color,quilt,True,0.7613954726545481
+bert-large,color,hamper,True,0.01612670170879316
+bert-large,color,toy,True,0.5734265734265735
+bert-large,color,blow dryer,True,-0.29565619799454135
+bert-large,color,candle holder,True,0.7642037012804738
+bert-large,color,tulip,True,0.19494992379603923
+bert-large,color,loveseat,True,-0.34403630312092076
+bert-large,color,sausage,True,0.23865266204187083
+bert-large,color,i,True,0.39304183206703214
+bert-large,color,tall building,True,0.13101394402234404
+bert-large,color,dispenser,True,0.1602075942791931
+bert-large,color,taillight,True,0.5214300219176456
+bert-large,color,tarmac,True,0.3396210959826623
+bert-large,color,airplane,True,0.6970238359966545
+bert-large,color,name,True,0.6381001297545928
+bert-large,color,food,True,0.738147342286825
+bert-large,color,ballon,True,0.2183565733705734
+bert-large,color,balloon,True,0.8677586082058318
+bert-large,color,giraffe,True,0.0935759634220988
+bert-large,color,hoof,True,0.6115875464801618
+bert-large,color,monkey,True,0.42223163284330995
+bert-large,color,windmill,True,0.2183565733705734
+bert-large,color,lace,True,0.9157951110983675
+bert-large,color,goat,True,0.44932962598542503
+bert-large,color,tennis shoe,True,0.8611718993346292
+bert-large,color,r,True,0.7343158832057565
+bert-large,color,athletic shoe,True,0.6504436355879909
+bert-large,color,basketball,True,-0.08286049367048183
+bert-large,color,smoke stack,True,0.39304183206703214
+bert-large,color,buoy,True,0.5583376135352688
+bert-large,color,pedestrian sign,True,0.13101394402234404
+bert-large,color,backhoe,True,0.2183565733705734
+bert-large,color,cylinder,True,-0.08362420100070908
+bert-large,color,milk carton,True,0.30569920271880274
+bert-large,color,racket,True,0.9230769230769231
+bert-large,color,soda can,True,0.4730499167912661
+bert-large,color,switch plate,True,0.2183565733705734
+bert-large,color,ceiling tile,True,0.4803844614152615
+bert-large,color,steeple,True,0.7345440697902892
+bert-large,color,glove,True,0.7622377622377624
+bert-large,color,pickup,True,0.6881813500876758
+bert-large,color,suitcase,True,0.8251748251748254
+bert-large,color,girl,True,0.3450789794499594
+bert-large,color,suit jacket,True,0.5913123959890827
+bert-large,color,cake,True,0.8931712471313916
+bert-large,color,corner,True,0.5713990603758277
+bert-large,color,bar stool,True,0.178899758494197
+bert-large,color,twig,True,0.2150226894505755
+bert-large,color,date,True,0.2537880294917679
+bert-large,color,lane,True,0.04367131467411468
+bert-large,color,drive,True,-0.13101394402234404
+bert-large,color,platform,True,0.369808029744139
+bert-large,color,blue sign,True,0.39304183206703214
+bert-large,color,star,True,0.803513718166767
+bert-large,color,cell,True,0.13101394402234404
+bert-large,color,cellbar,True,0.4803844614152615
+bert-large,color,neck,True,0.7118564723133589
+bert-large,color,washer,True,0.39304183206703214
+bert-large,color,suit coat,True,0.639692501115462
+bert-large,color,decoration,True,0.7062937062937064
+bert-large,color,styrofoam cup,True,0.4803844614152615
+bert-large,color,bikini,True,0.9182948492842329
+bert-large,color,basin,True,0.5063696835418333
+bert-large,color,dress shirt,True,0.3855158386830221
+bert-large,color,hardwood floor,True,0.4803844614152615
+bert-large,color,boarder,True,0.3924164082473003
+bert-large,color,french fry,True,0.4730499167912661
+bert-large,color,packet,True,0.45626877970297486
+bert-large,color,magnet,True,0.7915960363759428
+bert-large,color,molding,True,0.7655245479751686
+bert-large,color,clip,True,0.27416901284939216
+bert-large,color,electrical outlet,True,0.13101394402234404
+bert-large,color,alarm,True,0.2183565733705734
+bert-large,color,food truck,True,0.11288691196155214
+bert-large,color,paper cup,True,0.4803844614152615
+bert-large,color,platter,True,0.866476742519613
+bert-large,color,dash,True,0.6792421919653246
+bert-large,color,open sign,True,0.38166527377477155
+bert-large,color,telephone pole,True,-0.2183565733705734
+bert-large,color,rear light,True,0.39304183206703214
+bert-large,color,divider,True,0.7751779949751055
+bert-large,color,bracket,True,-0.06425263978050368
+bert-large,color,box car,True,0.7382309028213248
+bert-large,color,triangle,True,0.7866014019062614
+bert-large,color,graffiti,True,0.46234746910330854
+bert-large,color,bouquet,True,0.7396002616336389
+bert-large,color,text,True,0.5410109189581528
+bert-large,color,brick wall,True,0.6947967364774628
+bert-large,color,pamphlet,True,0.20427155497804672
+bert-large,color,business card,True,0.30569920271880274
+bert-large,color,lock,True,-0.007797996951841567
+bert-large,color,wallet,True,0.5323790153241733
+bert-large,color,base board,True,0.39304183206703214
+bert-large,color,framed window,True,0.4803844614152615
+bert-large,color,sill,True,0.4803844614152615
+bert-large,color,houseplant,True,0.39304183206703214
+bert-large,color,cupboard,True,0.3304421474425904
+bert-large,color,rocking chair,True,-0.15589144985166722
+bert-large,color,electrical box,True,-0.04367131467411468
+bert-large,color,grout,True,0.554715876131278
+bert-large,color,diamond,True,0.8877247628654674
+bert-large,color,cork,True,0.2183565733705734
+bert-large,color,muffler,True,-0.4803844614152615
+bert-large,color,section,True,0.535224539555039
+bert-large,color,pine needle,True,0.4803844614152615
+bert-large,color,bonnet,True,0.4803844614152615
+bert-large,color,directional sign,True,0.39304183206703214
+bert-large,color,e,True,0.639692501115462
+bert-large,color,exhaust,True,-0.29565619799454135
+bert-large,color,horizon,True,0.21111581642165497
+bert-large,color,tanktop,True,0.5647079819651082
+bert-large,color,tan building,True,-0.04367131467411468
+bert-large,color,paw,True,0.5787043096127515
+bert-large,color,deer,True,-0.04367131467411468
+bert-large,color,hillside,True,0.3855158386830221
+bert-large,color,cow,True,0.6235978540783521
+bert-large,color,storefront,True,0.2183565733705734
+bert-large,color,traffic pole,True,0.04367131467411468
+bert-large,color,cowboy hat,True,0.39128566455505304
+bert-large,color,jersey,True,0.9859399412855983
+bert-large,color,arch,True,0.7932229667969805
+bert-large,color,lane divider,True,-0.04367131467411468
+bert-large,color,package,True,0.8427175363203869
+bert-large,color,front tire,True,0.4803844614152615
+bert-large,color,hoody,True,0.13101394402234404
+bert-large,color,stall,True,0.4803844614152615
+bert-large,color,mudflap,True,0.2183565733705734
+bert-large,color,flyer,True,0.4407965133736798
+bert-large,color,bang,True,0.23652495839563306
+bert-large,color,newspaper stand,True,0.4803844614152615
+bert-large,color,construction vehicle,True,0.13101394402234404
+bert-large,color,painted,True,0.30569920271880274
+bert-large,color,beer bottle,True,0.05375567236264388
+bert-large,color,plane tail,True,0.04367131467411468
+bert-large,color,trashcans,True,-0.04367131467411468
+bert-large,color,slack,True,0.6823153579778677
+bert-large,color,sandles,True,0.4407965133736798
+bert-large,color,leave,True,0.4730499167912661
+bert-large,color,limb,True,0.17201815156046038
+bert-large,color,speck,True,0.7018197256657411
+bert-large,color,vegetable,True,0.4982995306193512
+bert-large,color,bagel,True,0.499927752972588
+bert-large,color,truck cab,True,0.23114939115936867
+bert-large,color,winter coat,True,0.49255960126341974
+bert-large,color,crest,True,0.5214300219176456
+bert-large,color,podium,True,-0.2591001102525183
+bert-large,color,tennis court,True,0.6869414957823913
+bert-large,color,bathroom toilet,True,0.04367131467411468
+bert-large,color,artwork,True,0.614509867799027
+bert-large,color,step stool,True,0.39304183206703214
+bert-large,color,wheelchair,True,0.30569920271880274
+bert-large,color,siren,True,0.30569920271880274
+bert-large,color,bleacher,True,-0.12504007358376043
+bert-large,color,banana leaf,True,0.35478743759344955
+bert-large,color,flower vase,True,0.13101394402234404
+bert-large,color,cattle,True,0.596631655104677
+bert-large,color,cloudy,True,0.4803844614152615
+bert-large,color,under shirt,True,0.4803844614152615
+bert-large,color,car seat,True,0.23114939115936867
+bert-large,color,plank,True,0.3086926816599086
+bert-large,color,streetsign,True,0.4803844614152615
+bert-large,color,snowflake,True,0.23652495839563306
+bert-large,color,wristband,True,0.803513718166767
+bert-large,color,denim jean,True,0.39304183206703214
+bert-large,color,slipper,True,0.5604485383178051
+bert-large,color,seashell,True,0.4803844614152615
+bert-large,color,ghost,True,0.4803844614152615
+bert-large,color,pepper shaker,True,0.13101394402234404
+bert-large,color,freezer door,True,-0.04367131467411468
+bert-large,color,checker,True,0.6477502756312958
+bert-large,color,berry,True,0.3161949219897435
+bert-large,color,dalmation,True,0.4803844614152615
+bert-large,color,crossing sign,True,0.38668230379558177
+bert-large,color,kite,True,0.6993006993006995
+bert-large,color,visor,True,0.40846083281831924
+bert-large,color,wetsuit,True,0.8310065219407187
+bert-large,color,filling,True,0.5321811563901744
+bert-large,color,bun,True,0.6241685007248929
+bert-large,color,frisbee,True,0.5183895865703763
+bert-large,color,skull,True,0.13101394402234404
+bert-large,color,wet suit,True,0.9625868410556143
+bert-large,color,trash bag,True,0.28490506352201256
+bert-large,color,cat tail,True,0.4803844614152615
+bert-large,color,window sill,True,0.4589474270035978
+bert-large,color,loafer,True,0.499927752972588
+bert-large,color,stadium seat,True,0.4803844614152615
+bert-large,color,dandelion,True,0.6504436355879909
+bert-large,color,muzzle,True,0.7197594934766531
+bert-large,color,tote bag,True,0.30569920271880274
+bert-large,color,name tag,True,0.4254211982360177
+bert-large,color,snow board,True,0.8421836707988893
+bert-large,color,ski pole,True,0.6690306744437988
+bert-large,color,passenger car,True,0.15431945426208485
+bert-large,color,passenger train,True,0.5658224919816464
+bert-large,color,b,True,0.5938335379717864
+bert-large,color,skiis,True,0.7780059264747636
+bert-large,color,cockpit,True,0.30569920271880274
+bert-large,color,shoelace,True,0.9263214916857051
+bert-large,color,plane wing,True,0.39304183206703214
+bert-large,color,saddle bag,True,0.4803844614152615
+bert-large,color,wii remote,True,0.39304183206703214
+bert-large,color,water faucet,True,-0.4803844614152615
+bert-large,color,camera strap,True,0.4803844614152615
+bert-large,color,dvd player,True,-0.23865266204187083
+bert-large,color,shirt collar,True,0.4803844614152615
+bert-large,color,laptop computer,True,-0.3952436524871794
+bert-large,color,road cone,True,-0.13101394402234404
+bert-large,color,number 3,True,0.39304183206703214
+bert-large,color,soda,True,0.02762016455682727
+bert-large,color,sprinkle,True,0.16402440393375392
+bert-large,color,flip flop,True,0.5800910270496299
+bert-large,color,home plate,True,0.13101394402234404
+bert-large,color,hair tie,True,0.2937263532823025
+bert-large,color,bell pepper,True,0.5575015729819163
+bert-large,color,advertising,True,0.2570105591220147
+bert-large,color,knife blade,True,-0.2183565733705734
+bert-large,color,clockface,True,0.39304183206703214
+bert-large,color,chive,True,0.30569920271880274
+bert-large,color,neon sign,True,0.4803844614152615
+bert-large,color,mint,True,0.30569920271880274
+bert-large,color,gas pump,True,0.04367131467411468
+bert-large,color,photograph,True,0.5698101270440251
+bert-large,color,toilet tank,True,0.04367131467411468
+bert-large,color,raincoat,True,0.5575015729819163
+bert-large,color,binding,True,0.639692501115462
+bert-large,color,handwash,True,0.4803844614152615
+bert-large,color,bath mat,True,0.4803844614152615
+bert-large,color,apple logo,True,-0.04367131467411468
+bert-large,color,lifejacket,True,-0.06477502756312957
+bert-large,color,gourd,True,-0.043004537890115095
+bert-large,color,food tray,True,0.4803844614152615
+bert-large,color,fence pole,True,-0.4803844614152615
+bert-large,color,spatula,True,0.23714619149230765
+bert-large,color,gold line,True,0.39304183206703214
+bert-large,color,letter a,True,0.360163004829714
+bert-large,color,racquet,True,0.681606956783315
+bert-large,color,bicycle seat,True,0.13101394402234404
+bert-large,color,turkey,True,0.17201815156046038
+bert-large,color,dirt bike,True,0.166642584324196
+bert-large,color,rubber,True,0.4730499167912661
+bert-large,color,carving,True,0.13101394402234404
+bert-large,color,knee pad,True,0.865577661654414
+bert-large,color,pond,True,0.6504436355879909
+bert-large,color,toaster oven,True,-0.12850527956100735
+bert-large,color,pizza box,True,0.2902806307582769
+bert-large,color,passenger bus,True,0.30569920271880274
+bert-large,color,locomotive,True,0.7800571263960812
+bert-large,color,hotdog bun,True,-0.04367131467411468
+bert-large,color,number 8,True,0.360163004829714
+bert-large,color,tin,True,0.2773500981126146
+bert-large,color,overpass,True,0.07525794130770141
+bert-large,color,drawstring,True,0.13101394402234404
+bert-large,color,attire,True,0.4803844614152615
+bert-large,color,walkie talkie,True,0.30569920271880274
+bert-large,color,calendar,True,0.2183565733705734
+bert-large,color,register,True,0.2183565733705734
+bert-large,color,shopping cart,True,0.39304183206703214
+bert-large,color,knit hat,True,0.4803844614152615
+bert-large,color,tail fin,True,0.7018197256657411
+bert-large,color,coverlet,True,0.4803844614152615
+bert-large,color,safety marker,True,-0.13101394402234404
+bert-large,color,armoire,True,-0.04367131467411468
+bert-large,color,vas,True,0.7815004598985029
+bert-large,color,glaze,True,0.6076436202502
+bert-large,color,guitar case,True,0.4803844614152615
+bert-large,color,tank lid,True,0.04367131467411468
+bert-large,color,mesh,True,0.4314105813833818
+bert-large,color,medallion,True,0.4803844614152615
+bert-large,color,plantain,True,0.5698101270440251
+bert-large,color,plantation,True,0.39304183206703214
+bert-large,color,men,True,0.30569920271880274
+bert-large,color,snap,True,-0.4803844614152615
+bert-large,color,catchers mitt,True,-0.2183565733705734
+bert-large,color,baseball uniform,True,0.5614557805325929
+bert-large,color,space,True,0.596631655104677
+bert-large,color,swirl,True,0.4504459746028423
+bert-large,color,brake,True,-0.059131239598908265
+bert-large,color,handicapped sign,True,0.2526516601044262
+bert-large,color,h,True,0.639692501115462
+bert-large,color,high heel,True,0.4803844614152615
+bert-large,color,thigh,True,0.30569920271880274
+bert-large,color,spinach,True,0.2183565733705734
+bert-large,color,cleaner,True,0.39304183206703214
+bert-large,color,beer,True,0.27536845620215866
+bert-large,color,toast,True,0.5913123959890827
+bert-large,color,earbud,True,0.30569920271880274
+bert-large,color,turf,True,0.23865266204187083
+bert-large,color,broccoli floret,True,0.04367131467411468
+bert-large,color,scrunchie,True,0.39304183206703214
+bert-large,color,duvet,True,0.5321811563901744
+bert-large,color,winter hat,True,0.39304183206703214
+bert-large,color,electric pole,True,-0.39304183206703214
+bert-large,color,green grass,True,0.5106788874451168
+bert-large,color,cat eye,True,0.3709141393022427
+bert-large,color,ruler,True,0.38166527377477155
+bert-large,color,giraffe's eye,True,0.2183565733705734
+bert-large,color,crumb,True,0.5214300219176456
+bert-large,color,wrapping,True,0.4803844614152615
+bert-large,color,hot dog,True,0.3494785979886639
+bert-large,color,screw,True,0.05458597866289097
+bert-large,color,traffic line,True,0.31178289970333445
+bert-large,color,landing gear,True,0.5321811563901744
+bert-large,color,sign board,True,0.4803844614152615
+bert-large,color,baseline,True,0.4803844614152615
+bert-large,color,head gear,True,0.6504436355879909
+bert-large,color,shin guard,True,0.5866247894809716
+bert-large,color,mist,True,0.2183565733705734
+bert-large,color,basil,True,0.2183565733705734
+bert-large,color,shinguard,True,0.39304183206703214
+bert-large,color,1,True,0.4803844614152615
+bert-large,color,caution cone,True,0.11288691196155214
+bert-large,color,toilet brush,True,-0.360163004829714
+bert-large,color,substance,True,0.39304183206703214
+bert-large,color,frog,True,0.39304183206703214
+bert-large,color,guard,True,0.5507369124043173
+bert-large,color,coconut,True,0.2150226894505755
+bert-large,color,football,True,0.2202947649617269
+bert-large,color,smoke trail,True,0.2183565733705734
+bert-large,color,baseball cleat,True,0.4730499167912661
+bert-large,color,shin pad,True,0.04367131467411468
+bert-large,color,chalk,True,0.4803844614152615
+bert-large,color,lobster,True,-0.10213577748902336
+bert-large,color,flush,True,-0.4803844614152615
+bert-large,color,second hand,True,0.639692501115462
+bert-large,color,surf,True,0.39304183206703214
+bert-large,color,daffodil,True,0.7526737802859004
+bert-large,color,opening,True,0.30569920271880274
+bert-large,color,letter b,True,0.18276928603298917
+bert-large,color,bridal,True,0.39304183206703214
+bert-large,color,dashboard,True,0.6504436355879909
+bert-large,color,wakeboard,True,0.13101394402234404
+bert-large,color,connector,True,0.4730499167912661
+bert-large,color,wall plate,True,0.39304183206703214
+bert-large,color,tomato sauce,True,0.4803844614152615
+bert-large,color,arugula,True,0.04367131467411468
+bert-large,color,cilantro,True,0.2183565733705734
+bert-large,color,pony,True,0.41305268430323794
+bert-large,color,front paw,True,-0.04367131467411468
+bert-large,color,string bean,True,0.39304183206703214
+bert-large,color,dugout,True,0.4803844614152615
+bert-large,color,boundary line,True,0.13101394402234404
+bert-large,color,wooden door,True,-0.13101394402234404
+bert-large,color,computer key,True,0.04367131467411468
+bert-large,color,icon,True,0.5321811563901744
+bert-large,color,smartphone,True,0.39304183206703214
+bert-large,color,house plant,True,0.4803844614152615
+bert-large,color,sport shoe,True,0.39304183206703214
+bert-large,color,rear wheel,True,0.4803844614152615
+bert-large,color,bison,True,0.2183565733705734
+bert-large,color,windowsill,True,0.5913123959890827
+bert-large,color,tofu,True,0.30569920271880274
+bert-large,color,font,True,0.4803844614152615
+bert-large,color,slit,True,0.39304183206703214
+bert-large,color,melon,True,0.4589474270035978
+bert-large,color,lillie,True,0.13101394402234404
+bert-large,color,bedsheets,True,0.39304183206703214
+bert-large,color,grandfather clock,True,-0.39304183206703214
+bert-large,color,cargo pant,True,-0.04367131467411468
+bert-large,color,cloak,True,0.39304183206703214
+bert-large,color,ankle,True,0.30569920271880274
+bert-large,color,tomatoe,True,0.4803844614152615
+bert-large,color,ski glove,True,0.639692501115462
+bert-large,color,letter l,True,0.04367131467411468
+bert-large,color,letter n,True,0.04367131467411468
+bert-large,color,carrying case,True,0.4803844614152615
+bert-large,color,crossing,True,0.4803844614152615
+bert-large,color,front of train,True,0.13101394402234404
+bert-large,color,post it note,True,0.04367131467411468
+bert-large,color,ski stick,True,0.2526516601044262
+bert-large,color,pizza pan,True,-0.4803844614152615
+bert-large,color,duckling,True,0.13101394402234404
+bert-large,color,chunk,True,0.10751134472528776
+bert-large,color,fog,True,0.39304183206703214
+bert-large,color,coin slot,True,-0.3238751378156479
+bert-large,color,check,True,0.6241685007248929
+bert-large,color,tent top,True,0.39304183206703214
+bert-large,color,steak,True,0.13101394402234404
+bert-large,color,toilet cover,True,0.39304183206703214
+bert-large,color,piercing,True,-0.4803844614152615
+bert-large,color,grafitti,True,0.6005946328037898
+bert-large,color,cowboy boot,True,-0.13101394402234404
+bert-large,color,link,True,-0.4803844614152615
+bert-large,color,hot dog bun,True,0.04367131467411468
+bert-large,color,baseball mitt,True,-0.08600907578023019
+bert-large,color,woman's shirt,True,0.46229878231873733
+bert-large,color,message,True,0.13101394402234404
+bert-large,color,fang,True,0.04367131467411468
+bert-large,color,bedsheet,True,0.4803844614152615
+bert-large,color,dog's nose,True,0.39304183206703214
+bert-large,color,ceramic bowl,True,0.39304183206703214
+bert-large,color,video camera,True,0.4803844614152615
+bert-large,color,silhouette,True,0.4803844614152615
+bert-large,color,wildebeest,True,0.39304183206703214
+bert-large,color,sea gull,True,0.39304183206703214
+bert-large,color,fir tree,True,0.4803844614152615
+bert-large,color,headscarf,True,0.13101394402234404
+bert-large,color,shuttle,True,0.30569920271880274
+bert-large,color,numbering,True,0.4803844614152615
+bert-large,color,dirt road,True,-0.13101394402234404
+bert-large,color,serving plate,True,0.39304183206703214
+bert-large,color,copyright,True,0.2183565733705734
+bert-large,color,broccoli spear,True,0.30569920271880274
+bert-large,color,croissant,True,-0.13101394402234404
+bert-large,color,santa hat,True,0.5214300219176456
+bert-large,color,restaurant logo,True,0.39304183206703214
+bert-large,color,banana bunch,True,0.5698101270440251
+bert-large,color,golf ball,True,0.13101394402234404
+bert-large,color,eggplant,True,-0.2183565733705734
+bert-large,color,foal,True,0.4803844614152615
+bert-large,color,ski track,True,0.4803844614152615
+bert-large,color,cake server,True,-0.4803844614152615
+bert-large,color,gull,True,0.39304183206703214
+bert-large,color,jet engine,True,0.30569920271880274
+bert-large,color,go signal,True,0.39304183206703214
+bert-large,color,clock arm,True,0.30569920271880274
+bert-large,color,rashguard,True,0.4803844614152615
+bert-large,color,caution line,True,0.39304183206703214
+bert-large,color,carrot top,True,0.39304183206703214
+bert-large,color,tan short,True,0.39304183206703214
+bert-large,color,tick,True,0.5913123959890827
+bert-large,color,zebra stripe,True,0.39304183206703214
+bert-large,color,flower pedal,True,-0.04367131467411468
+bert-large,color,tan hat,True,0.13101394402234404
+bert-large,color,snow glove,True,0.30569920271880274
+bert-large,color,tan brick,True,0.39304183206703214
+bert-large,color,wave crest,True,0.4803844614152615
+bert-large,color,polygon,True,-0.13101394402234404
+bert-large,color,tiled floor,True,0.4803844614152615
+bert-large,color,traffic barrel,True,-0.12363804643408093
+bert-large,color,baby zebra,True,0.30569920271880274
+bert-large,color,sink bowl,True,-0.30569920271880274
+bert-large,color,bathroom wall,True,0.30569920271880274
+bert-large,color,bird wing,True,0.4803844614152615
+bert-large,color,sprinkler,True,0.2591001102525183
+bert-large,color,wild animal,True,0.3360453354413985
+bert-large,color,shoe tip,True,0.4803844614152615
+bert-large,color,metal tip,True,-0.4803844614152615
+bert-large,color,river wave,True,0.12955005512625914
+bert-large,color,flood light,True,-0.4803844614152615
+bert-large,color,banana cluster,True,0.30569920271880274

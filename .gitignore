@@ -12,3 +12,4 @@ output.csv
 */__pycache__
 probing/*.jsonl
 visual_genome_python_driver
+*/.DS_Store

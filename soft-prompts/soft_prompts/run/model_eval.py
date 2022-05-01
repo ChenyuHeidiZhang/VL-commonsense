@@ -18,7 +18,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 #relations = ['size_smaller', 'size_larger']
-relations = ['cooccur'] #, 'shape', 'material', 'cooccur'
+relations = ['color'] #, 'shape', 'material', 'cooccur'
 verbose = False  # verbose=True only available for non-size relations, one at a time
 
 WORD_LISTS = {
@@ -317,7 +317,7 @@ if __name__ == '__main__':
         # print(bd_distil)
     else:
         sp_bert = run('lm', log_path='logs/vl-bert-large')
-        sp_oscar = run('lm2', log_path='logs/vl-oscar-large')
+        #sp_oscar = run('lm2', log_path='logs/vl-oscar-large')
         #print(stats.ttest_ind(sp_bert, sp_oscar, equal_var=False))
-        run('lm3', log_path='logs/vl-distilbert')
+        #run('lm3', log_path='logs/vl-distilbert')
         #run('lm4')

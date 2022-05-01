@@ -3,6 +3,7 @@ pretrained_base/
 pretrained_large/
 *.DS_Store
 student-bert/
+bert-on-captions/
 
 # Initially taken from Github's Python gitignore file
 

@@ -9,6 +9,7 @@ from transformers import BertTokenizer, BertForMaskedLM, BertModel
 from transformers import AlbertTokenizer, AlbertForMaskedLM
 from transformers import RobertaTokenizer, RobertaForMaskedLM
 from pytorch_transformers import BertConfig
+from transformers import DistilBertForMaskedLM, VisualBertForPreTraining
 from modeling_bert import BertImgModel, BertImgForPreTraining
 
 
@@ -61,6 +62,12 @@ def init_mlm_model(model_name='bert', model_size='base', device='cpu'):
         config = BertConfig.from_pretrained(dir + "/config.json")
         model = BertImgForPreTraining.from_pretrained(dir + "/pytorch_model.bin", config=config)
         tokenizer = BertTokenizer.from_pretrained(dir)
+    elif model_name == 'visualbert':
+        model = VisualBertForPreTraining.from_pretrained("uclanlp/visualbert-vqa-coco-pre")
+        tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
+    elif model_name == 'caption_bert':
+        model = BertForMaskedLM.from_pretrained("Oscar/bert-on-captions/checkpoint-0250000")
+        tokenizer = BertTokenizer.from_pretrained("Oscar/bert-on-captions/checkpoint-0250000")
     elif model_name == 'distil_bert':
         config = BertConfig.from_pretrained("soft-prompts/distil_bert/config.json")
         model = BertForMaskedLM.from_pretrained("soft-prompts/distil_bert/")
@@ -71,6 +78,25 @@ def init_mlm_model(model_name='bert', model_size='base', device='cpu'):
         tokenizer = BertTokenizer.from_pretrained("soft-prompts/vlm_12L_768H_wiki/")
     else:
         raise Exception('model name undefined')
+    return model.to(device), tokenizer
+
+def init_distilled_model(model_name, device='cpu'):
+    models = {
+        'bert12': "bert-base-uncased", # provided
+        'bert6': "Distillation/student-bert/checkpoint-0560000",
+        'bert4': "Distillation/student-bert-4/checkpoint-0660000",  # done
+        'bert2': "Distillation/student-bert-2/checkpoint-0500000",
+        'oscar': "VL-commonsense/Oscar/pretrained_base/checkpoint-2000000",  # provided, but needs to configure model
+        'oscar12': "VL-commonsense/soft-prompts/distil_bert",  # done
+        'oscar6': "Distillation/student-oscar/checkpoint-0500000",
+        'oscar4': "Distillation/student-oscar-4/checkpoint-0560000",
+        'oscar2': "Distillation/student-oscar-2/checkpoint-0320000",
+    }
+    assert model_name in models
+    path = '' if model_name == 'bert12' else '/home/heidi/'
+    modelType = BertForMaskedLM if model_name[-2:] == '12' else DistilBertForMaskedLM
+    model = modelType.from_pretrained(path + models[model_name])
+    tokenizer = BertTokenizer.from_pretrained(path + models[model_name])
     return model.to(device), tokenizer
 
 

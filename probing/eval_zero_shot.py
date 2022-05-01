@@ -40,12 +40,15 @@ def get_model_dist(scores, obj_ls, obj_ids, obj_id_map):
     return torch.tensor(model_dist)
 
 
-def run(args):
+def run(args, distilled=False):
     '''
     Obtains the best accuracy and sp correlation across all templates for each 
     test example, and returns the averages.
     '''
-    model, tokenizer = init_mlm_model(args.model, args.model_size, device)
+    if not distilled:
+        model, tokenizer = init_mlm_model(args.model, args.model_size, device)
+    else:
+        model, tokenizer = init_distilled_model(args.model, device)
     mask_token = tokenizer.mask_token
     mask_id = tokenizer.convert_tokens_to_ids(mask_token)
 
@@ -113,7 +116,7 @@ def run(args):
     return round(np.mean(sp_corrs),3), round(np.std(sp_corrs),3), round(correct/len(test_data)*100,1)
     #return sp_corrs, sp_per_obj #, avg_per_obj
 
-if __name__ == '__main__':
+def main():
     # parser = argparse.ArgumentParser(description='zero-shot eval parser')
     # parser.add_argument('--model', type=str, default='bert',
     #                     help='name of the model (bert, roberta, albert, vokenization, oscar, or distil_bert)')
@@ -127,7 +130,7 @@ if __name__ == '__main__':
     # sp_mean, sp_std, acc = run(args)
 
     rel_types = ['coda', 'color', 'wiki-color']  # 'color', 'shape', 'material', 'cooccur', 'coda'
-    models = ['bert', 'oscar', 'distil_bert', 'roberta', 'vokenization']  # 'albert'
+    models = ['bert', 'oscar', 'distil_bert', 'roberta', 'albert', 'vokenization']  # 
     d = {rel: [] for rel in rel_types}
     sps_per_obj = {rel: [] for rel in rel_types}
     for relation in rel_types:
@@ -153,3 +156,26 @@ if __name__ == '__main__':
     #df.to_excel('file.xlsx')
     df.to_csv('heatmap_data.csv')
     print(df)
+
+def test():
+    models = ['distil_bert']
+    rel_types = ['coda', 'color', 'shape', 'material']  # 'color', 'shape', 'material', 'cooccur', 'coda'
+    d = {rel: [] for rel in rel_types}
+    for relation in rel_types:
+        print(relation)
+        groups = ['']  # , 'single', 'multi', 'any'
+        for group in groups:
+            for model in models:
+                print(model)
+                args = Args(model, relation, group)
+                sp_mean, sp_std, acc = run(args, distilled=False)
+                d[relation].append((sp_mean, sp_std, acc))
+
+    import pandas as pd
+    df = pd.DataFrame(d)
+    df.to_csv('distil_test_data.csv')
+    print(df)
+
+if __name__ == '__main__':
+    #main()
+    test()

@@ -9,6 +9,8 @@ import seaborn as sns
 import numpy as np
 import pandas as pd
 plt.rcParams.update({'font.size': 12})
+plt.rcParams['axes.spines.top'] = False
+plt.rcParams['axes.spines.right'] = False
 
 from models import init_model, plot_dists
 
@@ -100,7 +102,10 @@ def cross_model_comparison(model_names, model_size, plot='boxplot'):
 
 def plot_data():
     df = pd.read_csv('probing/size_sims.csv')
-    sns.boxplot(x='group', y='cos_sim', hue='model', data=df, showfliers = False)
+    sns.set(font_scale = 1.1)
+    sns.boxplot(x='group', y='cos_sim', hue='model', data=df, showfliers = False).set(xlabel=None)
+    plt.tight_layout()
+    plt.legend(ncol=3, fontsize=12)
     plt.savefig(f'probing/plots/size_comparison_boxplot.pdf', bbox_inches='tight')
 
 

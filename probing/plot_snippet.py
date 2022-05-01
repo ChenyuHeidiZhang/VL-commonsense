@@ -65,11 +65,11 @@ def draw_linked_plot():
 
 # reference: https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html
 def plot_heatmap(**kwargs):
-    models = ['BERT', 'Oscar', 'Distilled', 'RoBERTa', 'Vokenization']  #  'ALBERT',
+    models = ['BERT', 'Oscar', 'Distilled', 'RoBERTa', 'ALBERT', 'Vokenization', 'VisualBERT', 'CaptionBERT']  #  
     data = ['CoDa', 'VG', 'Wiki']
     df = pd.read_csv('heatmap_data.csv', sep=',', index_col=0)
     df_values = df.values*100
-    sns.set(font_scale = 1)
+    sns.set(font_scale = 1.1)
     ax = sns.heatmap(df_values, annot=True, fmt = '.1f', xticklabels=data, yticklabels=models)
     ax.collections[0].colorbar.set_label("Spearman correlation")
 
@@ -78,5 +78,5 @@ def plot_heatmap(**kwargs):
 
 
 if __name__ == '__main__':
-    draw_linked_plot()
-    #plot_heatmap(cmap="YlGn")
+    #draw_linked_plot()
+    plot_heatmap(cmap="YlGn")

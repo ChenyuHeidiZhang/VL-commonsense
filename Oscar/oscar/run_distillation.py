@@ -50,7 +50,7 @@ def main():
                         required=False, help="Path to pre-trained Oscar model")
     parser.add_argument("--model_name_or_path", default='bert-base-uncased', type=str,
                         required=False, help="Shortcut name selected in the list: " + ", ".join(ALL_MODELS))
-    parser.add_argument("--data_dir", default='/home/heidi/VL-commonsense/Oscar/oscar/datasets', type=str, required=False,
+    parser.add_argument("--data_dir", default='oscar/datasets', type=str, required=False,
                         help="The input data dir. "
                              "Should contain the .yaml files for the task.")
     parser.add_argument("--dataset_file", default='coco_flickr30k_gqa.yaml', type=str, required=False,
