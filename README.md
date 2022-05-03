@@ -5,7 +5,7 @@ Data sets and code to mine data from Visual Genome are in `mine-data` directory.
 
 ## Models
 We train two models: `Distilled` and `CaptionBERT`.
-The model checkpoints can be accessed at [this link](`https://drive.google.com/drive/folders/1Kbd2aWLMU57Rgt8UMehUiHyyCNnqn5gY?usp=sharing`)
+The model checkpoints can be accessed at [this link](https://drive.google.com/drive/folders/1Kbd2aWLMU57Rgt8UMehUiHyyCNnqn5gY?usp=sharing)
 
 ## Probing
 The `probing` directory contains code for zero shot evaluation ("best template" mode) -- `eval_zero_shot.py` -- and the logistic regression classification case -- `eval_classification.py`. `emb_for_size.py` contains code for the "adjective projection" method for size evaluation.

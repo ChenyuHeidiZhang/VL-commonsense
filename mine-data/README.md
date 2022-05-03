@@ -11,7 +11,7 @@ The attributes' order is as followed:
 * shape: ['cross', 'heart', 'octagon', 'oval', 'polygon', 'rectangle', 'rhombus', 'round', 'semicircle', 'square', 'star', 'triangle']
 * material: ['bronze', 'ceramic', 'cloth', 'concrete', 'cotton', 'denim', 'glass', 'gold', 'iron', 'jade', 'leather', 'metal', 'paper', 'plastic', 'rubber', 'stone', 'tin', 'wood']
 * CoDa: ['black', 'blue', 'brown', 'gray', 'green', 'orange', 'pink', 'purple' 'red', 'white', 'yellow']
-Distributions for "visual cooccurrence" can be access at [this link](`https://drive.google.com/drive/folders/1Kbd2aWLMU57Rgt8UMehUiHyyCNnqn5gY?usp=sharing`), as is too large to fit on Github.
+Distributions for "visual cooccurrence" can be access at [this link](https://drive.google.com/drive/folders/1Kbd2aWLMU57Rgt8UMehUiHyyCNnqn5gY?usp=sharing), as is too large to fit on Github.
 
 The `db` subfolder contains (subject, object) pairs for each relation. "obj" is the top attribute associated with the "sub" and "alt" is selected from the tail distribution. This is used to calculated the top 1 accuracy. 
 The data is split into 80% training and 20% testing (repeatedly select 8 into train, and then 2 into test), where the training set is used for prompt tuning and logistic regression training, and all results are reported on the test set.
