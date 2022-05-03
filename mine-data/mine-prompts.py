@@ -1,6 +1,8 @@
 import numpy as np
 import json
 
+# experimental for inspirations for prompts; not used in the end
+
 def mine_prompts(type, print_every=1000, max_annotations=10000):
     # Read a list of sub,obj pairs and find those pairs in COCO caption annotations.
     # Output templates that connect the sub and obj.

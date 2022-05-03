@@ -1,38 +1,6 @@
 # Soft Prompts
 
-## Setup
-
-We assume you are running soft-prompts on Linux with GPU available and anaconda3 installed.
-To set up the environment, please run
-
-```shell
-conda create -n soft-prompts python=3.7
-conda activate soft-prompts
-conda install -y pytorch==1.7.0 cudatoolkit=11.0 -c pytorch
-pip install transformers==4.0.0 pyyaml tqdm
-```
-
-## Data
-
-The `prompts` folder contains the prompts we used for T-REx, Google-RE, and ConceptNet.
-The `db` folder contains the relations we used for experiments.
-We further proprocessed T-REx to split it into train, dev, and test subsets.
-
-## Experiment
-
-To replicate our results on T-REx extended datasets with BERT-large-cased LM, run the following commands:
-
-```shell
-git clone git@github.com:hiaoxui/soft-prompts
-cd soft-prompts
-python3 -m soft_prompts.run.experiment config.yaml
-```
-
-## Paper
-
-You can read our paper on [arXiv](https://arxiv.org/abs/2104.06599).
-
-You can cite our paper by
+Reference: https://github.com/hiaoxui/soft-prompts
 
 ```bibtex
 @inproceedings{qin-eisner-2021-learning,
@@ -48,4 +16,33 @@ You can cite our paper by
     pages = "5203--5212",
 }
 ```
+
+## Setup
+
+We assume you are running soft-prompts on Linux with GPU available and anaconda3 installed.
+To set up the environment, please run
+
+```shell
+conda create -n soft-prompts python=3.7
+conda activate soft-prompts
+conda install -y pytorch==1.7.0 cudatoolkit=11.0 -c pytorch
+pip install transformers==4.0.0 pyyaml tqdm
+```
+
+## Data
+
+The `prompts/vl` folder contains the prompts used for the vision-langauge tasks.
+The `db/vl` folder contains the relations we used for experiments, including CoDa, color, shape, material, size_larger, size_smaller, and cooccur. Data is split into train and test sets; the dev set is only a placeholder and not used for our purpose.
+(Some of the data used in the original paper for T-REx, Google-RE, and ConceptNet are kept for reference.)
+
+## Experiment
+
+To replicate our results with soft-prompt tuning, run the following commands:
+
+```shell
+cd soft-prompts
+python3 -m soft_prompts.run.experiment config-vl.yaml  # to train
+python3 -m soft_prompts.run.model_eval config-vl-eval.yaml  # to eval
+```
+
 

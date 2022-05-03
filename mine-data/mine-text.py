@@ -247,8 +247,8 @@ def del_zero_dists(data_name='wiki'):
 
 
 if __name__ == '__main__':
-    # run()
-    del_zero_dists()
+    run()
+    # del_zero_dists()
     # google_ngram()
     # get_db_from_dist('material')
     # plot_count_comparison('material')

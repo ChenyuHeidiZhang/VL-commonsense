@@ -4,6 +4,7 @@ pretrained_large/
 *.DS_Store
 student-bert/
 bert-on-captions/
+eval_outs/
 
 # Initially taken from Github's Python gitignore file
 

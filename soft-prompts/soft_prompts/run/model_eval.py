@@ -18,7 +18,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 #relations = ['size_smaller', 'size_larger']
-relations = ['color'] #, 'shape', 'material', 'cooccur'
+relations = ['color', 'shape', 'material', 'cooccur'] #
 verbose = False  # verbose=True only available for non-size relations, one at a time
 
 WORD_LISTS = {
