@@ -25,3 +25,15 @@ Figures:
 * Figure 2, 6, 7 (heatmap and linked plots): probing/plot_snippet.py
 * Figure 3, 5 (size plots): probing/emb_for_size.py
 -->
+
+# Citation
+If this code is useful in you research, please cite
+
+```
+@article{zhang2022visual,
+  title={Visual Commonsense in Pretrained Unimodal and Multimodal Models},
+  author={Zhang, Chenyu and Van Durme, Benjamin and Li, Zhuowan and Stengel-Eskin, Elias},
+  journal={arXiv preprint arXiv:2205.01850},
+  year={2022}
+}
+```
